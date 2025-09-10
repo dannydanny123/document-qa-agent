@@ -1,0 +1,30 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Conda / venv
+.venv/
+env/
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Streamlit cache
+.streamlit/
+
+# Pytest cache
+.pytest_cache/

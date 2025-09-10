@@ -1,0 +1,7 @@
+google-generativeai
+pypdf
+faiss-cpu
+fastapi
+uvicorn
+streamlit
+pytest

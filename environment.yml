@@ -1,0 +1,15 @@
+name: docqa
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - google-generativeai
+      - pypdf
+      - faiss-cpu
+      - fastapi
+      - uvicorn
+      - streamlit
+      - pytest
