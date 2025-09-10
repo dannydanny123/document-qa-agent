@@ -35,7 +35,7 @@ document-qa-agent/
 
 ⚙️ Setup Instructions
 1️⃣ Clone Repo
-git clone https://github.com/<your-username>/document-qa-agent.git
+git clone https://github.com/dannydanny123/document-qa-agent.git
 cd document-qa-agent
 
 2️⃣ Create Conda Environment
