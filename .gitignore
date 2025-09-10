@@ -9,9 +9,6 @@ __pycache__/
 env/
 .conda/
 
-# Jupyter
-.ipynb_checkpoints/
-
 # Secrets
 .env
 
