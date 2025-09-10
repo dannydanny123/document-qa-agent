@@ -8,6 +8,8 @@ import pdfplumber
 import camelot
 import pandas as pd
 from pathlib import Path
+from typing import List, Dict
+import tempfile
 
 def generate_doc_id(pdf_path: str, title: str) -> str:
     """Generate unique ID: hash(title + path) for dedupe."""
@@ -67,29 +69,58 @@ def extract_tables(pdf_path: str) -> List[Dict]:
             })
     return extracted
 
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+
 def extract_images(pdf_path: str, doc_id: str) -> List[Dict]:
-    """Extract figures/equations as images with bbox."""
+    """Extract figures/equations as images with bbox, handle errors gracefully."""
     doc = fitz.open(pdf_path)
     images = []
     os.makedirs(f"data/assets/{doc_id}", exist_ok=True)
+    
     for page_num in range(len(doc)):
         page = doc[page_num]
-        image_list = page.get_images()
+        image_list = page.get_images(full=True)
         for img_index, img in enumerate(image_list):
-            xref = img[0]
-            pix = fitz.Pixmap(doc, xref)
-            if pix.n - pix.alpha < 4:  # Skip transparency
+            try:
+                xref = img[0]
+                base_image = doc.extract_image(xref)
+                if not base_image:
+                    logger.warning(f"Skipping invalid image on page {page_num+1}, index {img_index}")
+                    continue
+                image_bytes = base_image["image"]
                 img_path = f"data/assets/{doc_id}/fig_page{page_num+1}_{img_index}.png"
-                pix.save(img_path)
+                with open(img_path, "wb") as f:
+                    f.write(image_bytes)
+                # Handle bbox
+                try:
+                    bbox = page.get_image_bbox(img)
+                    # Convert Rect to list of floats [x0, y0, x1, y1]
+                    bbox_serializable = [float(bbox.x0), float(bbox.y0), float(bbox.x1), float(bbox.y1)] if bbox else None
+                except ValueError as e:
+                    logger.warning(f"No bbox for image on page {page_num+1}: {e}")
+                    bbox_serializable = None
+                # Detect caption (text near image, e.g., below bbox)
+                caption = ""
+                if bbox:
+                    caption_area = [bbox.x0, bbox.y1, bbox.x1, bbox.y1 + 50]
+                    caption = page.get_text("text", clip=caption_area).strip()
                 images.append({
                     "id": img_index,
                     "page": page_num + 1,
-                    "bbox": page.get_image_bbox(img),  # For eq/fig location
+                    "bbox": bbox_serializable,
                     "path": img_path,
-                    "type": "equation" if any(sym in pix.tobytes() for sym in ['∫', '$']) else "figure"  # Heuristic
+                    "type": "equation" if re.search(r'[\$\\{∫∑]', base_image.get("ext", "") + page.get_text()) else "figure",
+                    "caption": caption
                 })
-            pix = None
+            except Exception as e:
+                logger.error(f"Error processing image {img_index} on page {page_num+1}: {e}")
+                continue
     doc.close()
+    logger.info(f"Extracted {len(images)} images for {pdf_path}")
     return images
 
 def chunk_text(full_text: str, chunk_size: 500, overlap: 100) -> List[Dict]:
@@ -162,6 +193,6 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
     return results
 
 if __name__ == "__main__":
-    sample_pdfs = ["data/sample1.pdf", "data/sample2.pdf"]  # Add your files
+    sample_pdfs = ["data/sociology-ai.pdf", "data/Startup-Proposal.pdf"]  # Add your files
     results = ingest(sample_pdfs)
     print(f"Ingestion complete: {list(results.keys())}")
