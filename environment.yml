@@ -13,3 +13,8 @@ dependencies:
       - uvicorn
       - streamlit
       - pytest
+      - pymupdf 
+      - pdfplumber 
+      - camelot-py
+      - pandas  # For table handling
+      - python-dotenv  # For future env

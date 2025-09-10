@@ -5,3 +5,8 @@ fastapi
 uvicorn
 streamlit
 pytest
+pymupdf
+pdfplumber
+camelot-py[base]  # Includes ghostscript for tables
+pandas  # For table handling
+python-dotenv  # For future env
