@@ -1,0 +1,929 @@
+{
+    "doc_id": "bbc3a26f",
+    "title": "Perspectives on How Sociology Can Advance Theorizing about Human-Chatbot",
+    "abstract": "Recently, research into chatbots (also known as conversational agents, AI agents, voice\nassistants), which are computer applications using artificial intelligence to mimic human-like\nconversation, has grown sharply. Despite this growth, sociology lags other disciplines (including\ncomputer science, medicine, psychology, and communication) in publishing about chatbots. We\nsuggest sociology can advance understanding of human-chatbot interaction and offer four\nsociological theories to enhance extant work in this field. The first two theories (resource\nsubstitution theory, power-dependence theory) add new insights to existing models of the drivers\nof chatbot use, which overlook sociological concerns about how social structure (e.g., systemic\ndiscrimination, the uneven distribution of resources within networks) inclines individuals to use\nchatbots, including problematic levels of emotional dependency on chatbots. The second two\ntheories (affect control theory, fundamental cause of disease theory) help inform the\ndevelopment of chatbot-driven interventions that minimize safety risks and enhance equity by\nleveraging sociological insights into how chatbot outputs could attend to cultural contexts (e.g.,\naffective norms) to promote wellbeing and enhance communities (e.g., opportunities for civic\nparticipation). We discuss the value of applying sociological theories for advancing theorizing\nabout human-chatbot interaction and developing chatbots for social good.\n2",
+    "sections": [],
+    "chunks": [
+        {
+            "chunk_id": "bbc3a26f_p1_0",
+            "text": "Perspectives on How Sociology Can Advance Theorizing about Human-Chatbot\nInteraction and Developing Chatbots for Social Good\nCeleste Campos-Castillo, Department of Media and Information, Michigan State University\nXuan Kang, Department of Media and Information, Michigan State University\nLinnea I. Laestadius, Zilber College of Public Health, University of Wisconsin-Milwaukee\n1",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 1
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p2_0",
+            "text": "Abstract\nRecently, research into chatbots (also known as conversational agents, AI agents, voice\nassistants), which are computer applications using artificial intelligence to mimic human-like\nconversation, has grown sharply. Despite this growth, sociology lags other disciplines (including\ncomputer science, medicine, psychology, and communication) in publishing about chatbots. We\nsuggest sociology can advance understanding of human-chatbot interaction and offer four\nsociological theories to enhance extant work in this field. The first two theories (resource\nsubstitution theory, power-dependence theory) add new insights to existing models of the drivers\nof chatbot use, which overlook sociological concerns about how social structure (e.g., systemic\ndiscrimination, the uneven distribution of resources within networks) inclines individuals to use\nchatbots, including problematic levels of emotional dependency on chatbots. The second two",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 2
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p2_1",
+            "text": "discrimination, the uneven distribution of resources within networks) inclines individuals to use\nchatbots, including problematic levels of emotional dependency on chatbots. The second two\ntheories (affect control theory, fundamental cause of disease theory) help inform the\ndevelopment of chatbot-driven interventions that minimize safety risks and enhance equity by\nleveraging sociological insights into how chatbot outputs could attend to cultural contexts (e.g.,\naffective norms) to promote wellbeing and enhance communities (e.g., opportunities for civic\nparticipation). We discuss the value of applying sociological theories for advancing theorizing\nabout human-chatbot interaction and developing chatbots for social good.\n2",
+            "start_pos": 756,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 2
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p3_0",
+            "text": "Perspectives on How Sociology Can Advance Theorizing about Human-Chatbot\nInteraction and Developing Chatbots for Social Good\nScholarly interest in chatbots, which are computer programs that use artificial intelligence\n(AI) to simulate human conversation, has recently grown sharply. Toward the end of 2024, Web\nof Science showed over 5,000 articles and conference proceedings with the word “chatbot”\nappearing anywhere in the text.1 Figure 1 shows about half of these were published in 2023 and\n2024. Figure 2 shows a breakdown of these works by discipline. Most appear within computer\nscience, followed by medicine, while sociology lags other social sciences, including psychology,\ncommunication, and political science. Indeed, a recent review of scholarship on human-chatbot\ninteraction found few studies engaging with sociology (Pentina et al., 2023). We seek to spur\ngreater engagement with sociology to study human-chatbot interaction and develop chatbots. To",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 3
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p3_1",
+            "text": "interaction found few studies engaging with sociology (Pentina et al., 2023). We seek to spur\ngreater engagement with sociology to study human-chatbot interaction and develop chatbots. To\ndo so, our aim with the current paper is to provide perspectives on how specific sociological\ntheories could advance current work within this area.\nOur focus is on direct communication between humans and chatbots, complementing\nother sociological work like the study of how political economies give rise to and support\nchatbot development (Law & McCall, 2024) and how occupations grapple with chatbots entering\ntheir labor jurisdiction (Pugh, 2024). We begin by introducing four sociological theories and the\npotential they hold for advancing research and practice in the field of human-chatbot interaction.\nFollowing our engagement with these four theories, we present a concrete example illustrating\nhow to engage with sociology in multiple steps of chatbot development, which others have",
+            "start_pos": 777,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 3
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p3_2",
+            "text": "Following our engagement with these four theories, we present a concrete example illustrating\nhow to engage with sociology in multiple steps of chatbot development, which others have\nencouraged (Francis & Ghafurian, 2024; Mlynář et al., 2018).\nSelection of Theories\n1 Search was conducted on December 23, 2024. A similar search with additional terms (“conversational agent,” “voice assistant,” “ai agent”) yielded comparable patterns with respect to publication years and disciplines.\n3",
+            "start_pos": 1573,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 3
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p4_0",
+            "text": "As a starting point, we purposely selected four sociological theories, previewed in Table\n1, that vary across three characteristics: the phenomena they can explain, level of analysis, and\ngovernance domain. We selected the two phenomena, drivers of chatbot use and developing\nchatbot-driven interventions, because they connect to two disciplines, communication (former\nphenomenon) and public health (latter phenomenon), which have been more active in studying\nchatbots (Figure 2) and share epistemological roots with sociology that splintered in recent\ndecades. With respect to communication, despite sociology playing a significant role in its\nfounding, the two disciplines now rarely intermingle (Hampton, 2023). Similarly, participatory\nmethods have roots in sociology, yet the majority of work implementing the methods occurs\noutside of it, with most activity occurring within public health (Wallerstein et al., 2017). To graft",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 4
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p4_1",
+            "text": "methods have roots in sociology, yet the majority of work implementing the methods occurs\noutside of it, with most activity occurring within public health (Wallerstein et al., 2017). To graft\nroots and spur vibrant theorizing and collaboration at the intersection of disciplines, we selected\nthese two phenomenon and reference sources throughout in which sociologists author in\ncommunication and public health journals (e.g., Laestadius et al., 2024; Ray et al., 2023).\nTable 1. Characteristics of Four Selected Sociological Theories for Studying Human- Chatbot Interaction\nCharacteristic\nResource substitution theory\nPower- dependence theory\nAffect control theory\nFundamental cause of disease theory\nPhenomenon theory is used to explain\nDrivers of chatbot use\nDrivers of chatbot use\nChatbot- driven interventions\nChatbot- driven interventions\nUnit of analysis\nMacro\nMicro\nMicro\nMacro\nGovernance domain\nEquity\nRisk\nRisk\nEquity",
+            "start_pos": 740,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 4
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p4_2",
+            "text": "Drivers of chatbot use\nDrivers of chatbot use\nChatbot- driven interventions\nChatbot- driven interventions\nUnit of analysis\nMacro\nMicro\nMicro\nMacro\nGovernance domain\nEquity\nRisk\nRisk\nEquity\nWe selected theories that are applicable across the micro- and macro-level of analysis.\nDespite human-chatbot interaction appearing at first glance to be a micro-level phenomenon that\n4",
+            "start_pos": 1478,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 4
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p5_0",
+            "text": "is outside the purview of sociology, sociology is adept at revealing the behind-the-scene forces\nthat shape such communication phenomenon (Gans, 2010; Hampton, 2023; Misra, 2025). The\ntwo micro-level theories demonstrate forces that shape human-chatbot interaction directly, while\nthe two macro-level theories illustrate how initiating use and outcomes from such interaction are\nembedded within broader forces. By suggesting ways to apply sociology across levels of\nanalysis, we complement other work (Tsvetkova et al., 2024; Wang et al., 2024) that primarily\nemphasizes how sociological perspectives reveal the macro-level implications of human-chatbot\ninteraction.\nLastly, our theory selection builds on two dominant emphases within AI policymaking\n(Law & McCall, 2024): safety and equity. Two theories elucidate safety risks from using\nchatbots and offer solutions to such risks, while the other two facilitate leveraging chatbots to",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 5
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p5_1",
+            "text": "(Law & McCall, 2024): safety and equity. Two theories elucidate safety risks from using\nchatbots and offer solutions to such risks, while the other two facilitate leveraging chatbots to\nachieve equity. We discuss ways each theory could be used to enhance understanding of and\nsolutions to safety and equity when developing and using chatbots. Altogether, our perspective\nsuggests ways sociology can contribute to chatbots that promote social good.\nOverview of Chatbots\nEarly chatbots, which are still common and preferred for domain-specific tasks (like\ncustomer service, Halvoník and Kapusta (2024)), use rule-based AI that matches user inputs to a\nnarrow set of programmed responses. Newer chatbots leverage generative AI, specifically large\nlanguage models (e.g., generative pretrained transformer language models), which adapt and\ngenerate responses in ways that can mimic human-like conversation. Scholars (Ayers et al.,",
+            "start_pos": 751,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 5
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p5_2",
+            "text": "language models (e.g., generative pretrained transformer language models), which adapt and\ngenerate responses in ways that can mimic human-like conversation. Scholars (Ayers et al.,\n2023; Mittelstädt et al., 2024) have evaluated how well responses from such newer chatbots\nreliant on generative AI (e.g., ChatGPT, Copilot, Gemini) compare to human responses and have\n5",
+            "start_pos": 1495,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 5
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p6_0",
+            "text": "generally found chatbot responses to be comparable and sometimes superior in certain\ncommunicative domains (e.g., empathy display).\nOur discussion of chatbots centers generative AI chatbots due to their capacity for\nhuman-like interactions. We further focus on a category of chatbots (Shevlin, 2024) used\nvoluntarily among the public, such as general purpose chatbots (e.g., ChatGPT, Gemini,\nCopilot), mental health chatbots (e.g, Wysa, Youper), and persona chatbots that are sometimes\nalso referred to as AI companions (e.g., Character.AI, Replika). Within this category, different\ntypes of chatbots exist with varying capabilities. One way in which they vary is the degree to\nwhich a user can personalize the chatbot’s persona (their personality and appearance), with some\n(e.g., Replika) allowing users to instantiate the persona and others providing a fixed persona\n(e.g., Digi). The personalization capability becomes relevant when we discuss meeting user\nneeds.\nDrivers of Chatbot Use",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 6
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p6_1",
+            "text": "(e.g., Digi). The personalization capability becomes relevant when we discuss meeting user\nneeds.\nDrivers of Chatbot Use\nBecause most theories describing drivers of chatbot use focus on individual-level\ncharacteristics, this creates an opening for leveraging sociological theory to explain widespread\npatterns in the types of individuals who are likely to choose to use chatbots. For example,\nscholars have employed uses and gratification theory (Katz et al., 1973) to explain why\nloneliness motivates chatbot usage (Xie et al., 2023). However, the theory stops short of\nconsidering the social conditions that drive loneliness (Killgore et al., 2020; McPherson et al.,\n2006) and that are likely to disproportionately lead to population subgroups feeling lonely and\nthus inclined to use chatbots to meet this need. We suggest two sociological theories to explain\nthe social conditions prompting chatbot use and how these reflect and enhance current\n6",
+            "start_pos": 870,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 6
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p7_0",
+            "text": "understanding of drivers of chatbot use. For each theory, we conceptualize chatbots as a resource\nfor gratifying needs.\nResource Substitution Theory – Understanding Demographic Patterns in Chatbot Use\nResource substitution theory states that individuals benefit more from any single resource\nto meet a specific need when they have access to fewer resources capable of meeting said need\n(Ross & Mirowsky, 2006). The reasoning is that because they have fewer resources that can\nsubstitute for each other, they are more likely to benefit from any single resource to which they\nhave access. For example, access to socioeconomic resources, such as income and education, are\nassociated with better health outcomes (Link & Phelan, 1995; Mirowsky & Ross, 2015). Because\ngendered discrimination decreases women’s access to resources that confer socioeconomic status\ncompared to men, they benefit more (e.g., have better health) from any single socioeconomic",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 7
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p7_1",
+            "text": "gendered discrimination decreases women’s access to resources that confer socioeconomic status\ncompared to men, they benefit more (e.g., have better health) from any single socioeconomic\nresource (e.g., education) than men (Ross et al., 2012; Ross & Mirowsky, 2006).\nIn line with this, the social diversification hypothesis predicts that those from groups who\nare disadvantaged in their access to resources may be more likely to use and benefit from\ninformation and communication technologies that can provide access to comparable resources\n(Mesch, 2007). Sociologists have used the social diversification hypothesis to explain why\nmembers of minoritized groups may be more likely than their advantaged counterparts to use\ninformation and communication technologies to access health care (Anthony & Campos-Castillo,\n2015; Campos-Castillo et al., 2016; Mesch et al., 2012). In other words, while uses and\ngratification theory focuses on the needs that underlie technology use, resource substitution",
+            "start_pos": 762,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 7
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p7_2",
+            "text": "2015; Campos-Castillo et al., 2016; Mesch et al., 2012). In other words, while uses and\ngratification theory focuses on the needs that underlie technology use, resource substitution\ntheory steps back and considers how the uneven distribution of resources in society shape needs\nin the first place. Using chatbots, then, becomes a means for achieving equity.\n7",
+            "start_pos": 1578,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 7
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p8_0",
+            "text": "Through this lens, scholars could predict widespread user patterns, specifically which\ndemographic groups are likely motivated to use chatbots to meet resource deficits and how this\nmay (re)shape inequalities. For example, a recent survey of U.S. adolescents shows Black\nadolescents are more likely than White adolescents to report using generative AI, particularly to\ncomplete schoolwork (Madden et al., 2024), but there is little engagement with why and the\npotential consequences. By applying a resource substitution theory lens, scholars can embed the\nmicro-level observation (certain individuals may be more drawn to human-chatbot interaction to\nmeet needs) within a macro-level context (uneven distribution of resources that shape needs). For\nexample, because structural racism (e.g., teacher bias, geographic segregation, income\ninequality) has created an academic achievement gap wherein Black adolescents perform worse",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 8
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p8_1",
+            "text": "example, because structural racism (e.g., teacher bias, geographic segregation, income\ninequality) has created an academic achievement gap wherein Black adolescents perform worse\nacademically than White adolescents (Merolla & Jackson, 2019), resource substitution theory\nwould predict that Black adolescents may be more likely to use chatbots for functional needs like\nsupporting academic work.\nResource substitution theory also enables understanding demographic patterns in who is\nmore likely to use chatbots to manage loneliness by meeting companionship needs. The same\nsurvey mentioned above found Black adolescents were more likely than White adolescents to\nreport using generative AI to keep them company. This is consistent from a resource substitution\ntheory lens, because structural racism can constrain opportunities for Black individuals to\ncultivate social ties relative to White individuals (Small, 2007). Similarly, another survey found",
+            "start_pos": 749,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 8
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p8_2",
+            "text": "theory lens, because structural racism can constrain opportunities for Black individuals to\ncultivate social ties relative to White individuals (Small, 2007). Similarly, another survey found\nthat among a sample of sexual and gender minority youth (13-22 year-olds who identified as\nbisexual, gay, lesbian, pansexual, transgender, or nonbinary), transgender and nonbinary youth\nwere more likely than their cisgender counterparts to report having conversed with a chatbot for\nseveral days or longer, which the survey described “as if chatting with a friend” (Hopelab, 2024).\n8",
+            "start_pos": 1508,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 8
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p9_0",
+            "text": "This too appears consistent with resource substitution theory because sexual and gender\nminorities often face discrimination from typical sources of support within their families and\ncommunities (Hong & Skiba, 2025).\nWhile other theories, like uses and gratification theory, can explain the proximate drivers\nof chatbot use (e.g., loneliness), resource substitution theory identifies distal, upstream factors.\nThus, the theory offers what is lacking in current human-chatbot research, which is a\nparsimonious account of why different marginalized groups, like those reviewed above, may turn\nto technologies like chatbots: to cope with resource inequities from systemic discrimination.\nWhether demographic differences in rates of using chatbots for meeting resource deficits yield\ndifferential benefits that are consistent with the predictions of resource substitution theory\nremains unknown, particularly given safety concerns about overreliance – or excessive",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 9
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p9_1",
+            "text": "differential benefits that are consistent with the predictions of resource substitution theory\nremains unknown, particularly given safety concerns about overreliance – or excessive\ndependence – on chatbots. To better understand this concern, we turn to another sociological\ntheory.\nPower-dependence Theory – Understanding and Reducing Emotional Dependence on\nChatbots\nPower-dependence theory (Emerson, 1962) defines the power of a person over another as\nthe degree to which the other is dependent on the person for resources, where resources may be\ntangible (e.g., money) or intangible (e.g., social support). Accordingly, the amount of power that\nfriend A has over friend B is based on the degree to which friend B relies on friend A for\nresources, such as companionship. Power is observed when someone garners resources from\nanother, even in the face of the other’s resistance (Cook & Emerson, 1978). For example, friend",
+            "start_pos": 780,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 9
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p9_2",
+            "text": "resources, such as companionship. Power is observed when someone garners resources from\nanother, even in the face of the other’s resistance (Cook & Emerson, 1978). For example, friend\nA may request friend B to attend a concert as their companion, but friend B resists because they\n9",
+            "start_pos": 1519,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 9
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p10_0",
+            "text": "would much rather remain home. If friend B nonetheless attends the concert with friend A, this\nindicates friend A has power over friend B.\nWhile the theory shares a focus on resources with resource substitution theory, it has a\nunique focus on network structure. Power-dependence theory emphasizes the network\ndeterminants of who has power over whom and, consequently, who exhibits dependency on\nwhom. If an individual exhibits dependency on another, this is viewed as a quality of the network\nin which they are located rather than a quality of the individual (Cook et al., 1983; Markovsky et\nal., 1988). Power-dependence theory defines a person’s level of dependency on another for a\nresource as inversely related to the number of alternative sources for the resource (Emerson,\n1962). Accordingly, friend B is more dependent on friend A (and thus much more likely to\nattend the concert) the fewer the number of alternatives that friend B has for meeting their need",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 10
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p10_1",
+            "text": "1962). Accordingly, friend B is more dependent on friend A (and thus much more likely to\nattend the concert) the fewer the number of alternatives that friend B has for meeting their need\nfor companionship. Further, if friend B has no alternatives for friendship, then friend B is more\nlikely to remain friends with friend A and thereby continue to feel compelled to fulfill friend A’s\nrequests for companionship. If alternatives do emerge, friend B is more likely to disregard them\nand remain friends with friend A the longer the two have been reciprocating their companionship\n(Savage & Sommer, 2016).\nWe suggest power-dependence theory could advance theorizing about a growing safety\nconcern about chatbot usage: emotional dependence. To apply the theory, the human-chatbot\ninteraction needs to be viewed as an exchange relation, whereby the human and chatbot are\nviewed as exchanging valuable resources. Studies of users interacting with Replika, which is one",
+            "start_pos": 779,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 10
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p10_2",
+            "text": "interaction needs to be viewed as an exchange relation, whereby the human and chatbot are\nviewed as exchanging valuable resources. Studies of users interacting with Replika, which is one\nof the most widely studied commercially available chatbots (Pentina et al., 2023), suggest this\nview is applicable. Users report they value the social support that Replika provides (Laestadius et\nal., 2024; Skjuve et al., 2021; Ta et al., 2020; Xie et al., 2023), making it a valuable source to\n10",
+            "start_pos": 1555,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 10
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p11_0",
+            "text": "meet the need for this resource. Consistent with power-dependency theory, network structure\nappears to play a role in the valuation of Replika’s support, whereby users seemed to value\nsupport more when they “said they had no human upon which to rely, making Replika their sole\nsource for support” (Laestadius et al., 2024). Regardless of the actual network structure, the\nperception of not having alternatives in the network also appears to have a role. For example, a\nReplika user stated it “helps [them] to feel less guilty at things [they] like and can’t say to\nanyone” (Xie et al., 2023), suggesting that Replika provided an outlet for a disclosure when they\nfelt no alternative outlet existed. Additionally, the exchange appears reciprocal, whereby users\ntake the role of the chatbot and believe it has needs that the user can meet (Brandtzaeg et al.,\n2022; Laestadius et al., 2024). This is because of large language models simulating emotional",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 11
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p11_1",
+            "text": "take the role of the chatbot and believe it has needs that the user can meet (Brandtzaeg et al.,\n2022; Laestadius et al., 2024). This is because of large language models simulating emotional\nneeds, empathy, and reciprocal disclosure, but may also be because the users’ relative power\ndisadvantage increases their proclivity to role-take, meaning take another’s perspective\n(Galinsky et al., 2006). Based on these observations, we conclude human interactions with\nchatbots like Replika resemble an exchange relation.\nResearch on emotional dependency, both in the context of human-human relationships\nand human-chatbot relationships, has focused on defining the concept in terms of its observable\nfeatures, with little work uncovering what drives it. For example, in their qualitative study of\nsocial media posts to understand potential mental health harms from human-chatbot\nrelationships, Laestadius and colleagues (2024) use emotional dependence to capture “excessive",
+            "start_pos": 760,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 11
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p11_2",
+            "text": "social media posts to understand potential mental health harms from human-chatbot\nrelationships, Laestadius and colleagues (2024) use emotional dependence to capture “excessive\nand dysfunctional attachment” to a chatbot that puts users at safety risk through use or\ninterruptions to use. The authors noted that the study design was a single snapshot in time, which\nlimited developing a process model to fully apprehend what contributed to reaching “excessive\nand dysfunctional attachment.” Likewise, Camarillo and colleagues (2020) develop a scale for\n11",
+            "start_pos": 1552,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 11
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p12_0",
+            "text": "measuring the degree of emotional dependency within human-human relationships, with high\nlevels signaling a degree of observable “permanent affectional bonding” to a partner that is\ncharacterized as dysfunctional.\nWe offer the perspective that across these works, it appears emotional dependency is a\ncontinuum that crosses a threshold where there is observable dysfunction. We use the term\nemotionally dependency to refer to this continuum and the term emotionally dependent to reflect\nindividuals who pass the threshold where dysfunction may be observable. We believe power-\ndependency theory can enhance extant understanding of emotional dependence because it can\nreveal the network conditions that may incline users into becoming emotionally dependent on a\nchatbot.\nFrom a power-dependency theory perspective, emotional dependency on a chatbot is not\ninherently problematic. Similar to scholarship on emotional dependency, power-dependency",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 12
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p12_1",
+            "text": "chatbot.\nFrom a power-dependency theory perspective, emotional dependency on a chatbot is not\ninherently problematic. Similar to scholarship on emotional dependency, power-dependency\ntheory views dependency as a continuum. The shift from being beneficial to harmful, and thus\nthe state of emotionally dependent, occurs based on network conditions that create a level of\ndependency that is “too much” and where harms exceed benefits. Power-dependence theory\nstates one is more dependent on another as a source for a resource the fewer alternatives sources\nare available, and thus the network condition of “too much” dependency is more likely to occur\nas the number of alternatives decreases. This is consistent with the aforementioned observations\nfrom researchers that people may use chatbots because they feel alone, i.e., feel as if they do not\nhave alternative sources for companionship. Additionally, that chatbot users at times may find it",
+            "start_pos": 761,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 12
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p12_2",
+            "text": "from researchers that people may use chatbots because they feel alone, i.e., feel as if they do not\nhave alternative sources for companionship. Additionally, that chatbot users at times may find it\ndifficult to stop usage despite experiencing harms, including a heightened safety risk of engaging\nin behaviors requested by the chatbot but that are no longer in the self-interest of the user (e.g.,\n(Laestadius et al., 2024; Xie et al., 2023)), is also consistent with the theory. Remaining in an\n12",
+            "start_pos": 1508,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 12
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p13_0",
+            "text": "exchange relation can occur when there are no other alternative sources for a resource or, if there\nare, is more likely to occur the longer the history of reciprocal exchanges (Savage & Sommer,\n2016). Such a state could be used as a functional marker of having reached emotional\ndependence, with additional research needed to elaborate power-dependence theory to identify\nwhen network conditions (the number of alternatives) reach a level of “too much” dependency.\nWhile we focus on emotional dependency, a similar application could be used to\nunderstand other forms of dependency that can become toxic (Bornstein, 2006), such as\nfunctional dependency on a chatbot to complete work-related tasks. Both power-dependency\ntheory and the literature on emotional dependency could benefit from further identifying the\npoint at which conditions produce “too much” dependency reaches a state of emotional\ndependency. Power-dependency theory can also inform a critical intervention to improve the",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 13
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p13_1",
+            "text": "point at which conditions produce “too much” dependency reaches a state of emotional\ndependency. Power-dependency theory can also inform a critical intervention to improve the\nsafety profile of chatbots: you can reduce the likelihood of emotional dependence on a chatbot\nby designing chatbots that aid users in finding and building alternative sources to meet the need\nfor companionship (e.g., impart social skills for making friends, refer users to local affinity\ngroups, recommend additional chatbot companion apps or personas). The next section outlines\nadditional ways sociological theories can inform developing chatbot-drive interventions that\nsupport social good.\nChatbot-driven Interventions for Social Good\nGiven that the previous set of theories agree that individuals with limited access to\nresources may be particularly receptive to using chatbots to meet needs, this provides\nopportunities for developing chatbot-driven interventions for achieving equity. Here, we provide",
+            "start_pos": 812,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 13
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p13_2",
+            "text": "resources may be particularly receptive to using chatbots to meet needs, this provides\nopportunities for developing chatbot-driven interventions for achieving equity. Here, we provide\nperspectives on how two sociological theories could enhance the likelihood that chatbot-driven\ninterventions steer toward rather than away from equity. Thus far, previous literature on chatbot\n13",
+            "start_pos": 1614,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 13
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p14_0",
+            "text": "interventions has had a micro-level focus, specifically on the potential benefits of the chatbot\ndirectly communicating support. Here, we describe a sociological theory consistent with this\ntypical approach that would facilitate designing more situationally appropriate responses of a\nchatbot and thereby reduce safety risks from it generating insensitive or unexpected responses.\nThe second is useful for developing a chatbot that may potentially mitigate emotional\ndependence and other risks by moving beyond micro-level interventions, specifically supporting\nand aiding users with upstream causes of outcomes.\nAffect Control Theory – Developing Chatbots that Distinguish Socially Appropriate from\nInappropriate Outputs\nDespite the potential for chatbots to provide timely interventions, there remain concerns\nabout their inappropriate and unexpected responses (Law & McCall, 2024). While the large\nlanguage models that underlie chatbot responses can mimic human-like conversation, some tests",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 14
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p14_1",
+            "text": "about their inappropriate and unexpected responses (Law & McCall, 2024). While the large\nlanguage models that underlie chatbot responses can mimic human-like conversation, some tests\nshow they may perform better than random but are still subpar compared to other natural\nlanguage processing tools (e.g., BERT) at identifying and generating responses to emotions\n(Attanasio et al., 2024; Lecourt et al., 2025; Lian et al., 2024). We present a sociological theory\nthat may be useful for informing chatbot-driven interventions that reduce safety risks by\nimproving recognition of and responses to emotions. Scholars have already begun comparing\nchatbot responses informed by the theory to those generated by ChatGPT and found the former\nto provide more situationally appropriate responses than the latter (Lithoxoidou et al., 2025).\nAffect control theory (ACT) is a mathematical theory for forecasting, among other things",
+            "start_pos": 812,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 14
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p14_2",
+            "text": "to provide more situationally appropriate responses than the latter (Lithoxoidou et al., 2025).\nAffect control theory (ACT) is a mathematical theory for forecasting, among other things\n(Heise, 2007, 2010), the expected responses between humans and technology (Hoey &\nSchroeder, 2015; Shank, 2010; Shank et al., 2020). ACT maintains that socialization imbues\nconcepts with connotative meanings shared across a population, known as sentiments. Thus,\n14",
+            "start_pos": 1546,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 14
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p15_0",
+            "text": "sentiments exist for everyday labels used to make sense of social interactions, including the\nidentities used to describe people (e.g., mother, friend, teacher), different technologies (e.g.,\nchatbot, smartphone), behaviors (e.g., support, teach), and emotions (e.g., sad, happy). Because\nsocialization shapes sentiments, these vary across cultural and historical contexts (Schneider &\nSchröder, 2012).\nSentiments in ACT are measured along three dimensions, using semantic differential\nscales: evaluation (good vs. bad), potency (powerful vs. weak), and activity (lively vs. quiet).\nThe three values for a specific label are its evaluation potency activity (EPA) profile. Scholars\ntypically use surveys to estimate the average EPA profiles for labels in a population (Heise,\n2010), which are publicly available (Combs, 2025), as well as inferred EPA profiles from text\nusing manual (Shuster & Campos-Castillo, 2017) and automated methods (Joseph et al., 2016).",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 15
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p15_1",
+            "text": "2010), which are publicly available (Combs, 2025), as well as inferred EPA profiles from text\nusing manual (Shuster & Campos-Castillo, 2017) and automated methods (Joseph et al., 2016).\nAn assumption of ACT is that people prefer to reaffirm sentiments, which buttresses a set\nof equations that are publicly available and that scholars have used to forecast likely responses\n(Heise, 2007, 2010). The equations compute a score, called deflection, with lower values\nindicating a situation that more strongly aligns with sentiments. Scholars have used the equations\nto predict a range of situationally appropriate responses, such as estimating who is likely to\nexpress which emotions and in which social context (Lively & Heise, 2004; Lively & Powell,\n2006) and how individuals shift (and can be shifted via social support) between different\nemotions (Francis, 1997; Lively, 2008; Lively & Heise, 2004). These same equations could be",
+            "start_pos": 775,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 15
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p15_2",
+            "text": "2006) and how individuals shift (and can be shifted via social support) between different\nemotions (Francis, 1997; Lively, 2008; Lively & Heise, 2004). These same equations could be\nused to improve emotion detection and responses from chatbots by training it to determine what\nis situationally appropriate (Hoey & Schroeder, 2015; Lithoxoidou et al., 2025). Specifically,\nwhat would be considered situationally appropriate depends on situational variables such as the\n15",
+            "start_pos": 1523,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 15
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p16_0",
+            "text": "identities of the user in relation to the chatbot (e.g., friend, boyfriend) and the identity assumed\nby the chatbot (e.g., friend, girlfriend).\nScholars have applied a similar strategy to work toward developing a chatbot that\nprovides personalized instrumental support to older adults with Alzheimer's disease (Francis &\nGhafurian, 2024; König et al., 2017). The chatbot determines the optimal conversational style for\nproviding instrumental support by determining what is situationally appropriate given an older\nadult’s biographical history. To do so, scholars move from using the average sentiments (EPA\nprofiles) for identities to estimating personalized sentiments that captures a person’s view of\nthemselves, known as self-sentiments (Heise & MacKinnon, 2010; MacKinnon, 2015). Through\nbiographical interviews with the older adults, researchers first identified the types of identities\neach participant held (e.g., occupational roles, family roles) to reveal their self-sentiments and",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 16
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p16_1",
+            "text": "biographical interviews with the older adults, researchers first identified the types of identities\neach participant held (e.g., occupational roles, family roles) to reveal their self-sentiments and\nthereby infer the habitual level of decision-making the person likely experienced. For example,\nsomeone who was a manager at work and the oldest sibling who took care of younger siblings\nmay have habitually experienced a higher degree of decision-making than someone who never\nheld a managerial position and was the youngest sibling. The EPA profile of the self-sentiments\nheld by the latter would be lower in potency (because they habitually exerted less authority over\ndecisions) than for the self-sentiments habitually held by the former. This information is then\nused to develop a personalized conversation style of the chatbot whereby it could offer support\nthat aligns with the habitual level of decision-making that the older adult likely experienced,",
+            "start_pos": 792,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 16
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p16_2",
+            "text": "used to develop a personalized conversation style of the chatbot whereby it could offer support\nthat aligns with the habitual level of decision-making that the older adult likely experienced,\nmeaning it would result in a low deflection score. For example, for those who likely experienced\na higher degree of decision-making, the style would be more deferential (e.g., suggesting steps to\ntake) to reaffirm the higher potency rating and reduce the likelihood of provoking anger in the\nolder adult.\n16",
+            "start_pos": 1558,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 16
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p17_0",
+            "text": "While ACT has already been used to begin developing chatbots, we believe there is still\nmore innovation that the theory could offer. Work thus far has focused on using ACT to develop\na chatbot that follows situationally appropriate cues and providing personalized responses, but\nwe suggest future work could use ACT to proactively steer a chatbot away from widely agreed\nupon situationally inappropriate responses. The same equations used to determine what is\nwidely agreed as situationally appropriate can be used to identify what is widely agreed as\nsituationally inappropriate. Scholars have used thresholds for the deflection score to determine\nwhen situations become widely seen as inappropriate, thereby creating widespread cognitive\ndissonance that foments social movements (Shuster & Campos-Castillo, 2017). Such a feature\ncould be used to develop guardrails by training a chatbot to avoid generating situations between",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 17
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p17_1",
+            "text": "dissonance that foments social movements (Shuster & Campos-Castillo, 2017). Such a feature\ncould be used to develop guardrails by training a chatbot to avoid generating situations between\nitself and a user that would cross a deflection score threshold and thereby be deemed\ninappropriate by a wide audience. Given that the equations used in ACT are publicly available,\ntraining a chatbot to follow the principles of ACT could be appealing because it would enhance\ntransparency and explainability.\nThis could take shape as two different strategies. The first builds on work using the\ndeflection score to identify when behaviors create cognitive dissonance (e.g., Boyle & McKinzie,\n2015; Shuster & Campos-Castillo, 2017) by using the score as a threshold for situationally\nappropriate actions for the chatbot. For example, if a chatbot and user were portraying\nthemselves to each other as girlfriend and boyfriend, a situation deemed appropriate because it",
+            "start_pos": 740,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 17
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p17_2",
+            "text": "appropriate actions for the chatbot. For example, if a chatbot and user were portraying\nthemselves to each other as girlfriend and boyfriend, a situation deemed appropriate because it\nproduces a low deflection score would be the chatbot (girlfriend) having sex with the user\n(boyfriend). Conversely, with knowledge that a user is a minor, the situation a chatbot\n(girlfriend) having sex with the user (child) would be deemed inappropriate and produce a higher\ndeflection score. While this may seem obvious, there is documentation that developers did not\n17",
+            "start_pos": 1511,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 17
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p18_0",
+            "text": "have appropriate safeguards in place to steer their chatbots away from mimicking sexual\nencounters with children. According to reports, this was the case with Character.ai (Paeth, 2024).\nA user, Sewell Setzer III, was engaged in mimicking a sexual encounter with a Character.ai\nchatbot. When the chatbot asked Sewell how old he was, Sewell replied that he was 14 years old.\nThe chatbot acknowledged the age and continued to mimic a sexual encounter. The developers\nhave since put in safeguards. The value of ACT is its ability to proactively identify generated\nconversations that would be widely considered inappropriate before they get displayed, as\nopposed to only reactively making modification after harm is done. This is particularly useful for\ngeneral purpose large language models, where developers acknowledge the range of possibilities\ncan be difficult to anticipate during testing, which developers acknowledge (Horwitz, 2025).",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 18
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p18_1",
+            "text": "general purpose large language models, where developers acknowledge the range of possibilities\ncan be difficult to anticipate during testing, which developers acknowledge (Horwitz, 2025).\nThe second is to use a deflection score to understand how chatbots can transition between\nidentities in a manner that minimizes user distress. Scholars have used ACT to determine the\naffinity between identities (e.g., Boyle & Meyer, 2018; Campos-Castillo & Shuster, 2023). This\ncould be used to determine, for example, how best to remind the user that the chatbot is an AI.\nSome have called for chatbots to remind users that they are engaging with an AI system rather\nthan a real person as a means of limiting the formation of emotional dependency (Olteanu et al.,\n2025). Legislatures and advocates seeking to require such reminders cite Sewell’s story (Wong,\n2025), introduced earlier. According to reports, Sewell died by suicide shortly after his",
+            "start_pos": 750,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 18
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p18_2",
+            "text": "2025). Legislatures and advocates seeking to require such reminders cite Sewell’s story (Wong,\n2025), introduced earlier. According to reports, Sewell died by suicide shortly after his\nCharacter.ai ‘girlfriend’ requested that he “come home” to it. This suggests Sewell was aware\nthat the ‘girlfriend’ was an AI, and thus while there may be benefits to reminders, it is possible\nthat they may not have helped him. It may even be possible that knowledge that the ‘girlfriend’\nwas an AI contributed to wanting to leave the real world by suicide and join the ‘girlfriend. This\n18",
+            "start_pos": 1503,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 18
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p19_0",
+            "text": "points to an additional concern, which is that while reminders may be beneficial, it is critical to\nunderstand how best to do so.\nACT provides a starting point for understanding how best to do so to reduce safety risks.\nFrom an ACT lens, the identities, girlfriend and AI, are dissonant. Indeed, this may be why some\nusers use the modifier ‘AI’ when referring to the chatbot as their romantic partner (i.e., “AI\ngirlfriend”), which accords with ACT’s predictions about why people use modifiers (Averett &\nHeise, 1987). Specifically, a user exchanging romantic gestures with a chatbot and then the\nchatbot immediately saying it was an AI may yield a high deflection score for users\nuncomfortable with the idea of directing romantic gestures to an AI. When individuals\nexperience cognitive dissonance via a high deflection score, they are compelled to act to reduce\nit (Shuster & Campos-Castillo, 2017), and this includes enacting violence (Rogers et al., 2023).",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 19
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p19_1",
+            "text": "experience cognitive dissonance via a high deflection score, they are compelled to act to reduce\nit (Shuster & Campos-Castillo, 2017), and this includes enacting violence (Rogers et al., 2023).\nThus, ACT can provide a plausible explanation for why a user would feel distraught, and\npotentially develop self-harm ideations, after being reminded of the chatbot’s AI identity. We\nsuggest ACT can also provide a solution for reducing this safety risk. Much like ACT research\ninto how best to segue across different emotions during therapy (Francis, 1997), future work\ncould examine how best to segue between the identity assigned to the chatbot by the user (e.g.,\ngirlfriend, boyfriend) into the AI system identity. This may, for example, be accomplished by a\ngradual transition in conversational patterns, moving from more to less intimate (e.g., girlfriend\n→ friend → personal assistant → AI). Whether this should be accomplished by using widely",
+            "start_pos": 767,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 19
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p19_2",
+            "text": "gradual transition in conversational patterns, moving from more to less intimate (e.g., girlfriend\n→ friend → personal assistant → AI). Whether this should be accomplished by using widely\nshared estimates of sentiments (which would privilege following societal level rules, including\nformal and informal rules) or personalized self-sentiments (which would privilege following a\nuser’s preferences) will need to be determined.\n19",
+            "start_pos": 1523,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 19
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p20_0",
+            "text": "Leveraging ACT’s equations can contribute toward developing a chatbot that displays\nsituationally appropriate responses that are transparent and explainable, and thus improve the\nexisting state of chatbot technology. The same logic could be applied in chatbot moderation,\nspecifically using the deflection score as a guardrail to reduce safety risks. Because this avenue is\nless explored, more research is needed alongside deliberation among users, policymakers, and\ndevelopers to collectively determine how best to implement ACT. Moreover, because much of\nthe data informing ACT are collected from college samples, more work is needed to refine\nACT’s data collection methods and estimates for a broader range of populations, including\nminors and minoritized groups. While chatbot hallucinations remain a broader underlying\nconcern, insights from ACT could help limit inappropriate or unexpected remarks that increase\ndistress and safety risks among users.",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 20
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p20_1",
+            "text": "concern, insights from ACT could help limit inappropriate or unexpected remarks that increase\ndistress and safety risks among users.\nFundamental Cause of Disease Theory – Developing Chatbots Targeting Upstream Causes\nFundamental cause of disease theory (Link & Phelan, 1995) maintains that social\ndeterminants of health can persistently cause poor health outcomes because social determinants\nand health are linked via multiple pathways. The theory was originally proposed to explain why\nincome is stubbornly linked to health outcomes, specifically stating that those with higher\nincomes have better access to several resources, including health care, reliable transportation,\ngreen spaces, and fresh food, that help them avoid health risks relative to those with lower\nincomes. Each resource operates as a pathway linking income and health. Despite this,\ninterventions typically target only one or a few pathways. Sometimes interventions inadvertently",
+            "start_pos": 824,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 20
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p20_2",
+            "text": "incomes. Each resource operates as a pathway linking income and health. Despite this,\ninterventions typically target only one or a few pathways. Sometimes interventions inadvertently\nprivilege those with higher incomes because they have better access to resources that enable\nuptake and use of the intervention (Chang & Lauderdale, 2009; Clouston et al., 2021; Veinot et\nal., 2018).\n20",
+            "start_pos": 1593,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 20
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p21_0",
+            "text": "Over the years, scholars have elaborated the theory further in several ways. For example,\nscholars have expanded the realm of examples of social determinants, such as education, gender\nidentity, racial identity, sexual orientation, and disability (Clouston & Link, 2021; Hatzenbuehler\net al., 2013; Phelan et al., 2010). Other scholars, largely from public health but from sociology as\nwell (Ray et al., 2023), have elaborated the theory to identify its implications for developing\ninterventions. Intervening on an upstream determinant of health, such as education can positively\nimpact health through multiple pathways, whereas more downstream interventions have a more\nlimited scope of impact. For example, improving education enhances both health literacy and\nincome, which in turn enhances access to health care both through improved ability to pay for\nout-of-pocket costs and through access to reliable transportation to reach healthcare.",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 21
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p21_1",
+            "text": "income, which in turn enhances access to health care both through improved ability to pay for\nout-of-pocket costs and through access to reliable transportation to reach healthcare.\nAccordingly, this suggests interventions should focus on distal, upstream factors (Goldberg,\n2014; Ray et al., 2023), also referred to as “causes of causes” (Rose, 2001).\nAnother way to characterize the pathways that enhances precision for intervention targets\nis to consider how each pathway may operate at different levels (Krieger, 2008) – micro-, meso-,\nand macro-level – with the latter two levels capturing upstream factors. The micro-level refers to\nthe individual, the meso-level to the networks and communities in which the individual is\nembedded, and macro-level to the social systems that (re)distribute resources across a\npopulation, such as social hierarchies and policies. Thus, in the case of access to health care, the",
+            "start_pos": 763,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 21
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p21_2",
+            "text": "embedded, and macro-level to the social systems that (re)distribute resources across a\npopulation, such as social hierarchies and policies. Thus, in the case of access to health care, the\npathway can operate at the micro-level (e.g., an individual’s level of health literacy), meso-level\n(e.g., the distance to the clinic from the individual’s home, availability of friends and family to\nhelp navigate around a hospital), and macro-level (e.g., policies that reduce out-of-pocket costs,\nminimum wage and leave policies, policies that decriminalize stigmatized identities).\n21",
+            "start_pos": 1491,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 21
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p22_0",
+            "text": "We build upon an elaboration by Veinot and colleagues (Veinot et al., 2019), who\ndescribed ways information and communication technologies can intervene at the micro-, meso-,\nand macro-level to mitigate inequities. Though not mentioned by them explicitly, we suggest\nchatbots can be developed to produce some of the sample interventions they described. Table 2\nsummarizes chatbot interventions that operate at each level and provides examples. Several of\nthese examples represent chatbots that have already been or are being developed, while others\nare our suggested modifications. Table 2 provides an organizing framework for linking together\nthese disparate ideas.\nTable 2. Descriptions and Examples of Chatbot-driven Interventions across Levels\nDescription of Interventions\nMacro-Level (Social Hierarchies and Policies) Chatbot enables users to engage with social and political processes to facilitate structural change\nMeso-Level (Social Networks and Communities)",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 22
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p22_1",
+            "text": "Macro-Level (Social Hierarchies and Policies) Chatbot enables users to engage with social and political processes to facilitate structural change\nMeso-Level (Social Networks and Communities)\nChatbot provides recommendations or referrals to local resources\nMicro-Level (Individual)\nChatbot offers personalized advice and feedback to shape individual behaviors and cognitions\nExample Interventions\nChatbot aids user in identifying a political affinity group where they can work toward collective change\nChatbot refers an individual experiencing mental health crisis to human therapist\nChatbot suggests exercise activities and keeps track of daily physical activity\nChatbot provides information on how to contact a local leader about a concern in their community\nChatbot recommends local recreation league to build new friendships\nChatbot provides advice for better sleep hygiene\nAt the micro-level, a chatbot could provide personalized support to the individual.",
+            "start_pos": 777,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 22
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p22_2",
+            "text": "Chatbot provides advice for better sleep hygiene\nAt the micro-level, a chatbot could provide personalized support to the individual.\nBecause chatbot-driven interventions at this level are common, and systematic reviews of such\ninterventions are available (e.g., Aggarwal et al., 2023; Oh et al., 2021; Okonkwo & Ade-Ibijola,\n2021), we focus on the other two levels. At the meso-level, chatbots may operate as an\n22",
+            "start_pos": 1605,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 22
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p23_0",
+            "text": "intermediary linking individuals to other local resources. Other resources can offer rapid and\nremote access to support. For mental health crises, including suicidal thoughts and behaviors,\n988 and other crisis lines are options, but they are not uniformly endorsed across populations\nbecause users feel they are impersonal and lack continuity (Harris, 2023; Radez et al., 2021).\nScholars have taken steps to develop ways for chatbots to detect who may be experiencing a\nmental health crisis and refer them to human support (Jaroszewski et al., 2019). Other\ninterventions from a similar vein would develop chatbots to link users to social care services\n(Henry et al., 2024), such as connecting users who express concerns about housing to local\nresources for housing assistance or legal aid.\nAlso at the meso-level, a chatbot may enable linking individuals to peers, such as making\nrecommendations for local organizations to meet new people, thereby reducing dependency on",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 23
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p23_1",
+            "text": "Also at the meso-level, a chatbot may enable linking individuals to peers, such as making\nrecommendations for local organizations to meet new people, thereby reducing dependency on\nthe chatbot to meet social needs. Such interventions would characterize chatbots as providing\nbridging social capital (Burt, 1992), whereby the chatbot provides access to others that the\nindividual would otherwise not have access to or that differ from those with whom the individual\ntypically interacts. This is similar to the way sociologists have described the social benefits of\ninformation and communication technologies (Chen, 2013; Mesch, 2007) and builds on other\nsociological work investigating how chatbots could suggest new social connections to\nindividuals within a social network (Shirado & Christakis, 2020).\nAt the macro-level, while the framework from Veinot and colleagues (2019) focuses on\nuse of technologies by policymakers and other decision-makers, we expand their framework to",
+            "start_pos": 791,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 23
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p23_2",
+            "text": "At the macro-level, while the framework from Veinot and colleagues (2019) focuses on\nuse of technologies by policymakers and other decision-makers, we expand their framework to\nconsider ways chatbots can enable communities to effect structural change. Examples include\ndeveloping chatbots to inform the public about opportunities for collective action and civic\nparticipation (Richterich & Wyatt, 2024; Toupin & Couture, 2020), which could be modified to\n23",
+            "start_pos": 1595,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 23
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p24_0",
+            "text": "target macro-level causes of individual outcomes, such as supporting social policies to address\nfood insecurity. A chatbot could also facilitate civic participation by aiding the public’s\nunderstanding of government data, enhancing their communication with government officials,\nand providing suggestions for political dialogue (Androutsopoulou et al., 2019; Argyle et al.,\n2023).\nAcross these suggestions for chatbot-driven interventions, it is important to recognize\nconcerns about the nefarious use of chatbots (Yadlin & Marciano, 2024), which may sow distrust\nin chatbots and their sponsoring institutions among those who are the targets of the intervention.\nTo improve uptake, it will be important to adopt participatory designs in which researchers,\nchatbot developers, and communities collaborate (Francis & Ghafurian, 2024; Mlynář et al.,\n2018).\nDeveloping a Sociologically-informed Chatbot\nWhile we presented each theory separately, this does not preclude integration across",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 24
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p24_1",
+            "text": "2018).\nDeveloping a Sociologically-informed Chatbot\nWhile we presented each theory separately, this does not preclude integration across\ntheories by creating a chatbot informed by sociological insights. Here, we provide a concrete\npossibility.\nIn psychology, the interpersonal theory of suicide suggests that people develop a desire\nfor suicide in part because of thwarted belongingness (Chu et al., 2017; Van Orden et al., 2010).\nWe can apply all four of the sociological theories we identified above to help determine an\nappropriate target population and intervention designs. Applying resource substitution theory\nsuggests that individuals at risk of developing suicidal thoughts and behaviors need an\nalternative source of belongingness, which may be in the form of developing a relationship with\na chatbot. Uses and gratification theory would make a similar prediction, but would not address\nthe meso- and macro-level contexts that can shape the development and trajectory of thwarted\n24",
+            "start_pos": 847,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 24
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p25_0",
+            "text": "belongingness (Hjelmeland & Loa Knizek, 2020). Resource substitution theory would consider\nsystemic discrimination that creates complex and entangled barriers toward accessing support to\nmitigate suicide risk, like those faced among Black adolescents in the U.S. (Prichett et al., 2024).\nThus, resource substitution theory adds insight into which demographic groups may be at risk\nand therefore who may benefit most from a chatbot.\nMerely drawing at-risk groups to chatbots raises new risks, which the sociological\ntheories we reviewed can address. This includes making inappropriate remarks and reminding\nthe user about its AI identity sensitively, which ACT can avoid through tracking deflection\nscores. Attention should also be focused on the chatbot provider to ensure that the power held\nover users is not utilized to further goals that would be counter to user wellbeing. Power-\ndependence theory indicates that it will be critical to establish safeguards to prevent emotional",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 25
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p25_1",
+            "text": "over users is not utilized to further goals that would be counter to user wellbeing. Power-\ndependence theory indicates that it will be critical to establish safeguards to prevent emotional\ndependency by fostering connections and social skills to create connections to human\ncompanionship. Fundamental cause of disease theory would further suggest the chatbot should\noperate as a broker to access resources to address upstream factors. The chatbot could refer its\nusers to a host of not only mental health and suicide care services, but also social care services\nfor co-occurring concerns, like being unhoused, substance use, domestic violence, and food\ninsecurity. As illustrated in this example, sociological theories offer novel directions for chatbot\ndevelopment that go far beyond the current emotional companionship focused model.\nConclusion\nWe provided perspectives on how to use four sociological theories to complement extant",
+            "start_pos": 793,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 25
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p25_2",
+            "text": "development that go far beyond the current emotional companionship focused model.\nConclusion\nWe provided perspectives on how to use four sociological theories to complement extant\nwork on human-chatbot interaction. We selected theories that vary in the phenomenon they can\nexplain (drivers of chatbot use, chatbot-driven interventions), analytic level (micro, macro), and\nAI governance focus (safety, equity). Throughout, we provided concrete ways each theory could\n25",
+            "start_pos": 1548,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 25
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p26_0",
+            "text": "be applied individually and together to spur greater engagement with sociology. Given the rapid\ngrowth in interest from other disciplinary fields and recent technological advances spurring\nincreased use by the public, we see opportunities for engaging sociology to enhance research into\nhuman-chatbot interaction and design the future of human-chatbot interaction.\nReferences\nAggarwal, A., Tam, C. C., Wu, D., Li, X., & Qiao, S. (2023). Artificial Intelligence–Based\nChatbots for Promoting Health Behavioral Changes: Systematic Review [Review]. J Med Internet Res, 25, e40789. https://doi.org/10.2196/40789\nAndroutsopoulou, A., Karacapilidis, N., Loukis, E., & Charalabidis, Y. (2019). Transforming the\ncommunication between citizens and government through AI-guided chatbots. Government Information Quarterly, 36(2), 358-367. https://doi.org/https://doi.org/10.1016/j.giq.2018.10.001\nAnthony, D. L., & Campos-Castillo, C. (2015). A looming digital divide? Group differences in",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 26
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p26_1",
+            "text": "Anthony, D. L., & Campos-Castillo, C. (2015). A looming digital divide? Group differences in\nthe perceived importance of electronic health records. Information, Communication & Society, 18(7), 832-846. https://doi.org/10.1080/1369118X.2015.1006657\nArgyle, L. P., Bail, C. A., Busby, E. C., Gubler, J. R., Howe, T., Rytting, C., Sorensen, T., & Wingate, D. (2023). Leveraging AI for democratic discourse: Chat interventions can improve online political conversations at scale. Proceedings of the National Academy of Sciences, 120(41), e2311627120. https://doi.org/10.1073/pnas.2311627120\nAttanasio, M., Mazza, M., Le Donne, I., Masedu, F., Greco, M. P., & Valenti, M. (2024). Does\nChatGPT have a typical or atypical theory of mind? [Brief Research Report]. Frontiers in Psychology, 15. https://doi.org/10.3389/fpsyg.2024.1488172\nAverett, C., & Heise, D. R. (1987). Modified social identities: Amalgamations, attributions, and",
+            "start_pos": 885,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 26
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p26_2",
+            "text": "Averett, C., & Heise, D. R. (1987). Modified social identities: Amalgamations, attributions, and\nemotions. The Journal of Mathematical Sociology, 13(1-2), 103-132. https://doi.org/10.1080/0022250x.1987.9990028\nAyers, J. W., Poliak, A., Dredze, M., Leas, E. C., Zhu, Z., Kelley, J. B., Faix, D. J., Goodman, A.\nM., Longhurst, C. A., Hogarth, M., & Smith, D. M. (2023). Comparing Physician and Artificial Intelligence Chatbot Responses to Patient Questions Posted to a Public Social Media Forum. JAMA Internal Medicine, 183(6), 589-596. https://doi.org/10.1001/jamainternmed.2023.1838\nBornstein, R. F. (2006). The complex relationship between dependency and domestic violence: Converging psychological factors and social forces. American Psychologist, 61(6), 595- 606. https://doi.org/https://doi.org/10.1037/0003-066X.61.6.595\nBoyle, K. M., & McKinzie, A. E. (2015). Resolving Negative Affect and Restoring Meaning:",
+            "start_pos": 1713,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 26
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p26_3",
+            "text": "Boyle, K. M., & McKinzie, A. E. (2015). Resolving Negative Affect and Restoring Meaning:\nResponses to Deflection Produced by Unwanted Sexual Experiences. Social Psychology Quarterly, 78(2), 151-172. https://doi.org/10.1177/0190272514564073\nBoyle, K. M., & Meyer, C. B. (2018). Who Is Presidential? Women’s Political Representation,\nDeflection, and the 2016 Election. Socius, 4, 2378023117737898. https://doi.org/10.1177/2378023117737898\n26",
+            "start_pos": 2539,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 26
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p27_0",
+            "text": "Brandtzaeg, P. B., Skjuve, M., & Følstad, A. (2022). My AI Friend: How Users of a Social\nChatbot Understand Their Human–AI Friendship. Human Communication Research, 48(3), 404-429. https://doi.org/10.1093/hcr/hqac008\nBurt, R. S. (1992). Structural Holes: The Social Structure of Competition. Harvard University\nPress.\nCamarillo, L., Ferre, F., Echeburúa, E., & Amor, P. J. (2020). Partner’s Emotional Dependency\nScale: Psychometrics. Actas Españolas de Psiquiatría, 48(4), 145-153. https://actaspsiquiatria.es/index.php/actas/article/view/308\nCampos-Castillo, C., Bartholomay, D. J., Callahan, E. F., & Anthony, D. L. (2016). Depressive\nSymptoms and Electronic Messaging with Health Care Providers. Society and Mental Health, 6(3), 168-186. https://doi.org/10.1177/2156869316646165",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 27
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p27_1",
+            "text": "Symptoms and Electronic Messaging with Health Care Providers. Society and Mental Health, 6(3), 168-186. https://doi.org/10.1177/2156869316646165\nCampos-Castillo, C., & Shuster, S. M. (2023). So What if They’re Lying to Us? Comparing Rhetorical Strategies for Discrediting Sources of Disinformation and Misinformation Using an Affect-Based Credibility Rating. American Behavioral Scientist, 67(2), 201- 223. https://doi.org/10.1177/00027642211066058\nChang, V. W., & Lauderdale, D. S. (2009). Fundamental Cause Theory, Technological\nInnovation, and Health Disparities: The Case of Cholesterol in the Era of Statins. Journal of Health and Social Behavior, 50(3), 245-260. https://doi.org/10.1177/002214650905000301\nChen, W. (2013). Internet Use, Online Communication, and Ties in Americans’ Networks.\nSocial Science Computer Review, 31(4), 404-423. https://doi.org/10.1177/0894439313480345\nChu, C., Buchman-Schmitt, J. M., Stanley, I. H., Hom, M. A., Tucker, R. P., Hagan, C. R.,",
+            "start_pos": 637,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 27
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p27_2",
+            "text": "Social Science Computer Review, 31(4), 404-423. https://doi.org/10.1177/0894439313480345\nChu, C., Buchman-Schmitt, J. M., Stanley, I. H., Hom, M. A., Tucker, R. P., Hagan, C. R.,\nRogers, M. L., Podlogar, M. C., Chiurliza, B., Ringer, F. B., Michaels, M. S., Patros, C. H. G., & Joiner Jr, T. E. (2017). The interpersonal theory of suicide: A systematic review and meta-analysis of a decade of cross-national research. Psychological Bulletin, 143(12), 1313-1345. https://doi.org/10.1037/bul0000123\nClouston, S. A. P., & Link, B. G. (2021). A retrospective on fundamental cause theory: State of\nthe literature, and goals for the future. Annual Review of Sociology, 47(1), 131-156. https://doi.org/10.1146/annurev-soc-090320-094912\nClouston, S. A. P., Natale, G., & Link, B. G. (2021). Socioeconomic inequalities in the spread of",
+            "start_pos": 1435,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 27
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p27_3",
+            "text": "Clouston, S. A. P., Natale, G., & Link, B. G. (2021). Socioeconomic inequalities in the spread of\ncoronavirus-19 in the United States: A examination of the emergence of social inequalities. Social Science & Medicine, 268, 113554. https://doi.org/https://doi.org/10.1016/j.socscimed.2020.113554\nCombs, A. (2025). actdata: R-based repository for standardized Affect Control Theory\ndictionary and equation data sets https://doi.org/10.5281/zenodo.14652399\nCook, K. S., & Emerson, R. M. (1978). Power, Equity and Commitment in Exchange Networks. American Sociological Review, 43(5), 721-739. https://doi.org/10.2307/2094546\nCook, K. S., Emerson, R. M., Gillmore, M. R., & Yamagishi, T. (1983). The Distribution of\nPower in Exchange Networks: Theory and Experimental Results. American Journal of Sociology, 89(2), 275-305. https://doi.org/10.1086/227866\nEmerson, R. M. (1962). Power-Dependence Relations. American Sociological Review, 27(1), 31-\n41. http://www.jstor.org/stable/2089716",
+            "start_pos": 2164,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 27
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p27_4",
+            "text": "Emerson, R. M. (1962). Power-Dependence Relations. American Sociological Review, 27(1), 31-\n41. http://www.jstor.org/stable/2089716\nFrancis, L., & Ghafurian, M. (2024). Preserving the self with artificial intelligence using\nVIPCare—a virtual interaction program for dementia caregivers [Original Research]. Frontiers in Sociology, Volume 9 - 2024. https://doi.org/10.3389/fsoc.2024.1331315\n27",
+            "start_pos": 3013,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 27
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p28_0",
+            "text": "Francis, L. E. (1997). Ideology and Interpersonal Emotion Management: Redefining Identity in\nTwo Support Groups. Social Psychology Quarterly, 60(2), 153-171. https://doi.org/10.2307/2787102\nGalinsky, A. D., Magee, J. C., Inesi, M. E., & Gruenfeld, D. H. (2006). Power and Perspectives\nNot Taken. Psychological Science, 17(12), 1068-1074. https://doi.org/10.1111/j.1467- 9280.2006.01824.x\nGans, H. J. (2010). Public Ethnography; Ethnography as Public Sociology. Qualitative\nSociology, 33(1), 97-104. https://doi.org/https://doi.org/10.1007/s11133-009-9145-1 Goldberg, D. S. (2014). The Implications of Fundamental Cause Theory for Priority Setting.\nAmerican Journal of Public Health, 104(10), 1839-1843. https://doi.org/10.2105/AJPH.2014.302058\nHalvoník, D., & Kapusta, J. (2024). Large Language Models and Rule-Based Approaches in\nDomain-Specific Communication. IEEE Access, 12, 107046-107058. https://doi.org/10.1109/ACCESS.2024.3436902",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 28
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p28_1",
+            "text": "Halvoník, D., & Kapusta, J. (2024). Large Language Models and Rule-Based Approaches in\nDomain-Specific Communication. IEEE Access, 12, 107046-107058. https://doi.org/10.1109/ACCESS.2024.3436902\nHampton, K. N. (2023). Disciplinary brakes on the sociology of digital media: the incongruity of communication and the sociological imagination. Information, Communication & Society, 26(5), 881-890. https://doi.org/10.1080/1369118X.2023.2166365 Harris, B. R. (2023). Helplines for Mental Health Support: Perspectives of New York State\nCollege Students and Implications for Promotion and Implementation of 988. Community Mental Health Journal. https://doi.org/10.1007/s10597-023-01157-3\nHatzenbuehler, M. L., Phelan, J. C., & Link, B. G. (2013). Stigma as a Fundamental Cause of Population Health Inequalities. American Journal of Public Health, 103(5), 813-821. https://doi.org/10.2105/ajph.2012.301069",
+            "start_pos": 744,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 28
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p28_2",
+            "text": "Heise, D. R. (2007). Expressive Order: Confirming Sentiments in Social Actions. Springer. Heise, D. R. (2010). Surveying Cultures: Discovering Shared Conceptions and Sentiments.\nWiley Interscience.\nHeise, D. R., & MacKinnon, N. J. (2010). Self, identity, and social institutions. Springer. Henry, N., Witt, A., & Vasil, S. (2024). A ‘design justice’ approach to developing digital tools for addressing gender-based violence: exploring the possibilities and limits of feminist chatbots. Information, Communication & Society, 1-24. https://doi.org/10.1080/1369118X.2024.2363900\nHjelmeland, H., & Loa Knizek, B. (2020). The emperor’s new clothes? A critical look at the\ninterpersonal theory of suicide. Death Studies, 44(3), 168-178. https://doi.org/10.1080/07481187.2018.1527796\nHoey, J., & Schroeder, T. (2015). Bayesian Affect Control Theory of Self. Proceedings of the\nAAAI Conference on Artificial Intelligence, 29(1). https://doi.org/10.1609/aaai.v29i1.9222",
+            "start_pos": 1641,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 28
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p28_3",
+            "text": "Hoey, J., & Schroeder, T. (2015). Bayesian Affect Control Theory of Self. Proceedings of the\nAAAI Conference on Artificial Intelligence, 29(1). https://doi.org/10.1609/aaai.v29i1.9222\nHong, C., & Skiba, B. (2025). Mental health outcomes, associated factors, and coping strategies among LGBTQ adolescent and young adults during the COVID-19 pandemic: A systematic review. Journal of Psychiatric Research, 182, 132-141. https://doi.org/https://doi.org/10.1016/j.jpsychires.2024.12.037\nHopelab. (2024). Parasocial Relationships, AI Chatbots, and Joyful Online Interactions among a\nDiverse Sample of LGBTQ+ Young People. https://hopelab.org/parasocial-relationships- ai-chatbots-and-joyful-online-interactions/\nHorwitz, J. (2025). Meta’s ‘Digital Companions’ Will Talk Sex With Users—Even Children.\nWall Street Journal.\n28",
+            "start_pos": 2418,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 28
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p29_0",
+            "text": "Jaroszewski, A. C., Morris, R. R., & Nock, M. K. (2019). Randomized controlled trial of an\nonline machine learning-driven risk assessment and intervention platform for increasing the use of crisis services. J Consult Clin Psychol, 87(4), 370-379. https://doi.org/10.1037/ccp0000389\nJoseph, K., Wei, W., Benigni, M., & Carley, K. M. (2016). A social-event based approach to\nsentiment analysis of identities and behaviors in text. The Journal of Mathematical Sociology, 40(3), 137-166. https://doi.org/10.1080/0022250X.2016.1159206 Katz, E., Blumler, J. G., & Gurevitch, M. (1973). Uses and Gratifications Research. Public\nOpinion Quarterly, 37(4), 509-523. https://doi.org/10.1086/268109\nKillgore, W. D. S., Cloonan, S. A., Taylor, E. C., & Dailey, N. S. (2020). Loneliness: A\nsignature mental health concern in the era of COVID-19. Psychiatry Research, 290, 113117. https://doi.org/https://doi.org/10.1016/j.psychres.2020.113117",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 29
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p29_1",
+            "text": "signature mental health concern in the era of COVID-19. Psychiatry Research, 290, 113117. https://doi.org/https://doi.org/10.1016/j.psychres.2020.113117\nKönig, A., Francis, L. E., Joshi, J., Robillard, J. M., & Hoey, J. (2017). Qualitative study of\naffective identities in dementia patients for the design of cognitive assistive technologies. Journal of Rehabilitation and Assistive Technologies Engineering, 4, 1-15. https://doi.org/10.1177/2055668316685038\nKrieger, N. (2008). Proximal, Distal, and the Politics of Causation: What’s Level Got to Do With\nIt? American Journal of Public Health, 98(2), 221-230. https://doi.org/10.2105/AJPH.2007.111278\nLaestadius, L., Bishop, A., Gonzalez, M., Illenčík, D., & Campos-Castillo, C. (2024). Too\nhuman and not human enough: A grounded theory analysis of mental health harms from emotional dependence on the social chatbot Replika. New Media & Society, 26(10), 5923-5941. https://doi.org/10.1177/14614448221142007",
+            "start_pos": 776,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 29
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p29_2",
+            "text": "Law, T., & McCall, L. (2024). Artificial Intelligence Policymaking: An Agenda for Sociological Research. Socius, 10, 23780231241261596. https://doi.org/10.1177/23780231241261596\nLecourt, F., Croitoru, M., & Todorov, K. (2025). 'Only ChatGPT gets me': An Empirical\nAnalysis of GPT versus other Large Language Models for Emotion Detection in Text Companion Proceedings of the ACM on Web Conference 2025, Sydney NSW, Australia. https://doi.org/10.1145/3701716.3718375\nLian, Z., Sun, L., Sun, H., Chen, K., Wen, Z., Gu, H., Liu, B., & Tao, J. (2024). GPT-4V with\nemotion: A zero-shot benchmark for Generalized Emotion Recognition. Information Fusion, 108, 102367. https://doi.org/https://doi.org/10.1016/j.inffus.2024.102367 Link, B. G., & Phelan, J. (1995). Social Conditions As Fundamental Causes of Disease. Journal",
+            "start_pos": 1735,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 29
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p29_3",
+            "text": "of Health and Social Behavior, 35, 80-94. https://doi.org/10.2307/2626958 Lithoxoidou, E. E., Eleftherakis, G., Votis, K., & Prescott, T. (2025). Advancing Affective Intelligence in Virtual Agents Using Affect Control Theory Proceedings of the 30th International Conference on Intelligent User Interfaces, https://doi.org/10.1145/3708359.3712079\nLively, K. (2008). Emotional Segues and the Management of Emotion by Women and Men.\nSocial Forces, 87(2), 911-936. https://doi.org/10.2307/20430896\nLively, Kathryn J., & Heise, David R. (2004). Sociological Realms of Emotional Experience.\nAmerican Journal of Sociology, 109(5), 1109-1136. https://doi.org/10.1086/381915 Lively, K. J., & Powell, B. (2006). Emotional Expression at Work and at Home: Domain, Status,\nor Individual Characteristics? Social Psychology Quarterly, 69(1), 17-38. http://www.jstor.org/stable/20141726\nMacKinnon, N. J. (2015). Self-esteem and beyond. Springer.\n29",
+            "start_pos": 2550,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 29
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p30_0",
+            "text": "Madden, M., Calvin, A., Hasse, A., & Lenhart, A. (2024). The dawn of the AI era: Teens, parents, and the adoption of generative AI at home and school. Common Sense. Markovsky, B., Willer, D., & Patton, T. (1988). Power Relations in Exchange Networks. American Sociological Review, 53(2), 220-236. https://doi.org/10.2307/2095689\nMcPherson, M., Smith-Lovin, L., & Brashears, M. E. (2006). Social Isolation in America: Changes in Core Discussion Networks over Two Decades. American Sociological Review, 71(3), 353-375. https://doi.org/10.1177/000312240607100301 Merolla, D. M., & Jackson, O. (2019). Structural racism as the fundamental cause of the\nacademic achievement gap. Sociology Compass, 13(6), e12696. https://doi.org/https://doi.org/10.1111/soc4.12696",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 30
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p30_1",
+            "text": "academic achievement gap. Sociology Compass, 13(6), e12696. https://doi.org/https://doi.org/10.1111/soc4.12696\nMesch, G., Mano, R., & Tsamir, J. (2012). Minority Status and Health Information Search: A Test of the Social Diversification Hypothesis. Social Science & Medicine, 75(5), 854- 858. https://doi.org/http://dx.doi.org/10.1016/j.socscimed.2012.03.024\nMesch, G. S. (2007). Social Diversification: A Perspective for the Study of Social networks of\nAdolescents Offline and Online. In Grenzenlose Cyberwelt? Zum Verhältnis von digitaler Ungleichheit und neuen Bildungszugängen für Jugendliche (pp. 105-117). VS Verlag für Sozialwissenschaften. https://doi.org/10.1007/978-3-531-90519-8_6\nMirowsky, J., & Ross, C. E. (2015). Education, Health, and the Default American Lifestyle.\nJournal of Health and Social Behavior, 56(3), 297-306. https://doi.org/10.1177/0022146515594814\nMisra, J. (2025). Sociological Solutions: Building Communities of Hope, Justice, and Joy.",
+            "start_pos": 648,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 30
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p30_2",
+            "text": "Journal of Health and Social Behavior, 56(3), 297-306. https://doi.org/10.1177/0022146515594814\nMisra, J. (2025). Sociological Solutions: Building Communities of Hope, Justice, and Joy.\nAmerican Sociological Review, 90(1), 1-25. https://doi.org/10.1177/00031224241302828\nMittelstädt, J. M., Maier, J., Goerke, P., Zinn, F., & Hermes, M. (2024). Large language models can outperform humans in social situational judgments. Scientific Reports, 14(1), 27449. https://doi.org/10.1038/s41598-024-79048-0\nMlynář, J., Alavi, H. S., Verma, H., & Cantoni, L. (2018, 2018//). Towards a Sociological Conception of Artificial Intelligence. Artificial General Intelligence, Cham. Oh, Y. J., Zhang, J., Fang, M.-L., & Fukuoka, Y. (2021). A systematic review of artificial intelligence chatbots for promoting physical activity, healthy diet, and weight loss. International Journal of Behavioral Nutrition and Physical Activity, 18(1), 160. https://doi.org/10.1186/s12966-021-01224-6",
+            "start_pos": 1431,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 30
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p30_3",
+            "text": "Okonkwo, C. W., & Ade-Ibijola, A. (2021). Chatbots applications in education: A systematic\nreview. Computers and Education: Artificial Intelligence, 2, 100033. https://doi.org/https://doi.org/10.1016/j.caeai.2021.100033\nOlteanu, A., Barocas, S., Blodgett, S. L., Egede, L., DeVrio, A., & Cheng, M. (2025). AI\nautomatons: AI systems intended to imitate humans. arXiv preprint arXiv:2503.02250. Paeth, K. (2024). Incident Number 826: Character.ai Chatbot Allegedly Influenced Teen User Toward Suicide Amid Claims of Missing Guardrails. Retrieved 7/7/2025 from https://incidentdatabase.ai/cite/826/\nPentina, I., Xie, T., Hancock, T., & Bailey, A. (2023). Consumer–machine relationships in the age of artificial intelligence: Systematic literature review and research directions. Psychology & Marketing, 40(8), 1593-1614. https://doi.org/https://doi.org/10.1002/mar.21853\nPhelan, J. C., Link, B. G., & Tehranifar, P. (2010). Social Conditions as Fundamental Causes of",
+            "start_pos": 2399,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 30
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p30_4",
+            "text": "Phelan, J. C., Link, B. G., & Tehranifar, P. (2010). Social Conditions as Fundamental Causes of\nHealth Inequalities: Theory, Evidence, and Policy Implications. Journal of Health and Social Behavior, 51(1 suppl), S28-S40. https://doi.org/10.1177/0022146510383498\n30",
+            "start_pos": 3267,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 30
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p31_0",
+            "text": "Prichett, L. M., Yolken, R. H., Severance, E. G., Young, A. S., Carmichael, D., Zeng, Y., & Kumra, T. (2024). Racial and Gender Disparities in Suicide and Mental Health Care Utilization in a Pediatric Primary Care Setting. Journal of Adolescent Health, 74(2), 277- 282. https://doi.org/https://doi.org/10.1016/j.jadohealth.2023.08.036\nPugh, A. J. (2024). The Last Human Job: The Work of Connecting in a Disconnected World.\nPrinceton University Press.\nRadez, J., Reardon, T., Creswell, C., Lawrence, P. J., Evdoka-Burton, G., & Waite, P. (2021).\nWhy do children and adolescents (not) seek and access professional help for their mental health problems? A systematic review of quantitative and qualitative studies. European Child & Adolescent Psychiatry, 30(2), 183-211. https://doi.org/10.1007/s00787-019- 01469-4\nRay, R., Lantz, P. M., & Williams, D. (2023). Upstream Policy Changes to Improve Population",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 31
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p31_1",
+            "text": "Ray, R., Lantz, P. M., & Williams, D. (2023). Upstream Policy Changes to Improve Population\nHealth and Health Equity: A Priority Agenda. Milbank Q, 101(S1), 20-35. https://doi.org/10.1111/1468-0009.12640\nRichterich, A., & Wyatt, S. (2024). Feminist automation: Can bots have feminist politics? New Media & Society, 26(9), 4973-4991. https://doi.org/10.1177/14614448241251801 Rogers, K. B., Boyle, K. M., & Scaptura, M. N. (2023). Through the Looking Glass: Self,\nInauthenticity, and (Mass) Violence ∗. In W. Kalkhoff, S. R. Thye, & E. J. Lawler (Eds.), Advances in Group Processes (Vol. 40, pp. 23-47). Emerald Publishing Limited. https://doi.org/10.1108/S0882-614520230000040002\nRose, G. (2001). Sick individuals and sick populations. International Journal of Epidemiology,\n30(3), 427-432. https://doi.org/10.1093/ije/30.3.427\nRoss, C., Masters, R., & Hummer, R. (2012). Education and the Gender Gaps in Health and",
+            "start_pos": 812,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 31
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p31_2",
+            "text": "30(3), 427-432. https://doi.org/10.1093/ije/30.3.427\nRoss, C., Masters, R., & Hummer, R. (2012). Education and the Gender Gaps in Health and\nMortality [Article]. Demography, 49(4), 1157-1183. https://doi.org/10.1007/s13524-012- 0130-z\nRoss, C. E., & Mirowsky, J. (2006). Sex differences in the effect of education on depression:\nResource multiplication or resource substitution? Social Science & Medicine, 63(5), 1400-1413. https://doi.org/http://dx.doi.org/10.1016/j.socscimed.2006.03.013\nSavage, S. V., & Sommer, Z. L. (2016). Should I Stay or Should I Go? Reciprocity, Negotiation,\nand the Choice of Structurally Disadvantaged Actors to Remain in Networks. Social Psychology Quarterly, 79(2), 115-135. http://www.jstor.org/stable/44076843\nSchneider, A., & Schröder, T. (2012). Ideal Types of Leadership as Patterns of Affective\nMeaning: A Cross-cultural and Over-time Perspective. Social Psychology Quarterly, 75(3), 268-287. https://doi.org/10.1177/0190272512446755",
+            "start_pos": 1587,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 31
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p31_3",
+            "text": "Meaning: A Cross-cultural and Over-time Perspective. Social Psychology Quarterly, 75(3), 268-287. https://doi.org/10.1177/0190272512446755\nShank, D. B. (2010). An Affect Control Theory of Technology. Current Research in Social\nPsychology, 15(10), n10.\nShank, D. B., Burns, A., Rodriguez, S., & Bowen, M. (2020). Software program, bot, or artificial intelligence? Affective sentiments across general technology labels. Current Research in Social Psychology, 28, 32-41.\nShevlin, H. (2024). All too human? Identifying and mitigating ethical risks of Social AI. Law,\nEthics & Technology.\nShirado, H., & Christakis, N. A. (2020). Network Engineering Using Autonomous Agents\nIncreases Cooperation in Human Groups. iScience, 23(9). https://doi.org/10.1016/j.isci.2020.101438\n31",
+            "start_pos": 2418,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 31
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p32_0",
+            "text": "Shuster, S. M., & Campos-Castillo, C. (2017). Measuring Resonance and Dissonance in Social Movement Frames With Affect Control Theory. Social Psychology Quarterly, 80(1), 20- 40. https://doi.org/doi:10.1177/0190272516664322\nSkjuve, M., Følstad, A., Fostervold, K. I., & Brandtzaeg, P. B. (2021). My Chatbot Companion -\na Study of Human-Chatbot Relationships. International Journal of Human-Computer Studies, 149, 102601. https://doi.org/https://doi.org/10.1016/j.ijhcs.2021.102601\nSmall, M. L. (2007). Racial Differences in Networks: Do Neighborhood Conditions Matter?* [https://doi.org/10.1111/j.1540-6237.2007.00460.x]. Social Science Quarterly, 88(2), 320-343. https://doi.org/https://doi.org/10.1111/j.1540-6237.2007.00460.x\nTa, V., Griffith, C., Boatfield, C., Wang, X., Civitello, M., Bader, H., DeCero, E., & Loggarakis,",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 32
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p32_1",
+            "text": "Ta, V., Griffith, C., Boatfield, C., Wang, X., Civitello, M., Bader, H., DeCero, E., & Loggarakis,\nA. (2020). User Experiences of Social Support From Companion Chatbots in Everyday Contexts: Thematic Analysis. Journal of Medical Internet Research, 22(3), e16235- e16235. https://doi.org/10.2196/16235\nToupin, S., & Couture, S. (2020). Feminist chatbots as part of the feminist toolbox. Feminist\nMedia Studies, 20(5), 737-740. https://doi.org/10.1080/14680777.2020.1783802 Tsvetkova, M., Yasseri, T., Pescetelli, N., & Werner, T. (2024). A new sociology of humans and\nmachines. Nature Human Behaviour, 8(10), 1864-1876. https://doi.org/10.1038/s41562- 024-02001-8\nVan Orden, K. A., Witte, T. K., Cukrowicz, K. C., Braithwaite, S. R., Selby, E. A., & Joiner Jr,\nT. E. (2010). The interpersonal theory of suicide. Psychological Review, 117(2), 575-600. https://doi.org/10.1037/a0018697\nVeinot, T. C., Ancker, J. S., Cole-Lewis, H., Mynatt, E. D., Parker, A. G., Siek, K. A., &",
+            "start_pos": 729,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 32
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p32_2",
+            "text": "Veinot, T. C., Ancker, J. S., Cole-Lewis, H., Mynatt, E. D., Parker, A. G., Siek, K. A., &\nMamykina, L. (2019). Leveling Up: On the Potential of Upstream Health Informatics Interventions to Enhance Health Equity. Medical Care, 57 Suppl 6 Suppl 2, S108-s114. https://doi.org/10.1097/mlr.0000000000001032\nVeinot, T. C., Mitchell, H., & Ancker, J. S. (2018). Good intentions are not enough: how informatics interventions can worsen inequality. Journal of the American Medical Informatics Association, 25(8), 1080-1088. https://doi.org/10.1093/jamia/ocy052 Wallerstein, N., Duran, B., Oetzel, J. G., & Minkler, M. (2017). Community-based participatory\nresearch for health: Advancing social and health equity. John Wiley & Sons. Wang, S., Cooper, N., & Eby, M. (2024). From human-centered to social-centered artificial\nintelligence: Assessing ChatGPT's impact through disruptive events. Big Data & Society, 11(4), 20539517241290220. https://doi.org/10.1177/20539517241290220",
+            "start_pos": 1612,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 32
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p32_3",
+            "text": "intelligence: Assessing ChatGPT's impact through disruptive events. Big Data & Society, 11(4), 20539517241290220. https://doi.org/10.1177/20539517241290220\nWong, Q. (2025). California Senate passes bill that aims to make AI chatbots safer. Los Angeles\nTimes.\nXie, T., Pentina, I., & Hancock, T. (2023). Friend, mentor, lover: does chatbot engagement lead to psychological dependence? Journal of Service Management, 34(4), 806-828. https://doi.org/10.1108/JOSM-02-2022-0072\nYadlin, A., & Marciano, A. (2024). Hallucinating a political future: Global press coverage of human and post-human abilities in ChatGPT applications. Media, Culture & Society, 46(8), 1580-1598. https://doi.org/10.1177/01634437241259892\n32",
+            "start_pos": 2426,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 32
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p33_0",
+            "text": "Figure 1. Publications with “chatbot” appearing anywhere in text by publication year\nSource: Authors’ analysis of Web of Science data as of December 2024\n33",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 33
+            }
+        },
+        {
+            "chunk_id": "bbc3a26f_p34_0",
+            "text": "Figure 2. Disciplinary sources of the publications with “chatbot” appearing anywhere in the text\nSource: Authors’ own analysis of Web of Science data as of December 2024\n34",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "bbc3a26f",
+                "page": 34
+            }
+        }
+    ],
+    "tables": [],
+    "images": [],
+    "full_text_preview": "Perspectives on How Sociology Can Advance Theorizing about Human-Chatbot\n\nInteraction and Developing Chatbots for Social Good\n\nCeleste Campos-Castillo, Department of Media and Information, Michigan State University\n\nXuan Kang, Department of Media and Information, Michigan State University\n\nLinnea I. Laestadius, Zilber College of Public Health, University of Wisconsin-Milwaukee\n\n1\n\nAbstract\n\nRecently, research into chatbots (also known as conversational agents, AI agents, voice\n\nassistants), which are computer applications using artificial intelligence to mimic human-like\n\nconversation, has grown sharply. Despite this growth, sociology lags other disciplines (including\n\ncomputer science, medicine, psychology, and communication) in publishing about chatbots. We\n\nsuggest sociology can advance understanding of human-chatbot interaction and offer four\n\nsociological theories to enhance extant work in this field. The first two theories (resource\n\nsubstitution theory, power-dependence theory) add new insights to existing models of the drivers\n\nof chatbot use, which overlook sociological concerns about how social structure (e.g., systemic\n\ndiscrimination, the uneven distribution of resources within networks) inclines individuals to use\n\nchatbots, including problematic levels of emotional dependency on chatbots. The second two\n\ntheories (affect control theory, fundamental cause of disease theory) help inform the\n\ndevelopment of chatbot-driven interventions that minimize safety risks and enhance equity by\n\nleveraging sociological insights into how chatbot outputs could attend to cultural contexts (e.g.,\n\naffective norms) to promote wellbeing and enhance communities (e.g., opportunities for civic\n\nparticipation). We discuss the value of applying sociological theories for advancing theorizing\n\nabout human-chatbot interaction and developing chatbots for social good.\n\n2\n\nPerspectives on How Sociology Can Advance Theorizing about Human-Chatbot\n\nInteraction and Developing Chatbots f"
+}
