@@ -10,3 +10,5 @@ pdfplumber
 camelot-py[base]  # Includes ghostscript for tables
 pandas  # For table handling
 python-dotenv  # For future env
+pip install langchain "unstructured[pdf]" pdf2image pytesseract camelot-py[cv]
+pip install nougat-ocr torch pillow
