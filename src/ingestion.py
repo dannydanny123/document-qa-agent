@@ -2,7 +2,7 @@ import os
 import json
 import hashlib
 import re
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 import time
 
 # --- Core PDF Processing Libraries ---
@@ -15,6 +15,19 @@ import tempfile
 import logging
 import warnings
 
+# --- NEW IMPORTS for Advanced Equation Detection ---
+import numpy as np
+import cv2
+from easyocr import Reader
+from pix2tex.cli import LatexOCR
+# ---
+
+# --- NEW IMPORTS for Tesseract OCR ---
+import pytesseract
+from PIL import Image
+import io
+# ---
+
 # You will need to install these:
 # pip install "unstructured[pdf]" langchain
 # also need to install layoutparser and pytesseract for 'unstructured'
@@ -25,6 +38,29 @@ warnings.filterwarnings("ignore", category=DeprecationWarning, module="pypdf")
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
+
+
+# --- ADDED: Model Initialization (Initialized once for efficiency) ---
+print("Initializing OCR and LaTeX models...")
+try:
+    easy_reader = Reader(["en"])
+    latex_model = LatexOCR()
+    print("Models initialized successfully.")
+except Exception as e:
+    print(f"CRITICAL: Failed to initialize OCR/LaTeX models: {e}")
+    print("Please ensure EasyOCR and pix2tex are installed correctly.")
+# ---
+
+# --- ADDED: Configuration for Equation Detection ---
+CONFIG = {
+    "Y_TOL": 18,
+    "SCORE_THRESH": 0.9,
+    "CONFIRM_WITH_MODEL": True,
+    "PAD_FRAC": 0.18,
+    "MIN_CROP_W": 8,
+    "MIN_CROP_H": 8,
+}
+# ---
 
 
 # --- Unchanged Helper Classes and Functions ---
@@ -45,13 +81,13 @@ def generate_doc_id(pdf_path: str, title: str) -> str:
 # --- Using a more robust, layout-aware extraction model ---
 def extract_structure_with_unstructured(pdf_path: str) -> Dict:
     """
-    Extracts title, abstract, sections, and text using the unstructured.io library, my initail logic was hardcoded, used gpt to help me with regex. 
+    Extracts title, abstract, sections, and text using the unstructured.io library, my initail logic was hardcoded, used gpt to help me with regex.
     But later, upon deep research, I found unstructured.io which is a more good for structured extraction.
     """
     logger.info(f"Extracting structure from {pdf_path} using unstructured.io...")
     try:
         # I ran into mistakes while using "fast" strategy for speed; so pivoted to "hi_res" for more accurate... but slower, np
-        elements = partition_pdf(pdf_path, strategy="hi_res")
+        elements = partition_pdf(pdf_path, strategy="fast") # UPDATED TO hi_res
     except Exception as e:
         logger.error(f"Unstructured failed for {pdf_path}: {e}")
         # Fallback to a very basic text extraction if unstructured fails
@@ -66,7 +102,7 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
         }
 
     title = next((el.text for el in elements if el.category == "Title"), os.path.basename(pdf_path))
-    
+
     pages_text = []
     page_content = {}
     for el in elements:
@@ -74,12 +110,12 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
         if page_num not in page_content:
             page_content[page_num] = []
         page_content[page_num].append(el.text)
-    
+
     for page_num, texts in sorted(page_content.items()):
         pages_text.append({"page": page_num, "text": "\n".join(texts)})
-    
+
     full_text = "\n\n".join([el.text for el in elements])
-    
+
     # Heuristic to find abstract and sections from the structured elements
     abstract = ""
     sections = []
@@ -108,8 +144,8 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
 def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
     """
     It was challanging to pull tables out of a PDF...
-    First attempt with Camelot (lattice → stream), if that fails, 
-    fall back to pdfplumber. 
+    First attempt with Camelot (lattice → stream), if that fails,
+    fall back to pdfplumber.
     Everything gets saved as CSV for traceability.
     """
     extracted = []
@@ -190,83 +226,176 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
     return extracted
 
 
-def extract_images(pdf_path: str, doc_id: str) -> List[Dict]:
+# --- ADDED: Helper functions for the new equation pipeline ---
+STRONG_OPS = set("=+×÷*/^_{}[]()∑∫√\\")
+LATEX_MARKERS = ["\\frac", "\\sum", "\\int", "\\sqrt", "\\left", "\\right", "\\cdot", "\\pi", "\\theta"]
+
+def normalize_bbox(bbox) -> Tuple[int, int, int, int]:
+    pts = [(float(p[0]), float(p[1])) for p in bbox]
+    xs, ys = [p[0] for p in pts], [p[1] for p in pts]
+    return int(min(xs)), int(min(ys)), int(max(xs)), int(max(ys))
+
+def group_linewise(results: List[Tuple], y_tol: float = CONFIG["Y_TOL"]) -> List[List[Tuple]]:
+    if not results: return []
+    tokens = sorted(
+        [(idx, r, (normalize_bbox(r[0])[1] + normalize_bbox(r[0])[3]) / 2.0, normalize_bbox(r[0])[0]) for idx, r in enumerate(results)],
+        key=lambda t: (t[2], t[3])
+    )
+    groups, cur_group, cur_y = [], [tokens[0][1]], tokens[0][2]
+    for t in tokens[1:]:
+        if abs(t[2] - cur_y) <= y_tol:
+            cur_group.append(t[1])
+            cur_y = (cur_y * len(cur_group) + t[2]) / (len(cur_group) + 1)
+        else:
+            groups.append(cur_group)
+            cur_group, cur_y = [t[1]], t[2]
+    groups.append(cur_group)
+    return groups
+
+TOKEN_DIGIT_RE = re.compile(r'\d')
+def token_is_strict_math(token: str) -> bool:
+    t = token.strip()
+    if not t: return False
+    if '\\' in t or any(op in t for op in STRONG_OPS) or re.search(r'\d+/\d+|\d[A-Za-z]|[A-Za-z]\d|[\^_]', t):
+        return True
+    if re.search(r'(alpha|beta|gamma|delta|lambda|mu|sigma|omega|theta|pi)', t, re.I):
+        return True
+    if TOKEN_DIGIT_RE.search(t) and len(re.sub(r'[^A-Za-z0-9]', '', t)) <= 3:
+        return True
+    return False
+
+def group_features(group: List[Tuple]) -> Dict:
+    texts = [t[1] for t in group]
+    joined = " ".join(texts).strip()
+    tokens = [tk for tk in re.split(r'\s+', joined) if tk]
+    if not tokens: return {}
+    math_flags = [token_is_strict_math(tk) for tk in tokens]
+    token_math_ratio = sum(math_flags) / len(tokens)
+    op_count = sum(c in STRONG_OPS for c in joined)
+    digit_count = sum(c.isdigit() for c in joined)
+    bboxes = [normalize_bbox(t[0]) for t in group]
+    x1, y1 = min(b[0] for b in bboxes), min(b[1] for b in bboxes)
+    x2, y2 = max(b[2] for b in bboxes), max(b[3] for b in bboxes)
+    return {
+        "joined": joined, "token_math_ratio": token_math_ratio,
+        "op_count": op_count, "digit_count": digit_count,
+        "bbox": (x1, y1, x2, y2)
+    }
+
+def confirm_with_pix2tex(crop_pil: Image.Image) -> Tuple[bool, str]:
+    try:
+        latex = latex_model(crop_pil)
+        if not latex or not latex.strip(): return False, ""
+        if any(m in latex for m in LATEX_MARKERS) or (re.search(r'[\d]', latex) and re.search(r'[=+\-^_{}\\/]', latex)):
+            return True, latex
+    except Exception: return False, ""
+    return False, latex
+
+def find_equations_on_page(page_image_path: str) -> Tuple[List[Dict], np.ndarray]:
+    """Runs the full equation detection pipeline on a single page image."""
+    easy_results = easy_reader.readtext(page_image_path, detail=1)
+    groups = group_linewise(easy_results)
+    cv_img = cv2.imread(page_image_path)
+    h, w = cv_img.shape[:2]
+    detections = []
+    for group in groups:
+        feats = group_features(group)
+        if not feats: continue
+        score = 2.0 * feats["token_math_ratio"] + 0.8 * min(1.0, feats["op_count"] / 3.0)
+        if score < CONFIG["SCORE_THRESH"]: continue
+        x1, y1, x2, y2 = feats["bbox"]
+        pad = int((y2 - y1) * CONFIG["PAD_FRAC"])
+        x1c, y1c, x2c, y2c = max(0, x1 - pad), max(0, y1 - pad), min(w - 1, x2 + pad), min(h - 1, y2 + pad)
+        if (x2c - x1c) < CONFIG["MIN_CROP_W"] or (y2c - y1c) < CONFIG["MIN_CROP_H"]: continue
+        crop_pil = Image.fromarray(cv2.cvtColor(cv_img[y1c:y2c, x1c:x2c], cv2.COLOR_BGR2RGB))
+        is_math, latex_str = confirm_with_pix2tex(crop_pil) if CONFIG["CONFIRM_WITH_MODEL"] else (True, "")
+        if is_math:
+            cv2.rectangle(cv_img, (x1c, y1c), (x2c, y2c), (0, 220, 0), 2)
+            detections.append({"bbox": [x1c, y1c, x2c, y2c], "ocr_text": feats["joined"], "latex_text": latex_str})
+    return detections, cv_img
+# ---
+
+
+# --- REPLACED FUNCTION ---
+def extract_figures_and_equations(pdf_path: str, doc_id: str) -> Tuple[List[Dict], List[Dict], str]:
     """
-    Pull out figures/equations as images from the PDF.
-    Store them in a doc-specific folder, with bounding boxes and captions if possible. I wanted to design it in a way that the system could easily differientiate between figures and equations by feeding the images to the LLM image model, but for now it just judge based on surrounding text.
+    This is the new integrated function. It extracts embedded images as figures,
+    then renders each page to run a sophisticated OCR pipeline to detect and
+    extract equations, returning an annotated overview image.
     """
+    doc = fitz.open(pdf_path)
+    figures = []
+    equations = [] # This will store all detected equations
+    annotated_page_paths = []
+    
+    assets_dir = f"data/assets/{doc_id}"
+    os.makedirs(assets_dir, exist_ok=True)
 
-    doc = fitz.open(pdf_path)  # PyMuPDF document object
-    images = []
+    # This function now processes the PDF page by page
+    for page_num, page in enumerate(doc, 1):
+        logger.info(f"Processing Page {page_num}/{len(doc)}...")
 
-    # make sure the doc gets its own asset folder
-    os.makedirs(f"data/assets/{doc_id}", exist_ok=True)
-
-    for page_num in range(len(doc)):
-        page = doc[page_num]
-
-        # grab all image objects (full=True → no skipping)
-        image_list = page.get_images(full=True)
-
-        for img_index, img in enumerate(image_list):
+        # Part 1: Extract embedded images as figures, same as your original code
+        for img_index, img in enumerate(page.get_images(full=True)):
             try:
-                # every image in PyMuPDF has an "xref" (like a unique ref id)
-                xref = img[0]
-                base_image = doc.extract_image(xref)
+                base_image = doc.extract_image(img[0])
+                if not base_image: continue
+                
+                bbox = page.get_image_bbox(img)
+                bbox_serializable = [float(b) for b in bbox] if bbox else None
+                
+                img_path = os.path.join(assets_dir, f"fig_page{page_num}_{img_index}.png")
+                with open(img_path, "wb") as f: f.write(base_image["image"])
 
-                if not base_image:  # sometimes xref exists but image data is junk
-                    logger.warning(f"Skipping invalid image on page {page_num+1}, index {img_index}")
-                    continue
-
-                # save the raw bytes → png on disk
-                image_bytes = base_image["image"]
-                img_path = f"data/assets/{doc_id}/fig_page{page_num+1}_{img_index}.png"
-                with open(img_path, "wb") as f:
-                    f.write(image_bytes)
-
-                # try to grab bounding box (where on the page this image lives)
-                try:
-                    bbox = page.get_image_bbox(img)
-                    bbox_serializable = [
-                        float(bbox.x0), float(bbox.y0), float(bbox.x1), float(bbox.y1)
-                    ] if bbox else None
-                except ValueError as e:
-                    # PyMuPDF can choke on some objects → don’t crash, just log
-                    logger.warning(f"No bbox for image on page {page_num+1}: {e}")
-                    bbox_serializable = None
-
-                # try to guess the caption (usually text directly under the image box)
                 caption = ""
-                if bbox:
-                    caption_area = [bbox.x0, bbox.y1, bbox.x1, bbox.y1 + 50]  # 50px below
+                if bbox_serializable:
+                    caption_area = [bbox_serializable[0], bbox_serializable[3], bbox_serializable[2], bbox_serializable[3] + 50]
                     caption = page.get_text("text", clip=caption_area).strip()
-
-                # decide if this is a "figure" or an "equation"
-                # (very rough: look at extension + surrounding text for LaTeX-ish symbols)
-                img_type = "equation" if re.search(
-                    r'[\$\\{∫∑]', 
-                    base_image.get("ext", "") + page.get_text()
-                ) else "figure"
-
-                # stash everything in a structured dict
-                images.append({
-                    "id": img_index,
-                    "page": page_num + 1,
-                    "bbox": bbox_serializable,
-                    "path": img_path,
-                    "type": img_type,
-                    "caption": caption
+                
+                figures.append({
+                    "id": f"fig_{page_num}_{img_index}", "page": page_num,
+                    "bbox": bbox_serializable, "path": img_path, "caption": caption
                 })
-
             except Exception as e:
-                # generic catch-all so a single bad image doesn’t ruin the run
-                logger.error(f"Error processing image {img_index} on page {page_num+1}: {e}")
-                continue
+                logger.error(f"Error extracting figure on page {page_num}: {e}")
+
+        # Part 2: Render the entire page and run the advanced equation detector on it
+        page_image_path = os.path.join(assets_dir, f"page_{page_num}_render.png")
+        pix = page.get_pixmap(dpi=300) # High DPI is crucial for good OCR
+        pix.save(page_image_path)
+        
+        page_detections, annotated_img = find_equations_on_page(page_image_path)
+        
+        # Add the current page number to each detection and add to the main list
+        for det in page_detections:
+            det["page"] = page_num
+        equations.extend(page_detections)
+        
+        # We save the annotated version of this page to combine later
+        annotated_page_path = os.path.join(assets_dir, f"page_{page_num}_annotated.png")
+        cv2.imwrite(annotated_page_path, annotated_img)
+        annotated_page_paths.append(annotated_page_path)
 
     doc.close()
-    logger.info(f"Extracted {len(images)} images for {pdf_path}")
 
-    return images
+    # Part 3: After processing all pages, stitch the annotated images together
+    final_annotated_path = os.path.join(assets_dir, f"{doc_id}_equations_overview.png")
+    if annotated_page_paths:
+        annotated_images = [cv2.imread(p) for p in annotated_page_paths]
+        # To stack images vertically, they must have the same width
+        max_width = max(img.shape[1] for img in annotated_images)
+        resized_images = [
+            cv2.copyMakeBorder(img, 0, 0, 0, max_width - img.shape[1], cv2.BORDER_CONSTANT, value=[255, 255, 255])
+            for img in annotated_images
+        ]
+        combined_image = cv2.vconcat(resized_images)
+        cv2.imwrite(final_annotated_path, combined_image)
+    else:
+        final_annotated_path = None # No equations were found anywhere
+
+    logger.info(f"Extraction complete. Found {len(figures)} figures and {len(equations)} equations.")
+    return figures, equations, final_annotated_path
+
 
 # Using a semantic-aware chunking strategy
 def chunk_text_semantic(
@@ -313,24 +442,26 @@ def chunk_text_semantic(
                 "metadata": {
                     "doc_id": doc_id,
                     "page": page_num,
-                    "section": current_section  
+                    "section": current_section
                 }
             })
     return all_chunks
 
 
 #  Helper Functions
+# --- UPDATED FUNCTION ---
 def validate_output(output: Dict) -> bool:
     """Validate JSON output structure."""
     return all([
         isinstance(output.get("doc_id"), str),
         isinstance(output.get("chunks"), list),
         isinstance(output.get("tables"), list),
-        isinstance(output.get("images"), list)
+        isinstance(output.get("figures"), list), # UPDATED
+        isinstance(output.get("equations"), list) # UPDATED
     ])
 
 # Initially didnt care about this. but upon closer look at the task given, I decided to get this right ...
-# This function scans text for sensitive info (emails, SSNs) 
+# This function scans text for sensitive info (emails, SSNs)
 # and replaces them with [REDACTED] so we don’t leak PII (Personal info stuff) in logs/outputs.
 def redact_pii(text: str) -> str:
     """Redact PII (emails, SSNs) from text for security."""
@@ -339,7 +470,7 @@ def redact_pii(text: str) -> str:
     return text
 
 
-# Main Ingestion Pipeline 
+# Main Ingestion Pipeline
 def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
     """Main pipeline: Batch ingest, validate, extract, save JSON."""
     results = {}
@@ -347,22 +478,24 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
         if not os.path.exists(pdf_path):
             logger.warning(f"{pdf_path} not found. Skipping.")
             continue
-        
+
         try:
             # Step 1: robust structure extraction
             structure = extract_structure_with_unstructured(pdf_path)
             doc_id = generate_doc_id(pdf_path, structure["title"])
-            
-            # Step 2: excellent table and image extractors    ###todo: diff btw image and equation? fix eq latwr
+
+            # --- UPDATED LOGIC ---
+            # Step 2: Extract tables, figures, and equations separately
             tables = extract_tables(pdf_path, doc_id)
-            images = extract_images(pdf_path, doc_id)
-            
+            # This is the new, powerful function call
+            figures, equations, annotated_path = extract_figures_and_equations(pdf_path, doc_id)
+
             # Step 3: Use the new semantic chunking method
             chunks = chunk_text_semantic(structure["pages_text"], structure["sections"], doc_id)
-            
+
             # Step 4: Redact PII from the full text for storage
             redacted_full_text = redact_pii(structure["full_text"])
-            
+
             # Step 5: Assemble the final output
             output = {
                 "doc_id": doc_id,
@@ -371,44 +504,47 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
                 "sections": structure["sections"],
                 "chunks": chunks,
                 "tables": tables,
-                "images": images,
+                "figures": figures,
+                "equations": equations,
+                "annotated_overview_path": annotated_path, # New field for the debug image
                 "full_text_preview": redacted_full_text[:2000] # Store a preview
             }
-            
+
             if not validate_output(output):
                 logger.error(f"Invalid output for {doc_id}")
                 continue
-            
+
             # Step 6: Save the output !
             output_dir = Path("data/processed") / doc_id
             output_dir.mkdir(parents=True, exist_ok=True)
             with open(output_dir / "metadata.json", "w", encoding="utf-8") as f:
                 json.dump(output, f, ensure_ascii=False, indent=4, cls=CustomJSONEncoder)
-            
+
             results[doc_id] = output
-            logger.info(f"Successfully ingested {pdf_path} as {doc_id}: {len(chunks)} chunks, {len(tables)} tables, {len(images)} images.")
-        
+            # --- UPDATED LOG ---
+            logger.info(f"Successfully ingested {pdf_path} as {doc_id}: {len(chunks)} chunks, {len(tables)} tables, {len(figures)} figures, and {len(equations)} equations.")
+
         except Exception as e:
             logger.error(f"Failed to process {pdf_path}: {e}", exc_info=True)
             continue
-    
+
     if not results:
         raise ValueError("No valid PDFs were ingested.")
-    
+
     return results
 
 
 if __name__ == "__main__":
     # Ensure you have the required libraries installed, pls follow the github Readme.md for installation steps:
     Start = time.time()
-    sample_pdfs = ["data/All you need is attention.pdf"] # Add your files
+    sample_pdfs = ["data/test.pdf"] # Add your files
     if not os.path.exists(sample_pdfs[0]):
         print(f"Error: Sample PDF not found at {sample_pdfs[0]}")
         print("Please add a PDF to the 'data/' directory to run this script.")
-        end = time.time()
-        print(f"Time taken: {end - Start} seconds, or {(end - Start)/60} minutes")
     else:
         results = ingest(sample_pdfs)
-        print(f"\nIngestion complete. Processed doc_ids: {list(results.keys())}")
-        end = time.time()
-        print(f"\nTime taken: {end - Start} seconds, or {(end - Start)/60} minutes")
+        if results:
+            print(f"\nIngestion complete. Processed doc_ids: {list(results.keys())}")
+
+    end = time.time()
+    print(f"\nTime taken: {end - Start:.2f} seconds, or {(end - Start)/60:.2f} minutes")
