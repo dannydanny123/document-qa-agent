@@ -339,8 +339,11 @@ def extract_text_equations(chunks: List[Dict]) -> List[Dict]:
                     "section": chunk['metadata']['section'],
                     "equation_text": line
                 })
-                
+            
     logger.info(f"Extracted {len(text_equations)} text-based equations from chunks.")
+        # 🔑 Normalize just before returning
+    for eq in text_equations:
+        eq["equation_text"] = normalize_equation_text(eq["equation_text"])
     return text_equations
 
 
@@ -413,6 +416,57 @@ def redact_pii(text: str) -> str:
     """Redact PII (emails, SSNs) from text for security."""
     text = re.sub(r'\b[\w\.-]+@[\w\.-]+\w+\b', '[REDACTED]', text)
     text = re.sub(r'\b\d{3}-\d{2}-\d{4}\b', '[REDACTED]', text)
+    return text
+
+# delibratly ignoring the Latex_ocr library cuz that way model might "correct" the ? to a +, and broken structure in many cases, risking llm hallucinations.
+def normalize_equation_text(text: str) -> str:
+    """
+    Replaces common Unicode math symbols with their LaTeX equivalents.
+    Ensures equations are standardized before further processing.
+    """
+    normalization_dict = {
+        '−': '-',        # minus
+        '–': '-',        # en dash → minus
+        '—': '-',        # em dash → minus
+        '×': '\\times',  # multiplication
+        '·': '\\cdot',   # middle dot
+        '÷': '\\div',
+        '≤': '\\leq',
+        '≥': '\\geq',
+        '≠': '\\neq',
+        '≈': '\\approx',
+        '±': '\\pm',
+        '∞': '\\infty',
+        '∑': '\\sum',
+        '∏': '\\prod',
+        '∫': '\\int',
+        '√': '\\sqrt',
+        '→': '\\to',
+        '←': '\\leftarrow',
+        '↔': '\\leftrightarrow',
+        '⇔': '\\iff',
+        '°': '^{\\circ}',  # degrees
+        'π': '\\pi',
+        'θ': '\\theta',
+        'λ': '\\lambda',
+        'μ': '\\mu',
+        'σ': '\\sigma',
+        'Δ': '\\Delta',
+        'δ': '\\delta',
+        'α': '\\alpha',
+        'β': '\\beta',
+        'γ': '\\gamma',
+    }
+
+    for uni, latex in normalization_dict.items():
+        text = text.replace(uni, latex)
+
+    return text.strip()
+
+    
+    for unicode_char, latex_command in normalization_dict.items():
+        text = text.replace(unicode_char, latex_command)
+        
     return text
 
 
