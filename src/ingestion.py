@@ -259,53 +259,74 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
     return figures
 
 
-# --- REPLACEMENT BLOCK: Top-notch text equation extraction logic ---
 def is_scientific_equation(line: str) -> bool:
     """
     A top-notch, production-ready heuristic to verify if a line of text is a
-    scientific equation. This is a high-precision filter.
+    scientific equation. This version uses aggressive rejection filters for high precision.
     """
     line = line.strip()
 
-    # Rule 1: Reject trivial lines. Catches page numbers and stray references.
+    # --- Stage 1: Aggressive Rejection Filters ---
+
+    # Rule 1: Reject trivial lines (captures equation numbers like '(1)', single vars).
     if len(line.replace(" ", "")) < 3:
         return False
 
-    # Rule 2: Actively reject common section headers (e.g., "7 Conclusion").
+    # Rule 2: Reject if it IS ONLY an equation number like "(1)" or "(A.1)".
+    if re.fullmatch(r'\s*\([\w\.\-]+\)\s*', line):
+        return False
+        
+    # Rule 3: Reject if it looks like a citation or reference.
+    # Checks for 4-digit years, common terms, or reference formats like 9(8):1735-1780.
+    if re.search(r'\b(19|20)\d{2}\b', line) or re.search(r'\b(Vol|pp|et al)\b', line, re.IGNORECASE) or re.search(r'\d+\(\d+\):\d+–\d+', line):
+        return False
+        
+    # Rule 4: Reject if it looks like a table row. This is a critical filter.
+    # We define a "data-like token" as a number or a word with digits (e.g., F1, 90.4).
+    data_like_tokens = re.findall(r'\b(\d+\.\d+|\d+|[A-Za-z]+\d+)\b', line)
+    # If a line has many of these tokens BUT no equals sign, it's very likely a table row.
+    if '=' not in line and len(data_like_tokens) > 3:
+        return False
+        
+    # Rule 5: Reject obvious section headers.
     if re.match(r'^\d+(\.\d+)*\s+[A-Za-z]{4,}', line):
         return False
 
-    # Rule 3: Require strong structural evidence. Must have an equals sign OR
-    # at least two different common math operators. This is key to rejecting table rows.
+    # --- Stage 2: Acceptance Heuristics (Must pass to be considered an equation) ---
+
+    # Rule 6: Must have an equals sign OR a high density of math symbols.
     has_equals = '=' in line
-    operators = re.findall(r'[+\-*/^_{}()\[\]]', line)
-    has_multiple_ops = len(set(operators)) >= 2
-    if not has_equals and not has_multiple_ops:
+    math_symbols = re.findall(r'[+\-*/^_{}()\[\]|∑∫√]', line)
+    if not has_equals and len(math_symbols) < 2:
         return False
 
-    # Rule 4: Check for balanced parentheses and brackets. A very strong signal of well-formed expressions.
-    if line.count('(') != line.count(')') or line.count('[') != line.count(']'):
+    # Rule 7: Must have balanced parentheses.
+    if line.count('(') != line.count(')'):
+        return False
+
+    # Rule 8: Should have very few long words.
+    long_words = re.findall(r'[a-zA-Z]{5,}', line)
+    if len(long_words) > 2: # Allow for names like 'softmax', 'Attention'
         return False
         
-    # Rule 5: Low ratio of long, prose-like words. Equations don't have many.
-    # We find words with 4 or more letters.
-    words = re.findall(r'[a-zA-Z]{4,}', line)
-    # We allow up to 2 such words for function names like 'softmax' or 'Attention'.
-    if len(words) > 2:
-        return False
-
-    # Rule 6: A line with only numbers, spaces, and dots is likely a table row.
-    # It must contain at least one operator or letter.
-    if len(re.findall(r'[a-zA-Z=+\-*/^_{}()\[\]]', line)) == 0:
-        return False
-
-    # If a line passes all these stringent checks, we can be confident it's an equation.
+    # If a line survives all these filters, we can be confident it's an equation.
     return True
 
+def deduplicate_equations(equations: List[Dict]) -> List[Dict]:
+    """Removes duplicate equations found in overlapping chunks."""
+    seen = set()
+    unique_equations = []
+    for eqn in equations:
+        # Normalize whitespace to ensure "a = b" and "a=b" are treated as the same
+        normalized_text = re.sub(r'\s+', '', eqn['equation_text'])
+        if normalized_text not in seen:
+            seen.add(normalized_text)
+            unique_equations.append(eqn)
+    return unique_equations
 
 def extract_text_equations(chunks: List[Dict]) -> List[Dict]:
     """
-    Extracts text equations using a high-precision, multi-line assembly strategy.
+    Extracts text equations using the final high-precision, multi-line assembly strategy.
     """
     text_equations = []
     
@@ -315,34 +336,38 @@ def extract_text_equations(chunks: List[Dict]) -> List[Dict]:
         while i < len(lines):
             line = lines[i].strip()
             
-            # Use the strict verifier on each potential line
+            # The main check is the new, powerful heuristic
             if is_scientific_equation(line):
                 # If a line is an equation, check if the next line is a continuation
                 equation_buffer = [line]
                 j = i + 1
-                # A continuation line is usually indented and starts with an operator or is short
+                # A continuation line is usually indented or very short
                 while j < len(lines) and (lines[j].startswith('  ') or len(lines[j].strip()) < 20):
                     equation_buffer.append(lines[j].strip())
                     j += 1
                 
                 merged_text = " ".join(equation_buffer)
                 
-                logger.info(f"Detected equation on page {chunk['metadata']['page']}: '{merged_text}'")
-                text_equations.append({
-                    "id": f"txt_eqn_{chunk['chunk_id']}_{i}",
-                    "page": chunk['metadata']['page'],
-                    "section": chunk['metadata']['section'],
-                    "type": "heuristic",
-                    "equation_text": merged_text
-                })
+                # --- CRITICAL FINAL CHECK ---
+                # We run the final check on the fully merged block as well to ensure its integrity.
+                if is_scientific_equation(merged_text):
+                    text_equations.append({
+                        "id": f"txt_eqn_{chunk['chunk_id']}_{i}",
+                        "page": chunk['metadata']['page'],
+                        "section": chunk['metadata']['section'],
+                        "type": "heuristic",
+                        "equation_text": merged_text
+                    })
                 
                 i = j # Advance the loop counter past the merged lines
             else:
                 i += 1 # Move to the next line
 
-    logger.info(f"Extracted {len(text_equations)} text-based equations from chunks.")
-    return text_equations
-# --- END OF REPLACEMENT BLOCK ---
+    # --- CRITICAL FINAL STEP ---
+    # Remove duplicates before returning the final list
+    unique_equations = deduplicate_equations(text_equations)
+    logger.info(f"Extracted {len(unique_equations)} unique text-based equations from chunks.")
+    return unique_equations
 
 
 # Using a semantic-aware chunking strategy
