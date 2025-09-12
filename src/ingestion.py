@@ -4,7 +4,7 @@ import re
 from typing import List, Dict, Any
 import time
 import os
-
+import csv
 # --- Core PDF Processing Libraries ---
 import fitz  # PyMuPDF
 import pdfplumber
@@ -55,7 +55,7 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
     logger.info(f"Extracting structure from {pdf_path} using unstructured.io...")
     try:
         # I ran into mistakes while using "fast" strategy for speed; so pivoted to "hi_res" for more accurate... but slower, np
-        elements = partition_pdf(pdf_path, strategy="fast")
+        elements = partition_pdf(pdf_path, strategy="hi_res")
     except Exception as e:
         logger.error(f"Unstructured failed for {pdf_path}: {e}")
         # Fallback to a very basic text extraction if unstructured fails
@@ -109,6 +109,13 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
         "full_text": full_text.strip()
     }
 
+def _sanitize_cell(cell_data: Any) -> str:
+    """A helper function to clean individual table cells."""
+    if cell_data is None:
+        return ""
+    # Convert to string, remove null bytes, and replace newlines with a space
+    return str(cell_data).replace('\x00', '').replace('\n', ' ').replace('\r', ' ')
+
 def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
     """
     It was challanging to pull tables out of a PDF...
@@ -118,22 +125,18 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
     """
     extracted = []
 
-    # use a temp dir to keep Camelot happy (avoids file locking issues)
     with tempfile.TemporaryDirectory() as tmpdir:
         try:
-            # first shot: lattice mode (works if the PDF has nice grid lines)
+            # First shot: lattice mode
             tables = camelot.read_pdf(
                 pdf_path,
                 pages='all',
                 flavor='lattice',
-                backend='poppler',
-                temp_dir=tmpdir
+                backend='poppler'
             )
-
-            if not tables:  # sometimes no luck with lattice
+            if not tables:
                 logger.info(f"No lattice tables found in {pdf_path}, trying stream mode")
-
-                # second shot: stream mode (uses spacing instead of grid lines)
+                # Second shot: stream mode
                 tables = camelot.read_pdf(
                     pdf_path,
                     pages='all',
@@ -141,58 +144,44 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
                     backend='poppler',
                     temp_dir=tmpdir
                 )
-
         except Exception as e:
-            # if Camelot blows up, don’t die — try pdfplumber instead
+            # Fallback to pdfplumber
             logger.warning(f"Camelot failed for {pdf_path}: {e}. Falling back to pdfplumber.")
-
             with pdfplumber.open(pdf_path) as pdf:
                 for page_num, page in enumerate(pdf.pages, 1):
-                    tables_plumber = page.extract_tables()
-
-                    for i, table in enumerate(tables_plumber):
-                        if table:  # pdfplumber can sometimes spit out empty ones
-                            df = pd.DataFrame(table)
-
-                            # keep assets organized by document id
+                    raw_tables = page.extract_tables()
+                    for i, table in enumerate(raw_tables):
+                        if table:
+                            # --- SANITIZE DATA HERE ---
+                            cleaned_table = [[_sanitize_cell(cell) for cell in row] for row in table]
+                            df = pd.DataFrame(cleaned_table)
+                            
                             os.makedirs(f"data/assets/{doc_id}", exist_ok=True)
                             csv_path = f"data/assets/{doc_id}/tbl_{page_num}_{i}.csv"
-
-                            # dump to CSV (so we can debug easily later)
-                            df.to_csv(csv_path, index=False)
-
+                            df.to_csv(csv_path, index=False, quoting=csv.QUOTE_ALL)
                             extracted.append({
-                                "id": f"{page_num}_{i}",
-                                "page": page_num,
-                                "data": df.to_dict('records'),
-                                "csv_path": csv_path,
-                                "shape": df.shape
+                                "id": f"{page_num}_{i}", "page": page_num,
+                                "csv_path": csv_path, "shape": df.shape
                             })
-
             return extracted
 
-        # if Camelot did return something usable → process it
+        # Process the tables returned by Camelot
         for i, table in enumerate(tables):
             if not table.df.empty:
-                df = table.df
+                # --- SANITIZE DATA HERE ---
+                # Apply the cleaning function to every cell in the DataFrame
+                df = table.df.applymap(_sanitize_cell)
 
                 os.makedirs(f"data/assets/{doc_id}", exist_ok=True)
                 csv_path = f"data/assets/{doc_id}/tbl_{table.page}_{i}.csv"
-
-                df.to_csv(csv_path, index=False)
-
+                df.to_csv(csv_path, index=False, quoting=csv.QUOTE_ALL)
                 extracted.append({
-                    "id": f"{table.page}_{i}",
-                    "page": table.page,
-                    "data": df.to_dict('records'),
-                    "csv_path": csv_path,
-                    "shape": df.shape
+                    "id": f"{table.page}_{i}", "page": table.page,
+                    "csv_path": csv_path, "shape": df.shape
                 })
 
         logger.info(f"Extracted {len(extracted)} tables for {pdf_path}")
-
     return extracted
-
 
 # --- MODIFIED FUNCTION: Simplified to only extract figures ---
 def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
@@ -259,6 +248,7 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
     return figures
 
 
+# --- Final, Top-Notch Text Equation Extraction Block ---
 def is_scientific_equation(line: str) -> bool:
     """
     A top-notch, production-ready heuristic to verify if a line of text is a
@@ -267,49 +257,21 @@ def is_scientific_equation(line: str) -> bool:
     line = line.strip()
 
     # --- Stage 1: Aggressive Rejection Filters ---
-
-    # Rule 1: Reject trivial lines (captures equation numbers like '(1)', single vars).
-    if len(line.replace(" ", "")) < 3:
-        return False
-
-    # Rule 2: Reject if it IS ONLY an equation number like "(1)" or "(A.1)".
-    if re.fullmatch(r'\s*\([\w\.\-]+\)\s*', line):
-        return False
-        
-    # Rule 3: Reject if it looks like a citation or reference.
-    # Checks for 4-digit years, common terms, or reference formats like 9(8):1735-1780.
-    if re.search(r'\b(19|20)\d{2}\b', line) or re.search(r'\b(Vol|pp|et al)\b', line, re.IGNORECASE) or re.search(r'\d+\(\d+\):\d+–\d+', line):
-        return False
-        
-    # Rule 4: Reject if it looks like a table row. This is a critical filter.
-    # We define a "data-like token" as a number or a word with digits (e.g., F1, 90.4).
+    if len(line.replace(" ", "")) < 3: return False
+    if re.fullmatch(r'\s*\([\w\.\-]+\)\s*', line): return False
+    if re.search(r'\b(19|20)\d{2}\b', line) or re.search(r'\b(Vol|pp|et al)\b', line, re.IGNORECASE) or re.search(r'\d+\(\d+\):\d+–\d+', line): return False
     data_like_tokens = re.findall(r'\b(\d+\.\d+|\d+|[A-Za-z]+\d+)\b', line)
-    # If a line has many of these tokens BUT no equals sign, it's very likely a table row.
-    if '=' not in line and len(data_like_tokens) > 3:
-        return False
-        
-    # Rule 5: Reject obvious section headers.
-    if re.match(r'^\d+(\.\d+)*\s+[A-Za-z]{4,}', line):
-        return False
+    if '=' not in line and len(data_like_tokens) > 3: return False
+    if re.match(r'^\d+(\.\d+)*\s+[A-Za-z]{4,}', line): return False
 
-    # --- Stage 2: Acceptance Heuristics (Must pass to be considered an equation) ---
-
-    # Rule 6: Must have an equals sign OR a high density of math symbols.
+    # --- Stage 2: Acceptance Heuristics ---
     has_equals = '=' in line
     math_symbols = re.findall(r'[+\-*/^_{}()\[\]|∑∫√]', line)
-    if not has_equals and len(math_symbols) < 2:
-        return False
-
-    # Rule 7: Must have balanced parentheses.
-    if line.count('(') != line.count(')'):
-        return False
-
-    # Rule 8: Should have very few long words.
+    if not has_equals and len(math_symbols) < 2: return False
+    if line.count('(') != line.count(')'): return False
     long_words = re.findall(r'[a-zA-Z]{5,}', line)
-    if len(long_words) > 2: # Allow for names like 'softmax', 'Attention'
-        return False
-        
-    # If a line survives all these filters, we can be confident it's an equation.
+    if len(long_words) > 2: return False
+    
     return True
 
 def deduplicate_equations(equations: List[Dict]) -> List[Dict]:
@@ -317,7 +279,6 @@ def deduplicate_equations(equations: List[Dict]) -> List[Dict]:
     seen = set()
     unique_equations = []
     for eqn in equations:
-        # Normalize whitespace to ensure "a = b" and "a=b" are treated as the same
         normalized_text = re.sub(r'\s+', '', eqn['equation_text'])
         if normalized_text not in seen:
             seen.add(normalized_text)
@@ -335,21 +296,13 @@ def extract_text_equations(chunks: List[Dict]) -> List[Dict]:
         i = 0
         while i < len(lines):
             line = lines[i].strip()
-            
-            # The main check is the new, powerful heuristic
             if is_scientific_equation(line):
-                # If a line is an equation, check if the next line is a continuation
                 equation_buffer = [line]
                 j = i + 1
-                # A continuation line is usually indented or very short
                 while j < len(lines) and (lines[j].startswith('  ') or len(lines[j].strip()) < 20):
                     equation_buffer.append(lines[j].strip())
                     j += 1
-                
                 merged_text = " ".join(equation_buffer)
-                
-                # --- CRITICAL FINAL CHECK ---
-                # We run the final check on the fully merged block as well to ensure its integrity.
                 if is_scientific_equation(merged_text):
                     text_equations.append({
                         "id": f"txt_eqn_{chunk['chunk_id']}_{i}",
@@ -358,16 +311,14 @@ def extract_text_equations(chunks: List[Dict]) -> List[Dict]:
                         "type": "heuristic",
                         "equation_text": merged_text
                     })
-                
-                i = j # Advance the loop counter past the merged lines
+                i = j
             else:
-                i += 1 # Move to the next line
+                i += 1
 
-    # --- CRITICAL FINAL STEP ---
-    # Remove duplicates before returning the final list
     unique_equations = deduplicate_equations(text_equations)
     logger.info(f"Extracted {len(unique_equations)} unique text-based equations from chunks.")
     return unique_equations
+# --- END of Equation Block ---
 
 
 # Using a semantic-aware chunking strategy
@@ -390,33 +341,21 @@ def chunk_text_semantic(
         add_start_index=True,
     )
 
-    # We sort the sections by page number to process them in order.
     page_to_section_map = {sec["page"]: sec["name"] for sec in sorted(sections, key=lambda x: x["page"])}
-    current_section = "Introduction"  # A sensible default for pages before the first section
+    current_section = "Introduction"
 
     all_chunks = []
-    for page_info in sorted(pages_text, key=lambda x: x["page"]): # Ensure pages are in order
-        page_num = page_info["page"]
-        page_content = page_info["text"]
+    for page_info in sorted(pages_text, key=lambda x: x["page"]):
+        page_num, page_content = page_info["page"], page_info["text"]
+        if page_num in page_to_section_map: current_section = page_to_section_map[page_num]
 
-        # If the current page number has a new section starting on it, update our tracker.
-        if page_num in page_to_section_map:
-            current_section = page_to_section_map[page_num]
-
-        # Split the content of a single page
         docs = text_splitter.create_documents([page_content])
-
         for i, doc in enumerate(docs):
-            chunk_id = f"{doc_id}_p{page_num}_{i}"
             all_chunks.append({
-                "chunk_id": chunk_id,
+                "chunk_id": f"{doc_id}_p{page_num}_{i}",
                 "text": doc.page_content,
                 "start_pos": doc.metadata.get("start_index"),
-                "metadata": {
-                    "doc_id": doc_id,
-                    "page": page_num,
-                    "section": current_section  
-                }
+                "metadata": {"doc_id": doc_id, "page": page_num, "section": current_section}
             })
     return all_chunks
 
@@ -440,6 +379,24 @@ def redact_pii(text: str) -> str:
     text = re.sub(r'\b[\w\.-]+@[\w\.-]+\.\w+\b', '[REDACTED]', text)
     text = re.sub(r'\b\d{3}-\d{2}-\d{4}\b', '[REDACTED]', text)
     return text
+
+
+# --- ADDED: Normalization function for LLM-friendly output ---
+def normalize_equation_text(text: str) -> str:
+    """
+    Replaces common Unicode math symbols with their LaTeX equivalents.
+    Ensures equations are standardized before further processing.
+    """
+    normalization_dict = {
+        '−': '-', '–': '-', '—': '-', '×': '\\times', '·': '\\cdot', '÷': '\\div', '≤': '\\leq',
+        '≥': '\\geq', '≠': '\\neq', '≈': '\\approx', '±': '\\pm', '∞': '\\infty', '∑': '\\sum',
+        '∏': '\\prod', '∫': '\\int', '√': '\\sqrt', '→': '\\to', '←': '\\leftarrow', '↔': '\\leftrightarrow',
+        '⇔': '\\iff', '°': '^{\\circ}', 'π': '\\pi', 'θ': '\\theta', 'λ': '\\lambda', 'μ': '\\mu',
+        'σ': '\\sigma', 'Δ': '\\Delta', 'δ': '\\delta', 'α': '\\alpha', 'β': '\\beta', 'γ': '\\gamma',
+    }
+    for uni, latex in normalization_dict.items():
+        text = text.replace(uni, latex)
+    return text.strip()
 
 
 # Main Ingestion Pipeline 
@@ -466,6 +423,11 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
             # Step 3.5: Extract equations from the text chunks using the new logic
             equations = extract_text_equations(chunks)
             
+            # --- ADDED NORMALIZATION STEP ---
+            # This loop adds a clean, LLM-ready version of the equation text.
+            for eqn in equations:
+                eqn["normalized_text"] = normalize_equation_text(eqn["equation_text"])
+            
             # Step 4: Redact PII from the full text for storage
             redacted_full_text = redact_pii(structure["full_text"])
             
@@ -478,8 +440,8 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
                 "chunks": chunks,
                 "tables": tables,
                 "figures": figures,
-                "equations": equations, # Now contains sophisticated text-based results
-                "full_text_preview": redacted_full_text[:2000] # Store a preview
+                "equations": equations,
+                "full_text_preview": redacted_full_text[:2000]
             }
             
             if not validate_output(output):
@@ -508,12 +470,15 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
 if __name__ == "__main__":
     # Ensure you have the required libraries installed, pls follow the github Readme.md for installation steps:
     Start = time.time()
-    sample_pdfs = ["data/All you need is attention.pdf"] # Add your files
-    if not sample_pdfs or not os.path.exists(sample_pdfs[0]):
-        print(f"Error: Sample PDF not found at '{sample_pdfs[0] if sample_pdfs else 'N/A'}'")
+    pdfs = ["data/micro-paper.pdf",
+        "data/math-paper.pdf",
+        "data/physics-paper.pdf",
+    ]
+    if not pdfs or not os.path.exists(pdfs[0]):
+        print(f"Error: Sample PDF not found at '{pdfs[0] if pdfs else 'N/A'}'")
         print("Please add a PDF to the 'data/' directory to run this script.")
     else:
-        results = ingest(sample_pdfs)
+        results = ingest(pdfs)
         if results:
             print(f"\nIngestion complete. Processed doc_ids: {list(results.keys())}")
     
