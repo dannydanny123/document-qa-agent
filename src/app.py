@@ -50,7 +50,7 @@ def load_models_and_data():
     with open(BM25_PATH, "rb") as f: bm25_index = pickle.load(f)
     with open(MAPPING_PATH, 'r', encoding='utf-8') as f: indexed_docs = json.load(f)
     try:
-        api_key = os.getenv("GEMINI_API_KEY") # Corrected to GOOGLE_API_KEY
+        api_key = os.getenv("GOOGLE_API_KEY") # Corrected to GOOGLE_API_KEY
         if not api_key:
             raise ValueError("GOOGLE_API_KEY not found. Please check your .env file.")
         genai.configure(api_key=api_key)
