@@ -3,7 +3,7 @@ import subprocess
 from pathlib import Path
 import shutil
 import time
-import os
+
 # --- Configuration ---
 # This script is designed to be run from the project root directory: 'document-qa-agent'
 # All paths are relative to this root, matching your specified structure.
@@ -12,12 +12,8 @@ TASKS_DIR = SRC_DIR / "tasks"
 DATA_DIR = SRC_DIR / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 INDEX_DIR = DATA_DIR / "index"
+# --- NEW: Define the assets directory path for cleaning ---
 ASSETS_DIR = DATA_DIR / "assets"
-os.makedirs(DATA_DIR, exist_ok=True)
-os.makedirs(PROCESSED_DIR, exist_ok=True)
-os.makedirs(INDEX_DIR, exist_ok=True)
-os.makedirs(ASSETS_DIR, exist_ok=True)
-
 
 INGESTION_SCRIPT = TASKS_DIR / "Stage 1" / "ingestion.py"
 INDEX_BUILDER_SCRIPT = TASKS_DIR / "Stage 2" / "Index_builder.py"
@@ -53,12 +49,15 @@ def main():
                 print(f"\n❌ ERROR: The provided path '{path}' is not a valid PDF file.")
                 sys.exit(1)
 
-        # 1. Clean up previous data for a fresh start. This is the core of the new logic.
+        # 1. Clean up ALL previous data for a fresh start. This is the core of the new logic.
         print("\n--- 🧹 Cleaning old data and indexes for a fresh build ---")
         if PROCESSED_DIR.exists():
             shutil.rmtree(PROCESSED_DIR)
         if INDEX_DIR.exists():
             shutil.rmtree(INDEX_DIR)
+        # --- CRITICAL FIX: The assets directory is now also cleaned ---
+        if ASSETS_DIR.exists():
+            shutil.rmtree(ASSETS_DIR)
         
         # Clean any old PDFs from the data directory as well
         for old_pdf in DATA_DIR.glob("*.pdf"):
@@ -81,11 +80,11 @@ def main():
         if not INDEX_DIR.exists() or not list(INDEX_DIR.glob("*")):
             print("\n❌ ERROR: No index found. The application cannot start.")
             print("   Please provide paths to some PDFs to process them first.")
-            print("   Usage: python agent.py <path_to_your_pdf_folder>")
+            print("   Usage: python agent.py <path_to_your_pdf>")
             sys.exit(1)
 
     # --- Final Step: Launch the Streamlit Application ---
-    print(f"\n--- 🎉 Pipeline Complete! Launching the Q&A Application ---\nPress ctr+c to exit!")
+    print(f"\n--- 🎉 Pipeline Complete! Launching the Q&A Application ---")
     
     try:
         subprocess.run(["streamlit", "run", str(APP_SCRIPT)])
@@ -95,3 +94,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
