@@ -6,25 +6,8 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
     📂 Multi-PDF ingestion pipeline (titles, abstracts, sections, tables).
     🤖 Query answering over extracted content.
     📝 Summarization & evaluation metric extraction.
-    ⚡ Enterprise-ready optimizations (CI/CD, modular design, version control).
+    ⚡ Enterprise-ready optimizations (Modular design, version control).
     🔌 Extensible to API calls (e.g., Arxiv search).
-
-📦 Project Structure:
-    document-qa-agent/
-    │── data/                 # Sample PDFs
-    │── src/                  # Source code
-    │   ├── ingest.py         # PDF ingestion & parsing
-    │   ├── agent.py          # Q&A agent logic
-    │   └── interface.py      # CLI / Streamlit interface
-    │── tests/                # Unit tests
-    │   └── test_sanity.py
-    │── environment.yml       # Conda environment setup
-    │── requirements.txt      # Pip dependencies
-    │── .gitignore
-    │── .github/
-    │   └── workflows/
-    │       └── ci.yml        # GitHub Actions (CI pipeline)
-    │── README.md             # Project documentation
 
 ⚙️ Setup Instructions
     1️⃣ Clone Repo
