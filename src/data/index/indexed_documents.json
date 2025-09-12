@@ -1,0 +1,1061 @@
+[
+  {
+    "content": "Title: Boiling After the Dust Settles: Constraining First-Order Phase Transitions During Dark Energy Domination. Abstract:",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "type": "summary",
+      "weight": 3.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 5 2 0 2 p e S 8 ] h p - p e h [ 1 v 6 7 0 7 0 . 9 0 5 2 : v arXiv i X r a Boiling After the Dust Settles: Constraining First-Order Phase Transitions During Dark Energy Domination Seth Koren,1 Yuhsin Tsai,1 and Runqing Wang1, 2 1Department of Physics and Astronomy, University of Notre Dame, South Bend, IN 46556 2Department of Physics and Center for Field Theory and Particle Physics, Fudan University, 2005 Song Hu Road, Shanghai 200438, China (Dated: September 10, 2025)",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: A first-order phase transition could occur in the late universe when vacuum energy begins domi- nating the energy density (z \u2272 0.3) and convert some latent heat into other forms such as invisible radiation. This generic possibility also has concrete motivation in particle physics models which invoke a multitude of vacua to address theoretical puzzles. The na\u00a8\u0131ve constraint on such an event comes from measurements of the Hubble expansion rate, but this can only probe transitions involv- ing O(10)% of the dark energy. In this work, we show that significantly tighter constraints appear when accounting for phase transition fluctuations affecting CMB photon propagation anisotropi- cally, akin to the integrated Sachs-Wolfe effect. For instance, if a completed phase transition has \u03b2/H\u22c6 \u2272 25, current CMB data limits the associated vacuum energy released to less than 1% of the dark energy. A transition to negative vacuum energy (quasi-anti-de Sitter) is allowed only for \u03b2/H\u22c6 \u2273 300. For \u03b2/H\u22c6 \u2272",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: CMB data limits the associated vacuum energy released to less than 1% of the dark energy. A transition to negative vacuum energy (quasi-anti-de Sitter) is allowed only for \u03b2/H\u22c6 \u2273 300. For \u03b2/H\u22c6 \u2272 500, the universe will not crunch for at least 14 Gyr.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: I. INTRODUCTION Cosmology provides a powerful window into the dark sector, where new particles\u2014including dark matter\u2014can interact strongly with each other while remaining nearly invisible to the Standard Model (SM) particles. Decades of direct, indirect, and collider searches suggest that any interaction with SM particles must be extremely weak, if present at all. So far, gravity remains our most reliable tool for probing the dark sector. Fortunately, precision cosmological observations\u2014sensitive to both the evolu- tion and fluctuations of the universe\u2014allow us to study gravitational fluctuations induced by dark sector dynam- ics across a wide range of scales and epochs. In particu- lar, they open the door to exploring dramatic events such as first-order phase transitions (FOPTs) that may occur entirely within the dark sector.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: FOPTs have long been studied as efficient sources of gravitational waves (GWs). Transitions occurring at SM photon temperatures around 100 GeV to 1 TeV can produce signals detectable by future GW detectors like LISA and BBO [1\u20139], with anisotropies that can re- flect non-trivial inflationary or reheating dynamics [10\u2013 14]. FOPTs at MeV to GeV scales have been suggested as explanations for the stochastic GW background ob- served by Pulsar Timing Arrays [15\u201328]. In the eV range, they have been proposed to help resolve the Hubble ten- sion [29\u201335], and may also produce observable CMB B- mode signals in future measurements [36]. Due to strong constraints from Big Bang Nucleosynthesis (BBN) and the CMB, FOPTs below the 10 MeV scale are generally required to occur entirely within a dark sector to avoid excessive reheating of SM particles [37].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: of the plasma generate both scalar and tensor pertur- bations. While tensor modes, especially their role in producing GW, have been extensively studied [38\u201340], scalar perturbations, including curvature and isocurva- ture modes, remain much less explored. Recent stud- ies [41\u201346] have begun filling this gap, showing that precise measurements of the CMB anisotropies, energy spectrum, and matter power spectrum already provide tight constraints on FOPTs occurring between 1 eV and 10 keV temperature. Additional constraints arise from sub-horizon density inhomogeneities generated during the PT, such as plasma sound waves [47] or curvature perturbations sourced by gravitational waves from bub- ble collisions [48].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: In this work, we take a step further and explore ex- tremely late-time FOPTs at redshifts z \u2272 0.3, within the dark energy domination of the last few billion years. We derive upper bounds on the change in vacuum en- ergy from a dark sector phase transition using constraints from CMB anisotropy measurements. We consider the ef- fect of inhomogeneous redshifting of CMB photons due to variations in the time they enter true vacuum regions, and show that this can impose much stronger constraints than those from the modification of cosmic expansion.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: To isolate this universal effect of late-time FOPTs, we model the latent heat as being converted into free- streaming radiation. This means that the density per- turbations are quickly damped out after the PT com- pletes, so the fluctuations imprinted on the CMB photons arise only from the time variation in the \u2018first-encounter- surface\u2019 of the PT (see Fig. 1). In future work we will consider the particular case where latent heat is con- verted into slowly-moving fluids, which allows density perturbations to persist and leads to even more stringent constraints. During FOPTs, bubble nucleation is stochastic and so occurs anisotropically even in the absence of primordial adiabatic perturbations. The resulting bubble wall colli- sions, sound waves, and magnetohydrodynamic motions As to why such late FOPTs are well motivated to study and constrain, we recall the earlier periods in the conven- tional model of the early universe when vacuum energy",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: nears domination and note that each time, this portends new vacuum dynamics which turn this latent heat into dynamical degrees of freedom. This may occur by the rolling of an inflationary scalar field to its minimum; or by a crossover as at the QCD phase transition; or by a vi- olent FOPT as in proposals for electroweak baryogenesis. Quite recently in the history of the cosmos we have seen vacuum energy re-emerge as a dominant component, so it seems reasonable to ask whether this too may signal a recent or future phase transition.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Further beyond the SM, one large class of solutions to naturalness problems of particle physics uses large num- bers of vacua and dynamical evolution between them. This strategy was famously invoked for the cosmological constant problem [49\u201360], and some mechanisms for the hierarchy problem [61\u201368] and the strong CP problem [69\u201373] work similarly. Generically, within such scenar- ios it is possible to have a further vacuum transition at a recent time. This includes transitions to negative vacuum energy, which lead eventually to crunching universes, on which we focus below in Sec. IV.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Of course neither of these general motivations tells us precisely when such a phase transition should occur or ex- actly its nature. Here we consider the more-violent case of a first-order phase transition, and its observational sig- natures when we can test it: if it has already happened. We emphasize that our purpose is not to propose specific models, but rather to analyze the signals and constrain generic models in which such behavior would occur. In comparison to the quintessence case of late vacuum dy- namics [74\u201377], this has seen far less study. Finally, there is some empirical motivation from recent late-time observations of DESI that hint at non-trivial dynamics of dark energy [78]. As for now the best-fitting model of these dynamics is far from clear, but it would be interesting to study models incorporating a FOPT. II. FLUCTUATIONS OF THE PHASE TRANSITION TIME",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: II. FLUCTUATIONS OF THE PHASE TRANSITION TIME A FOPT occurs through the nucleation and expansion of bubbles, the interiors of which are in the true vac- uum. This process is inherently stochastic, so different regions transition at slightly different times. The bubble nucleation rate per unit time and volume is described by [79\u201381]: \u0393 = \u03930e\u2212 S(t) \u03930e\u2212 S(tf)e\u03b2(t \u2212 tf) , (1) \u2248 where S is the bounce action for creating a critical bub- ble, and \u03b2 dS(tf)/dt. The timescale tf serves as a \u2248 \u2212 reference time marking the PT\u2019s progression, defined as when an e\u2212 1 fraction of space remains in the false vac- uum [82]. When \u03b2 H\u22c6 \u2261 H(tf), where H(z) is the \u226b Hubble scale, the transition completes quickly, finishing in a small fraction of the Hubble time near tf. To estimate the redshift fluctuations of CMB photons entering true vacuum regions, we begin by evaluating the CMB photon CMB photon First encounter surface At, ~ po! 0 WS <p + 52% oO",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: To estimate the redshift fluctuations of CMB photons entering true vacuum regions, we begin by evaluating the CMB photon CMB photon First encounter surface At, ~ po! 0 WS <p + 52% oO FIG. 1: Sketch of the origin of CMB fluctuations from a late-time FOPT, comparing photon trajectories before (left) and after (right) accounting for stochastic bubble nucleation. See text for details. fluctuations in the PT time at different spatial points. We define the local transition time at position \u20d7x as tc(\u20d7x), and quantify its fluctuations using the two-point func- \u00aftc and \u00aftc is tion H2 \u03b4tc(\u20d7x)\u03b4tc(\u20d7y) , where \u03b4tc(\u20d7x) = tc(\u20d7x) \u22c6\u27e8 \u27e9 \u2212 the average transition time. The corresponding dimen- sionless power spectrum is derived in [43] via its Fourier transform: P\u03b4t(k) = k3 2\u03c02 H\u22c6 \u03b2 2 d3r ei\u20d7k \u20d7r\u03b22 \u00b7 \u27e8 \u03b4tc(\u20d7x)\u03b4tc(\u20d7y) \u27e9 , (2)",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: P\u03b4t(k) = k3 2\u03c02 H\u22c6 \u03b2 2 d3r ei\u20d7k \u20d7r\u03b22 \u00b7 \u27e8 \u03b4tc(\u20d7x)\u03b4tc(\u20d7y) \u27e9 , (2) with \u20d7r = \u20d7x \u20d7y. For perturbation modes with comov- \u2212 ing wavelengths larger than the average comoving bubble 1 (8\u03c0)1/3(1 + \u00afzpt)vw\u03b2\u2212 1 [80, 81], separation k\u2212 db \u2248 \u226b where \u00afzpt is the redshift at which the PT completes, the power spectrum primarily reflects the standard deviation of the PT completion time averaged over a volume This leads to the dimensionless power spectrum [43]: \u223c k\u2212 3. P\u03b4t(k) \u2248 3(8\u03c0)v3 w (1 + \u00afzpt)k H\u22c6 3 H\u22c6 \u03b2 5 , (3) assuming a bubble wall velocity vw. For wavelengths 1 shorter than the average bubble separation k\u2212 db, \u226a the power spectrum is proportional to P\u03b4t(k) [(1 + \u221d 3(H\u22c6/\u03b2)\u2212 1. \u00afzpt)k/H\u22c6]\u2212 In Appendix A we show the full \u03b4tc spectrum we use in our calculations, adapted from [43]. III. CMB REDSHIFT FLUCTUATIONS FROM PHASE TRANSITION",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: III. CMB REDSHIFT FLUCTUATIONS FROM PHASE TRANSITION We consider a FOPT in a dark energy-dominated uni- verse, with the transition to the true vacuum completing at redshift \u00afzpt. Across the PT a fraction r > 0 of the dark energy density is released, and we note r > 1 means the vacuum energy becomes negative which is physically allowed. To isolate the minimal signatures we consider 2",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 3 2 = 01,7 =0.1 Planck +1lo f* [WK?] a scenario where the latent heat is converted into free- streaming, massless dark radiation though in more gen- eral scenarios richer physics may occur. We model the PT as leading to a patchwork of regions with slightly dif- ferent Hubble parameters due to the variance in the local PT time, leading to differential local Hubble expansion as follows: Hy (2, pt1) (4) 4 = fy] r)+rOq ( ) + Om(L + 2), t 2p",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: where we use the local zpt (without a bar) to describe the spatially-varying dark radiation density, discussed fur- ther below. Because the PT considered here only affects the CMB spectra at \u2113 \u2272 50, while most \u039bCDM param- eter constraints are determined by higher \u2113 modes, we adopt the Planck 2018 best-fit parameters [83]: H0 = 1Mpc\u2212 1, \u2126\u039b = 0.69, and \u2126m = 0.31 in our anal- 68 km s\u2212 ysis. Rather than performing a full fit of the \u039bCDM+PT model to cosmological data, we estimate upper bounds on r from CMB anisotropy using these fixed parameters. As we will show, even when saturating the anisotropy bounds, the change in the universe\u2019s average redshift due to the PT can be well below 1%, resulting in shifts in \u039bCDM energy densities smaller than the current preci- sion. As the CMB fluctuations we consider come from random bubble distributions of PT, which are uncorre- lated to the adiabatic perturbations, we turn off the adi- abatic perturbations in the following discussion and con- sider",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: we consider come from random bubble distributions of PT, which are uncorre- lated to the adiabatic perturbations, we turn off the adi- abatic perturbations in the following discussion and con- sider the total CMB power spectrum to be the sum of PT and \u039bCDM results.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: FIG. 2: CMB temperature power spectrum from a PT at \u00afzpt = 0.1 with r = 0.1. Discrete \u2113 points are connected for visualization. The +1\u03c3 error bar from Planck 2018 [84] is shown for comparison. by only considering perturbations due to the inhomoge- neous redshifting of dark radiation within [\u00afzpt+\u03b4zpt, \u00afzpt] (yellow region in Fig. 1), which is comparable to the PT duration. Beyond this time interval, we treat the energy density as homogeneous, and no further photon fluctua- tions are generated.1 We define the comoving distance zi dz \u03c7zpt,r(zi,zf) = . (5) (1 + z)Hpt(z,zpt,r) zf In the no-PT case, r = 0, and we drop the zpt dependence \u03c70(zi,zf).",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: We define the comoving distance zi dz \u03c7zpt,r(zi,zf) = . (5) (1 + z)Hpt(z,zpt,r) zf In the no-PT case, r = 0, and we drop the zpt dependence \u03c70(zi,zf). We focus on PTs with \u03b2/H\u22c6 \u2248 10\u2013500, which implies that a PT finishing at \u00afzpt started at nearly the same redshift. A CMB photon traveling along the line of sight will enter the true vacuum region at \u00afzpt+\u03b4zpt(\u03b8,\u03d5), where the redshift at photon entry varies due to stochasticity. We note that as \u00afzpt is defined at the redshift at which the PT finishes, \u03b4zpt \u2265 0. Since the PT quickly takes over the space, the photon will then always be in the true vacuum region. As Hubble is decreasing inside, the photons can be redshifted more or less before reaching us, depending on \u03b4zpt(\u03b8,\u03d5), which defines a \u201cfirst-encounter-surface\u201d (Fig. 1) that is similar to the last scattering surface of the CMB photon during recombination. to write \u03c7zpt,r=0 \u2261",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: to write \u03c7zpt,r=0 \u2261 The first-encounter-surface is anisotropic and located at \u00afzpt + \u03b4zpt(\u03b8,\u03d5) (line BO in Fig. 1). The comoving distance from this entry point to us is: Zptt+dzpe XBO 5 = Xzper(Zpts 620) +Xzpe+52per (Zp +O2pe, Zpt) \u00bb 20 (6) where the final redshift dz also depends on (0,@). To determine this fluctuation, we can compare to the case where the PT occurs uniformly at Z), without fluctua- tions. There are no fluctuations of the final redshift in this case, and 6z9 = 0 (line AO in Fig. 1). The comoving distance a photon travels from redshift Zp\u00a2 + 45zp+(9, \u00a2) to today is given by",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: The first-encounter-surface determines when along a CMB photon\u2019s trajectory it sees the background density redshifting, and so the amount of propagation in the red- shifting background for a given photon fluctuates by or- der \u03b4zpt. The stochasticity in the phase transition time also induces spatial variations in the dark sector energy density, which in turn could modify the local Hubble rate at all later times, imprinting additional fluctuations in the photon spectrum. However, since we consider free- streaming dark radiation, the energy density becomes ho- mogenized on the scale of the bubble size, which is where the dominant CMB anisotropy signal arises. For this reason, we take a conservative, simplifying assumption \u00afzpt+\u03b4zpt \u03c7AO = \u03c7\u00afzpt,r(\u00afzpt,0) + \u03c70(\u00afzpt + \u03b4zpt, \u00afzpt),(7) 0",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: \u00afzpt+\u03b4zpt \u03c7AO = \u03c7\u00afzpt,r(\u00afzpt,0) + \u03c70(\u00afzpt + \u03b4zpt, \u00afzpt),(7) 0 1 If the PT reheats into slow-moving fluids such as dark matter, the lack of free-streaming damping could preserve larger energy den- sity fluctuations at low redshift, enhancing the CMB anisotropy. The perturbations we study are thus the minimal signatures, and we leave these cases for future work.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Since the phase transition only affects the expansion rate of the universe, the total comoving distance from the same initial redshift to us must remain the same. This gives the condition: \u00afzpt+\u03b4zpt \u00afzpt+\u03b4zpt \u03c7AO = \u03c7BO . 0 \u03b4z0 (8) Solving this equality gives the final redshift fluctuation 629 as a function of the PT-time fluctuation 6zp,. For small values Zp1,620,6%pt < 1, the solution is well- approximated by: ROAN ( + Zps) [Qa + A%m(1 = : (9) bz \u00a9 Oz pe",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 4,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: ROAN ( + Zps) [Qa + A%m(1 = : (9) bz \u00a9 Oz pe This expression agrees with the numerical solution at the (1)% level for the parameters we consider. The fluctu- O ation scales with the PT energy r and with \u03b4z2 pt, where one power of \u03b4zpt arises from its effect on photon prop- agation, and the other from having a significant redshift of dark radiation energy in the first \u03b4zpt window. For \u03b4zpt > 0, the CMB photon enters the true-vacuum region earlier, and the Hubble expansion is slower at a later red- shift due to a smaller total energy density compared to the uniform-PT case. This requires the expansion to end earlier with \u03b4z0 > 0 to keep the same comoving distance. We estimate the redshift power spectrum P\u03b4zpt using the power spectrum of the PT time at which each point transitions to the true vacuum (1 + \u00afzpt)2 (10) P\u03b4zpt(k) P\u03b4t(k). \u2248 Combining this with Eq. (9), we compute the two-point \u03b4z2 pt(\u03b81,\u03d51)\u03b4z2 function pt(\u03b82,\u03d52) and obtain the power \u27e8 \u27e9 spectrum of the induced photon redshift:",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 4,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: (1 + \u00afzpt)2 (10) P\u03b4zpt(k) P\u03b4t(k). \u2248 Combining this with Eq. (9), we compute the two-point \u03b4z2 pt(\u03b81,\u03d51)\u03b4z2 function pt(\u03b82,\u03d52) and obtain the power \u27e8 \u27e9 spectrum of the induced photon redshift: \u2248 r2 \u21262 \u039b[\u2126\u039b + \u2126m(1 + \u00afzpt)3]\u2212 3 I\u03b4t(k), (11) P\u03b4z0(k) where I\u03b4t(k) \u2261 k3 kmax kmin dr r P\u03b4t(r) 1 1 d\u00b5s\u2212 3 P\u03b4t(s), (12) \u2212 and s = \\/k? +r? \u2014 2kry. In the numerical integral, we set kmin (Kmax) to be 10 times smaller (larger) than the peak mode of P5;, which provides a good approximation. Further details of the derivation of Eqs. (9) and (11) are in the Appendix. The anisotropy we obtain corresponds to a late-time integrated Sachs\u2013Wolfe effect [85], sourced by metric per- turbations from the PT around \u00afzpt. The redshift pertur- bation \u03b4z0 alters the CMB photon temperature, and its contribution to the CMB power spectrum is estimated by projecting P\u03b4z0(k) onto the first-encounter surface using the standard method DTT,pt \u2113 = 2\u2113(\u2113 + 1) kmax kmin dk k P\u03b4z0(k)j2 \u2113(k\u2206\u03c4). (13)",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 4,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: DTT,pt \u2113 = 2\u2113(\u2113 + 1) kmax kmin dk k P\u03b4z0(k)j2 \u2113(k\u2206\u03c4). (13) Sateng > 14 Gyrs 500) 200 50} r<0.01 20) r < 0.005 r-<.0.003 10} 0.05 0.10 0.15 0.20 0.25 0.30 Zpt FIG. 3: Upper bounds on a FOPT converting a fraction r of dark energy into dark radiation, assuming wall velocity vw = 1. The dashed curve indicates where the present-day redshift is shifted by 1% relative to the no-PT, implying a 1% rescaling of \u039bCDM energy \u2248 densities at earlier times if z0 = 0 is fixed. The gray region indicates where the distance to \u00afzpt falls within the average bubble size, where our anisotropy estimate does not apply. For r > 1, the square boxes show the minimal crunching time from Eq. (18).",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 4,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: minimal crunching time from Eq. (18). We use \u2206\u03c4 = \u03c70(\u00afzpt,0) as the no-PT case, since the allowed PT only introduces a negligible (< 1%) correc- tion to the comoving distance. Since the PT signal we consider mainly peaks at \u2113 < 20, we omit the reion- ization suppression factor in the calculation. Including 2\u03c4 e\u2212 0.89 [83] for signal peaks at higher \u2113 would only \u2248 change the bound on r at the percent level. We show some examples of DTT,pt in Fig. 2. \u2113 We estimate the bounds on r using a \u03c72-analysis byt [Drt'(r, 8/Ha=)] v= l=lp\u20141 14 a , (4) l=lp\u20141",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 4,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: \u2113 We estimate the bounds on r using a \u03c72-analysis byt [Drt'(r, 8/Ha=)] v= l=lp\u20141 14 a , (4) l=lp\u20141 where \u03c3\u2113 are the 1\u03c3 error bars taken directly from the Planck 2018 archive [84]. The uncertainties include both foreground and cosmic variance. \u2113p is the peak location of DTT,pt . We use three \u2113-bins for the \u03c72 calculation, \u2113 and require \u03c72 5.99 to set a 2\u03c3 upper bound on r with \u2264 given (\u03b2/H\u22c6, \u00afzpt). Including more \u2113-bins only mildly af- fects the bound. While this method is not fully accu- rate\u2014since Planck error bars are highly correlated and depend on the assumed baseline cosmology\u2014it still gives a useful estimate of the allowed size of r without signifi- 4",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 4,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: cantly modifying the observed DTT \u2113 Fig. 3 shows the upper bounds on r, assuming vw = 1. A useful analytic order-of-magnitude approximation is r \u2272 10\u2212 5 \u03b2 2 . (15) Approximating the power spectrum with just its peak 2, and 1, we get value around \u03b4tc \u223c (\u03b2/H\u22c6)\u2212 \u03b2\u2212 P\u03b4t \u223c 4. The CMB bound r2(\u03b2/H\u22c6)\u2212 Eqs. (11, 12) give P\u03b4z0 \u223c 9, where As refers to the P\u03b4z0 \u2272 As \u2248 10\u2212 is roughly 2 \u00d7 primordial scalar perturbation, leading to Eq. (15). The r bounds also become weaker at lower \u00afzpt, as the peak of P\u03b4z0(k) shifts to such low k-modes that it no longer contributes significantly to the power spectrum with \u2113 2. Note that a naive estimate of the PT bound \u2265 by requiring a \u2272 10% suppression in the Hubble rate 0.2, as motivated by the h(z)/h\u039bCDM from Eq. (4) at z \u2248 constraint from the DESI BAO analysis [86], allows a PT at \u00afzpt = 0.3 with r 0.65. The CMB anisotropy bounds \u2248 we obtained are significantly stronger for \u03b2/H\u22c6 \u2272 200.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 5,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: we obtained are significantly stronger for \u03b2/H\u22c6 \u2272 200. Since our estimate assumes a completed PT, the aver- age comoving bubble separation must be larger than the comoving distance from redshift \u00afzpt to today: (8\u03c0)1/3vw\u03b2\u2212 1(1 + \u00afzpt) > \u2206\u03c4. (16) dp \u2248 Although an incomplete PT will still affect CMB photon propagation and lead to strong constraints on r, we leave a detailed analysis of the incomplete PT (grey) regime for future work. We have so far assumed the existence of a PT and cal- culated the resulting CMB anisotropies from fluctuations in the transition redshift, \u03b4zpt. Compared to standard \u039bCDM with no PT, the change in Hpt also induces a homogeneous redshifting today, \u03b4\u00afz0, which we can deter- mine by equating \u03c7\u00afzpt,r(\u00afzpt,\u03b4\u00afz0) = \u03c70(\u00afzpt,0). (17)",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 5,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: \u03c7\u00afzpt,r(\u00afzpt,\u03b4\u00afz0) = \u03c70(\u00afzpt,0). (17) After rescaling today\u2019s redshift back to zero, the \u039bCDM energy densities at earlier times could be modified at the level of \u03b4\u00afz0. For reference, Fig. 3 shows a dashed curve for \u03b4\u00afz0 = 1% when saturating the r bounds from the anisotropy estimate. This overall redshift shift is com- parable to uncertainties in current \u039bCDM density mea- surements, and the region above the curve may be further constrained by fitting \u039bCDM energy densities to the full CMB data. IV. THE END TIMES For large \u03b2/H\u22c6, FOPTs with r > 1 become allowed. Here the released latent heat exceeds the dark energy density \u039b0 = \u03c1c\u2126\u039b, where \u03c1c = (2.5meV)4 [87] is the critical density, leading the universe to decelerate and eventually crunch. This regime may be motivated from a UV perspective, as there is evidence from string theory 5",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 5,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 5 that true vacua have \u039b0 < 0, and any positive \u039b0 must be metastable (see e.g. [88] and references therein). A slowly-rolling scalar whose minimum is eventually found at V < 0 is one way such scenarios might be made consis- tent with our universe\u2014but a late-time phase transition could also satisfy these conjectures. The second Friedmann equation after the PT is 4 H2Q\\ f (- +2 ) a Zot 204 (18) (18) For r > 1 the right-hand side is strictly negative, so the expansion begins decelerating. The continued expansion of the universe further di- lutes the radiation and matter densities until the uni- verse switches from expanding to contracting when H(zmax)2 = 0. Neglecting matter density (\u2126\u039b \u2192 this occurs at 1), 1/4 1 + \u00afzpt r = . 1 + zmax r 1 (19) \u2212 Following this point, the scale factor decreases, causing the energy density to grow and leading to increasingly rapid contraction. The universe then collapses at a time 12 r\u2014-\u20141 ArcCos \u20141 tend \u00a9 Ay (20)",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 5,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 12 r\u2014-\u20141 ArcCos \u20141 tend \u00a9 Ay (20) In the yellow and orange regions of Fig. 3 where r > 1 is allowed, we show the lower bounds on tend corresponding to the upper bounds r 2 and 3, obtained by numer- \u2264 \u2264 ically solving Eq. (18). The anisotropy bound ensures that, for a PT with \u03b2/H\u22c6 \u2272 500 which has already com- pleted, the universe must live at least another \u2273 14 Gyr. As to humanity we can offer no such guarantees. V. CONCLUSION",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 5,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: In this work we investigated constraints on late-time FOPTs, and found that probing the fluctuations provides far stronger constraints than considering only the back- ground evolution. This work is one step toward a map of the constraints on FOPTs over all of cosmic time, which limits the most violent dark sector behaviors. Currently the constraints between recombination and dark energy domination are unknown, and remain an obvious target for future exploration. It would also be interesting to consider phase transitions in sectors which are not en- tirely secluded but have some portal interaction with us. Overall, the signatures of phase transitions in the late universe may be subtle enough that we will not see them if we do not look for them. Since this phenomenon is motivated both on general grounds and in specific the- oretical frameworks, it would serve us well to learn how to characterize and search for signals from these drastic rearrangements of the degrees of freedom of the",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 5,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: general grounds and in specific the- oretical frameworks, it would serve us well to learn how to characterize and search for signals from these drastic rearrangements of the degrees of freedom of the universe.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 5,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: ACKNOWLEDGEMENTS We are grateful to Salvatore Bottaro, Raymond Co, Peter Garnavich, Michael Geller, Roni Harnik for helpful discussions. We especially thank Sai Chaitanya Tade- palli for guiding us through the calculation of the two- point correlation function of the composite operators, and Soubhik Kumar for valuable feedback on the draft. This work was partially supported by the NSF Grant [1] A. Kosowsky, M. S. Turner, and R. Watkins, \u201cGravitational waves from first order cosmological phase transitions,\u201d Phys. Rev. Lett. 69 (1992) 2026\u20132029. [2] A. Kosowsky, M. S. Turner, and R. Watkins, \u201cGravitational radiation from colliding vacuum bubbles,\u201d Phys. Rev. D 45 (1992) 4514\u20134535. [3] A. Kosowsky and M. S. Turner, \u201cGravitational radiation from colliding vacuum bubbles: envelope approximation to many bubble collisions,\u201d Phys. Rev. D 47 (1993) 4372\u20134391, arXiv:astro-ph/9211004.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [3] A. Kosowsky and M. S. Turner, \u201cGravitational radiation from colliding vacuum bubbles: envelope approximation to many bubble collisions,\u201d Phys. Rev. D 47 (1993) 4372\u20134391, arXiv:astro-ph/9211004. [4] M. Kamionkowski, A. Kosowsky, and M. S. Turner, \u201cGravitational radiation from first order phase transitions,\u201d Phys. Rev. D 49 (1994) 2837\u20132851, arXiv:astro-ph/9310044. [5] C. Caprini et al., \u201cScience with the space-based interferometer eLISA. II: Gravitational waves from cosmological phase transitions,\u201d JCAP 04 (2016) 001, arXiv:1512.06239 [astro-ph.CO]. [6] C. Caprini et al., \u201cDetecting gravitational waves from cosmological phase transitions with LISA: an update,\u201d JCAP 03 (2020) 024, arXiv:1910.13125 [astro-ph.CO]. [7] R. Caldwell et al., \u201cDetection of early-universe gravitational-wave signatures and fundamental physics,\u201d Gen. Rel. Grav. 54 no. 12, (2022) 156, arXiv:2203.07972 [gr-qc].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [7] R. Caldwell et al., \u201cDetection of early-universe gravitational-wave signatures and fundamental physics,\u201d Gen. Rel. Grav. 54 no. 12, (2022) 156, arXiv:2203.07972 [gr-qc]. [8] LISA Collaboration, K. G. Arun et al., \u201cNew horizons for fundamental physics with LISA,\u201d Living Rev. Rel. 25 no. 1, (2022) 4, arXiv:2205.01597 [gr-qc]. [9] LISA Cosmology Working Group Collaboration, P. Auclair et al., \u201cCosmology with the Laser Interferometer Space Antenna,\u201d Living Rev. Rel. 26 no. 1, (2023) 5, arXiv:2204.05434 [astro-ph.CO]. [10] M. Geller, A. Hook, R. Sundrum, and Y. Tsai, \u201cPrimordial Anisotropies in the Gravitational Wave Background from Cosmological Phase Transitions,\u201d Phys. Rev. Lett. 121 no. 20, (2018) 201303, arXiv:1803.10780 [hep-ph]. [11] S. Kumar, R. Sundrum, and Y. Tsai, \u201cNon-Gaussian stochastic gravitational waves from phase transitions,\u201d JHEP 11 (2021) 107, arXiv:2102.05665 [astro-ph.CO].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [11] S. Kumar, R. Sundrum, and Y. Tsai, \u201cNon-Gaussian stochastic gravitational waves from phase transitions,\u201d JHEP 11 (2021) 107, arXiv:2102.05665 [astro-ph.CO]. [12] LISA Cosmology Working Group Collaboration, N. Bartolo et al., \u201cProbing anisotropies of the Stochastic Gravitational Wave Background with LISA,\u201d JCAP 11 (2022) 009, arXiv:2201.08782 [astro-ph.CO]. [13] A. Bodas and R. Sundrum, \u201cLarge primordial fluctuations in gravitational waves from phase transitions,\u201d JHEP 06 (2023) 029, arXiv:2211.09301",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [13] A. Bodas and R. Sundrum, \u201cLarge primordial fluctuations in gravitational waves from phase transitions,\u201d JHEP 06 (2023) 029, arXiv:2211.09301 PHY-2412701. SK and YT would also like to thank Mu- nich Institute for Astro-, Particle and BioPhysics (MI- APbP) which is funded by the Deutsche Forschungsge- meinschaft (DFG, German Research Foundation) under Germany\u2019s Excellence Strategy \u2013 EXC-2094 \u2013 390783311. YT would like to thank the Tom and Carolyn Marquez Chair Fund for its generous support and the Aspen Cen- ter for Physics (supported by NSF grant PHY-2210452). YT would also like to thank the host of Fermilab, sup- ported by the URA-22-F-13 fund. [hep-ph]. [14] Y. Cui, S. Kumar, R. Sundrum, and Y. Tsai, \u201cUnraveling cosmological anisotropies within stochastic gravitational wave backgrounds,\u201d JCAP 10 (2023) 064, arXiv:2307.10360 [astro-ph.CO].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [hep-ph]. [14] Y. Cui, S. Kumar, R. Sundrum, and Y. Tsai, \u201cUnraveling cosmological anisotropies within stochastic gravitational wave backgrounds,\u201d JCAP 10 (2023) 064, arXiv:2307.10360 [astro-ph.CO]. [15] NANOGrav Collaboration, Z. Arzoumanian et al., \u201cThe NANOGrav 12.5 yr Data Set: Search for an Isotropic Stochastic Gravitational-wave Background,\u201d Astrophys. J. Lett. 905 no. 2, (2020) L34, arXiv:2009.04496 [astro-ph.HE]. [16] NANOGrav Collaboration, G. Agazie et al., \u201cThe NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background,\u201d Astrophys. J. Lett. 951 no. 1, (2023) L8, arXiv:2306.16213 [astro-ph.HE]. [17] EPTA Collaboration, S. Chen et al., \u201cCommon-red-signal analysis with 24-yr high-precision timing of the European Pulsar Timing Array: inferences in the stochastic gravitational-wave background search,\u201d Mon. Not. Roy. Astron. Soc. 508 no. 4, (2021) 4970\u20134993, arXiv:2110.13184 [astro-ph.HE].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [18] EPTA, InPTA: Collaboration, J. Antoniadis et al., \u201cThe second data release from the European Pulsar Timing Array - III. Search for gravitational wave signals,\u201d Astron. Astrophys. 678 (2023) A50, arXiv:2306.16214 [astro-ph.HE]. [19] EPTA, InPTA Collaboration, J. Antoniadis et al., \u201cThe second data release from the European Pulsar Timing Array - IV. Implications for massive black holes, dark matter, and the early Universe,\u201d Astron. Astrophys. 685 (2024) A94, arXiv:2306.16227 [astro-ph.CO]. [20] B. Goncharov et al., \u201cOn the Evidence for a Common-spectrum Process in the Search for the Nanohertz Gravitational-wave Background with the Parkes Pulsar Timing Array,\u201d Astrophys. J. Lett. 917 no. 2, (2021) L19, arXiv:2107.12112 [astro-ph.HE]. [21] D. J. Reardon et al., \u201cSearch for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array,\u201d Astrophys. J. Lett. 951 no. 1, (2023) L6, arXiv:2306.16215 [astro-ph.HE].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [21] D. J. Reardon et al., \u201cSearch for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array,\u201d Astrophys. J. Lett. 951 no. 1, (2023) L6, arXiv:2306.16215 [astro-ph.HE]. [22] H. Xu et al., \u201cSearching for the Nano-Hertz Stochastic Gravitational Wave Background with the Chinese Pulsar Timing Array Data Release I,\u201d Res. Astron. Astrophys. 23 no. 7, (2023) 075024, arXiv:2306.16216 [astro-ph.HE]. [23] T. Bringmann, P. F. Depta, T. Konstandin, K. Schmidt-Hoberg, and C. Tasillo, \u201cDoes NANOGrav observe a dark sector phase transition?,\u201d JCAP 11 6",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 6,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: (2023) 053, arXiv:2306.09411 [astro-ph.CO]. [24] A. Addazi, Y.-F. Cai, A. Marciano, and L. Visinelli, \u201cHave pulsar timing array methods detected a cosmological phase transition?,\u201d Phys. Rev. D 109 no. 1, (2024) 015028, arXiv:2306.17205 [astro-ph.CO]. [25] T. Ghosh, A. Ghoshal, H.-K. Guo, F. Hajkarim, S. F. King, K. Sinha, X. Wang, and G. White, \u201cDid we hear the sound of the Universe boiling? Analysis using the full fluid velocity profiles and NANOGrav 15-year data,\u201d JCAP 05 (2024) 100, arXiv:2307.02259 [astro-ph.HE]. [26] A. Salvio, \u201cSupercooling in radiative symmetry breaking: theory extensions, gravitational wave detection and primordial black holes,\u201d JCAP 12 (2023) 046, arXiv:2307.04694 [hep-ph]. [27] M. W. Winkler and K. Freese, \u201cOrigin of the Stochastic Gravitational Wave Background: First-Order Phase Transition vs. Black Hole Mergers,\u201d arXiv:2401.13729 [astro-ph.CO].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [27] M. W. Winkler and K. Freese, \u201cOrigin of the Stochastic Gravitational Wave Background: First-Order Phase Transition vs. Black Hole Mergers,\u201d arXiv:2401.13729 [astro-ph.CO]. [28] A. Banik, J. H. Kim, J. S. Pi, and Y. Tsai, \u201cEchoes of Self-Interacting Dark Matter from Binary Black Hole Mergers,\u201d arXiv:2503.08787 [astro-ph.CO]. [29] A. G. Riess et al., \u201cA Comprehensive Measurement of the Local Value of the Hubble Constant with 1 km/s/Mpc Uncertainty from the Hubble Space Telescope and the SH0ES Team,\u201d Astrophys. J. Lett. 934 no. 1, (2022) L7, arXiv:2112.04510 [astro-ph.CO]. [30] N. Sch\u00a8oneberg, G. Franco Abell\u00b4an, A. P\u00b4erez S\u00b4anchez, S. J. Witte, V. Poulin, and J. Lesgourgues, \u201cThe H0 Olympics: A fair ranking of proposed models,\u201d Phys. Rept. 984 (2022) 1\u201355, arXiv:2107.10291 [astro-ph.CO]. [31] F. Niedermann and M. S. Sloth, \u201cNew early dark energy,\u201d Phys. Rev. D 103 no. 4, (2021) L041303, arXiv:1910.10739 [astro-ph.CO].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [31] F. Niedermann and M. S. Sloth, \u201cNew early dark energy,\u201d Phys. Rev. D 103 no. 4, (2021) L041303, arXiv:1910.10739 [astro-ph.CO]. [32] F. Niedermann and M. S. Sloth, \u201cResolving the Hubble tension with new early dark energy,\u201d Phys. Rev. D 102 no. 6, (2020) 063527, arXiv:2006.06686 [astro-ph.CO]. [33] F. Niedermann and M. S. Sloth, \u201cNew Early Dark Energy as a solution to the H0 and S8 tensions,\u201d arXiv:2307.03481 [hep-ph]. [34] M. Garny, F. Niedermann, H. Rubira, and M. S. Sloth, \u201cHot new early dark energy bridging cosmic gaps: Supercooled phase transition reconciles stepped dark radiation solutions to the Hubble tension with BBN,\u201d Phys. Rev. D 110 no. 2, (2024) 023531, arXiv:2404.07256 [astro-ph.CO]. [35] A. Chatrchyan, F. Niedermann, V. Poulin, and M. S. Sloth, \u201cConfronting cold new early dark energy and its equation of state with updated CMB, supernovae, and BAO data,\u201d Phys. Rev. D 111 no. 4, (2025) 043536, arXiv:2408.14537 [astro-ph.CO].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [36] K. Greene, A. Ireland, G. Krnjaic, and Y. Tsai, \u201cObservable CMB B-modes from Cosmological Phase Transitions,\u201d arXiv:2410.23348 [astro-ph.CO]. [37] Y. Bai and M. Korwar, \u201cCosmological constraints on first-order phase transitions,\u201d Phys. Rev. D 105 no. 9, (2022) 095015, arXiv:2109.14765 [hep-ph]. [38] C. Caprini, R. Durrer, and G. Servant, \u201cGravitational wave generation from bubble collisions in first-order phase transitions: An analytic approach,\u201d Phys. Rev. D 77 (2008) 124015, arXiv:0711.2593 [astro-ph]. [39] R. Jinno and M. Takimoto, \u201cGravitational waves from bubble collisions: An analytic derivation,\u201d Phys. Rev. D 95 no. 2, (2017) 024009, arXiv:1605.01403 [astro-ph.CO]. [40] R. Jinno and M. Takimoto, \u201cGravitational waves from bubble dynamics: Beyond the Envelope,\u201d JCAP 01 (2019) 060, arXiv:1707.03111 [hep-ph].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [40] R. Jinno and M. Takimoto, \u201cGravitational waves from bubble dynamics: Beyond the Envelope,\u201d JCAP 01 (2019) 060, arXiv:1707.03111 [hep-ph]. [41] M. R. Buckley, P. Du, N. Fernandez, and M. J. Weikert, \u201cDark radiation isocurvature from cosmological phase transitions,\u201d JCAP 07 (2024) 031, arXiv:2402.13309 [hep-ph]. [42] J. Liu, L. Bian, R.-G. Cai, Z.-K. Guo, and S.-J. Wang, \u201cConstraining First-Order Phase Transitions with Curvature Perturbations,\u201d Phys. Rev. Lett. 130 no. 5, (2023) 051001, arXiv:2208.14086 [astro-ph.CO]. [43] G. Elor, R. Jinno, S. Kumar, R. McGehee, and Y. Tsai, \u201cFinite Bubble Statistics Constrain Late Cosmological Phase Transitions,\u201d Phys. Rev. Lett. 133 no. 21, (2024) 211003, arXiv:2311.16222 [hep-ph]. [44] M. Lewicki, P. Toczek, and V. Vaskonen, \u201cBlack Holes and Gravitational Waves from Slow First-Order Phase Transitions,\u201d Phys. Rev. Lett. 133 no. 22, (2024) 221003, arXiv:2402.04158 [astro-ph.CO].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [44] M. Lewicki, P. Toczek, and V. Vaskonen, \u201cBlack Holes and Gravitational Waves from Slow First-Order Phase Transitions,\u201d Phys. Rev. Lett. 133 no. 22, (2024) 221003, arXiv:2402.04158 [astro-ph.CO]. [45] J. Zou, Z. Zhu, Z. Zhao, and L. Bian, \u201cNumerical simulations of density perturbation and gravitational wave production from cosmological first-order phase transition,\u201d arXiv:2502.20166 [hep-ph]. [46] G. Franciolini, Y. Gouttenoire, and R. Jinno, \u201cCurvature Perturbations from First-Order Phase Transitions: Implications to Black Holes and Gravitational Waves,\u201d arXiv:2503.01962 [hep-ph]. [47] N. Ramberg, W. Ratzinger, and P. Schwaller, \u201cOne \u00b5 to rule them all: CMB spectral distortions can probe domain walls, cosmic strings and low scale phase transitions,\u201d JCAP 02 (2023) 039, arXiv:2209.14313 [hep-ph]. [48] S. Bottaro, M. Geller, D. Redigolo, and M. Tsur in preparation .",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [48] S. Bottaro, M. Geller, D. Redigolo, and M. Tsur in preparation . [49] L. F. Abbott, \u201cA Mechanism for Reducing the Value of the Cosmological Constant,\u201d Phys. Lett. B 150 (1985) 427\u2013430. [50] J. D. Brown and C. Teitelboim, \u201cDynamical Neutralization of the Cosmological Constant,\u201d Phys. Lett. B 195 (1987) 177\u2013182. [51] J. D. Brown and C. Teitelboim, \u201cNeutralization of the Cosmological Constant by Membrane Creation,\u201d Nucl. Phys. B 297 (1988) 787\u2013836. [52] M. J. Duncan and L. G. Jensen, \u201cFour Forms and the Vanishing of the Cosmological Constant,\u201d Nucl. Phys. B 336 (1990) 100\u2013114. [53] R. Bousso and J. Polchinski, \u201cQuantization of four form fluxes and dynamical neutralization of the cosmological constant,\u201d JHEP 06 (2000) 006, arXiv:hep-th/0004134. [54] J. L. Feng, J. March-Russell, S. Sethi, and F. Wilczek, \u201cSaltatory relaxation of the cosmological constant,\u201d Nucl. Phys. B 602 (2001) 307\u2013328, arXiv:hep-th/0005276.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [54] J. L. Feng, J. March-Russell, S. Sethi, and F. Wilczek, \u201cSaltatory relaxation of the cosmological constant,\u201d Nucl. Phys. B 602 (2001) 307\u2013328, arXiv:hep-th/0005276. [55] G. R. Dvali and A. Vilenkin, \u201cField theory models for variable cosmological constant,\u201d Phys. Rev. D 64 (2001) 063509, arXiv:hep-th/0102142. [56] N. Kaloper and A. Westphal, \u201cQuantum-mechanical mechanism for reducing the cosmological constant,\u201d 7",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 7,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Phys. Rev. D 106 no. 10, (2022) L101701, arXiv:2204.13124 [hep-th]. [57] N. Kaloper, \u201cGeneral relativity on the multiverse and nature\u2019s hierarchies,\u201d Phys. Rev. D 106 no. 4, (2022) 044023, arXiv:2202.08860 [hep-th]. [58] N. Kaloper, \u201cAxion flux monodromy discharges relax the cosmological constant,\u201d JCAP 11 (2023) 032, arXiv:2307.10365 [hep-th]. [59] N. Kaloper, \u201cde Sitter space decay and cosmological constant relaxation in unimodular gravity with charged membranes,\u201d Phys. Rev. D 108 no. 2, (2023) 025005, arXiv:2305.02349 [hep-th]. [60] N. Kaloper, \u201cDiscretely Evanescent Dark Energy,\u201d arXiv:2506.04317 [hep-th]. [61] G. Dvali and A. Vilenkin, \u201cCosmic attractors and gauge hierarchy,\u201d Phys. Rev. D 70 (2004) 063501, arXiv:hep-th/0304043. [62] G. Dvali, \u201cLarge hierarchies from attractor vacua,\u201d Phys. Rev. D 74 (2006) 025018, arXiv:hep-th/0410286.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 8,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [62] G. Dvali, \u201cLarge hierarchies from attractor vacua,\u201d Phys. Rev. D 74 (2006) 025018, arXiv:hep-th/0410286. [63] P. W. Graham, D. E. Kaplan, and S. Rajendran, \u201cCosmological Relaxation of the Electroweak Scale,\u201d Phys. Rev. Lett. 115 no. 22, (2015) 221801, arXiv:1504.07551 [hep-ph]. [64] D. E. Kaplan and R. Rattazzi, \u201cLarge field excursions and approximate discrete symmetries from a clockwork axion,\u201d Phys. Rev. D 93 no. 8, (2016) 085007, arXiv:1511.01827 [hep-ph]. [65] K. Choi and S. H. Im, \u201cRealizing the relaxion from multiple axions and its UV completion with high scale supersymmetry,\u201d JHEP 01 (2016) 149, arXiv:1511.00132 [hep-ph]. [66] L. E. Ibanez, M. Montero, A. Uranga, and I. Valenzuela, \u201cRelaxion Monodromy and the Weak Gravity Conjecture,\u201d JHEP 04 (2016) 020, arXiv:1512.00025 [hep-th]. [67] R. S. Gupta, Z. Komargodski, G. Perez, and L. Ubaldi, \u201cIs the Relaxion an Axion?,\u201d JHEP 02 (2016) 166, arXiv:1509.00047 [hep-ph].",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 8,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [67] R. S. Gupta, Z. Komargodski, G. Perez, and L. Ubaldi, \u201cIs the Relaxion an Axion?,\u201d JHEP 02 (2016) 166, arXiv:1509.00047 [hep-ph]. [68] A. Hook and G. Marques-Tavares, \u201cRelaxation from particle production,\u201d JHEP 12 (2016) 101, arXiv:1607.01786 [hep-ph]. [69] T. Banks, M. Dine, and N. Seiberg, \u201cIrrational axions as a solution of the strong CP problem in an eternal universe,\u201d Phys. Lett. B 273 (1991) 105\u2013110, arXiv:hep-th/9109040. [70] G. Dvali, \u201cA Vacuum accumulation solution to the strong CP problem,\u201d Phys. Rev. D 74 (2006) 025019, arXiv:hep-th/0510053. [71] N. Kaloper and J. Terning, \u201cLandscaping the Strong CP Problem,\u201d JHEP 03 (2019) 032, arXiv:1710.01740 [hep-th]. [72] N. Kaloper, \u201cA Quantal Theory of Restoration of Strong CP Symmetry,\u201d arXiv:2505.04690 [hep-ph]. [73] N. Kaloper, \u201cAn Alternative to Axion,\u201d arXiv:2504.21078 [hep-ph]. [74] Y. Fujii, \u201cOrigin of the Gravitational Constant and Particle Masses in Scale Invariant Scalar - Tensor Theory,\u201d Phys. Rev. D 26 (1982) 2580.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 8,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [74] Y. Fujii, \u201cOrigin of the Gravitational Constant and Particle Masses in Scale Invariant Scalar - Tensor Theory,\u201d Phys. Rev. D 26 (1982) 2580. [75] L. H. Ford, \u201cCOSMOLOGICAL CONSTANT DAMPING BY UNSTABLE SCALAR FIELDS,\u201d Phys. Rev. D 35 (1987) 2339. [76] B. Ratra and P. J. E. Peebles, \u201cCosmological Consequences of a Rolling Homogeneous Scalar Field,\u201d Phys. Rev. D 37 (1988) 3406. [77] C. Wetterich, \u201cCosmology and the Fate of Dilatation Symmetry,\u201d Nucl. Phys. B 302 (1988) 668\u2013696, arXiv:1711.03844 [hep-th]. [78] DESI Collaboration, M. Abdul Karim et al., \u201cDESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints,\u201d arXiv:2503.14738 [astro-ph.CO]. [79] C. J. Hogan, \u201cNucleation of cosmological phase transitions,\u201d Physics Letters B 133 no. 3, (1983) 172\u2013176. https://www.sciencedirect.com/science/ article/pii/0370269383905531.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 8,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [79] C. J. Hogan, \u201cNucleation of cosmological phase transitions,\u201d Physics Letters B 133 no. 3, (1983) 172\u2013176. https://www.sciencedirect.com/science/ article/pii/0370269383905531. [80] K. Enqvist, J. Ignatius, K. Kajantie, and K. Rummukainen, \u201cNucleation and bubble growth in a first-order cosmological electroweak phase transition,\u201d Phys. Rev. D 45 (May, 1992) 3415\u20133428. https: //link.aps.org/doi/10.1103/PhysRevD.45.3415. [81] M. Hindmarsh, S. J. Huber, K. Rummukainen, and D. J. Weir, \u201cNumerical simulations of acoustically generated gravitational waves at a first order phase transition,\u201d Phys. Rev. D 92 no. 12, (2015) 123009, arXiv:1504.03291 [astro-ph.CO]. [82] P. Athron, C. Bal\u00b4azs, A. Fowlie, L. Morris, and L. Wu, \u201cCosmological phase transitions: From perturbative particle physics to gravitational waves,\u201d Progress in Particle and Nuclear Physics 135 (2024) 104094. https://www.sciencedirect.com/science/article/ pii/S0146641023000753.",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 8,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: [83] Planck Collaboration, N. Aghanim et al., \u201cPlanck 2018 results. VI. Cosmological parameters,\u201d Astron. Astrophys. 641 (2020) A6, arXiv:1807.06209 [astro-ph.CO]. [Erratum: Astron.Astrophys. 652, C4 (2021)]. [84] https://pla.esac.esa.int/#home. [85] R. K. Sachs and A. M. Wolfe, \u201cPerturbations of a cosmological model and angular variations of the microwave background,\u201d Astrophys. J. 147 (1967) 73\u201390. [86] DESI Collaboration, K. Lodha et al., \u201cExtended Dark Energy analysis using DESI DR2 BAO measurements,\u201d arXiv:2503.14743 [astro-ph.CO]. [87] Particle Data Group Collaboration, S. Navas et al., \u201cReview of particle physics,\u201d Phys. Rev. D 110 no. 3, (2024) 030001. [88] G. Obied, H. Ooguri, L. Spodyneiko, and C. Vafa, \u201cDe Sitter Space and the Swampland,\u201d arXiv:1806.08362 [hep-th]. 8",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 8,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 1 0.500 0.100} 0.050} 0.001 hes ott eT \u20ac = (87)! (k/ ap He)(He/8) 0.010 (8/H,)\u201d Pse(E) 0.005 err Appendix A: More details of the power spectrum calculation Fig. 4 shows the rescaled power spectrum (\u03b2/H\u22c6)2 P\u03b4t(\u03be) of PT time fluctuations, with \u03be de- fined as the comoving wavenumber k times the average bubble size db = (8\u03c0)1/3vw/(apt\u03b2) right before the PT completes. In this parametrization, the curve is insensitive to (\u03b2/H\u22c6,zpt). We use this curve for the power spectrum in Eq. (11). FIG. 4: Dimensionless power spectrum of PT time fluctuations from [43], rescaled by (\u03b2/H\u22c6)2, plotted vs. the comoving wavenumber ratio \u03be, which characterizes the mode relative to the bubble separation. To determine the parametric dependence of the CMB photon redshift perturbation in Eq. (9), we use the rela- tion in Eq. (8): i dz ; re dz a \"ds QO, +90 +23 0 (+2) /a-n)o brn (4) + Qm(1 + z)3 Zp (1+ 2) + Qm(1 + 2) ia dz re de 1 { 6 lz pt ltz (+2) /a-n)o tra (EL) + %m(1+ 2) (14 aa 7)2a +17 (qb) + =",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 9,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: i dz ; re dz a \"ds QO, +90 +23 0 (+2) /a-n)o brn (4) + Qm(1 + z)3 Zp (1+ 2) + Qm(1 + 2) ia dz re de 1 { 6 lz pt ltz (+2) /a-n)o tra (EL) + %m(1+ 2) (14 aa 7)2a +17 (qb) + = Our goal is to extract the leading-order \u03b4zpt dependence 1. in \u03b4z0 from the equality, using \u03b4z0,\u03b4zpt \u226a r\u00afzpt \u226a Combining the first integrals on both sides of the equal- ity, and using \u2126\u039b + \u2126m \u2248 1 together with the small- redshift approximation, we obtain _\u2014_ Eqs. (A1) and (A3) give the expression r bz & 522 pt rn (1 + Zpt) [2a + Mm(1 + Zpe)3]\u00b0? | ao Jz P [ \u00b0 dz 0 4 (14 aya r)Qx +O (4) + Qm(1 + 2) = Oz. (Al) \u2248 in Eq. (9). The approximation agrees with the full nu- merical integral to within the percent level. To obtain the power spectrum P\u03b4z0(k), we need to cal- culate the two-point correlation function For the second integral on the right-hand side, the de- nominator can be expanded as \u27e8 \u03b4z0(x)\u03b4z0(y) \u27e9 = d3k (2\u03c0)3ei\u20d7k.(\u20d7x \u2212 \u20d7y)2\u03c02 k3 P\u03b4z0(k). (A5)",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 9,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: For the second integral on the right-hand side, the de- nominator can be expanded as \u27e8 \u03b4z0(x)\u03b4z0(y) \u27e9 = d3k (2\u03c0)3ei\u20d7k.(\u20d7x \u2212 \u20d7y)2\u03c02 k3 P\u03b4z0(k). (A5) Zpttozp, dz F \u2014 27a (GW Fpe\u2014dzpt) ee . | pt +dzp Qa +2m 142) . (A2) Zpe (1+ 2) /Qa + Qn (1 + z)8 From the discussion above, the two-point correlation function comes from the correlation of two composite op- erators Here we use the fact that r\u00afzpt \u226a 1 for the PT we con- sider. Combining this with the second integral on the left-hand side, we approximate the remainder as \u2248 \u03b4z2 pt r \u2126\u039b (1 + \u00afzpt)[\u2126\u039b + \u2126m(1 + \u00afzpt)3]3/2 . (A3) \u03b4z0(x)\u03b4z0(y) \u27e9 \u2248 (1 + \u00afzpt)\u2212 2r2 \u21262 \u039b[\u2126\u039b + \u2126m(1 + \u00afzpt)3]\u2212 3 \u03b4z2 pt(x)\u03b4z2 pt(y) , (A6) \u27e8 \u27e8 \u27e9 and we want to express \u03b4z2 pt(x)\u03b4z2 pt(y) in terms of \u27e8 \u27e9 9 + \u2126m(1 + z)3 .",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 9,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: P\u03b4t(k). We first define the Fourier transform2 F[\u03b4z2 pt(x)] = d3xe\u2212 i\u20d7k.\u20d7x\u03b4z2 pt(x), (A7) itz a wa igg _ [ee on 1 eau -/ a = (/ feces *) Sea Mal. Integrate over \u20d7x and \u20d7q gives: pt(\u20d7k) = \u03b4z2 d3p (2\u03c0)3\u03b4zpt(\u20d7p)\u03b4zpt(\u20d7k \u2212 \u20d7p). (A8) The correlation function becomes (525 (@)dz5e(\u00a5)) (A9) Pk ga f Ov ing a et = foe | pet (HORM) 3 3 3, 3 . ak ap | dr | dq eik-f PG (2m) J (2m) J (2m) J (2n)\" (dzn(7)02\u20140(F \u20147)02p0(Dbzn(P'- A) where ... is the equal-time correlator of perturbations \u27e8 \u27e9 in momentum space. Only the two-point correlations be- tween perturbations at x- and y contribute to the scale- dependent power spectrum for the cosmological measure- 2 We thank Sai Chaitanya Tadepalli for providing the following calculation of the two-point correlation function of the composite , ment: (dzpi(7)0zpu(F \u2014 7)b=pe(Ddzp(8- D) = (bz (F)5zp()) (Sz(F \u2014 F)32\u2014(7- 9) + (Bzpe(7)5zpu (9 \u2014 F) (dzp( \u20147)5p() \u00ab (A10) Using the definition of the dimensionless power spectrum",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 10,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: , ment: (dzpi(7)0zpu(F \u2014 7)b=pe(Ddzp(8- D) = (bz (F)5zp()) (Sz(F \u2014 F)32\u2014(7- 9) + (Bzpe(7)5zpu (9 \u2014 F) (dzp( \u20147)5p() \u00ab (A10) Using the definition of the dimensionless power spectrum \u03b4zpt(\u20d7k)\u03b4zpt(\u20d7p) = (2\u03c0)3 \u03b4(\u20d7k + \u20d7p) 2\u03c02 k3 P\u03b4zpt(k), (A11) we perform the volume integrals in Eq. (A9) over \u20d7q and \u20d7p, which correspond to the connected diagrams, and obtain (5z5e(2) 525 \u00a2( \u00a5))conn (A12) i a Pr 8x4 = [| yen [ 3 Pigs (TYP Sy (IK \u2014 (27) (2n)* Pk \u2014 7B where s = \\/k?+7r?\u20142kru. With Eqs. (A5), (A6), (A12) and a 1 etk-@1\u2014@2) (/ Toney (0) f ayes \u00b0P sn) -1 (1 + \u00afzpt)2 (A13) P\u03b4zpt(k) P\u03b4t(k), \u2248 which follows from \u03b4apt/\u00afapt = we obtain \u2212 \u03b4zpt/(1 + \u00afzpt) = H\u22c6\u03b4t, \u21262 \u039b[\u2126\u039b + \u2126m(1 + \u00afzpt)3]\u2212 3 (A14) P\u03b4z0(k) \u2248 k3 dr r P\u03b4zpt(r) 1 1 d\u00b5s\u2212 3 P\u03b4zpt(s). (A15) \u2212 This is the power spectrum we use for the CMB calcula- tion in Eq. (11). operators. 10 \u20d7r r), ), | ,",
+    "metadata": {
+      "doc_id": "fbde592e",
+      "page": 10,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Table from document 'Boiling After the Dust Settles: Constraining First-Order Phase Transitions During Dark Energy Domination' on page 3: 0 10 The \ufb01rst-encounter-surface is anisotropic and located 5 +1 error bar from Planck 2018 is shown for at (line BO in Fig. 1). zpt + zpt(\u2713, ) comparison. zpt = 0.1, r = 0.1 \u03b2/H\u22c6 = 40 result- distance from this entry point to us is: FIG. 2: CMB temperature power spectrum from a PT 80 at \u00afzpt = 0.1 with r = 0.1. Discrete ` points are homogeneous.1 z0 connected for visualization. The +1 error bar from We de\ufb01ne the comoving distance Planck 2018 [43] is shown for comparison. Planck +1 zi determine this \ufb02uctuation, we can compare to the case zpt,r(zi, zf ) = where the PT occurs uniformly at \u00afzpt without \ufb02uctua- zf 200 homogeneous.1 tions. There are no \ufb02uctuations of scattering surface of 100 We de\ufb01ne the comoving distance this case, and z0 = 0 (line AO in Fig. 1). The comoving In the no-PT case, r = 0, and we drop the zpt dependence distance a photon travels from redshift \u00afzpt + zpt(\u2713, ) to 0(zi, zf ).",
+    "metadata": {
+      "id": "3_0",
+      "page": 3,
+      "csv_path": "data/assets/fbde592e/tbl_3_0.csv",
+      "shape": [
+        2,
+        1
+      ],
+      "doc_id": "fbde592e",
+      "type": "tables",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Table from document 'Boiling After the Dust Settles: Constraining First-Order Phase Transitions During Dark Energy Domination' on page 4: 0 1 2 tend \u2265 14 Gyrs r \u2264 3 tend \u2265 22 Gyrs r \u2264 2 r \u2264 1 \u03b4\u00afz r \u2264 0.6 0\u22651% r \u2264 0.4 r \u2264 0.2 r \u2264 0.1 r \u2264 0.04 r \u2264 0.02 r \u2264 0.01 r \u2264 0.005 Incomplete PT r \u2264 0.003 NaN NaN",
+    "metadata": {
+      "id": "4_1",
+      "page": 4,
+      "csv_path": "data/assets/fbde592e/tbl_4_1.csv",
+      "shape": [
+        2,
+        3
+      ],
+      "doc_id": "fbde592e",
+      "type": "tables",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 2: \u0393 = \u03930e- S(t) \u03930e- S(tf)e\\beta(t - tf) , (1) \\approx",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p2_3_2",
+      "page": 2,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "\u0393 = \u03930e\u2212 S(t) \u03930e\u2212 S(tf)e\u03b2(t \u2212 tf) , (1) \u2248",
+      "normalized_text": "\u0393 = \u03930e- S(t) \u03930e- S(tf)e\\beta(t - tf) , (1) \\approx",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 2: P\\deltat(k) = k3 2\\pi2 H\u22c6 \\beta 2 d3r ei\u20d7k \u20d7r\\beta2 \\cdot \u27e8 \\deltatc(\u20d7x)\\deltatc(\u20d7y) \u27e9 , (2)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p2_4_4",
+      "page": 2,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "P\u03b4t(k) = k3 2\u03c02 H\u22c6 \u03b2 2 d3r ei\u20d7k \u20d7r\u03b22 \u00b7 \u27e8 \u03b4tc(\u20d7x)\u03b4tc(\u20d7y) \u27e9 , (2)",
+      "normalized_text": "P\\deltat(k) = k3 2\\pi2 H\u22c6 \\beta 2 d3r ei\u20d7k \u20d7r\\beta2 \\cdot \u27e8 \\deltatc(\u20d7x)\\deltatc(\u20d7y) \u27e9 , (2)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 3: 2 = 01,7 =0.1 Planck +1lo f* [WK?]",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p3_0_1",
+      "page": 3,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "2 = 01,7 =0.1 Planck +1lo f* [WK?]",
+      "normalized_text": "2 = 01,7 =0.1 Planck +1lo f* [WK?]",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 3: zi dz \u03c7zpt,r(zi,zf) = . (5) (1 + z)Hpt(z,zpt,r) zf",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p3_3_3",
+      "page": 3,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "zi dz \u03c7zpt,r(zi,zf) = . (5) (1 + z)Hpt(z,zpt,r) zf",
+      "normalized_text": "zi dz \u03c7zpt,r(zi,zf) = . (5) (1 + z)Hpt(z,zpt,r) zf",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 3: In the no-PT case, r = 0, and we drop the zpt dependence \u03c70(zi,zf).",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p3_3_4",
+      "page": 3,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "In the no-PT case, r = 0, and we drop the zpt dependence \u03c70(zi,zf).",
+      "normalized_text": "In the no-PT case, r = 0, and we drop the zpt dependence \u03c70(zi,zf).",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 3: to write \u03c7zpt,r=0 \u2261",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p3_4_4",
+      "page": 3,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "to write \u03c7zpt,r=0 \u2261",
+      "normalized_text": "to write \u03c7zpt,r=0 \u2261",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 3: Zptt+dzpe XBO 5 = Xzper(Zpts 620) +Xzpe+52per (Zp +O2pe, Zpt) \u00bb 20 (6)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p3_5_2",
+      "page": 3,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "Zptt+dzpe XBO 5 = Xzper(Zpts 620) +Xzpe+52per (Zp +O2pe, Zpt) \u00bb 20 (6)",
+      "normalized_text": "Zptt+dzpe XBO 5 = Xzper(Zpts 620) +Xzpe+52per (Zp +O2pe, Zpt) \u00bb 20 (6)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 3: \u00afzpt+\\deltazpt \u03c7AO = \u03c7\u00afzpt,r(\u00afzpt,0) + \u03c70(\u00afzpt + \\deltazpt, \u00afzpt),(7) 0",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p3_6_1",
+      "page": 3,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "\u00afzpt+\u03b4zpt \u03c7AO = \u03c7\u00afzpt,r(\u00afzpt,0) + \u03c70(\u00afzpt + \u03b4zpt, \u00afzpt),(7) 0",
+      "normalized_text": "\u00afzpt+\\deltazpt \u03c7AO = \u03c7\u00afzpt,r(\u00afzpt,0) + \u03c70(\u00afzpt + \\deltazpt, \u00afzpt),(7) 0",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 4: \u00afzpt+\\deltazpt \u00afzpt+\\deltazpt \u03c7AO = \u03c7BO . 0 \\deltaz0 (8)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p4_0_1",
+      "page": 4,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "\u00afzpt+\u03b4zpt \u00afzpt+\u03b4zpt \u03c7AO = \u03c7BO . 0 \u03b4z0 (8)",
+      "normalized_text": "\u00afzpt+\\deltazpt \u00afzpt+\\deltazpt \u03c7AO = \u03c7BO . 0 \\deltaz0 (8)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 4: (1 + \u00afzpt)2 (10) P\\deltazpt(k) P\\deltat(k). \\approx",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p4_1_3",
+      "page": 4,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "(1 + \u00afzpt)2 (10) P\u03b4zpt(k) P\u03b4t(k). \u2248",
+      "normalized_text": "(1 + \u00afzpt)2 (10) P\\deltazpt(k) P\\deltat(k). \\approx",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 4: P\\deltaz0(k) where",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p4_2_6",
+      "page": 4,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "P\u03b4z0(k) where",
+      "normalized_text": "P\\deltaz0(k) where",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 4: DTT,pt \u2113 = 2\u2113(\u2113 + 1) kmax kmin dk k P\\deltaz0(k)j2 \u2113(k\u2206\u03c4). (13)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p4_2_12",
+      "page": 4,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "DTT,pt \u2113 = 2\u2113(\u2113 + 1) kmax kmin dk k P\u03b4z0(k)j2 \u2113(k\u2206\u03c4). (13)",
+      "normalized_text": "DTT,pt \u2113 = 2\u2113(\u2113 + 1) kmax kmin dk k P\\deltaz0(k)j2 \u2113(k\u2206\u03c4). (13)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 4: minimal crunching time from Eq. (18).",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p4_3_3",
+      "page": 4,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "minimal crunching time from Eq. (18).",
+      "normalized_text": "minimal crunching time from Eq. (18).",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 4: byt [Drt'(r, 8/Ha=)] v= l=lp-1 14 a , (4) l=lp-1",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p4_4_4",
+      "page": 4,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "byt [Drt'(r, 8/Ha=)] v= l=lp\u20141 14 a , (4) l=lp\u20141",
+      "normalized_text": "byt [Drt'(r, 8/Ha=)] v= l=lp-1 14 a , (4) l=lp-1",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 5: \u03c7\u00afzpt,r(\u00afzpt,\\delta\u00afz0) = \u03c70(\u00afzpt,0). (17)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p5_1_6",
+      "page": 5,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "\u03c7\u00afzpt,r(\u00afzpt,\u03b4\u00afz0) = \u03c70(\u00afzpt,0). (17)",
+      "normalized_text": "\u03c7\u00afzpt,r(\u00afzpt,\\delta\u00afz0) = \u03c70(\u00afzpt,0). (17)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 5: 1/4 1 + \u00afzpt r = . 1 + zmax r 1 (19) -",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p5_3_7",
+      "page": 5,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "1/4 1 + \u00afzpt r = . 1 + zmax r 1 (19) \u2212",
+      "normalized_text": "1/4 1 + \u00afzpt r = . 1 + zmax r 1 (19) -",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 6: [hep-ph].",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p6_4_2",
+      "page": 6,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "[hep-ph].",
+      "normalized_text": "[hep-ph].",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 8: [84] https://pla.esac.esa.int/#home.",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p8_5_1",
+      "page": 8,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "[84] https://pla.esac.esa.int/#home.",
+      "normalized_text": "[84] https://pla.esac.esa.int/#home.",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 9: 1 0.500 0.100} 0.050} 0.001 hes ott eT \u20ac = (87)! (k/ ap He)(He/8) 0.010 (8/H,)\u201d Pse(E) 0.005 err",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p9_0_0",
+      "page": 9,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "1 0.500 0.100} 0.050} 0.001 hes ott eT \u20ac = (87)! (k/ ap He)(He/8) 0.010 (8/H,)\u201d Pse(E) 0.005 err",
+      "normalized_text": "1 0.500 0.100} 0.050} 0.001 hes ott eT \u20ac = (87)! (k/ ap He)(He/8) 0.010 (8/H,)\u201d Pse(E) 0.005 err",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 9: _-_",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p9_1_6",
+      "page": 9,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "_\u2014_",
+      "normalized_text": "_-_",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 9: Eqs. (A1) and (A3) give the expression r",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p9_1_7",
+      "page": 9,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "Eqs. (A1) and (A3) give the expression r",
+      "normalized_text": "Eqs. (A1) and (A3) give the expression r",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 9: Jz P [ ^{\\circ} dz 0 4 (14 aya r)Qx +O (4) + Qm(1 + 2) = Oz. (Al) \\approx",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p9_1_10",
+      "page": 9,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "Jz P [ \u00b0 dz 0 4 (14 aya r)Qx +O (4) + Qm(1 + 2) = Oz. (Al) \u2248",
+      "normalized_text": "Jz P [ ^{\\circ} dz 0 4 (14 aya r)Qx +O (4) + Qm(1 + 2) = Oz. (Al) \\approx",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 9: \u27e8 \\deltaz0(x)\\deltaz0(y) \u27e9 = d3k (2\\pi)3ei\u20d7k.(\u20d7x - \u20d7y)2\\pi2 k3 P\\deltaz0(k). (A5)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p9_1_15",
+      "page": 9,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "\u27e8 \u03b4z0(x)\u03b4z0(y) \u27e9 = d3k (2\u03c0)3ei\u20d7k.(\u20d7x \u2212 \u20d7y)2\u03c02 k3 P\u03b4z0(k). (A5)",
+      "normalized_text": "\u27e8 \\deltaz0(x)\\deltaz0(y) \u27e9 = d3k (2\\pi)3ei\u20d7k.(\u20d7x - \u20d7y)2\\pi2 k3 P\\deltaz0(k). (A5)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 9: and we want to express \\deltaz2 pt(x)\\deltaz2 pt(y) in terms of \u27e8 \u27e9 9 + \u2126m(1 + z)3 .",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p9_2_10",
+      "page": 9,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "and we want to express \u03b4z2 pt(x)\u03b4z2 pt(y) in terms of \u27e8 \u27e9 9 + \u2126m(1 + z)3 .",
+      "normalized_text": "and we want to express \\deltaz2 pt(x)\\deltaz2 pt(y) in terms of \u27e8 \u27e9 9 + \u2126m(1 + z)3 .",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 10: F[\\deltaz2 pt(x)] = d3xe- i\u20d7k.\u20d7x\\deltaz2 pt(x), (A7)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p10_0_1",
+      "page": 10,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "F[\u03b4z2 pt(x)] = d3xe\u2212 i\u20d7k.\u20d7x\u03b4z2 pt(x), (A7)",
+      "normalized_text": "F[\\deltaz2 pt(x)] = d3xe- i\u20d7k.\u20d7x\\deltaz2 pt(x), (A7)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 10: itz a wa igg _ [ee on 1 eau -/ a = (/ feces *) Sea Mal.",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p10_0_2",
+      "page": 10,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "itz a wa igg _ [ee on 1 eau -/ a = (/ feces *) Sea Mal.",
+      "normalized_text": "itz a wa igg _ [ee on 1 eau -/ a = (/ feces *) Sea Mal.",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 10: pt(\u20d7k) = \\deltaz2 d3p (2\\pi)3\\deltazpt(\u20d7p)\\deltazpt(\u20d7k - \u20d7p). (A8)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p10_0_4",
+      "page": 10,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "pt(\u20d7k) = \u03b4z2 d3p (2\u03c0)3\u03b4zpt(\u20d7p)\u03b4zpt(\u20d7k \u2212 \u20d7p). (A8)",
+      "normalized_text": "pt(\u20d7k) = \\deltaz2 d3p (2\\pi)3\\deltazpt(\u20d7p)\\deltazpt(\u20d7k - \u20d7p). (A8)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 10: \\deltazpt(\u20d7k)\\deltazpt(\u20d7p) = (2\\pi)3 \\delta(\u20d7k + \u20d7p) 2\\pi2 k3 P\\deltazpt(k), (A11)",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p10_1_4",
+      "page": 10,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "\u03b4zpt(\u20d7k)\u03b4zpt(\u20d7p) = (2\u03c0)3 \u03b4(\u20d7k + \u20d7p) 2\u03c02 k3 P\u03b4zpt(k), (A11)",
+      "normalized_text": "\\deltazpt(\u20d7k)\\deltazpt(\u20d7p) = (2\\pi)3 \\delta(\u20d7k + \u20d7p) 2\\pi2 k3 P\\deltazpt(k), (A11)",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 10: (1 + \u00afzpt)2 (A13) P\\deltazpt(k) P\\deltat(k), \\approx",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p10_1_7",
+      "page": 10,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "(1 + \u00afzpt)2 (A13) P\u03b4zpt(k) P\u03b4t(k), \u2248",
+      "normalized_text": "(1 + \u00afzpt)2 (A13) P\\deltazpt(k) P\\deltat(k), \\approx",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Equation on page 10: P\\deltaz0(k) \\approx",
+    "metadata": {
+      "id": "txt_eqn_fbde592e_p10_1_13",
+      "page": 10,
+      "section": "Introduction",
+      "type": "equations",
+      "equation_text": "P\u03b4z0(k) \u2248",
+      "normalized_text": "P\\deltaz0(k) \\approx",
+      "doc_id": "fbde592e",
+      "weight": 1.0
+    }
+  }
+]

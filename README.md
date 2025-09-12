@@ -38,6 +38,29 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
     3️⃣ Install Dependencies
     pip install -r requirements.txt
 
+    ## System-Level Dependencies (Crucial!)
+    Some of the Python libraries require external tools to be installed on the operating system. These must be installed before running pip install.
+
+    ### Tesseract-OCR
+    Required by unstructured for Optical Character Recognition.
+
+    macOS: brew install tesseract
+
+    Debian/Ubuntu: sudo apt-get install tesseract-ocr
+
+    Windows: Download and run the installer from the Tesseract at UB-Mannheim page.
+
+    ### Poppler
+    Required by unstructured and camelot for PDF rendering.
+
+    macOS: brew install poppler
+
+    Debian/Ubuntu: sudo apt-get install poppler-utils
+
+    Windows: Download the binaries, extract them, and add the bin/ folder to your system's PATH.
+
+    This complete list will ensure that anyone, including the evaluator, can set up and run your project smoothly.
+
     4️⃣ Add API Keys
     Create a .env file in project root:
 

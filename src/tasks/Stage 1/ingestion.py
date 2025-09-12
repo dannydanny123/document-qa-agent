@@ -15,11 +15,7 @@ import tempfile
 import logging
 import warnings
 
-# --- IMPORTS for lightweight image and text processing ---
-from PIL import Image
-import io
-
-# You will need to install these:
+# pls install these:
 # pip install "unstructured[pdf]" langchain
 # also need to install layoutparser and pytesseract for 'unstructured'
 from unstructured.partition.pdf import partition_pdf
@@ -29,6 +25,12 @@ warnings.filterwarnings("ignore", category=DeprecationWarning, module="pypdf")
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+# Navigates from src/tasks/Stage 1/ -> src/
+SRC_ROOT = SCRIPT_DIR.parent.parent
+DATA_DIR = SRC_ROOT / "data"
+ASSETS_DIR = DATA_DIR / "assets"
 
 
 # --- Unchanged Helper Classes and Functions ---
@@ -136,7 +138,7 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
             )
             if not tables:
                 logger.info(f"No lattice tables found in {pdf_path}, trying stream mode")
-                # Second shot: stream mode
+                # Second shot, if first fails: stream mode
                 tables = camelot.read_pdf(
                     pdf_path,
                     pages='all',
@@ -152,38 +154,41 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
                     raw_tables = page.extract_tables()
                     for i, table in enumerate(raw_tables):
                         if table:
-                            # --- SANITIZE DATA HERE ---
+                            # --- SANITIZE DATA ---
                             cleaned_table = [[_sanitize_cell(cell) for cell in row] for row in table]
                             df = pd.DataFrame(cleaned_table)
-                            
-                            os.makedirs(f"data/assets/{doc_id}", exist_ok=True)
-                            csv_path = f"data/assets/{doc_id}/tbl_{page_num}_{i}.csv"
+                                          
+                            doc_assets_dir = ASSETS_DIR / doc_id
+                            doc_assets_dir.mkdir(parents=True, exist_ok=True)
+                            csv_path = doc_assets_dir / f"tbl_{page_num}_{i}.csv"
+
                             df.to_csv(csv_path, index=False, quoting=csv.QUOTE_ALL)
                             extracted.append({
                                 "id": f"{page_num}_{i}", "page": page_num,
-                                "csv_path": csv_path, "shape": df.shape
+                                "csv_path": str(csv_path), "shape": df.shape # Convert Path to string for JSON
                             })
             return extracted
-
+        
         # Process the tables returned by Camelot
         for i, table in enumerate(tables):
             if not table.df.empty:
                 # --- SANITIZE DATA HERE ---
-                # Apply the cleaning function to every cell in the DataFrame
                 df = table.df.applymap(_sanitize_cell)
 
-                os.makedirs(f"data/assets/{doc_id}", exist_ok=True)
-                csv_path = f"data/assets/{doc_id}/tbl_{table.page}_{i}.csv"
+                doc_assets_dir = ASSETS_DIR / doc_id
+                doc_assets_dir.mkdir(parents=True, exist_ok=True)
+                csv_path = doc_assets_dir / f"tbl_{table.page}_{i}.csv"
+
                 df.to_csv(csv_path, index=False, quoting=csv.QUOTE_ALL)
                 extracted.append({
                     "id": f"{table.page}_{i}", "page": table.page,
-                    "csv_path": csv_path, "shape": df.shape
+                    "csv_path": str(csv_path), "shape": df.shape # Convert Path to string for JSON
                 })
 
         logger.info(f"Extracted {len(extracted)} tables for {pdf_path}")
     return extracted
 
-# --- MODIFIED FUNCTION: Simplified to only extract figures ---
+# Simplified to only extract figures
 def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
     """
     Extracts all images from a PDF and saves them as figures,
@@ -192,8 +197,8 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
     doc = fitz.open(pdf_path)
     figures = []
 
-    # make sure the doc gets its own asset folder
-    os.makedirs(f"data/assets/{doc_id}", exist_ok=True)
+    doc_assets_dir = ASSETS_DIR / doc_id
+    doc_assets_dir.mkdir(parents=True, exist_ok=True)
 
     # Loop through each page and image
     for page_num, page in enumerate(doc, 1):
@@ -215,11 +220,12 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
                     bbox = page.get_image_bbox(img)
                     bbox_serializable = [float(b) for b in bbox] if bbox else None
                 except ValueError as e:
-                    # PyMuPDF can choke on some objects → don’t crash, just log
+                    # PyMuPDF can choke on some objects, so don’t crash, just log
                     logger.warning(f"No bbox for image on page {page_num}: {e}")
 
-                # save the raw bytes → png on disk
-                img_path = f"data/assets/{doc_id}/fig_page{page_num}_{img_index}.png"
+                # save the raw bytes to  png on disk
+                # --- PATH FIX: Use the correctly constructed path object ---
+                img_path = doc_assets_dir / f"fig_page{page_num}_{img_index}.png"
                 with open(img_path, "wb") as f:
                     f.write(base_image["image"])
 
@@ -234,7 +240,7 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
                     "id": f"fig_{page_num}_{img_index}",
                     "page": page_num,
                     "bbox": bbox_serializable,
-                    "path": img_path,
+                    "path": str(img_path), # Convert Path to string for JSON
                     "caption": caption
                 })
 
@@ -318,8 +324,6 @@ def extract_text_equations(chunks: List[Dict]) -> List[Dict]:
     unique_equations = deduplicate_equations(text_equations)
     logger.info(f"Extracted {len(unique_equations)} unique text-based equations from chunks.")
     return unique_equations
-# --- END of Equation Block ---
-
 
 # Using a semantic-aware chunking strategy
 def chunk_text_semantic(
@@ -379,7 +383,6 @@ def redact_pii(text: str) -> str:
     text = re.sub(r'\b[\w\.-]+@[\w\.-]+\.\w+\b', '[REDACTED]', text)
     text = re.sub(r'\b\d{3}-\d{2}-\d{4}\b', '[REDACTED]', text)
     return text
-
 
 # --- ADDED: Normalization function for LLM-friendly output ---
 def normalize_equation_text(text: str) -> str:
@@ -465,22 +468,22 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
         raise ValueError("No valid PDFs were ingested.")
     
     return results
-
-
+    
 if __name__ == "__main__":
     # Ensure you have the required libraries installed, pls follow the github Readme.md for installation steps:
     Start = time.time()
-    pdfs = ["data/micro-paper.pdf",
-        "data/math-paper.pdf",
-        "data/physics-paper.pdf",
-    ]
-    if not pdfs or not os.path.exists(pdfs[0]):
-        print(f"Error: Sample PDF not found at '{pdfs[0] if pdfs else 'N/A'}'")
-        print("Please add a PDF to the 'data/' directory to run this script.")
+    
+    # This logic automatically finds all PDFs in the data directory
+    pdfs_to_process = [str(p) for p in DATA_DIR.glob("*.pdf")]
+    
+    if not pdfs_to_process:
+        print("No PDFs found in the data directory to process.")
     else:
-        results = ingest(pdfs)
+        print(f"Found {len(pdfs_to_process)} PDF(s) to process in '{DATA_DIR}'.")
+        results = ingest(pdfs_to_process)
         if results:
             print(f"\nIngestion complete. Processed doc_ids: {list(results.keys())}")
     
     end = time.time()
     print(f"\nTime taken: {end - Start:.2f} seconds, or {(end - Start)/60:.2f} minutes")
+
