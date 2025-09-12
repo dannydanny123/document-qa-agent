@@ -1,9 +1,9 @@
-import os
 import json
 import hashlib
 import re
 from typing import List, Dict, Any
 import time
+import os
 
 # --- Core PDF Processing Libraries ---
 import fitz  # PyMuPDF
@@ -14,8 +14,6 @@ from pathlib import Path
 import tempfile
 import logging
 import warnings
-
-# --- REMOVED HEAVY IMPORTS: easyocr, pix2tex, cv2, numpy are no longer needed ---
 
 # --- IMPORTS for lightweight image and text processing ---
 from PIL import Image
@@ -57,7 +55,7 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
     logger.info(f"Extracting structure from {pdf_path} using unstructured.io...")
     try:
         # I ran into mistakes while using "fast" strategy for speed; so pivoted to "hi_res" for more accurate... but slower, np
-        elements = partition_pdf(pdf_path, strategy="hi_res")
+        elements = partition_pdf(pdf_path, strategy="fast")
     except Exception as e:
         logger.error(f"Unstructured failed for {pdf_path}: {e}")
         # Fallback to a very basic text extraction if unstructured fails
@@ -261,90 +259,90 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
     return figures
 
 
-# --- ADDED: Helper functions for Text-Based Equation Detection ---
-STRONG_OPS = set("=+×÷*/^_{}[]()∑∫√\\")
-TOKEN_DIGIT_RE = re.compile(r'\d')
+# --- REPLACEMENT BLOCK: Top-notch text equation extraction logic ---
+def is_scientific_equation(line: str) -> bool:
+    """
+    A top-notch, production-ready heuristic to verify if a line of text is a
+    scientific equation. This is a high-precision filter.
+    """
+    line = line.strip()
 
-def token_is_strict_math(token: str) -> bool:
-    """A helper function to conservatively check if a single token is mathematical."""
-    t = token.strip()
-    if not t: return False
-    if '\\' in t or any(op in t for op in STRONG_OPS) or re.search(r'\d+/\d+|\d[A-Za-z]|[A-Za-z]\d|[\^_]', t):
-        return True
-    if re.search(r'(alpha|beta|gamma|delta|lambda|mu|sigma|omega|theta|pi)', t, re.I):
-        return True
-    if TOKEN_DIGIT_RE.search(t) and len(re.sub(r'[^A-Za-z0-9]', '', t)) <= 3:
-        return True
-    return False
+    # Rule 1: Reject trivial lines. Catches page numbers and stray references.
+    if len(line.replace(" ", "")) < 3:
+        return False
 
-def text_line_features(line: str) -> Dict:
-    """This computes features for a line of text to help classify it."""
-    tokens = [tk for tk in re.split(r'\s+', line.strip()) if tk]
-    if not tokens:
-        return {"tokens_count": 0}
-    
-    math_flags = [token_is_strict_math(tk) for tk in tokens]
-    token_math_ratio = sum(math_flags) / len(tokens)
-    op_count = sum(c in STRONG_OPS for c in line)
-    digit_count = sum(c.isdigit() for c in line)
-    alpha_tokens = sum(1 for tk in tokens if re.fullmatch(r'[a-zA-Z]{2,}', tk))
-    alpha_ratio = alpha_tokens / len(tokens)
-    avg_tok_len = sum(len(tk) for tk in tokens) / len(tokens)
-    
-    return {
-        "tokens": tokens, "token_math_ratio": token_math_ratio,
-        "op_count": op_count, "digit_count": digit_count,
-        "alpha_ratio": alpha_ratio, "avg_tok_len": avg_tok_len,
-        "tokens_count": len(tokens)
-    }
+    # Rule 2: Actively reject common section headers (e.g., "7 Conclusion").
+    if re.match(r'^\d+(\.\d+)*\s+[A-Za-z]{4,}', line):
+        return False
 
-def heuristic_accept(features: Dict) -> bool:
-    """This is the main heuristic that decides if a line is an equation."""
-    if features.get("tokens_count", 0) == 0:
+    # Rule 3: Require strong structural evidence. Must have an equals sign OR
+    # at least two different common math operators. This is key to rejecting table rows.
+    has_equals = '=' in line
+    operators = re.findall(r'[+\-*/^_{}()\[\]]', line)
+    has_multiple_ops = len(set(operators)) >= 2
+    if not has_equals and not has_multiple_ops:
         return False
-    # These rules are tuned to find lines that are mostly math
-    if features["token_math_ratio"] < 0.5:
+
+    # Rule 4: Check for balanced parentheses and brackets. A very strong signal of well-formed expressions.
+    if line.count('(') != line.count(')') or line.count('[') != line.count(']'):
         return False
-    if features["op_count"] < 1 and features["digit_count"] < 1:
+        
+    # Rule 5: Low ratio of long, prose-like words. Equations don't have many.
+    # We find words with 4 or more letters.
+    words = re.findall(r'[a-zA-Z]{4,}', line)
+    # We allow up to 2 such words for function names like 'softmax' or 'Attention'.
+    if len(words) > 2:
         return False
-    if features["alpha_ratio"] > 0.5 and features["avg_tok_len"] > 4:
+
+    # Rule 6: A line with only numbers, spaces, and dots is likely a table row.
+    # It must contain at least one operator or letter.
+    if len(re.findall(r'[a-zA-Z=+\-*/^_{}()\[\]]', line)) == 0:
         return False
+
+    # If a line passes all these stringent checks, we can be confident it's an equation.
     return True
 
 
-# --- NEW FUNCTION: The "sexy" lightweight text-based equation extraction, lol.
 def extract_text_equations(chunks: List[Dict]) -> List[Dict]:
     """
-    Extracts inline text-based equations from text chunks using a sophisticated heuristic.
-    This is a fast and lightweight alternative to image-based detection.
+    Extracts text equations using a high-precision, multi-line assembly strategy.
     """
     text_equations = []
     
     for chunk in chunks:
-        # We look for equations line-by-line within each text chunk
         lines = chunk['text'].split('\n')
-        
-        for i, line in enumerate(lines):
-            line = line.strip()
-            if not line or len(line) > 300: # Skip empty or overly long lines
-                continue
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
             
-            # Here we apply the powerful heuristic logic
-            features = text_line_features(line)
-            if heuristic_accept(features):
-                logger.info(f"Detected text-based equation on page {chunk['metadata']['page']}: '{line}'")
+            # Use the strict verifier on each potential line
+            if is_scientific_equation(line):
+                # If a line is an equation, check if the next line is a continuation
+                equation_buffer = [line]
+                j = i + 1
+                # A continuation line is usually indented and starts with an operator or is short
+                while j < len(lines) and (lines[j].startswith('  ') or len(lines[j].strip()) < 20):
+                    equation_buffer.append(lines[j].strip())
+                    j += 1
+                
+                merged_text = " ".join(equation_buffer)
+                
+                logger.info(f"Detected equation on page {chunk['metadata']['page']}: '{merged_text}'")
                 text_equations.append({
                     "id": f"txt_eqn_{chunk['chunk_id']}_{i}",
                     "page": chunk['metadata']['page'],
                     "section": chunk['metadata']['section'],
-                    "equation_text": line
+                    "type": "heuristic",
+                    "equation_text": merged_text
                 })
-            
+                
+                i = j # Advance the loop counter past the merged lines
+            else:
+                i += 1 # Move to the next line
+
     logger.info(f"Extracted {len(text_equations)} text-based equations from chunks.")
-        # 🔑 Normalize just before returning
-    for eq in text_equations:
-        eq["equation_text"] = normalize_equation_text(eq["equation_text"])
     return text_equations
+# --- END OF REPLACEMENT BLOCK ---
 
 
 # Using a semantic-aware chunking strategy
@@ -414,59 +412,8 @@ def validate_output(output: Dict) -> bool:
 # and replaces them with [REDACTED] so we don’t leak PII (Personal info stuff) in logs/outputs.
 def redact_pii(text: str) -> str:
     """Redact PII (emails, SSNs) from text for security."""
-    text = re.sub(r'\b[\w\.-]+@[\w\.-]+\w+\b', '[REDACTED]', text)
+    text = re.sub(r'\b[\w\.-]+@[\w\.-]+\.\w+\b', '[REDACTED]', text)
     text = re.sub(r'\b\d{3}-\d{2}-\d{4}\b', '[REDACTED]', text)
-    return text
-
-# delibratly ignoring the Latex_ocr library cuz that way model might "correct" the ? to a +, and broken structure in many cases, risking llm hallucinations.
-def normalize_equation_text(text: str) -> str:
-    """
-    Replaces common Unicode math symbols with their LaTeX equivalents.
-    Ensures equations are standardized before further processing.
-    """
-    normalization_dict = {
-        '−': '-',        # minus
-        '–': '-',        # en dash → minus
-        '—': '-',        # em dash → minus
-        '×': '\\times',  # multiplication
-        '·': '\\cdot',   # middle dot
-        '÷': '\\div',
-        '≤': '\\leq',
-        '≥': '\\geq',
-        '≠': '\\neq',
-        '≈': '\\approx',
-        '±': '\\pm',
-        '∞': '\\infty',
-        '∑': '\\sum',
-        '∏': '\\prod',
-        '∫': '\\int',
-        '√': '\\sqrt',
-        '→': '\\to',
-        '←': '\\leftarrow',
-        '↔': '\\leftrightarrow',
-        '⇔': '\\iff',
-        '°': '^{\\circ}',  # degrees
-        'π': '\\pi',
-        'θ': '\\theta',
-        'λ': '\\lambda',
-        'μ': '\\mu',
-        'σ': '\\sigma',
-        'Δ': '\\Delta',
-        'δ': '\\delta',
-        'α': '\\alpha',
-        'β': '\\beta',
-        'γ': '\\gamma',
-    }
-
-    for uni, latex in normalization_dict.items():
-        text = text.replace(uni, latex)
-
-    return text.strip()
-
-    
-    for unicode_char, latex_command in normalization_dict.items():
-        text = text.replace(unicode_char, latex_command)
-        
     return text
 
 
@@ -484,7 +431,6 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
             structure = extract_structure_with_unstructured(pdf_path)
             doc_id = generate_doc_id(pdf_path, structure["title"])
             
-            # --- UPDATED LOGIC ---
             # Step 2: Extract tables and figures.
             tables = extract_tables(pdf_path, doc_id)
             figures = extract_figures(pdf_path, doc_id)
@@ -537,7 +483,7 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
 if __name__ == "__main__":
     # Ensure you have the required libraries installed, pls follow the github Readme.md for installation steps:
     Start = time.time()
-    sample_pdfs = ["data/test.pdf"] # Add your files
+    sample_pdfs = ["data/All you need is attention.pdf"] # Add your files
     if not sample_pdfs or not os.path.exists(sample_pdfs[0]):
         print(f"Error: Sample PDF not found at '{sample_pdfs[0] if sample_pdfs else 'N/A'}'")
         print("Please add a PDF to the 'data/' directory to run this script.")
