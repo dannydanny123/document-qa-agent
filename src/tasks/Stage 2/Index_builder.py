@@ -13,11 +13,13 @@ from typing import List, Dict
 
 
 # --- Configuration ---
-SRC_DIR = Path("src")
-TASKS_DIR = SRC_DIR / "tasks"
-DATA_DIR = SRC_DIR / "data"
+SCRIPT_DIR = Path(__file__).resolve().parent
+# Navigates from .../src/tasks/Stage 2/ -> .../src/
+SRC_ROOT = SCRIPT_DIR.parent.parent
+DATA_DIR = SRC_ROOT / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
-INDEX_DIR = DATA_DIR / "index"
+INDEX_DIR = DATA_DIR / "index" # All index files will be saved here.
+
 
 INDEX_DIR.mkdir(parents=True, exist_ok=True)
 MAPPING_FILE = INDEX_DIR / "indexed_documents.json"
@@ -53,7 +55,6 @@ def table_to_text(csv_path: str, title: str, page: int) -> str:
     except Exception:
         return ""
 
-# --- UPGRADE: This function is now metadata-agnostic and weights content ---
 def load_and_prepare_documents(processed_dir: Path) -> List[Dict]:
     """
     Scans processed data and creates a unified list of "indexable documents"
@@ -146,10 +147,12 @@ def build_and_save_indexes(documents: List[Dict], index_dir: Path):
     with open(MAPPING_FILE, "w", encoding="utf-8") as f:
         json.dump(documents, f, indent=2)
     print("  - Mapping file saved.")
-
+    
 if __name__ == "__main__":
     start = time.time()
     print("--- Loading Smart Index Builder Engine ! ---")
+    PROCESSED_DIR = DATA_DIR / "processed"
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     prepared_documents = load_and_prepare_documents(PROCESSED_DIR)
     build_and_save_indexes(prepared_documents, INDEX_DIR)
     print(f"\n--- Indexing Complete ! ---")

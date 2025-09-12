@@ -3,7 +3,7 @@ import subprocess
 from pathlib import Path
 import shutil
 import time
-
+import os
 # --- Configuration ---
 # This script is designed to be run from the project root directory: 'document-qa-agent'
 # All paths are relative to this root, matching your specified structure.
@@ -12,6 +12,12 @@ TASKS_DIR = SRC_DIR / "tasks"
 DATA_DIR = SRC_DIR / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 INDEX_DIR = DATA_DIR / "index"
+ASSETS_DIR = DATA_DIR / "assets"
+os.makedirs(DATA_DIR, exist_ok=True)
+os.makedirs(PROCESSED_DIR, exist_ok=True)
+os.makedirs(INDEX_DIR, exist_ok=True)
+os.makedirs(ASSETS_DIR, exist_ok=True)
+
 
 INGESTION_SCRIPT = TASKS_DIR / "Stage 1" / "ingestion.py"
 INDEX_BUILDER_SCRIPT = TASKS_DIR / "Stage 2" / "Index_builder.py"

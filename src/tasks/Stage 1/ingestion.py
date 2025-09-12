@@ -26,10 +26,9 @@ warnings.filterwarnings("ignore", category=DeprecationWarning, module="pypdf")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-SCRIPT_DIR = Path(__file__).resolve().parent
-# Navigates from src/tasks/Stage 1/ -> src/
-SRC_ROOT = SCRIPT_DIR.parent.parent
-DATA_DIR = SRC_ROOT / "data"
+SRC_DIR = Path("src")
+DATA_DIR = SRC_DIR / "data"
+PROCESSED_DIR = DATA_DIR / "processed"
 ASSETS_DIR = DATA_DIR / "assets"
 
 
@@ -57,7 +56,7 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
     logger.info(f"Extracting structure from {pdf_path} using unstructured.io...")
     try:
         # I ran into mistakes while using "fast" strategy for speed; so pivoted to "hi_res" for more accurate... but slower, np
-        elements = partition_pdf(pdf_path, strategy="hi_res")
+        elements = partition_pdf(pdf_path, strategy="fast")
     except Exception as e:
         logger.error(f"Unstructured failed for {pdf_path}: {e}")
         # Fallback to a very basic text extraction if unstructured fails
@@ -452,7 +451,7 @@ def ingest(pdf_paths: List[str]) -> Dict[str, Dict]:
                 continue
             
             # Step 6: Save the output !
-            output_dir = Path("data/processed") / doc_id
+            output_dir = PROCESSED_DIR / doc_id
             output_dir.mkdir(parents=True, exist_ok=True)
             with open(output_dir / "metadata.json", "w", encoding="utf-8") as f:
                 json.dump(output, f, ensure_ascii=False, indent=4, cls=CustomJSONEncoder)
