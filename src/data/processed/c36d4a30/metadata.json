@@ -1,0 +1,139 @@
+{
+    "doc_id": "c36d4a30",
+    "title": "Skin Seoul Competency Assessment AI Agent Automation Engineer (Beauty E-Commerce)",
+    "abstract": "",
+    "sections": [],
+    "chunks": [
+        {
+            "chunk_id": "c36d4a30_p1_0",
+            "text": "Skin Seoul Competency Assessment AI Agent Automation Engineer (Beauty E-Commerce)\nDaniel Danny Kennedy 📩ddinny@gmail.com 📞+91 9393085959\nIntroduction: This document shows my approach to addressing the e-commerce automated merchandising challenge. The process begins with deploying a transparent ranking algorithm as a strategic baseline. Over time, the system evolves from simple learning to autonomous optimization, intelligently adapting and perfecting its ranking strategy in real time.This assessment challenged me to translate qualitative objectives, like ‘enhancing discovery,’ into a measurable ranking algorithm — moving from abstract goals to a precise, quantitative formula.",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 1,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "c36d4a30_p1_1",
+            "text": "1. Selected Touchpoint and Rationale ➔ on the main page to engage visitors immediately. ➔ ➔ on-site product merchandising. This agent will achieve this not only by historical sales data but also with proactive market intelligence to enhance product discovery and customer engagement. ➔ Rationale: The homepage has the widest reach at the top of the sales funnel, where users are most open to discovery. Optimizing this high-visibility space creates a strong first impression and drives immediate impact on conversions and customer experience.\nTouchpoint: “Homepage Carousels” (\"Best Sellers\" Section).This displays rotating product highlights\nUser Context: Top of the sales funnel, users are browsing K-Beauty casually, not yet committed. Business Objective: To maximize revenue by deploying an AI agent that automates and optimizes",
+            "start_pos": 685,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 1,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "c36d4a30_p1_2",
+            "text": "2. Defining Data Requirements (What Info We Need from the Dataset?) As an AI/ML Student, I naturally approached the mock data analytically and ran a Python-based exploration to uncover insights. I leveraged Google Colab to implement a Scoring Algorithm. I’ve extended the challenge by implementing a demo Skin Seoul website frontend (using Python Flask) with a clean, intuitive UI/UX that records basic user activity and feeds it into the “ML model” (MAB Algorithm) to fine-tune for optimal weights. Please Visit my Colab Notebook: https://colab.research.google.com/drive/1BQ4YNl0xV_z75XI3-RCIlikTbJ9HfGA0?usp=sharing ➔ Margin using the Volume Sold, Units in Stock, Price, and COGS data. Strategic attributes like Brand Priority, Inventory Freshness, and Views were then derived from the Brand Tier, Days of Inventory, and Views columns. ➔ Derived Fields/Columns: Profit Margin = ($ - COGS) / $; Sell-Through Rate = Sold / (Stock + Sold) ➔ Assumptions: The model requires a hybrid data pipeline,",
+            "start_pos": 1518,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 1,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "c36d4a30_p1_3",
+            "text": "Days of Inventory, and Views columns. ➔ Derived Fields/Columns: Profit Margin = ($ - COGS) / $; Sell-Through Rate = Sold / (Stock + Sold) ➔ Assumptions: The model requires a hybrid data pipeline, pulling internal data (sales, inventory, margin) from our analytics API and enriching it with external live internet data streams for market intelligence (social media buzz, competitor pricing, and product review sentiment).",
+            "start_pos": 2318,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 1,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "c36d4a30_p1_4",
+            "text": "3. Analytical Logic Design: ➔ ➔\n1: Filters: Units in Stock >= 10 (ensure availability) & Volume Sold Last Month >= 50 (proven demand). 2: Scoring Function: “The 4D Product Ranking Algorithm”\nMy first algorithm was too reactive, relying only on given data. Introducing the 4D Ranking Algorithm: a holistic system that is both reactive to Historical Data and proactive to market opportunities, generating a single intelligent score. Below are brief explanations of each term in the “Four Dimensions”: 1. “Core Performance” first identifies proven top-performers by analyzing raw sales velocity and efficiency. 2. \"Core Economics\" ensures our products make money by prioritizing high profits and efficient inventory. 3.“Market Intelligence” scans the internet, capitalizing on social media buzz and competitive advantages. 4. \"Customer's Voice\" adds brand reputation and product quality to the score, based on customer reviews.",
+            "start_pos": 2739,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 1,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "c36d4a30_p2_0",
+            "text": "➔ 3. Refresh Cadence: I must work backward from the modern customer’s real-time needs. If a product trends on TikTok or Instagram at 11 AM, it must be capitalized immediately—not the next day. That’s why I chose a 4-hour refresh cadence to meet this demand and serve customers what’s relevant now.\n4. Merchandising Goals and Design Constraints ➔ Goals:\n1. Drive conversions & AOV by ranking on multiple factors like profitability, not just past sales. 2. Enhance discovery by proactively identifying and boosting products based on social media & seasonal trends. 3. Automate strategically to reduce manual curation by ≈ 80% Assuming that the AI agent automates all routine ranking tasks, the merchandiser's role will shift from manual curation to high-level strategic oversight.\n4. Strengthen brand partnerships by ensuring key brands receive strategic visibility.\n➔ Constraints:",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 2,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "c36d4a30_p2_1",
+            "text": "4. Strengthen brand partnerships by ensuring key brands receive strategic visibility.\n➔ Constraints:\n1. The model is restricted to validation on a mock dataset with hardcoded algorithm weights. 2. The 4-hour refresh cadence is restricted by technical and resource limitations.\n5. Process Flow Map (multi-phase, cyclical, and robust system)\nPhase 1 – Automated Ranking: Every 4 hours, a CRON job pulls internal (sales, inventory) and external (social buzz, competitor prices) data. The 4D algorithm scores products, outputs a ranked JSON feed, and supports manual overrides via a dashboard, with full process logging. Phase 2 – Continuous Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent that dynamically adjusts the 4D formula’s weights to align with business goals. Deployment: A CI/CD pipeline ensures automated testing, reliable updates, and rapid iteration.",
+            "start_pos": 779,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 2,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "c36d4a30_p2_2",
+            "text": "Conclusion 💫 This assessment helped me hone my data analytical skills and business acumen while challenging me in multiple ways. The solution includes: a proactive 4D Ranking Algorithm that balances proven performance with profitability, while fusing market intelligence with the customer's voice. It proves we can move beyond simply reacting to sales data and start proactively shaping customer demand. Ultimately, this isn't just about optimizing a feature; it's about challenging the static nature of e-commerce itself by “Leveraging AI.”",
+            "start_pos": 1682,
+            "metadata": {
+                "doc_id": "c36d4a30",
+                "page": 2,
+                "section": "Introduction"
+            }
+        }
+    ],
+    "tables": [
+        {
+            "id": "2_0",
+            "page": 2,
+            "csv_path": "src\\data\\assets\\c36d4a30\\tbl_2_0.csv",
+            "shape": [
+                2,
+                1
+            ]
+        }
+    ],
+    "figures": [
+        {
+            "id": "fig_2_0",
+            "page": 2,
+            "bbox": [
+                349.3822937011719,
+                18.0,
+                603.8677368164062,
+                209.25
+            ],
+            "path": "src\\data\\assets\\c36d4a30\\fig_page2_0.png",
+            "caption": "aints \ne profitability, not just past sales. \nd\nt b\nd\ni l\ndi\n&\nl t\nd"
+        },
+        {
+            "id": "fig_2_1",
+            "page": 2,
+            "bbox": [
+                15.75,
+                18.0,
+                349.5,
+                127.5
+            ],
+            "path": "src\\data\\assets\\c36d4a30\\fig_page2_1.png",
+            "caption": "➔​ 3. Refresh Cadence: I must work backward from the modern \ncustomer’s real-time needs. If a product trends on TikTok or \nInstagram at 11 AM, it must be capitalized immediately—not the"
+        },
+        {
+            "id": "fig_2_2",
+            "page": 2,
+            "bbox": [
+                141.75,
+                376.6317138671875,
+                599.25,
+                592.6317138671875
+            ],
+            "path": "src\\data\\assets\\c36d4a30\\fig_page2_2.png",
+            "caption": "Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent \nhe 4D formula’s weights to align with business goals. \npeline ensures automated testing, reliable updates, and rapid iteration."
+        }
+    ],
+    "equations": [],
+    "full_text_preview": "Skin Seoul Competency Assessment AI Agent Automation Engineer (Beauty E-Commerce)\n\nDaniel Danny Kennedy 📩[REDACTED] 📞+91 9393085959\n\nIntroduction: This document shows my approach to addressing the e-commerce automated merchandising challenge. The process begins with deploying a transparent ranking algorithm as a strategic baseline. Over time, the system evolves from simple learning to autonomous optimization, intelligently adapting and perfecting its ranking strategy in real time.This assessment challenged me to translate qualitative objectives, like ‘enhancing discovery,’ into a measurable ranking algorithm — moving from abstract goals to a precise, quantitative formula.\n\n1. Selected Touchpoint and Rationale ➔ on the main page to engage visitors immediately. ➔ ➔ on-site product merchandising. This agent will achieve this not only by historical sales data but also with proactive market intelligence to enhance product discovery and customer engagement. ➔ Rationale: The homepage has the widest reach at the top of the sales funnel, where users are most open to discovery. Optimizing this high-visibility space creates a strong first impression and drives immediate impact on conversions and customer experience.\n\nTouchpoint: “Homepage Carousels” (\"Best Sellers\" Section).This displays rotating product highlights\n\nUser Context: Top of the sales funnel, users are browsing K-Beauty casually, not yet committed. Business Objective: To maximize revenue by deploying an AI agent that automates and optimizes\n\n2. Defining Data Requirements (What Info We Need from the Dataset?) As an AI/ML Student, I naturally approached the mock data analytically and ran a Python-based exploration to uncover insights. I leveraged Google Colab to implement a Scoring Algorithm. I’ve extended the challenge by implementing a demo Skin Seoul website frontend (using Python Flask) with a clean, intuitive UI/UX that records basic user activity and feeds it into the “ML model” (MAB Algorithm) to fine-tune for"
+}

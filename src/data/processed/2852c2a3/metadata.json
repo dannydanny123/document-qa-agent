@@ -1,0 +1,42 @@
+{
+    "doc_id": "2852c2a3",
+    "title": "Particulars",
+    "abstract": "",
+    "sections": [],
+    "chunks": [
+        {
+            "chunk_id": "2852c2a3_p1_0",
+            "text": "Particulars\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\nJanuary\nFebruary\nMarch\nTotal\nTHE PLAZA HOTEL\nOutlet wise revenue comparative Statement from (April & March FY 2017-18 & 2018-19)\nRoom Revenue - 2017-18 Room Revenue - 2018-19 Coffee Shop - 2017-18 Coffee Shop - 2018-19 Banquets - 2017-18 Banquets - 2018-19 Room Service - 2017-18 Room Service - 2018-19 Laundry -2017-18 Laundry -2018-19 Mis Income - 2017-18 Mis Income - 2018-19 Total - 2017-18 Total - 2018-19\n32.54\n32.33\n15.61\n15.33\n26.7\n29.68\n3.02\n3.43\n0.75\n1.02\n0.68\n0.69\n37.41\n26.23\n15.14\n12.77\n26.63\n23.46\n3.4\n3.16\n0.91\n1.36\n0.98\n0.95\n35.3\n28.41\n14.94\n15.25\n36.02\n39.49\n3.16\n3.45\n1.05\n1.16\n0.75\n0.44\n34.04\n30.97\n14.41\n16.9\n38.29\n32.71\n2.85\n4.07\n0.98\n1.23\n1.36\n0.42\n37.38\n35.59\n15.6\n16.21\n34.77\n50.34\n2.98\n3.93\n1.25\n1.19\n1.21\n1.71\n30.15\n29.86\n14.06\n14.65\n23.04\n35.71\n3.82\n4.07\n0.88\n1.08\n0.75\n0.84\n41.51\n41.68\n14.38\n17.37\n49.18\n39.6\n2.34\n4.31\n1.05\n0.98\n0.69\n0.64\n35.44\n35.69\n14.47\n15.73\n44.05\n38.09\n3.18\n5.73\n0.94\n1.32",
+            "start_pos": 0,
+            "metadata": {
+                "doc_id": "2852c2a3",
+                "page": 1,
+                "section": "Introduction"
+            }
+        },
+        {
+            "chunk_id": "2852c2a3_p1_1",
+            "text": "1.21\n1.71\n30.15\n29.86\n14.06\n14.65\n23.04\n35.71\n3.82\n4.07\n0.88\n1.08\n0.75\n0.84\n41.51\n41.68\n14.38\n17.37\n49.18\n39.6\n2.34\n4.31\n1.05\n0.98\n0.69\n0.64\n35.44\n35.69\n14.47\n15.73\n44.05\n38.09\n3.18\n5.73\n0.94\n1.32\n0.58\n1.02\n37.94\n39.55\n23.63\n15.65\n33.17\n48.26\n3.17\n5.23\n1.39\n1.11\n0.67\n0.56\n26.27\n30.21\n17.17\n23.45\n32.14\n38.05\n2.92\n3.1\n1.02\n1.01\n0.8\n0.66\n23.94\n29.64\n13.7\n12.74\n31.85\n48.74\n2.62\n3.15\n1.01\n0.74\n0.75\n0.68\n24.24\n24.37\n13.07\n12.96\n32.81\n33.23\n2.6\n2.71\n0.99\n0.86\n0.67\n0.73\n396.16\n384.53\n186.18\n189.01\n408.65\n457.36\n36.06\n46.34\n12.22\n13.06\n9.89\n9.34\n79.3\n84.47\n91.22\n91.93\n93.19\n72.7\n109.15\n98.66\n99.97\n80.32\n73.87\n74.38\n1049.16\n82.48\n67.93\n88.2\n86.3\n108.97\n86.21\n104.58\n97.58\n110.36\n96.48\n95.69\n74.86\n1099.64",
+            "start_pos": 801,
+            "metadata": {
+                "doc_id": "2852c2a3",
+                "page": 1,
+                "section": "Introduction"
+            }
+        }
+    ],
+    "tables": [
+        {
+            "id": "1_0",
+            "page": 1,
+            "csv_path": "src\\data\\assets\\2852c2a3\\tbl_1_0.csv",
+            "shape": [
+                14,
+                15
+            ]
+        }
+    ],
+    "figures": [],
+    "equations": [],
+    "full_text_preview": "Particulars\n\nApril\n\nMay\n\nJune\n\nJuly\n\nAugust\n\nSeptember\n\nOctober\n\nNovember\n\nDecember\n\nJanuary\n\nFebruary\n\nMarch\n\nTotal\n\nTHE PLAZA HOTEL\n\nOutlet wise revenue comparative Statement from (April & March FY 2017-18 & 2018-19)\n\nRoom Revenue - 2017-18 Room Revenue - 2018-19 Coffee Shop - 2017-18 Coffee Shop - 2018-19 Banquets - 2017-18 Banquets - 2018-19 Room Service - 2017-18 Room Service - 2018-19 Laundry -2017-18 Laundry -2018-19 Mis Income - 2017-18 Mis Income - 2018-19 Total - 2017-18 Total - 2018-19\n\n32.54\n\n32.33\n\n15.61\n\n15.33\n\n26.7\n\n29.68\n\n3.02\n\n3.43\n\n0.75\n\n1.02\n\n0.68\n\n0.69\n\n37.41\n\n26.23\n\n15.14\n\n12.77\n\n26.63\n\n23.46\n\n3.4\n\n3.16\n\n0.91\n\n1.36\n\n0.98\n\n0.95\n\n35.3\n\n28.41\n\n14.94\n\n15.25\n\n36.02\n\n39.49\n\n3.16\n\n3.45\n\n1.05\n\n1.16\n\n0.75\n\n0.44\n\n34.04\n\n30.97\n\n14.41\n\n16.9\n\n38.29\n\n32.71\n\n2.85\n\n4.07\n\n0.98\n\n1.23\n\n1.36\n\n0.42\n\n37.38\n\n35.59\n\n15.6\n\n16.21\n\n34.77\n\n50.34\n\n2.98\n\n3.93\n\n1.25\n\n1.19\n\n1.21\n\n1.71\n\n30.15\n\n29.86\n\n14.06\n\n14.65\n\n23.04\n\n35.71\n\n3.82\n\n4.07\n\n0.88\n\n1.08\n\n0.75\n\n0.84\n\n41.51\n\n41.68\n\n14.38\n\n17.37\n\n49.18\n\n39.6\n\n2.34\n\n4.31\n\n1.05\n\n0.98\n\n0.69\n\n0.64\n\n35.44\n\n35.69\n\n14.47\n\n15.73\n\n44.05\n\n38.09\n\n3.18\n\n5.73\n\n0.94\n\n1.32\n\n0.58\n\n1.02\n\n37.94\n\n39.55\n\n23.63\n\n15.65\n\n33.17\n\n48.26\n\n3.17\n\n5.23\n\n1.39\n\n1.11\n\n0.67\n\n0.56\n\n26.27\n\n30.21\n\n17.17\n\n23.45\n\n32.14\n\n38.05\n\n2.92\n\n3.1\n\n1.02\n\n1.01\n\n0.8\n\n0.66\n\n23.94\n\n29.64\n\n13.7\n\n12.74\n\n31.85\n\n48.74\n\n2.62\n\n3.15\n\n1.01\n\n0.74\n\n0.75\n\n0.68\n\n24.24\n\n24.37\n\n13.07\n\n12.96\n\n32.81\n\n33.23\n\n2.6\n\n2.71\n\n0.99\n\n0.86\n\n0.67\n\n0.73\n\n396.16\n\n384.53\n\n186.18\n\n189.01\n\n408.65\n\n457.36\n\n36.06\n\n46.34\n\n12.22\n\n13.06\n\n9.89\n\n9.34\n\n79.3\n\n84.47\n\n91.22\n\n91.93\n\n93.19\n\n72.7\n\n109.15\n\n98.66\n\n99.97\n\n80.32\n\n73.87\n\n74.38\n\n1049.16\n\n82.48\n\n67.93\n\n88.2\n\n86.3\n\n108.97\n\n86.21\n\n104.58\n\n97.58\n\n110.36\n\n96.48\n\n95.69\n\n74.86\n\n1099.64"
+}

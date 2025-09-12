@@ -13,6 +13,7 @@ from typing import List, Dict
 
 
 # --- Configuration ---
+# --- FIX: Paths are now correctly defined based on the script's location ---
 SCRIPT_DIR = Path(__file__).resolve().parent
 # Navigates from .../src/tasks/Stage 2/ -> .../src/
 SRC_ROOT = SCRIPT_DIR.parent.parent
@@ -20,9 +21,11 @@ DATA_DIR = SRC_ROOT / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 INDEX_DIR = DATA_DIR / "index" # All index files will be saved here.
 
-
 INDEX_DIR.mkdir(parents=True, exist_ok=True)
 MAPPING_FILE = INDEX_DIR / "indexed_documents.json"
+
+# --- CRITICAL FIX: The incorrect mkdir call on a file path has been removed ---
+# MAPPING_FILE.mkdir(parents=True, exist_ok=True) # This was the line causing the error.
 
 # --- UPGRADE: Enhanced text cleaning and normalization ---
 def normalize_text(text: str) -> str:
@@ -55,6 +58,7 @@ def table_to_text(csv_path: str, title: str, page: int) -> str:
     except Exception:
         return ""
 
+# --- UPGRADE: This function is now metadata-agnostic and weights content ---
 def load_and_prepare_documents(processed_dir: Path) -> List[Dict]:
     """
     Scans processed data and creates a unified list of "indexable documents"
@@ -105,7 +109,9 @@ def load_and_prepare_documents(processed_dir: Path) -> List[Dict]:
                 # Normalize the final content string
                 normalized_content = normalize_text(content)
                 if normalized_content:
-                    metadata = item.get("metadata", item) # Chunks have nested metadata
+                    # --- CRITICAL FIX: Create a copy of the metadata to prevent reference bugs ---
+                    # Instead of modifying the original dictionary, we work with a safe copy.
+                    metadata = item.get("metadata", item).copy()
                     metadata["doc_id"] = doc_id
                     metadata["type"] = key
                     metadata["weight"] = weight_map.get(key, 1.0)
@@ -147,13 +153,18 @@ def build_and_save_indexes(documents: List[Dict], index_dir: Path):
     with open(MAPPING_FILE, "w", encoding="utf-8") as f:
         json.dump(documents, f, indent=2)
     print("  - Mapping file saved.")
-    
+
 if __name__ == "__main__":
     start = time.time()
     print("--- Loading Smart Index Builder Engine ! ---")
+    
+    # Correctly define the processed directory path
     PROCESSED_DIR = DATA_DIR / "processed"
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    
     prepared_documents = load_and_prepare_documents(PROCESSED_DIR)
     build_and_save_indexes(prepared_documents, INDEX_DIR)
+    
     print(f"\n--- Indexing Complete ! ---")
     print(f"Total time taken: {time.time() - start:.2f} seconds")
+

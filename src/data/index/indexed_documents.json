@@ -1,17 +1,17 @@
 [
   {
-    "content": "Title: Atom Interferometer Phase Shear and Spacetime Sectional Curvature. Abstract:",
+    "content": "Title: Particulars. Abstract:",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "2852c2a3",
       "page": 1,
       "type": "summary",
       "weight": 3.0
     }
   },
   {
-    "content": "Section: Introduction. Text: 5 2 0 2 g u A 9 2 ] h p - m o t a . s c i s y h p [ 1 v 1 3 3 1 2 . 8 0 5 2 : v i X r a Atom Interferometer Phase Shear and Spacetime Sectional Curvature Hunter Swan\u2217 and Jason M. Hogan\u2020 Department of Physics, Stanford University, Stanford, California 94305, USA (Dated: September 1, 2025)",
+    "content": "Section: Introduction. Text: Particulars April May June July August September October November December January February March Total THE PLAZA HOTEL Outlet wise revenue comparative Statement from (April & March FY 2017-18 & 2018-19) Room Revenue - 2017-18 Room Revenue - 2018-19 Coffee Shop - 2017-18 Coffee Shop - 2018-19 Banquets - 2017-18 Banquets - 2018-19 Room Service - 2017-18 Room Service - 2018-19 Laundry -2017-18 Laundry -2018-19 Mis Income - 2017-18 Mis Income - 2018-19 Total - 2017-18 Total - 2018-19 32.54 32.33 15.61 15.33 26.7 29.68 3.02 3.43 0.75 1.02 0.68 0.69 37.41 26.23 15.14 12.77 26.63 23.46 3.4 3.16 0.91 1.36 0.98 0.95 35.3 28.41 14.94 15.25 36.02 39.49 3.16 3.45 1.05 1.16 0.75 0.44 34.04 30.97 14.41 16.9 38.29 32.71 2.85 4.07 0.98 1.23 1.36 0.42 37.38 35.59 15.6 16.21 34.77 50.34 2.98 3.93 1.25 1.19 1.21 1.71 30.15 29.86 14.06 14.65 23.04 35.71 3.82 4.07 0.88 1.08 0.75 0.84 41.51 41.68 14.38 17.37 49.18 39.6 2.34 4.31 1.05 0.98 0.69 0.64 35.44 35.69 14.47 15.73 44.05 38.09 3.18 5.73 0.94 1.32",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "2852c2a3",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -19,9 +19,9 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: Atom interferometry is a natural laboratory for precision tests of general relativity, but there is no simple relationship between atom interferometer phase and geometric properties of spacetime. Here we show that a different atom interferometer observable, the phase shear, can be expressed directly as the integrated sectional curvature over a spacetime surface enclosed by the interferometer arms and final beamsplitter. This is a consequence of a generalized Gauss-Bonnet theorem, which also explicitly computes small correction terms arising from gravitational redshift of atom optics pulses. This synthesis of quantum mechanics, relativity, and differential geometry affords a manifestly coordinate-free and representation-free means of measuring spacetime properties. Additionally, it provides a convenient computational tool for predicting atom interferometer properties in arbitrary background spacetimes.",
+    "content": "Section: Introduction. Text: 1.21 1.71 30.15 29.86 14.06 14.65 23.04 35.71 3.82 4.07 0.88 1.08 0.75 0.84 41.51 41.68 14.38 17.37 49.18 39.6 2.34 4.31 1.05 0.98 0.69 0.64 35.44 35.69 14.47 15.73 44.05 38.09 3.18 5.73 0.94 1.32 0.58 1.02 37.94 39.55 23.63 15.65 33.17 48.26 3.17 5.23 1.39 1.11 0.67 0.56 26.27 30.21 17.17 23.45 32.14 38.05 2.92 3.1 1.02 1.01 0.8 0.66 23.94 29.64 13.7 12.74 31.85 48.74 2.62 3.15 1.01 0.74 0.75 0.68 24.24 24.37 13.07 12.96 32.81 33.23 2.6 2.71 0.99 0.86 0.67 0.73 396.16 384.53 186.18 189.01 408.65 457.36 36.06 46.34 12.22 13.06 9.89 9.34 79.3 84.47 91.22 91.93 93.19 72.7 109.15 98.66 99.97 80.32 73.87 74.38 1049.16 82.48 67.93 88.2 86.3 108.97 86.21 104.58 97.58 110.36 96.48 95.69 74.86 1099.64",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "2852c2a3",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -29,9 +29,33 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: From its earliest days, atom interferometry has been understood to be an excellent technique for precision measurement of gravity [1]. Recent years have seen a rapid development of atom interferometer (AI) technol- ogy for such applications as geodesy [2, 3], gravitational wave detection [4\u20137], and weak equivalence principle tests [8\u201312]. Various formalisms exist for describing observable AI features [13\u201317], but the relationship between these features and intrinsic geometric properties of spacetime is often opaque. This is due partly to the confounding influence of non-gravitational effects and partly to the algebraic difficulty of modeling typical AI geometries. The main observable in an AI is the phase \u2206\u03d5, which a failure to close in momentum space, and manifests as a periodic modulation of the interferometer output ports. Phase shear due to a gravity gradient has been measured experimentally [24] and is an important effect for AI weak equivalence principle tests [25].",
+    "content": "Table from document 'Particulars' on page 1: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Particulars Room Revenue - 2017-18 Room Revenue - 2018-19 Coffee Shop - 2017-18 Coffee Shop - 2018-19 Banquets - 2017-18 Banquets - 2018-19 Room Service - 2017-18 Room Service - 2018-19 Laundry -2017-18 NaN Laundry -2018-19 Mis Income - 2017-18 Mis Income - 2018-19 NaN Total - 2017-18 Total - 2018-19 April 32.54 32.33 15.61 15.33 26.7 29.68 3.02 3.43 0.75 1.02 0.68 0.69 79.3 82.48 May 37.41 26.23 15.14 12.77 26.63 23.46 3.4 3.16 0.91 1.36 0.98 0.95 84.47 67.93 June 35.3 28.41 14.94 15.25 36.02 39.49 3.16 3.45 1.05 1.16 0.75 0.44 91.22 88.2 July 34.04 30.97 14.41 16.9 38.29 32.71 2.85 4.07 0.98 1.23 1.36 0.42 91.93 86.3 August 37.38 35.59 15.6 16.21 34.77 50.34 2.98 3.93 1.25 1.19 1.21 1.71 93.19 108.97 September 30.15 29.86 14.06 14.65 23.04 35.71 3.82 4.07 0.88 1.08 0.75 0.84 72.7 86.21 October 41.51 41.68 14.38 17.37 49.18 39.6 2.34 4.31 1.05 0.98 0.69 0.64 109.15 104.58 November 35.44 35.69 14.47 15.73 44.05 38.09 3.18 5.73 0.94 1.32 0.58 1.02 98.66 97.58 December 37.94 39.55 23.63 15.65 33.17 48.26 3.17 5.23 1.39 1.11 0.67 0.56 99.97 110.36 January 26.27 30.21 17.17 23.45 32.14 38.05 2.92 3.1 1.02 1.01 0.8 0.66 80.32 96.48 February 23.94 29.64 13.7 12.74 31.85 48.74 2.62 3.15 1.01 0.74 0.75 0.68 73.87 95.69 March 24.24 24.37 13.07 12.96 32.81 33.23 2.6 2.71 0.99 0.86 0.67 0.73 74.38 74.86 Total 396.16 384.53 186.18 189.01 408.65 457.36 36.06 46.34 12.22 13.06 9.89 9.34 1049.16 1099.64",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "id": "1_0",
+      "page": 1,
+      "csv_path": "src\\data\\assets\\2852c2a3\\tbl_1_0.csv",
+      "shape": [
+        14,
+        15
+      ],
+      "doc_id": "2852c2a3",
+      "type": "tables",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Title: Product Name. Abstract:",
+    "metadata": {
+      "doc_id": "36ae85b5",
+      "page": 1,
+      "type": "summary",
+      "weight": 3.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Product Name Brand Pure Collagen Cleanser COSRX Fresh Snail Mucin Cleanser Skinfood Soothing Hyaluronic Acid Emulsion Tony Moly Glow Niacinamide MaskMissha Hydra Collagen SerumSkinfood Bright Collagen Mist IOPE Calm Hyaluronic Acid Ampoule Tony Moly Hydra Collagen MaskCOSRX Laneige Glow Vitamin C Ampoule Innisfree Radiant Green Tea Serum Fresh Niacinamide Cream Mamonde Glow Centella MistSulwhasoo Pure Snail Mucin Emulsion Etude House Pure Collagen TonerNeogen Hydra Mugwort MaskSulwhasoo Laneige Hydra Niacinamide Mask Silky Propolis CreamInnisfree Youth Centella Cleanser Neogen Soothing Ginseng Emulsion Missha Youth Mugwort SerumCOSRX Calm Centella SerumBenton Fresh Green Tea MistHera Youth Centella MistCOSRX Calm Green Tea SerumMissha Glow Centella SerumNeogen Glow Ginseng SerumTony Moly Youth Centella Cleanser Innisfree Radiant Centella MaskMissha Hydra Vitamin C MistMamonde Radiant Centella Emulsion Neogen Dr. Jart+ Soothing Centella Serum Pure Propolis AmpouleSulwhasoo",
+    "metadata": {
+      "doc_id": "36ae85b5",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -39,9 +63,9 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: Our basic result states that if an AI is designed such that in flat space the momentum difference \u2206p between the two wavepackets in a given output port would vanish, then applying the same laser pulse sequence to an AI in curved space will lead to a momentum difference \u2206p = \u2212mc (cid:90) K dA + O (cid:0)m\u00afv \u00afK \u00afA(cid:1), M decomposes in a relativistically covariant way as [13] \u2206\u03d5 = \u2206\u03d5prop + \u2206\u03d5laser + \u2206\u03d5sep.",
+    "content": "Section: Introduction. Text: Youth Centella Cleanser Innisfree Radiant Centella MaskMissha Hydra Vitamin C MistMamonde Radiant Centella Emulsion Neogen Dr. Jart+ Soothing Centella Serum Pure Propolis AmpouleSulwhasoo Soothing Propolis Emulsion Laneige Glow Snail Mucin Essence Benton Brand Tier B A A A B B C A B A A B A A B B A B C A C B B A C B A A C B C B B C Price (USD) 36.22 76.55 61.24 51.91 20.92 20.92 14.07 61.09 52.08 59.57 11.44 77.89 68.27 24.86 22.73 22.84 31.3 46.73 40.24 30.39 52.83 19.76 30.45 35.65 41.92 64.96 23.98 46 51.47 13.25 52.53 21.94 14.55 76.42 COGS (USD) 14.83 45.24 30.27 28.68 14.06 9.93 7.36 44.26 24.41 25.2 5.57 34.92 46.35 15.97 13.41 15.11 20.07 21.31 26.87 17.07 33.93 13.22 15.08 15.44 19.63 34.31 15.48 30.28 20.7 7.33 27.59 10.24 6.34 38.31 Days of InventoryUnits in Stock 33 84 81 45 47 34 27 75 63 44 89 70 50 42 77 42 23 30 57 29 17 16 76 26 42 57 85 68 31 39 47 60 63 17 307 234 466 361 70 172 205 82 209 144 169 333 77 361 324 199 189 345 290 73 463 120 283 72 79 127 24 122 215",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "36ae85b5",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -49,9 +73,9 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: The propagation phase \u2206\u03d5prop and separation phase \u2206\u03d5sep depend on the geodesic trajectories of the inter- ferometer arms and atom optic light pulses, and thus de- pend indirectly on spacetime geometry, whereas the laser phase \u2206\u03d5laser depends also on the evolution of the laser generating the pulses. Laser phase may be considered a parasitic effect to measurement of spacetime curvature, and the gradiometric configuration of [5] was designed to remove this effect via a differential measurement between two AIs. Even in such a gradiometer, it remains a signif- icant challenge to compute differential phase in a known spacetime geometry, or conversely to infer spacetime ge- ometry from measured differential phases. In addition to these difficulties, the terms \u2206\u03d5prop, \u2206\u03d5laser, and \u2206\u03d5sep are not separately observable, with other representations decomposing the observable \u2206\u03d5 in different ways [14, 18\u2013 22], leading to interest in which elements of an AI phase calculation are in fact physically",
+    "content": "Section: Introduction. Text: 47 34 27 75 63 44 89 70 50 42 77 42 23 30 57 29 17 16 76 26 42 57 85 68 31 39 47 60 63 17 307 234 466 361 70 172 205 82 209 144 169 333 77 361 324 199 189 345 290 73 463 120 283 72 79 127 24 122 215 281 384 499 391 369 Views Last MonthVolume Sold Last Month 3059 185 2365 46 2579 190 4746 227 1735 126 1857 137 4552 167 2170 219 2949 225 3351 239 3830 335 2589 150 1731 243 2916 80 1115 13 1448 78 4711 257 3187 234 2939 11 435 178 4692 145 995 172 3646 174 951 397 1787 287 2031 126 3846 198 2527 9 1668 33 4100 169 2838 343 3598 140 4013 369 1166 325",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "36ae85b5",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -59,9 +83,123 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: separately observable, with other representations decomposing the observable \u2206\u03d5 in different ways [14, 18\u2013 22], leading to interest in which elements of an AI phase calculation are in fact physically meaningful [23].",
+    "content": "Section: Introduction. Text: Missha Soothing Ginseng Serum Calm Centella CreamLaneige Youth Mugwort TonerTony Moly Soothing Hyaluronic Acid Cleanser Mamonde Radiant Centella SerumHera Radiant Collagen Serum Tony Moly Glow Collagen Essence Skinfood Pure Centella TonerBenton Soothing Mugwort Emulsion Benton Calm Propolis Essence Benton Hydra Propolis Essence Skinfood Soothing Niacinamide Emulsion Dr. Jart+ Bright Propolis MaskCOSRX Radiant Hyaluronic Acid Cream Missha Bright Centella Essence Innisfree Silky Collagen Essence Skinfood Fresh Green Tea Essence Mamonde Silky Mugwort MaskCOSRX Youth Hyaluronic Acid Essence Neogen Youth Snail Mucin Toner COSRX Pure Vitamin C SerumSkinfood Calm Propolis SerumIOPE Silky Centella MistInnisfree Silky Green Tea MistBenton Pure Propolis MistMamonde Silky Collagen Ampoule Sulwhasoo Bright Centella Ampoule Tony Moly Calm Niacinamide Lotion Sulwhasoo Hydra Niacinamide Emulsion Skinfood Fresh Snail Mucin Essence Missha Radiant Vitamin C MistCOSRX Pure Snail Mucin MaskMissha",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "36ae85b5",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Bright Centella Ampoule Tony Moly Calm Niacinamide Lotion Sulwhasoo Hydra Niacinamide Emulsion Skinfood Fresh Snail Mucin Essence Missha Radiant Vitamin C MistCOSRX Pure Snail Mucin MaskMissha Benton Calm Collagen Cleanser Hydra Ginseng SerumSulwhasoo B B C B C B B A A A A A A A B B B A A C B B A B A B C B B B C B A A 77.59 66.59 31.32 16.84 57.9 40.81 18.54 44.66 12.41 73.65 28.11 56.38 31.82 46.4 48.27 22.94 77.87 64.26 75.76 72.64 51.85 74.53 16.19 23.72 13.17 32.77 37.21 28.99 68.01 34.97 29.67 47.99 19.86 66.15 52.98 33.09 17.4 10.29 29.48 28.22 12.77 21.24 6.82 36.11 13.65 23.18 18.55 25.56 20.05 11.09 52.37 30.32 33.6 39.72 36.07 35.22 9.74 14.91 6.21 20.27 18.99 17.1 40.13 19.61 12.67 31.22 9.86 30.16 36 36 30 39 37 73 78 70 57 28 13 44 73 58 26 53 39 55 15 46 33 55 62 69 72 41 42 76 27 34 63 67 76 55 66 374 330 443 327 163 288 389 143 125 177 166 164 139 338 294 111 77 458 365 248 493 136 337 298 146 412 415 148 77 141 20 258 309 4480 2544 4207 3473 4069 2646 853 2182 2874",
+    "metadata": {
+      "doc_id": "36ae85b5",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 42 76 27 34 63 67 76 55 66 374 330 443 327 163 288 389 143 125 177 166 164 139 338 294 111 77 458 365 248 493 136 337 298 146 412 415 148 77 141 20 258 309 4480 2544 4207 3473 4069 2646 853 2182 2874 2996 4285 875 1725 3169 517 214 716 4074 3367 925 1616 3246 512 828 3448 2908 775 3565 2604 3067 2886 1222 4179 1671 346 149 331 221 305 136 296 74 256 279 368 186 171 95 206 350 23 43 130 177 145 246 224 130 62 152 321 387 365 5 391 352 194 195",
+    "metadata": {
+      "doc_id": "36ae85b5",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Calm Ginseng Cleanser Tony Moly Hydra Mugwort MaskEtude House Bright Vitamin C MaskDr. Jart+ Missha Glow Collagen Cleanser Pure Hyaluronic Acid Cleanser Skinfood Pure Snail Mucin MaskMissha Hydra Niacinamide Cleanser Skinfood Silky Centella AmpouleBenton Calm Niacinamide Mask Mamonde Etude House Radiant Niacinamide Essence Pure Propolis Cleanser Neogen Neogen Glow Green Tea Ampoule Hydra Niacinamide Toner Sulwhasoo Radiant Collagen LotionMissha Youth Green Tea SerumTony Moly Pure Hyaluronic Acid Mask IOPE Glow Ginseng MistLaneige Sulwhasoo Youth Hyaluronic Acid Lotion Hydra Green Tea Cleanser Sulwhasoo Dr. Jart+ Fresh Green Tea Ampoule Calm Centella SerumMissha Fresh Collagen LotionHera Silky Hyaluronic Acid Cream Neogen Hydra Hyaluronic Acid Lotion Neogen Glow Hyaluronic Acid Ampoule Skinfood Soothing Centella Cleanser COSRX Hydra Snail Mucin Lotion The Face Shop A Glow Mugwort CreamThe Face Shop B Calm Mugwort Ampoule The Face Shop C Bright Centella CreamSkinfood",
+    "metadata": {
+      "doc_id": "36ae85b5",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Skinfood Soothing Centella Cleanser COSRX Hydra Snail Mucin Lotion The Face Shop A Glow Mugwort CreamThe Face Shop B Calm Mugwort Ampoule The Face Shop C Bright Centella CreamSkinfood Glow Centella LotionDr. Jart+ Fresh Niacinamide Serum Tony Moly B A A C C B B B C B A A B A B C B A C B A A A B B B B C C 15.22 79.08 64.06 23.91 10.39 67.08 59.48 61.03 63.99 15.18 35.09 18.11 70.42 53.63 33.16 14.45 31.77 32.76 61.07 54.63 72.1 43.06 18.37 59.93 63.25 49.29 63.97 44.57 46.59 39.93 11.78 17.55 6.27 45.65 38.65 9.68 5.75 31.39 35.3 27.6 38.86 7.83 23.9 7.99 35.37 23.28 22.46 9.58 15.17 19.59 39.4 30.95 40.3 20.35 7.86 40.1 42.39 29.08 32.09 22.5 28.78 26.72 7.85 11.13 33 41 56 32 75 36 11 26 42 18 52 57 48 51 35 59 34 33 22 69 16 66 45 54 29 74 17 25 23 85 24 75 115 145 137 67 108 256 392 404 291 208 211 466 88 297 368 266 470 95 173 163 454 105 204 304 481 239 88 66 113 257 465 472 2243 1787 4232 3951 3540 3866 2426 3014 4052 695 828 1465 4592 798 495 4271 4460 2602 1919 817 2882 3677",
+    "metadata": {
+      "doc_id": "36ae85b5",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 291 208 211 466 88 297 368 266 470 95 173 163 454 105 204 304 481 239 88 66 113 257 465 472 2243 1787 4232 3951 3540 3866 2426 3014 4052 695 828 1465 4592 798 495 4271 4460 2602 1919 817 2882 3677 243 3240 4591 3038 3736 3322 1267 2716 1162 2256 373 316 121 138 62 48 177 164 177 321 307 153 84 378 217 207 256 233 168 231 151 24 51 237 309 18 147 5 377 58 378 263",
+    "metadata": {
+      "doc_id": "36ae85b5",
+      "page": 3,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Table from document 'Product Name' on page 1: 0 1 2 3 4 5 6 7 8 9 Product Name Brand NaN Brand Tier Price (USD) COGS (USD) Days of InventoryUnits in Stock NaN Views Last MonthVolume Sold Last Month NaN NaN Pure Collagen Cleanser NaN B 36.22 14.83 33 307.0 3059 185 NaN NaN Fresh Snail Mucin Cleanser NaN A 76.55 45.24 84 234.0 2365 46 NaN NaN Soothing Hyaluronic Acid Emulsion NaN A 61.24 30.27 81 466.0 2579 190 NaN NaN Glow Niacinamide Mask NaN A 51.91 28.68 45 361.0 4746 227 NaN NaN Hydra Collagen Serum Skinfood NaN B 20.92 14.06 47 70.0 1735 126 NaN NaN Bright Collagen Mist IOPE NaN B 20.92 9.93 34 172.0 1857 137 NaN NaN Calm Hyaluronic Acid Ampoule NaN C 14.07 7.36 27 205.0 4552 167 NaN NaN Hydra Collagen MaskCOSRX NaN A 61.09 44.26 75 82.0 2170 219 NaN NaN Glow Vitamin C Ampoule NaN B 52.08 24.41 63 209.0 2949 225 NaN NaN Radiant Green Tea Serum NaN A 59.57 25.2 44 144.0 3351 239 NaN NaN Fresh Niacinamide Cream NaN A 11.44 5.57 89 169.0 3830 335 NaN NaN Glow Centella MistSulwhasoo NaN B 77.89 34.92 70 333.0 2589 150 NaN NaN Pure Snail Mucin Emulsion Etude House NaN A 68.27 46.35 50 77.0 1731 243 NaN NaN Pure Collagen TonerNeogen NaN A 24.86 15.97 42 361.0 2916 80 NaN NaN Hydra Mugwort MaskSulwhasoo NaN B 22.73 13.41 77 324.0 1115 13 NaN NaN Hydra Niacinamide Mask NaN B 22.84 15.11 42 199.0 1448 78 NaN NaN Silky Propolis CreamInnisfree NaN A 31.3 20.07 23 189.0 4711 257 NaN NaN Youth Centella Cleanser NaN B 46.73 21.31 30 345.0 3187 234 NaN NaN Soothing Ginseng Emulsion NaN C 40.24 26.87 57 290.0 2939 11 NaN NaN Youth Mugwort SerumCOSRX NaN A 30.39 17.07 29 73.0 435 178 NaN NaN Calm Centella SerumBenton NaN C 52.83 33.93 17 463.0 4692 145 NaN NaN Fresh Green Tea Mist NaN B 19.76 13.22 16 120.0 995 172 NaN NaN Youth Centella MistCOSRX NaN B 30.45 15.08 76 283.0 3646 174 NaN NaN Calm Green Tea Serum NaN A 35.65 15.44 26 72.0 951 397 NaN NaN Glow Centella SerumNeogen NaN C 41.92 19.63 42 79.0 1787 287 NaN NaN Glow Ginseng SerumTony Moly NaN B 64.96 34.31 57 127.0 2031 126 NaN NaN Youth Centella Cleanser Innisfree NaN A 23.98 15.48 85 24.0 3846 198 NaN NaN Radiant Centella Mask Missha NaN A 46 30.28 68 122.0 2527 9 NaN NaN Hydra Vitamin C MistMamonde NaN C 51.47 20.7 31 215.0 1668 33 NaN NaN Radiant Centella Emulsion NaN B 13.25 7.33 39 281.0 4100 169 NaN NaN Soothing Centella Serum NaN C 52.53 27.59 47 384.0 2838 343 NaN NaN Pure Propolis Ampoule Sulwhasoo NaN B 21.94 10.24 60 499.0 3598 140 NaN NaN Soothing Propolis Emulsion NaN B 14.55 6.34 63 391.0 4013 369 NaN NaN Glow Snail Mucin Essence NaN C 76.42 38.31 17 369.0 1166 325 NaN NaN",
+    "metadata": {
+      "id": "1_0",
+      "page": 1,
+      "csv_path": "src\\data\\assets\\36ae85b5\\tbl_1_0.csv",
+      "shape": [
+        35,
+        10
+      ],
+      "doc_id": "36ae85b5",
+      "type": "tables",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Table from document 'Product Name' on page 2: 0 1 2 3 4 5 6 7 8 Soothing Ginseng Serum B 77.59 52.98 36 66 4480 346 NaN Calm Centella CreamLaneige B 66.59 33.09 36 374 2544 149 NaN Youth Mugwort Toner Tony Moly C 31.32 17.40 30 330 4207 331 NaN Soothing Hyaluronic Acid Cleanser B 16.84 10.29 39 443 3473 221 NaN Radiant Centella Serum C 57.90 29.48 37 327 4069 305 NaN Radiant Collagen Serum Tony Moly B 40.81 28.22 73 163 2646 136 NaN Glow Collagen Essence Skinfood B 18.54 12.77 78 288 853 296 NaN Pure Centella TonerBenton A 44.66 21.24 70 389 2182 74 NaN Soothing Mugwort Emulsion A 12.41 6.82 57 143 2874 256 NaN Calm Propolis Essence A 73.65 36.11 28 125 2996 279 NaN Hydra Propolis Essence Skinfood A 28.11 13.65 13 177 4285 368 NaN Soothing Niacinamide Emulsion A 56.38 23.18 44 166 875 186 NaN Bright Propolis MaskCOSRX A 31.82 18.55 73 164 1725 171 NaN Radiant Hyaluronic Acid Cream A 46.40 25.56 58 139 3169 95 NaN Bright Centella Essence Innisfree B 48.27 20.05 26 338 517 206 NaN Silky Collagen Essence Skinfood B 22.94 11.09 53 294 214 350 NaN Fresh Green Tea Essence B 77.87 52.37 39 111 716 23 NaN Silky Mugwort MaskCOSRX A 64.26 30.32 55 77 4074 43 NaN Youth Hyaluronic Acid Essence A 75.76 33.60 15 458 3367 130 NaN Youth Snail Mucin Toner C 72.64 39.72 46 365 925 177 NaN Pure Vitamin C SerumSkinfood B 51.85 36.07 33 248 1616 145 NaN Calm Propolis SerumIOPE B 74.53 35.22 55 493 3246 246 NaN Silky Centella MistInnisfree A 16.19 9.74 62 136 512 224 NaN Silky Green Tea MistBenton B 23.72 14.91 69 337 828 130 NaN Pure Propolis MistMamonde A 13.17 6.21 72 298 3448 62 NaN Silky Collagen Ampoule Sulwhasoo B 32.77 20.27 41 146 2908 152 NaN Bright Centella Ampoule Tony Moly C 37.21 18.99 42 412 775 321 NaN Calm Niacinamide Lotion Sulwhasoo B 28.99 17.10 76 415 3565 387 NaN Hydra Niacinamide Emulsion B 68.01 40.13 27 148 2604 365 NaN Fresh Snail Mucin Essence B 34.97 19.61 34 77 3067 5 NaN Radiant Vitamin C Mist COSRX C 29.67 12.67 63 141 2886 391 NaN Pure Snail Mucin Mask Missha B 47.99 31.22 67 20 1222 352 NaN Calm Collagen Cleanser A 19.86 9.86 76 258 4179 194 NaN Hydra Ginseng SerumSulwhasoo A 66.15 30.16 55 309 1671 195 NaN",
+    "metadata": {
+      "id": "2_1",
+      "page": 2,
+      "csv_path": "src\\data\\assets\\36ae85b5\\tbl_2_1.csv",
+      "shape": [
+        34,
+        9
+      ],
+      "doc_id": "36ae85b5",
+      "type": "tables",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Table from document 'Product Name' on page 3: 0 1 2 3 4 5 6 7 8 Calm Ginseng Cleanser Tony Moly B 15.22 6.27 33 115 2243 373 NaN Hydra Mugwort MaskEtude House A 79.08 45.65 41 145 1787 316 NaN Bright Vitamin C Mask Dr. Jart+ A 64.06 38.65 56 137 4232 121 NaN Glow Collagen Cleanser C 23.91 9.68 32 67 3951 138 NaN Pure Hyaluronic Acid Cleanser C 10.39 5.75 75 108 3540 62 NaN Pure Snail Mucin Mask Missha B 67.08 31.39 36 256 3866 48 NaN Hydra Niacinamide Cleanser B 59.48 35.30 11 392 2426 177 NaN Silky Centella Ampoule Benton B 61.03 27.60 26 404 3014 164 NaN Calm Niacinamide Mask Mamonde C 63.99 38.86 42 291 4052 177 NaN Radiant Niacinamide Essence B 15.18 7.83 18 208 695 321 NaN Pure Propolis Cleanser Neogen A 35.09 23.90 52 211 828 307 NaN Glow Green Tea Ampoule A 18.11 7.99 57 466 1465 153 NaN Hydra Niacinamide Toner Sulwhasoo B 70.42 35.37 48 88 4592 84 NaN Radiant Collagen Lotion A 53.63 23.28 51 297 798 378 NaN Youth Green Tea Serum Tony Moly B 33.16 22.46 35 368 495 217 NaN Pure Hyaluronic Acid Mask C 14.45 9.58 59 266 4271 207 NaN Glow Ginseng MistLaneige B 31.77 15.17 34 470 4460 256 NaN Youth Hyaluronic Acid Lotion A 32.76 19.59 33 95 2602 233 NaN Hydra Green Tea Cleanser C 61.07 39.40 22 173 1919 168 NaN Fresh Green Tea Ampoule B 54.63 30.95 69 163 817 231 NaN Calm Centella SerumMissha A 72.10 40.30 16 454 2882 151 NaN Fresh Collagen Lotion A 43.06 20.35 66 105 3677 24 NaN Silky Hyaluronic Acid Cream A 18.37 7.86 45 204 243 51 NaN Hydra Hyaluronic Acid Lotion B 59.93 40.10 54 304 3240 237 NaN Glow Hyaluronic Acid Ampoule B 63.25 42.39 29 481 4591 309 NaN Soothing Centella Cleanser B 49.29 29.08 74 239 3038 18 NaN Hydra Snail Mucin Lotion The Face Shop A 63.97 32.09 17 88 3736 147 NaN Glow Mugwort CreamThe Face Shop B 44.57 22.50 25 66 3322 5 NaN Calm Mugwort Ampoule The Face Shop C 46.59 28.78 23 113 1267 377 NaN Bright Centella CreamSkinfood B 39.93 26.72 85 257 2716 58 NaN Glow Centella LotionDr. Jart+ C 11.78 7.85 24 465 1162 378 NaN Fresh Niacinamide Serum C 17.55 11.13 75 472 2256 263 NaN",
+    "metadata": {
+      "id": "3_2",
+      "page": 3,
+      "csv_path": "src\\data\\assets\\36ae85b5\\tbl_3_2.csv",
+      "shape": [
+        32,
+        9
+      ],
+      "doc_id": "36ae85b5",
+      "type": "tables",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Title: Introduction. Abstract:",
+    "metadata": {
+      "doc_id": "44eb8a28",
+      "page": 1,
+      "type": "summary",
+      "weight": 3.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Attention Is All You Need Introduction",
+    "metadata": {
+      "doc_id": "44eb8a28",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -69,9 +207,9 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: In this work, we show that in contrast to \u2206\u03d5, the phase shear of an AI has a direct geometric meaning related to integrated sectional curvature over a spacetime surface bounded by the interferometer arms and final beamsplit- ter (FBS). Phase shear arises due to a momentum differ- ence between the interferometer arms after the FBS, i.e. (1)",
+    "content": "Section: Introduction. Text:",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "44eb8a28",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -79,9 +217,9 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: where m is the atom mass, c the speed of light, M a spacetime surface bounded by the AI arms and FBS, K the sectional curvature on M, and dA the area element on M. The notation O(x) indicates additional terms of typical magnitude x or smaller, and \u00afv, \u00afK, \u00afA are charac- teristic scales for the atomic recoil velocity, spacetime sec- tional curvature, and spacetime area, respectively. The magnitude of m\u00afv \u00afK \u00afA is smaller than the first term in Eq. (2) by \u00afv/c, which is typically \u223c 10\u221211. We will show how to compute the error explicitly and see that it arises primarily from gravitational redshift of atom optics pho- tons. We emphasize Eq. (2) applies equally to multi- photon atom optics (such as Bragg or Raman transitions) or single-photon atom optics [5]. The momentum differ- ence \u2206p induces a modulation on the AI output port with wavelength \u03bb = h \u2206p, where h is Planck\u2019s constant. The observability of this effect depends roughly on whether this modulation wavelength is smaller than the",
+    "content": "Section: Introduction. Text: layers, or heads. For each of these we use dk = dv = dmodel/h = 64. Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "44eb8a28",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -89,9 +227,9 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: a modulation on the AI output port with wavelength \u03bb = h \u2206p, where h is Planck\u2019s constant. The observability of this effect depends roughly on whether this modulation wavelength is smaller than the AI atom cloud size, which is typically a few millimeters. We note that phase shear can also arise in a qualitatively differ- ent way when the AI wavepackets have significant phase curvature, as in [26]. We do not consider this effect here, assuming all wavepackets are collimated so as to have negligible phase curvature and focusing solely on phase shear arising from wavepacket momentum differences.",
+    "content": "Section: Introduction. Text: ReLU activation in between. FFN(x) = max(0,xW1 + b1)W2 + b2 (2) While the linear transformations are the same across different positions In this work, we use sine and cosine functions of different frequencies: PE(pos,2i) = sin(pos/100002i/dmodel ) PE(pos,2i+1) = cos(pos/100002i/dmodel ) where pos is the position and i is the dimension. That is, each dimension of the positional encoding We used the Adam optimizer [20] with \u03b21 = 0.9, \u03b22 = 0.98 and \u03f5 = 10\u22129. We varied the learning rate over the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used warmup_steps = 4000.",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "44eb8a28",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -99,9 +237,18 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: We later will discuss variants of this basic setup requir- ing only simple modifications of the above result. For in- (2)",
+    "content": "Title: Skin Seoul Competency Assessment AI Agent Automation Engineer (Beauty E-Commerce). Abstract:",
     "metadata": {
-      "doc_id": "0fb056a3",
+      "doc_id": "c36d4a30",
+      "page": 1,
+      "type": "summary",
+      "weight": 3.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Skin Seoul Competency Assessment AI Agent Automation Engineer (Beauty E-Commerce) Daniel Danny Kennedy \ud83d\udce9ddinny@gmail.com \ud83d\udcde+91 9393085959 Introduction: This document shows my approach to addressing the e-commerce automated merchandising challenge. The process begins with deploying a transparent ranking algorithm as a strategic baseline. Over time, the system evolves from simple learning to autonomous optimization, intelligently adapting and perfecting its ranking strategy in real time.This assessment challenged me to translate qualitative objectives, like \u2018enhancing discovery,\u2019 into a measurable ranking algorithm \u2014 moving from abstract goals to a precise, quantitative formula.",
+    "metadata": {
+      "doc_id": "c36d4a30",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -109,772 +256,323 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: stance, in [24, 25] phase shear is eliminated by a judicious frequency offset of the central mirror pulse, and space- time curvature is then measured by this frequency offset rather than phase shear. In derivations below we adopt natural units c = \u210f = 1. We will reinsert dimensional constants when we consider specific examples. Our main technical tool is a generalized version of the Gauss-Bonnet (GB) theorem. Many authors [27\u201330] have introduced Lorentzian versions of GB, though most ex- clude null boundary segments. We use a formalism sim- ilar to [28, 30], but modified to allow null geodesics, as described in Appendix A. This relativistic GB formula states that, given a piecewise smooth curve \u03b3 bounding a 1+1 dimensional Lorentzian surface M, under appro- priate technical hypotheses we have (cid:90) K dA + (cid:73) kg ds + (cid:88) \u03b1j = 0, M \u03b3 j",
+    "content": "Section: Introduction. Text: 1. Selected Touchpoint and Rationale \u2794 on the main page to engage visitors immediately. \u2794 \u2794 on-site product merchandising. This agent will achieve this not only by historical sales data but also with proactive market intelligence to enhance product discovery and customer engagement. \u2794 Rationale: The homepage has the widest reach at the top of the sales funnel, where users are most open to discovery. Optimizing this high-visibility space creates a strong first impression and drives immediate impact on conversions and customer experience. Touchpoint: \u201cHomepage Carousels\u201d (\"Best Sellers\" Section).This displays rotating product highlights User Context: Top of the sales funnel, users are browsing K-Beauty casually, not yet committed. Business Objective: To maximize revenue by deploying an AI agent that automates and optimizes",
     "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: (cid:90) K dA + (cid:73) kg ds + (cid:88) \u03b1j = 0, M \u03b3 j where K is sectional curvature, kg is geodesic curvature along \u03b3, dA is the area element on M, ds is differential proper time along \u03b3, and \u03b1j is an \u201cangle\u201d (to be defined below) associated to each non-smooth point Pj on \u03b3. The sectional curvature and geodesic curvature terms of Eq. (3) are identical to the usual (Riemannian) GB for- mula [31], but care is needed to define a notion of angle on a Lorentzian manifold. Given two time-like future di- rected unit vectors S, T at a point P \u2208 M, we define the angle \u03b1 from S to T to be the boost angle (i.e. rapidity) of a Lorentz transformation L(\u03b1) acting on the tangent space TPM which maps S to T. Recall that with respect to an orthonormal basis for TPM, L(\u03b1) takes the form L(\u03b1) = (cid:18)cosh(\u03b1) sinh(\u03b1) sinh(\u03b1) cosh(\u03b1) (cid:19) .",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: L(\u03b1) = (cid:18)cosh(\u03b1) sinh(\u03b1) sinh(\u03b1) cosh(\u03b1) (cid:19) . For an arbitrary non-null vector S \u2208 TPM, let (cid:98)S denote the unique time-like future directed unit vector in TPM which is either parallel to S (if S is time-like) or orthog- onal to S (if S is space-like). Then given any two such non-null vectors S, T \u2208 TPM, the angle from S to T is defined to be the angle from (cid:98)S to (cid:98)T. Angles so defined have an additivity property: The angle from S to T plus the angle from T to U equals the angle from S to U.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Given two time-like vectors S and T, the angle from S to T can be conveniently evaluated in the rest frame of S, i.e. the local Lorentz frame such that (cid:98)S has components (1,0)\u22ba. Let T have components (Tt,Tx)\u22ba in this frame. Then the angle from S to T is given by tanh\u22121(Tx/Tt). Finally, we consider angles associated to null geodesics (see Fig. 1). Suppose that null geodesic segment \u03b31 in- tersects two non-null curves \u03b30 and \u03b32 at points P1, P2 respectively, and define a single angle \u03b1 for these two points as follows. Take the tangent vector S to \u03b30 at P1 and the tangent vector T to \u03b32 at P2 and parallel transport both along the null geodesic \u03b31 to any com- mon point. Write the parallel transported vectors (cid:101)S, (cid:101)T (3) (4) 1 1 2 \u03b3 P S T T \u03b3 2 0 x t \u03b1P S \u03b3",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: (3) (4) 1 1 2 \u03b3 P S T T \u03b3 2 0 x t \u03b1P S \u03b3 FIG. 1. Defining angle \u03b1 at a null geodesic \u03b31 by parallel transport of tangent vectors. The wavy line is a null geodesic, solid lines are time-like curves, and dotted lines are tangent vectors. \u03b1 is defined to be the angle from (cid:101)S to (cid:101)T. and define \u03b1 to be the angle from (cid:101)S to (cid:101)T. This definition is independent of the specific point along \u03b31 chosen. For convenience, in the context of Eq. (3) we define the angle of the initial endpoint of a null geodesic to be this \u03b1 and the angle of the final endpoint to be zero. More general notions of Lorentzian angle are possible [27], but that above is convenient and sufficient for our purpose. With these definitions, Eq. (3) holds provided all null segments of \u03b3 are geodesic and no two null seg- ments are adjacent. See Appendix A for more details.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Before applying Eq. (3) to an AI, we recall some stan- dard relationships between boost angle and momentum. Consider a particle \u03a0 with mass m and unit tangent vec- tor T, and let S be any other time-like future directed vector at the same point. Let \u03b1 be the angle from S to T. In the rest frame of S, the velocity of \u03a0 is tanh(\u03b1) and the momentum of \u03a0 has components m(cosh(\u03b1),sinh(\u03b1))\u22ba, so that the spatial component is p = msinh(\u03b1) = m\u03b1 + O (cid:0)m\u03b13(cid:1). If \u03a0 absorbs a photon with momentum (\u03bd,\u03bd)\u22ba in the rest frame of T, its final momentum is (m+\u03bd,\u03bd)\u22ba, and its recoil velocity v is \u03bd/(m+\u03bd), which has typical magnitude \u223c 2 \u00d7 10\u221211 for e.g. the 698 nm clock transition in 87Sr. The angle from initial to final momentum of \u03a0 is \u03b2 = tanh\u22121 (cid:18) \u03bd m + \u03bd (cid:19) = \u03bd m + \u03bd + O (cid:0)\u00afv3(cid:1).",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: \u03b2 = tanh\u22121 (cid:18) \u03bd m + \u03bd (cid:19) = \u03bd m + \u03bd + O (cid:0)\u00afv3(cid:1). Similarly, if \u03a0 then emits an identical photon, it expe- riences a boost \u2212\u03b2. For a multi-photon transition, one has a similar relation to Eq. (6) with (\u03bd,\u03bd)\u22ba replaced by the effective momentum of the transition. If the pho- ton momentum is given by (\u03bd,\u03bd)\u22ba in the rest frame of S rather than T, we compute the resulting boost to \u03a0 by first expressing the momentum in the rest frame of T as L(\u2212\u03b1) (cid:18)\u03bd \u03bd (cid:19) = (cid:18)e\u2212\u03b1\u03bd e\u2212\u03b1\u03bd (cid:19) and then applying Eq. (6). We now apply Eq. (3) to an AI, as shown schematically in Fig. 2. We follow the covariant semiclassical formalism 2 (5) (6) (7)",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: \u03b1f\u03b2-\u03b2+\u03b8+\u03b8- x t FIG. 2. Typical Mach-Zehnder atom interferometer. Dashed lines are output port atom wavepackets. Solid wavy lines are null geodesics for a single-photon AI, and hatched wavy lines indicate additional null geodesics in a two-photon AI. of [13] in describing the AI. The upper and lower output ports of the AI both consist of two wavepackets arising from the two AI arms, and the phase shear of the upper (lower) output port can be characterized by a boost angle \u03b8+ (\u03b8\u2212) between these two wavepackets along the final beamsplitter null geodesic. We refer to \u03b8\u00b1 as a shear angle, and it determines the momentum difference \u2206p between the output port wavepackets via Eq. (5). Note that generically \u03b8+ \u0338= \u03b8\u2212, leading to (slightly) different phase shear between the two output ports.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: We set \u03b3 in Eq. (3) to consist of the lower AI arm, followed by the FBS null geodesic segment connect- ing the two arms, followed by the upper arm traversed backwards. Since all boundary segments are geodesic, geodesic curvature is uniformly zero on \u03b3, and Eq. (3) relates angles on \u03b3 (a type of holonomy of \u03b3) to the en- closed sectional curvature. Let \u03b1f denote the angle across the FBS, and let \u2212\u03b2\u2212 (\u03b2+) be the boost imparted to the lower (upper) arm by the FBS. Note that \u03b2\u00b1 is not an angle of \u03b3, but is needed to compute the shear angle \u03b8\u00b1, which is given by \u03b8\u00b1 = \u03b1f \u2212 \u03b2\u00b1.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: \u03b8\u00b1 = \u03b1f \u2212 \u03b2\u00b1. We consider the typical case where the atom optics pulses are designed such that the shear angle would van- ish for an AI in flat space, and examine what the shear angle must be for an AI in curved space with atom op- tics pulses of the same order, direction, and frequency at point of emission. Since we need to refer to analo- gous quantities in both flat space and curved space AIs, we adopt the convention that unprimed symbols such as \u03b1f,\u03b8+ refer to a curved space AI, while primed quanti- ties \u03b1\u2032 + refer to analogous quantities in a flat space AI, and a differential quantity like \u2206\u03b1f will denote \u03b1f \u2212\u03b1\u2032 f. f,\u03b8\u2032 In the flat space AI, Eq. (3) becomes (cid:88) \u03b1\u2032 j = 0 j since K\u2032 = 0. In curved space, Eqs. (3) and (9) give 0 = (cid:90) K dA + (cid:88) \u03b1j = (cid:90) K dA + (cid:88) \u2206\u03b1j. M j M j (8) (9) (10) 3 Solving for \u2206\u03b1f, \u2206\u03b1f = \u2212 (cid:90) K dA \u2212 (cid:88) \u2206\u03b1j, (11) M j\u0338=f which together with \u03b8\u2032 \u00b1 = 0 gives the shear angle \u03b8\u00b1 = \u03b1f \u2212 \u03b2\u00b1 = \u2206\u03b1f \u2212 \u2206\u03b2\u00b1 = \u2212 (cid:90) K dA \u2212",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: (cid:88) \u2206\u03b1j. M j M j (8) (9) (10) 3 Solving for \u2206\u03b1f, \u2206\u03b1f = \u2212 (cid:90) K dA \u2212 (cid:88) \u2206\u03b1j, (11) M j\u0338=f which together with \u03b8\u2032 \u00b1 = 0 gives the shear angle \u03b8\u00b1 = \u03b1f \u2212 \u03b2\u00b1 = \u2206\u03b1f \u2212 \u2206\u03b2\u00b1 = \u2212 (cid:90) K dA \u2212 (cid:88) \u2206\u03b1j \u2212 \u2206\u03b2\u00b1. (12) M j\u0338=f It remains to compute \u2206\u03b1j for j \u0338= f and \u2206\u03b2\u00b1. Note that \u03b1j (j \u0338= f) and \u03b2\u00b1 depend only on the frequency of the atom optic photon at the point of interaction, as in Eq. (6), unlike \u03b1f, which depends on the relative motion of the two AI arms at the FBS. Thus \u2206\u03b2\u00b1, \u2206\u03b1j depend only on the change in photon frequency due to spacetime curvature, i.e. gravitational redshift.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: We will sketch how to compute \u2206\u03b1j via Eq. (3) ap- plied to a loop bounded by the trajectories of the atom, the laser emitting the light pulses, and certain atom op- tics, and show that \u2206\u03b1j is much smaller than (cid:82) M K dA. For clarity, we work only to leading order in all small parameters, but this is not an essential limitation. We allow the laser to follow a non-geodesic trajectory (e.g. fixed to Earth\u2019s surface), but suppose that its geodesic curvature is identical in the curved and flat space AIs, i.e. kg = k\u2032 g. We further suppose for simplicity that the AI initial conditions are such that the angle \u03d50 across the initial beamsplitter (IBS) from the laser to lower AI arm is identical between curved and flat space, i.e. \u03d50 = \u03d5\u2032 0. Let \u03b11 denote the boost imparted to the lower AI arm by the first atom optic after the IBS, and let \u03d51 denote the angle from laser to incoming atom across this atom optic null geodesic, as in Fig. 3. Letting N1 denote the surface bounded by this atom",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: by the first atom optic after the IBS, and let \u03d51 denote the angle from laser to incoming atom across this atom optic null geodesic, as in Fig. 3. Letting N1 denote the surface bounded by this atom optic along with the laser, atom, and IBS, Eq. (3) gives",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: \u03d5\u2032 1 = \u03d50 \u2212 (cid:90) kg ds, (13) (cid:90) laser (cid:90) \u03d51 = \u03d50 \u2212 kg ds \u2212 K dA. (14) laser N1 Let (\u03bd,\u03bd)\u22ba be the momentum of the photon inducing \u03b11 in the rest frame of the laser. From Eq. (7), the photon momentum in the atom\u2019s rest frame is (e\u2212\u03d51\u03bd,e\u2212\u03d51\u03bd)\u22ba. From Eq. (6), the atom\u2019s boost is 1 = tanh\u22121 \u03b1\u2032 \u03b11 = tanh\u22121 (cid:32) (cid:32) e\u2212\u03d5\u2032 1\u03bd m + e\u2212\u03d5\u2032 e\u2212 (cid:82) m + e\u2212 (cid:82) N1 (cid:33) 1\u03bd K dAe\u2212\u03d5\u2032 1\u03bd K dAe\u2212\u03d5\u2032 N1 1\u03bd (cid:33) (15) (16) Finally, expanding to leading order in (cid:82) N1 K dA we find \u2206\u03b11 = \u2212\u03b1\u2032 1 (cid:90) K dA + O (cid:0)\u00afv2 \u00afK \u00afA + \u00afv \u00afK2 \u00afA2(cid:1). (17) N1",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: 1 x t laserT S N S atomIBS \u03d50\u03d51\u03b11\u03b10 FIG. 3. Spacetime loop for computing the redshift of an atom optic light pulse. The laser trajectory is shown with wiggles to emphasize that it may follow a non-geodesic trajectory. (cid:12) (cid:12) (cid:12) \u226a 1, In all examples below it will be true that justifying the expansion. We see that \u2206\u03b11 has the same form as the leading term (cid:82) M K dA of Eq. (12), integrated over a possibly larger surface N1 but suppressed by \u03b1\u2032 1, which is O(\u00afv). Subsequent terms \u2206\u03b1j and \u2206\u03b2\u00b1 may be computed similarly, inductively taking into account the previous angles, with the same leading order result (cid:12) (cid:12) (cid:12) (cid:82) K dA N1 \u2206\u03b1j = \u2212\u03b1\u2032 j (cid:90) K dA + O (cid:0)\u00afv2 \u00afK \u00afA + \u00afv \u00afK2 \u00afA2(cid:1), Nj Nj now being a surface bounded by the relevant atom op- tic, IBS, atom and laser. Together with Eqs. (5) and (12), this yields a refined version of our main result Eq. (2), \u2206p\u00b1 = \u2212 m (cid:90) K dA \u2212 m (cid:88) \u03b1\u2032 j (cid:90) K dA M j\u0338=f Nj + m\u03b2\u2032 \u00b1",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: \u2206p\u00b1 = \u2212 m (cid:90) K dA \u2212 m (cid:88) \u03b1\u2032 j (cid:90) K dA M j\u0338=f Nj + m\u03b2\u2032 \u00b1 (cid:90) K dA + O (cid:0) \u00afK3 \u00afA3 + \u00afv2 \u00afK \u00afA + \u00afv \u00afK2 \u00afA2(cid:1), N\u00b1 where the shear may now differ slightly between the two output ports. We will not analyze the new correction terms in detail, but note that the alternating sign of \u03b1\u2032 j for different j will lead to significant cancellation.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: We highlight a few variations of this argument. Firstly, we have considered a comparison to an AI in flat space, but one could equally well compare to any reference back- ground spacetime. If atom optics are designed to yield zero phase shear in such a reference spacetime, then ob- servation of phase shear in an unknown spacetime reveals deviation of the real sectional curvature from that of the reference. Secondly, in the case of multi-loop or reso- nant AIs in which the arms cross [32], one must account for the orientation of spacetime area, which varies with the handedness of the boundary region, but the above argument is otherwise unchanged. Thirdly, in the config- uration of [24, 25], the central mirror pulse is detuned so that phase shear vanishes. Here \u03b8\u00b1 = 0 and instead \u2206\u03b1\u03c0\u00b1 = \u00b1 1 2 (cid:90) M\u2032 K dA + O(\u00afv \u00afK \u00afA), where \u03c0+ (\u03c0\u2212) indexes the upper (lower) mirror pulse angle in Eq. (12). From Eqs. (6) and (7), the frequency (18) (19) (20)",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: \u2206\u03b1\u03c0\u00b1 = \u00b1 1 2 (cid:90) M\u2032 K dA + O(\u00afv \u00afK \u00afA), where \u03c0+ (\u03c0\u2212) indexes the upper (lower) mirror pulse angle in Eq. (12). From Eqs. (6) and (7), the frequency (18) (19) (20) shift \u2206\u03bd which realizes this is m\u2206\u03b1\u03c0\u2212 to leading order. Thus \u2206\u03bd measures spacetime curvature in this case. Note that in a single photon AI, this configuration inevitably entails loss of contrast due to diminished mirror pulse efficiency. One mitigation strategy is to apply smaller detunings to a larger number of pulses: Since pulse effi- ciency varies as \u2206\u03bd2, detuning N pulses by \u2206\u03bd/N results in a factor of N improvement in contrast. Lastly, if the phase shear modulation wavelength is comparable to the atom cloud size, measurement can be enhanced by intro- [24, 26]), e.g. by frequency ducing artificial shear (cf. shifting the FBS, which simply adds a known offset to the shear induced by spacetime curvature.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: As a first application, for weak gravity the sectional curvature integral of Eq. (2) may be evaluated to lead- ing order by integrating over the region bounded by the unperturbed atom and photon trajectories. Moreover, in linearized gravity, a static Newtonian metric ds2 = (1 + 2\u03a6(x)) dt2 \u2212 (1 \u2212 2\u03a6(x)) dx2 has sectional curvature \u03a6\u2032\u2032(x), reproducing a known re- sult that phase shear measures gravity gradients [24, 25]. Next we consider the Schwarzschild metric, with sec- tional curvature in the r-t plane K = \u2212rs/r3, for r the radial coordinate and rs the Schwarzschild radius. At Earth\u2019s surface, rs \u2248 8.9 mm and r \u2248 6.4 \u00d7 106 m, so approximating c2K \u2248 3100 eotvos as constant over the AI, the resulting phase shear wavelength is (cid:18)1 m s (cid:19) A/c h mcKA \u03bb = \u2248 1.5 mm ,",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: h mcKA \u03bb = \u2248 1.5 mm , for m = 87 amu. This is readily observable for a few mm atom cloud size and a spacetime area A/c \u223c 1 m s. Similarly, phase shear from test masses [33] can also be observable. The sectional curvature at the surface of a spherical test mass of density \u03c1 is \u22122GN\u03c1 (where GN is Newton\u2019s constant), or \u223c 11000 eotvos for Tungsten. This is measurable for an AI of spacetime area \u223c 1 m s near the test mass, which could be achieved via e.g. a levitation sequence or co-moving test mass.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: For long baseline terrestrial gradiometers, the differen- tial phase shear between the two AIs may be measurable. For a vertical gradiometer at Earth\u2019s surface with base- line 1 km and spacetime area of 1000 m s for each AI, such as proposed future versions of MAGIS [7], the dif- ference in sectional curvature \u2206K between the two AIs is c2\u2206K \u2248 1.4 eotvos. Thus if the shear of one AI is made zero as in [25], the other will exhibit shear of wavelength \u2248 3.2 mm. This may be a significant effect in future long baseline detectors. We note gravitational waves are not likely to produce measurable phase shear. The sectional curvature of a gravitational wave is of order c2\u03c92h, with h the strain and \u03c9 the angular frequency. For reasonable values h \u223c 10\u221221 and \u03c9 \u223c 2\u03c0 \u00d71 Hz, c2K \u223c 3\u00d710\u221211 eotvos, 14 orders of magnitude smaller than that at Earth\u2019s surface. 4 (21) (22)",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: Lastly, we consider the effect of laser frequency noise. An atom optic frequency offset \u2206\u03c9 alters the AI boost angle by \u2206\u03c9/m (cf. Eq. (20)). Laser frequency noise \u2206\u03c9 \u223c 2\u03c0\u00d7103 s\u22121 would induce spurious phase shear of wavelength 2\u03c0c/\u2206\u03c9 \u223c 105 m, which is safely unobserv- able. For an N pulse large momentum transfer sequence N, this wavelength may be reduced by a factor of \u223c but is likely still unobservable for all proposed AI exper- iments, for which N \u223c 104 is considered optimistic.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: Summarily, we have shown that phase shear of a colli- mated atom interferometer has a direct geometric inter- pretation as the integrated sectional curvature over the spacetime surface bounded by the interferometer arms and final beamsplitter null geodesic. Phase shear thus provides a measurement of spacetime geometry which is independent of interferometer phase, is robust to noise, and applies equally to single-photon and multi-photon AIs. This interpretation facilitates calculation of phase shear in non-trivial metrics. We have provided several examples where this effect is likely to be observable or already observed. The geometric interpretation of atom interferometer phase shear thus provides an elegant and powerful theoretical tool for understanding the connec- tion between gravitation and atom interferometry. ACKNOWLEDGEMENTS This work was supported by the National Science Foundation QLCI Award No. OMA-2016244 and the Gordon and Betty Moore Foundation Grant GBMF7945.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: ACKNOWLEDGEMENTS This work was supported by the National Science Foundation QLCI Award No. OMA-2016244 and the Gordon and Betty Moore Foundation Grant GBMF7945. \u2217 orswan@stanford.edu \u2020 hogan@stanford.edu [1] M. Kasevich and S. Chu, Measurement of the gravita- tional acceleration of an atom with a light-pulse atom interferometer, Applied Physics B 54, 321 (1992). [2] A. Peters, K. Y. Chung, and S. Chu, High-precision grav- ity measurements using atom interferometry, Metrologia 38, 25 (2001). [3] J. Stockton, K. Takase, and M. Kasevich, Absolute geodetic rotation measurement using atom interferom- etry, Phys. Rev. Lett. 107, 133001 (2011). [4] S. Dimopoulos, P. W. Graham, J. M. Hogan, M. A. Kasevich, and S. Rajendran, Gravitational wave detec- tion with atom interferometry, Physics Letters B 678, 37 (2009).",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [4] S. Dimopoulos, P. W. Graham, J. M. Hogan, M. A. Kasevich, and S. Rajendran, Gravitational wave detec- tion with atom interferometry, Physics Letters B 678, 37 (2009). [5] P. W. Graham, J. M. Hogan, M. A. Kasevich, and S. Ra- jendran, New method for gravitational wave detection with atomic sensors, Phys. Rev. Lett. 110, 171102 (2013). [6] S. Dimopoulos, P. W. Graham, J. M. Hogan, M. A. Ka- sevich, and S. Rajendran, Atomic gravitational wave in- terferometric sensor, Phys. Rev. D 78, 122002 (2008). [7] M. Abe, P. Adamson, M. Borcean, D. Bortoletto, K. Bridges, S. P. Carman, S. Chattopadhyay, J. Cole- man, N. M. Curfman, K. DeRose, et al., Matter-wave \u221a atomic gradiometer interferometric sensor (MAGIS-100), Quantum Science and Technology 6, 044003 (2021). [8] A. Bonnin, N. Zahzam, Y. Bidel, and A. Bresson, Simul- taneous dual-species matter-wave accelerometer, Phys. Rev. A 88, 043615 (2013).",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [9] D. Schlippert, J. Hartwig, H. Albers, L. L. Richardson, C. Schubert, A. Roura, W. P. Schleich, W. Ertmer, and E. M. Rasel, Quantum test of the universality of free fall, Phys. Rev. Lett. 112, 203002 (2014). [10] M. G. Tarallo, T. Mazzoni, N. Poli, D. V. Sutyrin, X. Zhang, and G. M. Tino, Test of einstein equivalence principle for 0-spin and half-integer-spin atoms: Search for spin-gravity coupling effects, Phys. Rev. Lett. 113, 023005 (2014). [11] L. Zhou, S. Long, B. Tang, X. Chen, F. Gao, W. Peng, W. Duan, J. Zhong, Z. Xiong, J. Wang, Y. Zhang, and M. Zhan, Test of equivalence principle at 10\u22128 level by a dual-species double-diffraction raman atom interferome- ter, Phys. Rev. Lett. 115, 013004 (2015). [12] P. Asenbaum, C. Overstreet, M. Kim, J. Curti, and M. A. Kasevich, Atom-interferometric test of the equivalence principle at the 10\u221212 level, Phys. Rev. Lett. 125, 191101 (2020).",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [12] P. Asenbaum, C. Overstreet, M. Kim, J. Curti, and M. A. Kasevich, Atom-interferometric test of the equivalence principle at the 10\u221212 level, Phys. Rev. Lett. 125, 191101 (2020). [13] S. Dimopoulos, P. W. Graham, J. M. Hogan, and M. A. Kasevich, General relativistic effects in atom interferom- etry, Phys. Rev. D 78, 042003 (2008). [14] L. Badurina, Y. Du, V. S. Lee, Y. Wang, and K. M. Zurek, Signatures of linearized gravity in atom interfer- ometers: A simplified computational framework, Physi- cal Review D 111, 042002 (2025). [15] M. Werner, P. K. Schwartz, J.-N. Kirsten-Siem\u00df, N. Gaaloul, D. Giulini, and K. Hammerer, Atom interfer- ometers in weakly curved spacetimes using Bragg diffrac- tion and Bloch oscillations, Phys. Rev. D 109, 022008 (2024). [16] A. Roura, Atom interferometer as a freely falling clock for time-dilation measurements, Quantum Science and Technology 10, 025004 (2025). [17] A. Roura, Gravitational redshift in quantum-clock inter-",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [17] A. Roura, Gravitational redshift in quantum-clock inter- ferometry, Phys. Rev. X 10, 021014 (2020). [18] A. Roura, W. Zeller, and W. P. Schleich, Overcoming loss of contrast in atom interferometry due to gravity gradients, New Journal of Physics 16, 123012 (2014). [19] C. Ufrecht and E. Giese, Perturbative operator approach to high-precision light-pulse atom interferometry, Physi- cal Review A 101, 053615 (2020). [20] P. Storey and C. Cohen-Tannoudji, The Feynman path integral approach to atomic interferometry. a tutorial, Journal de Physique II 4, 1999 (1994). [21] C. Antoine and C. J. Bord\u00b4e, Exact phase shifts for atom interferometry, Physics Letters A 306, 277 (2003). [22] B. Dubetsky, S. B. Libby, and P. Berman, Atom interfer- ometry in the presence of an external test mass, Atoms 4, 14 (2016).",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [23] C. Overstreet, P. Asenbaum, and M. A. Kasevich, Phys- ically significant phase shifts in matter-wave interferom- etry, American Journal of Physics 89, 324 (2021). [24] C. Overstreet, P. Asenbaum, T. Kovachy, R. Notermans, J. M. Hogan, and M. A. Kasevich, Effective inertial frame in an atom interferometric test of the equivalence princi- ple, Physical review letters 120, 183604 (2018). [25] A. Roura, Circumventing Heisenberg\u2019s uncertainty prin- ciple in atom interferometry tests of the equivalence prin- ciple, Physical review letters 118, 160401 (2017). 5",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 5,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [26] A. Sugarbaker, S. M. Dickerson, J. M. Hogan, D. M. Johnson, and M. A. Kasevich, Enhanced atom interfer- ometer readout through the application of phase shear, Physical review letters 111, 113002 (2013). [27] G. Helzer, A relativistic version of the Gauss-Bonnet for- mula, Journal of Differential Geometry 9, 507 (1974). [28] G. S. Birman and K. Nomizu, The Gauss-Bonnet theo- rem for 2-dimensional spacetimes, The Michigan mathe- matical journal 31, 77 (1984). [29] Dzan Jin Jee, Gauss-Bonnet formula for general Lorentzian surfaces, Geometriae Dedicata 15, 215 (1984). [30] P. R. Law, Neutral geometry and the Gauss-Bonnet the- orem for two-dimensional pseudo-Riemannian manifolds, The Rocky Mountain Journal of Mathematics 22, 1365 (1992). [31] N. J. Hicks, Notes on differential geometry (van Nostrand Princeton, 1965).",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [31] N. J. Hicks, Notes on differential geometry (van Nostrand Princeton, 1965). [32] P. W. Graham, J. M. Hogan, M. A. Kasevich, and S. Ra- jendran, Resonant mode for gravitational wave detectors based on atom interferometry, Physical Review D 94, 104022 (2016). [33] C. Overstreet, P. Asenbaum, J. Curti, M. Kim, and M. A. Kasevich, Observation of a gravitational Aharonov-Bohm effect, Science 375, 226 (2022). APPENDIX A",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: [33] C. Overstreet, P. Asenbaum, J. Curti, M. Kim, and M. A. Kasevich, Observation of a gravitational Aharonov-Bohm effect, Science 375, 226 (2022). APPENDIX A Our definition of Lorentzian angles between non-null vectors is equivalent to that of of Helzer [27] or the real part only of the definition of Law [30], and is equivalent to the definition of Birman and Nomizu [28] for time-like vectors. We will show that the Gauss-Bonnet formula as given by Law [30] can be extended to incorporate our definition of angles across null geodesics. Helzer\u2019s notion of angle is more general still, but we find the definition via parallel transport convenient for application to an AI final beampslitter, where the ultimate goal is to compare two time-like momenta.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: Taking the real part only of the Gauss-Bonnet formula of [30] yields precisely our Eq. (3). Suppose the boundary loop \u03b3 consists of smooth segments \u03b3j, j = 0,...,n \u2212 1. Let Pj denote the common endpoint of \u03b3j\u22121 and \u03b3j (with j \u2212 1 taken mod n) and let \u03c4j denote the corresponding parameter time such that Pj = \u03b3(\u03c4j). Suppose that ex- actly one segment \u03b3k is a null geodesic and that it lies in a geodesically convex neighborhood. Let the curve \u0393\u03f5(\u03c4) be the unique geodesic defined on the interval [\u03c4k,\u03c4k+1] starting at Pk and terminating at P\u03f5 := \u03b3k+1(\u03c4k+1 + \u03f5) (see Fig. 4). For sufficiently small \u03f5, \u0393\u03f5 is non-null, for otherwise \u03b3k+1(\u03c4k+1 + \u03f5) would lie on the light cone of Pk+1, which is impossible if \u03b3k+1 is non-null. As \u03f5 \u2192 0, \u0393\u03f5(\u03c4) \u2192 \u03b3k(\u03c4) for \u03c4 \u2208 [\u03c4k,\u03c4k+1] (by the smoothness of the exponential map). Let \u03b1(\u03f5) k and \u03b1(\u03f5)",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: Let \u03b1(\u03f5) k and \u03b1(\u03f5) k+1 denote the angles at the intersections \u03b3k\u22121 with \u0393\u03f5 and \u0393\u03f5 with \u03b3k+1, respectively. Let S and T be the tangents to \u03b3k\u22121 and \u0393\u03f5 at Pk, let (cid:101)S, (cid:101)T be the parallel transport of S,T along \u0393\u03f5 to P\u03f5, and let U be the tangent to \u03b3k+1 at P\u03f5. Note that (cid:101)T is the tangent to \u0393\u03f5 at \u0393\u03f5(\u03c4k+1) since \u0393\u03f5 is geodesic. Parallel transport preserves angles (since it preserves inner products), and thus \u03b1(\u03f5) k is equal to the angle from (cid:101)S to (cid:101)T. By additivity of angles, \u03b1(\u03f5) k + \u03b1(\u03f5) k+1 equals the angle from (cid:101)S to U. By continuity of parallel transport with respect to initial conditions, as \u03f5 \u2192 0, \u03b1(\u03f5) k+1 converges to the angle across the null geodesic \u03b3k. k + \u03b1(\u03f5)",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: k + \u03b1(\u03f5) Apply the Gauss-Bonnet formula of [30] to the modi- fied curve \u03b3\u03f5 which follows \u03b3 until time \u03c4k, then follows \u0393\u03f5 till \u03c4k+1, then resumes following \u03b3 for all remaining time. By the remarks of the above paragraph, the sum of angles of \u03b3\u03f5 converges to that of \u03b3. Since \u03b3k and \u0393\u03f5 are both geodesic, the geodesic curvature of \u03b3\u03f5 differs from that of \u03b3 only on a short segment of \u03b3k+1, so that (cid:72) \u03b3 kg ds also. Lastly, the sectional \u03b3\u03f5 integral for \u03b3\u03f5 differs from that of \u03b3 only by a wedge shaped region with vanishing area as \u03f5 \u2192 0. Thus each term in the Gauss-Bonnet formula for \u03b3\u03f5 separately con- verges to that with our definition of angle across a null geodesic, proving our generalized Gauss-Bonnet theorem in this case. kg ds converges to (cid:72) If the boundary curve \u03b3 has multiple null geodesics, inductively applying the same construction proves that the Gauss-Bonnet formula holds in this case as well.",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: kg ds converges to (cid:72) If the boundary curve \u03b3 has multiple null geodesics, inductively applying the same construction proves that the Gauss-Bonnet formula holds in this case as well. We make two remarks on subtleties of applying Gauss- Bonnet in special cases: First, any spacetime surface bounded by the AI may be used to compute the sectional curvature integral. If the surface is deformed in the am- bient 3+1 dimensional spacetime, the sectional curvature witnessed at particular points will of course vary, but the integrated curvature must remain fixed. This allows some flexibility in choosing convenient surfaces for calculation. Second, in dimensions higher than 1+1, it may happen ~ k \u03b3 + k \u0393 \u03b5 k \u03b3 1 \u03b3",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: ~ k \u03b3 + k \u0393 \u03b5 k \u03b3 1 \u03b3 FIG. 4. Approximating a null geodesic segment \u03b3k by a non- null geodesic segment \u0393\u03b5. See text for definitions. Dotted lines indicate tangent vectors, solid lines are segments of the original path \u03b3, and a dashed line is used for \u0393\u03b5 only. For visual clarity, the tangent vector T has been omitted, as it would overlap with \u0393\u03b5. 6",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: 1 = tanh\u22121 \u03b1\u2032. Text: that the same atom optics null geodesics do not address both arms of the AI. In this case, the Gauss-Bonnet for- mula may be applied to a loop formed by the AI arms, two null geodesic segments associated with the trajec- tories of FBS photons which address the two AI arms, and a short spacelike segment connecting these two null segments. 7",
-    "metadata": {
-      "doc_id": "0fb056a3",
-      "page": 7,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 1: ] h p - m o t a . s c i s y h p [",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p1_0_2",
+      "doc_id": "c36d4a30",
       "page": 1,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "] h p - m o t a . s c i s y h p [",
-      "normalized_text": "] h p - m o t a . s c i s y h p [",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 1: \u2206p = -mc (cid:90)",
+    "content": "Section: Introduction. Text: 2. Defining Data Requirements (What Info We Need from the Dataset?) As an AI/ML Student, I naturally approached the mock data analytically and ran a Python-based exploration to uncover insights. I leveraged Google Colab to implement a Scoring Algorithm. I\u2019ve extended the challenge by implementing a demo Skin Seoul website frontend (using Python Flask) with a clean, intuitive UI/UX that records basic user activity and feeds it into the \u201cML model\u201d (MAB Algorithm) to fine-tune for optimal weights. Please Visit my Colab Notebook: https://colab.research.google.com/drive/1BQ4YNl0xV_z75XI3-RCIlikTbJ9HfGA0?usp=sharing \u2794 Margin using the Volume Sold, Units in Stock, Price, and COGS data. Strategic attributes like Brand Priority, Inventory Freshness, and Views were then derived from the Brand Tier, Days of Inventory, and Views columns. \u2794 Derived Fields/Columns: Profit Margin = ($ - COGS) / $; Sell-Through Rate = Sold / (Stock + Sold) \u2794 Assumptions: The model requires a hybrid data pipeline,",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p1_3_1",
+      "doc_id": "c36d4a30",
       "page": 1,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "\u2206p = \u2212mc (cid:90)",
-      "normalized_text": "\u2206p = -mc (cid:90)",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 1: K dA + O (cid:0)m\u00afv \u00afK \u00afA(cid:1), M",
+    "content": "Section: Introduction. Text: Days of Inventory, and Views columns. \u2794 Derived Fields/Columns: Profit Margin = ($ - COGS) / $; Sell-Through Rate = Sold / (Stock + Sold) \u2794 Assumptions: The model requires a hybrid data pipeline, pulling internal data (sales, inventory, margin) from our analytics API and enriching it with external live internet data streams for market intelligence (social media buzz, competitor pricing, and product review sentiment).",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p1_3_3",
+      "doc_id": "c36d4a30",
       "page": 1,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "K dA + O (cid:0)m\u00afv \u00afK \u00afA(cid:1), M",
-      "normalized_text": "K dA + O (cid:0)m\u00afv \u00afK \u00afA(cid:1), M",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 1: \u2206\u03d5 = \u2206\u03d5prop + \u2206\u03d5laser + \u2206\u03d5sep.",
+    "content": "Section: Introduction. Text: 3. Analytical Logic Design: \u2794 \u2794 1: Filters: Units in Stock >= 10 (ensure availability) & Volume Sold Last Month >= 50 (proven demand). 2: Scoring Function: \u201cThe 4D Product Ranking Algorithm\u201d My first algorithm was too reactive, relying only on given data. Introducing the 4D Ranking Algorithm: a holistic system that is both reactive to Historical Data and proactive to market opportunities, generating a single intelligent score. Below are brief explanations of each term in the \u201cFour Dimensions\u201d: 1. \u201cCore Performance\u201d first identifies proven top-performers by analyzing raw sales velocity and efficiency. 2. \"Core Economics\" ensures our products make money by prioritizing high profits and efficient inventory. 3.\u201cMarket Intelligence\u201d scans the internet, capitalizing on social media buzz and competitive advantages. 4. \"Customer's Voice\" adds brand reputation and product quality to the score, based on customer reviews.",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p1_3_6",
+      "doc_id": "c36d4a30",
       "page": 1,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "\u2206\u03d5 = \u2206\u03d5prop + \u2206\u03d5laser + \u2206\u03d5sep.",
-      "normalized_text": "\u2206\u03d5 = \u2206\u03d5prop + \u2206\u03d5laser + \u2206\u03d5sep.",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: (cid:90) K dA + (cid:73) kg ds + (cid:88) \\alphaj = 0, M \\gamma j",
+    "content": "Section: Introduction. Text: \u2794 3. Refresh Cadence: I must work backward from the modern customer\u2019s real-time needs. If a product trends on TikTok or Instagram at 11 AM, it must be capitalized immediately\u2014not the next day. That\u2019s why I chose a 4-hour refresh cadence to meet this demand and serve customers what\u2019s relevant now. 4. Merchandising Goals and Design Constraints \u2794 Goals: 1. Drive conversions & AOV by ranking on multiple factors like profitability, not just past sales. 2. Enhance discovery by proactively identifying and boosting products based on social media & seasonal trends. 3. Automate strategically to reduce manual curation by \u2248 80% Assuming that the AI agent automates all routine ranking tasks, the merchandiser's role will shift from manual curation to high-level strategic oversight. 4. Strengthen brand partnerships by ensuring key brands receive strategic visibility. \u2794 Constraints:",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_0_2",
+      "doc_id": "c36d4a30",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "(cid:90) K dA + (cid:73) kg ds + (cid:88) \u03b1j = 0, M \u03b3 j",
-      "normalized_text": "(cid:90) K dA + (cid:73) kg ds + (cid:88) \\alphaj = 0, M \\gamma j",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: L(\\alpha) =",
+    "content": "Section: Introduction. Text: 4. Strengthen brand partnerships by ensuring key brands receive strategic visibility. \u2794 Constraints: 1. The model is restricted to validation on a mock dataset with hardcoded algorithm weights. 2. The 4-hour refresh cadence is restricted by technical and resource limitations. 5. Process Flow Map (multi-phase, cyclical, and robust system) Phase 1 \u2013 Automated Ranking: Every 4 hours, a CRON job pulls internal (sales, inventory) and external (social buzz, competitor prices) data. The 4D algorithm scores products, outputs a ranked JSON feed, and supports manual overrides via a dashboard, with full process logging. Phase 2 \u2013 Continuous Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent that dynamically adjusts the 4D formula\u2019s weights to align with business goals. Deployment: A CI/CD pipeline ensures automated testing, reliable updates, and rapid iteration.",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_1_11",
+      "doc_id": "c36d4a30",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "L(\u03b1) =",
-      "normalized_text": "L(\\alpha) =",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: (cid:18)cosh(\\alpha) sinh(\\alpha) sinh(\\alpha) cosh(\\alpha) (cid:19) .",
+    "content": "Section: Introduction. Text: Conclusion \ud83d\udcab This assessment helped me hone my data analytical skills and business acumen while challenging me in multiple ways. The solution includes: a proactive 4D Ranking Algorithm that balances proven performance with profitability, while fusing market intelligence with the customer's voice. It proves we can move beyond simply reacting to sales data and start proactively shaping customer demand. Ultimately, this isn't just about optimizing a feature; it's about challenging the static nature of e-commerce itself by \u201cLeveraging AI.\u201d",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_1_12",
+      "doc_id": "c36d4a30",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "(cid:18)cosh(\u03b1) sinh(\u03b1) sinh(\u03b1) cosh(\u03b1) (cid:19) .",
-      "normalized_text": "(cid:18)cosh(\\alpha) sinh(\\alpha) sinh(\\alpha) cosh(\\alpha) (cid:19) .",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: p = msinh(\\alpha) = m\\alpha + O (cid:0)m\\alpha3(cid:1).",
+    "content": "Figure on page 2: aints e profitability, not just past sales. d t b d i l di & l t d",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_5_1",
+      "id": "fig_2_0",
+      "page": 2,
+      "bbox": [
+        349.3822937011719,
+        18.0,
+        603.8677368164062,
+        209.25
+      ],
+      "path": "src\\data\\assets\\c36d4a30\\fig_page2_0.png",
+      "caption": "aints \ne profitability, not just past sales. \nd\nt b\nd\ni l\ndi\n&\nl t\nd",
+      "doc_id": "c36d4a30",
+      "type": "figures",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Figure on page 2: \u2794\u200b 3. Refresh Cadence: I must work backward from the modern customer\u2019s real-time needs. If a product trends on TikTok or Instagram at 11 AM, it must be capitalized immediately\u2014not the",
+    "metadata": {
+      "id": "fig_2_1",
+      "page": 2,
+      "bbox": [
+        15.75,
+        18.0,
+        349.5,
+        127.5
+      ],
+      "path": "src\\data\\assets\\c36d4a30\\fig_page2_1.png",
+      "caption": "\u2794\u200b 3. Refresh Cadence: I must work backward from the modern \ncustomer\u2019s real-time needs. If a product trends on TikTok or \nInstagram at 11 AM, it must be capitalized immediately\u2014not the",
+      "doc_id": "c36d4a30",
+      "type": "figures",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Figure on page 2: Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent he 4D formula\u2019s weights to align with business goals. peline ensures automated testing, reliable updates, and rapid iteration.",
+    "metadata": {
+      "id": "fig_2_2",
+      "page": 2,
+      "bbox": [
+        141.75,
+        376.6317138671875,
+        599.25,
+        592.6317138671875
+      ],
+      "path": "src\\data\\assets\\c36d4a30\\fig_page2_2.png",
+      "caption": "Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent \nhe 4D formula\u2019s weights to align with business goals. \npeline ensures automated testing, reliable updates, and rapid iteration.",
+      "doc_id": "c36d4a30",
+      "type": "figures",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Title: https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review. Abstract:",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "type": "summary",
+      "weight": 3.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: The Micro-Paper: Towards cheaper, citable research ideas and conversations FRANK ELAVSKY, Carnegie Mellon University, fje@cmu.edu",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Academic, peer-reviewed \u201cshort\u201d papers are a common way to present a late-breaking work to the academic community that outlines preliminary findings, research ideas, and novel conversations. By comparison, blogging or writing posts on social media are an unstructured and open way to discuss ideas and start new conversations. Both have limitations in the proliferation of research ideas. The short paper format relies on the conference and journal submission process while blogging does not operate within a structured format or set of expectations at all. However, at times the demand exists for late-breaking ideas and conversations to arise in a raw form or with urgency but should still be archived and recorded in a way that promotes citational honesty and integrity. To address this, I present: The Micro-Paper, as a micro-paper itself. The Micro-Paper is a small, cheap, accessible, digital document that is self-published and archived, akin to a pre-print of a short paper. This meta",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: present: The Micro-Paper, as a micro-paper itself. The Micro-Paper is a small, cheap, accessible, digital document that is self-published and archived, akin to a pre-print of a short paper. This meta micro-paper discusses the context, goals, and considerations of micro-paper authoring.",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: ideas that aren\u2019t only congealed or refined, but raw and messy as well. Generally, the gap for disseminating cheap Fig 1: The micro-paper fills a gap on the spectrum between fast, cheap ideas and rigorous, archival work. ideas is filled by academics today through Twitter, blogging, or in some form of social media or another. Sometimes the gap is filled through workshops, position papers, or conversation pieces (such as ACM\u2019s Interactions). There are many options for sharing ideas, all with different tradeoffs between editorial and authoring expenses, time, archiving, accessibility, and democratization of the process. 1. What is a micro-paper? A micro-paper is a paper between 1 and 4 pages in length that engages a single idea clearly. A micro-paper can be anything from focused blog post to a preprinted short paper, but it is published through an open archive.",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 2. The context of micro-papers Ideas and conversations often arise in research settings in response to problems, gaps, or issues. But some ideas and conversations also come about in a more generative fashion: they are still responding to something within a context but are not concerned with problems and gaps. So, whether filling gaps or otherwise, a micro-paper (and even the authors at times) must clearly and reflexively be situated within a conversational context. At a meta-level, this paper is framed as a gap- filler (see: Fig 1). Currently, academic publishing is expensive, time-consuming, and high risk. And while much of the process could be argued as a necessary set of procedures to ensure we aren\u2019t making claims that are misleading or unfounded, there exists a gap for disseminating ideas that should be cheap, accessible, and intended to inspire other work [4]. Not all research conversation needs to have answers. The heart of research as a community is due to the dissemination of",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 3. A micro-paper\u2019s goal is the free, cheap, open, and honest dissemination of ideas The micro-paper\u2019s focus is on ideas for the sake of generative work, conversation, and inspiration. In contrast, a micro-paper is not an appropriate venue for sharing findings, claims, or experiments. The nature of methodological generation of knowledge is most trustworthy when there is a more rigorous process in place. Some avenues generate good or trustworthy knowledge and ideas, but the micro-paper is a place for sharing potentially useful ideas. Good or trustworthy knowledge may require more careful review [3, 4, 6], but potentially useful ideas should at least be archived. 3.1 A micro-paper must be small and cheap Whether having peer-reviewed work or an editorial team, most writing is costly in both time and money. It is also risky: your work could get rejected or require slow iterations of feedback and review.",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: In contrast, this micro-paper took me 3 hours on a random Thursday in February (when I should be crunching for another deadline). Most micro-papers should ideally be short enough in length to encourage both rapid authoring and reading.",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 3.2 A micro-paper must be archived While blogging and tweeting is cheap and fast and encourages ideas to be shared, these aren\u2019t trustworthy archives. And sometimes good ideas arise in these faster, cheaper contexts that should be captured, articulated, and stored for later reference. With the existential threat of twitter disintegrating at any moment and the entirely unmaintained space of many academic blogs, it is important for some ideas to be archived [5]. While some blog maintainers may have higher standards for their longevity, url stability, dois, and records of changes, it may make sense for most to use an existing pre-print archival platform, like arXiv for ensuring trustworthiness and reliability in your readers.",
+    "metadata": {
+      "doc_id": "e531768d",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "p = msinh(\u03b1) = m\u03b1 + O (cid:0)m\u03b13(cid:1).",
-      "normalized_text": "p = msinh(\\alpha) = m\\alpha + O (cid:0)m\\alpha3(cid:1).",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: \\beta = tanh-1 (cid:18) \u03bd m + \u03bd (cid:19) = \u03bd m + \u03bd",
+    "content": "Section: Introduction. Text: 3.3 Revisions must also be archived In addition to archival processes for the sake of accessing later, many archival sites (such as arXiv) also keep track of revision histories. The ephemeral and non-standardized way that individuals operate their own blogs and social media means that not only might something move or cease to exist (a findability problem) but there is also an honesty problem when contents change or update without record [7].",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_5_3",
+      "doc_id": "e531768d",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "\u03b2 = tanh\u22121 (cid:18) \u03bd m + \u03bd (cid:19) = \u03bd m + \u03bd",
-      "normalized_text": "\\beta = tanh-1 (cid:18) \u03bd m + \u03bd (cid:19) = \u03bd m + \u03bd",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: + O (cid:0)\u00afv3(cid:1).",
+    "content": "Section: Introduction. Text: 3.4 A micro-paper must be accessible Blogs, twitter, and mastodon have done more for disability discourse than most other media, but especially more than the dreaded PDF favored by academics. This is because text-based media online (generally in HTML or Markdown) has immense accessibility potential over PDF [1] (and paper publications). All artifacts of academic discourse, including every paper publication, should be more accessible. Due to a micro-paper\u2019s size, it is easier for authors to learn accessibility for than a full-size paper with proprietary formatting involved. This micro-paper was authored in Microsoft Word, exported as a PDF, and then converted into HTML using pandoc. With the push for arXiv to transition more towards accessible formats of publication [2], I believe that trustworthy archives that are accessibility-first are near. Micro-papers will compliment this push.",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_5_9",
+      "doc_id": "e531768d",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "+ O (cid:0)\u00afv3(cid:1).",
-      "normalized_text": "+ O (cid:0)\u00afv3(cid:1).",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: L(-\\alpha) (cid:18)\u03bd \u03bd (cid:19) = (cid:18)e-\\alpha\u03bd e-\\alpha\u03bd (cid:19)",
+    "content": "Section: Introduction. Text: towards accessible formats of publication [2], I believe that trustworthy archives that are accessibility-first are near. Micro-papers will compliment this push. 4. Considering when a micro-paper is the write choice (pun intended) If someone has an idea, conversation, or late-breaking work, they might consider the following questions: Why wouldn\u2019t I write a short academic paper and submit to a traditional venue? It is time-consuming, expensive, and requires waiting for the publication cycle. It is also higher risk, in cases where the peer review process might reject it. Why shouldn\u2019t I write a piece in a non-peer reviewed publication, like ACM Interactions? This is also time-consuming and higher risk, because editorial interest may conflict. In addition, these often require an existing network of colleagues, invitation to contribute, or formal submission and selection process.",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_6_8",
+      "doc_id": "e531768d",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "L(\u2212\u03b1) (cid:18)\u03bd \u03bd (cid:19) = (cid:18)e\u2212\u03b1\u03bd e\u2212\u03b1\u03bd (cid:19)",
-      "normalized_text": "L(-\\alpha) (cid:18)\u03bd \u03bd (cid:19) = (cid:18)e-\\alpha\u03bd e-\\alpha\u03bd (cid:19)",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 2: and then applying Eq. (6).",
+    "content": "Section: Introduction. Text: Why shouldn\u2019t I write a blog or twitter thread? Blogs and social media posts raise concerns about archival quality and trustworthiness. Accessing the piece later may become difficult or cumbersome. Some great ideas and discussions have been lost in time due to the ephemeral nature of these cheap and fast options. When is writing a micro-paper a good idea? Notably, there is no formal peer review for a micro- paper. Our currently imagined peer review process may not make sense for all work published with the intent to push new ideas and conversations. It is even worth considering if this practice should continue at all [3, 4]. A practical use for a micro-paper may be as a",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p2_6_14",
+      "doc_id": "e531768d",
       "page": 2,
       "section": "Introduction",
-      "type": "equations",
-      "equation_text": "and then applying Eq. (6).",
-      "normalized_text": "and then applying Eq. (6).",
-      "doc_id": "0fb056a3",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 3: \\alphaf\\beta-\\beta+\\theta+\\theta- x t",
+    "content": "Section: Introduction. Text: preprint or early draft for an eventual short or full paper submission, position paper, or book chapter. The greatest strength of both the pre-print and short paper process is that they can invigorate scholars with new or raw ideas to see those turn into full projects. Short papers also have a core readership and opportunities to present that are not afforded to micro-papers, so for early career researchers it may be important to consider ways to use these two formats together. For folks who simply want to get a citable idea out into the world without regard for submission and publication cycles and procedures, a micro-paper is a good choice as well. And lastly, there may be authors with too",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_0_0",
+      "doc_id": "e531768d",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: out into the world without regard for submission and publication cycles and procedures, a micro-paper is a good choice as well. And lastly, there may be authors with too many ideas to pursue (even when some are useful) and they are willing to admit that they won\u2019t pursue every idea that they have. A micro-paper is a way to put the idea into the discussion and let it run its course. In my case, I recognize that some problems and patterns are outside of the scope of my leverage and experience to address, such as contributions to design or behavioral domains of accessibility (when my area is strictly technical contributions).",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: 5. Conclusion The hope is that both the procedural and systemic inaccessibility of the short paper authoring process and the citational uncertainty of blogs and social media can be addressed with the micro-paper. I hope to see early, usable ideas shared more freely and especially hope to invigorate young scholars and include historically excluded folks, such as those with disabilities, in the larger research conversation.",
+    "metadata": {
+      "doc_id": "e531768d",
+      "page": 2,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: Acknowledgements Special thanks to Jonathan Zong, for your encouragement to make my cheap ideas citable and for feedback on this micro-paper. Also thanks to the folks at the MIT Vis Lab (Arvind, Crystal, and Alan) for supporting my not- traditionally-publishable ideas over the past couple years especially. Hearing that my \u201ctweets are a public service\u201d encouraged me to make the heart of that service last longer than Twitter does (hopefully). References [1] Bigham, Jeffrey et al. \u201cAn Uninteresting Tour Through Why Our Research Papers Aren't Accessible.\u201d CHI, May 2016. doi: 10.1145/2851581.2892588. [2] Brinn, Shamsi et al. \u201cA framework for improving the accessibility of research papers on arXiv.org.\u201d arXiv, Dec. 2022. doi: 10.48550/ARXIV.2212.07286 [3] Mastroianni, Adam. \u201cThe rise and fall of peer review.\u201d Experimental History, Accessed: Feb. 24, 2023. https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review",
+    "metadata": {
+      "doc_id": "e531768d",
       "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u03b1f\u03b2-\u03b2+\u03b8+\u03b8- x t",
-      "normalized_text": "\\alphaf\\beta-\\beta+\\theta+\\theta- x t",
-      "doc_id": "0fb056a3",
+      "section": "Introduction",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 3: \\theta\\pm = \\alphaf - \\beta\\pm.",
+    "content": "Section: Introduction. Text: [3] Mastroianni, Adam. \u201cThe rise and fall of peer review.\u201d Experimental History, Accessed: Feb. 24, 2023. https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review [4] Mastroianni, Adam et al. \u201cThings Could Be Better.\u201d PsyArXiv, Nov 2022. [5] Sanderson, Robert et al. \u201cAnalyzing the Persistence of Referenced Web Resources with Memento.\u201d arXiv, May 2011. doi: 10.48550/arXiv.1105.3459 [6] \u201cWhy Do People Publish on Arxiv Instead of Other Places?\u201d Academia Stack Exchange, Accessed: Feb. 23, 2023, https://academia.stackexchange.com/questions/75325/why-do-people-publish-on-arxiv-instead-of- other-places. [7] Zittrain, Jonathan et al. \u201cPerma: Scoping and Addressing the Problem of Link and Reference Rot in Legal Citations.\u201d Harvard Law Review, Mar. 2014.",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_1_1",
+      "doc_id": "e531768d",
       "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u03b8\u00b1 = \u03b1f \u2212 \u03b2\u00b1.",
-      "normalized_text": "\\theta\\pm = \\alphaf - \\beta\\pm.",
-      "doc_id": "0fb056a3",
+      "section": "Introduction",
+      "type": "chunks",
       "weight": 1.0
     }
   },
   {
-    "content": "Equation on page 3: In the flat space AI, Eq. (3) becomes (cid:88) \\alpha\u2032 j = 0 j",
+    "content": "Figure on page 1: Fig 1: The micro-paper fills a gap on the spectrum between fast, cheap ideas and rigorous, archival work. 1. What is a micro-paper?",
     "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_2_3",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "In the flat space AI, Eq. (3) becomes (cid:88) \u03b1\u2032 j = 0 j",
-      "normalized_text": "In the flat space AI, Eq. (3) becomes (cid:88) \\alpha\u2032 j = 0 j",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 3: (cid:90) K dA + (cid:88) \\alphaj = (cid:90) K dA + (cid:88) \u2206\\alphaj. M j M j (8) (9) (10) 3 Solving for \u2206\\alphaf, \u2206\\alphaf = - (cid:90) K dA - (cid:88) \u2206\\alphaj, (11) M j\u0338=f",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_2_10",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "(cid:90) K dA + (cid:88) \u03b1j = (cid:90) K dA + (cid:88) \u2206\u03b1j. M j M j (8) (9) (10) 3 Solving for \u2206\u03b1f, \u2206\u03b1f = \u2212 (cid:90) K dA \u2212 (cid:88) \u2206\u03b1j, (11) M j\u0338=f",
-      "normalized_text": "(cid:90) K dA + (cid:88) \\alphaj = (cid:90) K dA + (cid:88) \u2206\\alphaj. M j M j (8) (9) (10) 3 Solving for \u2206\\alphaf, \u2206\\alphaf = - (cid:90) K dA - (cid:88) \u2206\\alphaj, (11) M j\u0338=f",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 3: \\theta\\pm = \\alphaf - \\beta\\pm = \u2206\\alphaf - \u2206\\beta\\pm = - (cid:90) K dA -",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_2_37",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u03b8\u00b1 = \u03b1f \u2212 \u03b2\u00b1 = \u2206\u03b1f \u2212 \u2206\u03b2\u00b1 = \u2212 (cid:90) K dA \u2212",
-      "normalized_text": "\\theta\\pm = \\alphaf - \\beta\\pm = \u2206\\alphaf - \u2206\\beta\\pm = - (cid:90) K dA -",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 3: (cid:88) \u2206\\alphaj. M j M j (8) (9) (10) 3 Solving for \u2206\\alphaf, \u2206\\alphaf = - (cid:90) K dA - (cid:88) \u2206\\alphaj, (11) M j\u0338=f",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_3_0",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "(cid:88) \u2206\u03b1j. M j M j (8) (9) (10) 3 Solving for \u2206\u03b1f, \u2206\u03b1f = \u2212 (cid:90) K dA \u2212 (cid:88) \u2206\u03b1j, (11) M j\u0338=f",
-      "normalized_text": "(cid:88) \u2206\\alphaj. M j M j (8) (9) (10) 3 Solving for \u2206\\alphaf, \u2206\\alphaf = - (cid:90) K dA - (cid:88) \u2206\\alphaj, (11) M j\u0338=f",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 3: \\theta\\pm = \\alphaf - \\beta\\pm = \u2206\\alphaf - \u2206\\beta\\pm = - (cid:90) K dA - (cid:88) \u2206\\alphaj - \u2206\\beta\\pm. (12) M j\u0338=f",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_3_21",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u03b8\u00b1 = \u03b1f \u2212 \u03b2\u00b1 = \u2206\u03b1f \u2212 \u2206\u03b2\u00b1 = \u2212 (cid:90) K dA \u2212 (cid:88) \u2206\u03b1j \u2212 \u2206\u03b2\u00b1. (12) M j\u0338=f",
-      "normalized_text": "\\theta\\pm = \\alphaf - \\beta\\pm = \u2206\\alphaf - \u2206\\beta\\pm = - (cid:90) K dA - (cid:88) \u2206\\alphaj - \u2206\\beta\\pm. (12) M j\u0338=f",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 3: 1 = \u03d50 - (cid:90) kg ds, (13) (cid:90) laser (cid:90) \u03d51 = \u03d50 - kg ds - K dA. (14) laser N1",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_6_1",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "1 = \u03d50 \u2212 (cid:90) kg ds, (13) (cid:90) laser (cid:90) \u03d51 = \u03d50 \u2212 kg ds \u2212 K dA. (14) laser N1",
-      "normalized_text": "1 = \u03d50 - (cid:90) kg ds, (13) (cid:90) laser (cid:90) \u03d51 = \u03d50 - kg ds - K dA. (14) laser N1",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 3: 1 = tanh-1 \\alpha\u2032 \\alpha1 = tanh-1 (cid:32) (cid:32)",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_6_15",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "1 = tanh\u22121 \u03b1\u2032 \u03b11 = tanh\u22121 (cid:32) (cid:32)",
-      "normalized_text": "1 = tanh-1 \\alpha\u2032 \\alpha1 = tanh-1 (cid:32) (cid:32)",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 3: \u2206\\alpha1 = -\\alpha\u2032 1 (cid:90)",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p3_6_33",
-      "page": 3,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u2206\u03b11 = \u2212\u03b1\u2032 1 (cid:90)",
-      "normalized_text": "\u2206\\alpha1 = -\\alpha\u2032 1 (cid:90)",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 4: (cid:12) (cid:12) (cid:12) (cid:82) K dA N1 \u2206\\alphaj = -\\alpha\u2032 j (cid:90)",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p4_0_11",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "(cid:12) (cid:12) (cid:12) (cid:82) K dA N1 \u2206\u03b1j = \u2212\u03b1\u2032 j (cid:90)",
-      "normalized_text": "(cid:12) (cid:12) (cid:12) (cid:82) K dA N1 \u2206\\alphaj = -\\alpha\u2032 j (cid:90)",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 4: \u2206p\\pm = - m (cid:90) K dA - m (cid:88) \\alpha\u2032 j (cid:90) K dA M j\u0338=f Nj + m\\beta\u2032 \\pm",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p4_0_20",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u2206p\u00b1 = \u2212 m (cid:90) K dA \u2212 m (cid:88) \u03b1\u2032 j (cid:90) K dA M j\u0338=f Nj + m\u03b2\u2032 \u00b1",
-      "normalized_text": "\u2206p\\pm = - m (cid:90) K dA - m (cid:88) \\alpha\u2032 j (cid:90) K dA M j\u0338=f Nj + m\\beta\u2032 \\pm",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 4: \u2206p\\pm = - m (cid:90) K dA - m (cid:88) \\alpha\u2032 j (cid:90) K dA M j\u0338=f Nj + m\\beta\u2032 \\pm (cid:90)",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p4_1_0",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u2206p\u00b1 = \u2212 m (cid:90) K dA \u2212 m (cid:88) \u03b1\u2032 j (cid:90) K dA M j\u0338=f Nj + m\u03b2\u2032 \u00b1 (cid:90)",
-      "normalized_text": "\u2206p\\pm = - m (cid:90) K dA - m (cid:88) \\alpha\u2032 j (cid:90) K dA M j\u0338=f Nj + m\\beta\u2032 \\pm (cid:90)",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 4: \u2206\\alpha\\pi\\pm = \\pm 1 2 (cid:90) M\u2032 K dA + O(\u00afv \u00afK \u00afA),",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p4_2_1",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "\u2206\u03b1\u03c0\u00b1 = \u00b1 1 2 (cid:90) M\u2032 K dA + O(\u00afv \u00afK \u00afA),",
-      "normalized_text": "\u2206\\alpha\\pi\\pm = \\pm 1 2 (cid:90) M\u2032 K dA + O(\u00afv \u00afK \u00afA),",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 4: ds2 = (1 + 2\u03a6(x)) dt2 - (1 - 2\u03a6(x)) dx2",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p4_4_1",
-      "page": 4,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "ds2 = (1 + 2\u03a6(x)) dt2 \u2212 (1 \u2212 2\u03a6(x)) dx2",
-      "normalized_text": "ds2 = (1 + 2\u03a6(x)) dt2 - (1 - 2\u03a6(x)) dx2",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 6: Let \\alpha(\u03f5) k and \\alpha(\u03f5)",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p6_3_1",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "Let \u03b1(\u03f5) k and \u03b1(\u03f5)",
-      "normalized_text": "Let \\alpha(\u03f5) k and \\alpha(\u03f5)",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 6: k + \\alpha(\u03f5)",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p6_4_4",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "k + \u03b1(\u03f5)",
-      "normalized_text": "k + \\alpha(\u03f5)",
-      "doc_id": "0fb056a3",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Equation on page 6: kg ds converges to (cid:72)",
-    "metadata": {
-      "id": "txt_eqn_0fb056a3_p6_5_2",
-      "page": 6,
-      "section": "1 = tanh\u22121 \u03b1\u2032",
-      "type": "equations",
-      "equation_text": "kg ds converges to (cid:72)",
-      "normalized_text": "kg ds converges to (cid:72)",
-      "doc_id": "0fb056a3",
+      "id": "fig_1_0",
+      "page": 1,
+      "bbox": [
+        72.0,
+        280.19000244140625,
+        297.0,
+        377.239990234375
+      ],
+      "path": "src\\data\\assets\\e531768d\\fig_page1_0.png",
+      "caption": "Fig 1: The micro-paper fills a gap on the spectrum \nbetween fast, cheap ideas and rigorous, archival work. \n1. What is a micro-paper?",
+      "doc_id": "e531768d",
+      "type": "figures",
       "weight": 1.0
     }
   }
