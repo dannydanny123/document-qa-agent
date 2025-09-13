@@ -1,17 +1,17 @@
 [
   {
-    "content": "Title: Particulars. Abstract:",
+    "content": "Title: ] L C . s c [. Abstract: The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data. \u2217Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Transformer models and has been crucially involved in every aspect of this work. Noam proposed scaled dot-product attention, multi-head attention and the parameter-free position representation and became the other person involved in nearly every detail. Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and tensor2tensor. Llion also experimented with novel model variants, was responsible for our initial codebase, and efficient inference and visualizations. Lukasz and Aidan spent countless long days designing various parts of and implementing tensor2tensor, replacing our earlier codebase, greatly improving results and massively accelerating our research. \u2020Work performed while at Google Brain. \u2021Work performed while at Google Research. 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA. 1",
     "metadata": {
-      "doc_id": "2852c2a3",
+      "doc_id": "3811cd14",
       "page": 1,
       "type": "summary",
       "weight": 3.0
     }
   },
   {
-    "content": "Section: Introduction. Text: Particulars April May June July August September October November December January February March Total THE PLAZA HOTEL Outlet wise revenue comparative Statement from (April & March FY 2017-18 & 2018-19) Room Revenue - 2017-18 Room Revenue - 2018-19 Coffee Shop - 2017-18 Coffee Shop - 2018-19 Banquets - 2017-18 Banquets - 2018-19 Room Service - 2017-18 Room Service - 2018-19 Laundry -2017-18 Laundry -2018-19 Mis Income - 2017-18 Mis Income - 2018-19 Total - 2017-18 Total - 2018-19 32.54 32.33 15.61 15.33 26.7 29.68 3.02 3.43 0.75 1.02 0.68 0.69 37.41 26.23 15.14 12.77 26.63 23.46 3.4 3.16 0.91 1.36 0.98 0.95 35.3 28.41 14.94 15.25 36.02 39.49 3.16 3.45 1.05 1.16 0.75 0.44 34.04 30.97 14.41 16.9 38.29 32.71 2.85 4.07 0.98 1.23 1.36 0.42 37.38 35.59 15.6 16.21 34.77 50.34 2.98 3.93 1.25 1.19 1.21 1.71 30.15 29.86 14.06 14.65 23.04 35.71 3.82 4.07 0.88 1.08 0.75 0.84 41.51 41.68 14.38 17.37 49.18 39.6 2.34 4.31 1.05 0.98 0.69 0.64 35.44 35.69 14.47 15.73 44.05 38.09 3.18 5.73 0.94 1.32",
+    "content": "Section: Introduction. Text: 3 2 0 2 g u A 2 ] L C . s c [ 7 v 2 6 7 3 0 . 6 0 7 1 : v i X r a Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works. Attention Is All You Need Ashish Vaswani\u2217 Google Brain avaswani@google.com Noam Shazeer\u2217 Google Brain noam@google.com Niki Parmar\u2217 Google Research nikip@google.com Jakob Uszkoreit\u2217 Google Research usz@google.com Llion Jones\u2217 Google Research llion@google.com Aidan N. Gomez\u2217 \u2020 University of Toronto aidan@cs.toronto.edu \u0141ukasz Kaiser\u2217 Google Brain lukaszkaiser@google.com Illia Polosukhin\u2217 \u2021 illia.polosukhin@gmail.com Abstract",
     "metadata": {
-      "doc_id": "2852c2a3",
+      "doc_id": "3811cd14",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -19,9 +19,9 @@
     }
   },
   {
-    "content": "Section: Introduction. Text: 1.21 1.71 30.15 29.86 14.06 14.65 23.04 35.71 3.82 4.07 0.88 1.08 0.75 0.84 41.51 41.68 14.38 17.37 49.18 39.6 2.34 4.31 1.05 0.98 0.69 0.64 35.44 35.69 14.47 15.73 44.05 38.09 3.18 5.73 0.94 1.32 0.58 1.02 37.94 39.55 23.63 15.65 33.17 48.26 3.17 5.23 1.39 1.11 0.67 0.56 26.27 30.21 17.17 23.45 32.14 38.05 2.92 3.1 1.02 1.01 0.8 0.66 23.94 29.64 13.7 12.74 31.85 48.74 2.62 3.15 1.01 0.74 0.75 0.68 24.24 24.37 13.07 12.96 32.81 33.23 2.6 2.71 0.99 0.86 0.67 0.73 396.16 384.53 186.18 189.01 408.65 457.36 36.06 46.34 12.22 13.06 9.89 9.34 79.3 84.47 91.22 91.93 93.19 72.7 109.15 98.66 99.97 80.32 73.87 74.38 1049.16 82.48 67.93 88.2 86.3 108.97 86.21 104.58 97.58 110.36 96.48 95.69 74.86 1099.64",
+    "content": "Section: Introduction. Text: The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the",
     "metadata": {
-      "doc_id": "2852c2a3",
+      "doc_id": "3811cd14",
       "page": 1,
       "section": "Introduction",
       "type": "chunks",
@@ -29,550 +29,692 @@
     }
   },
   {
-    "content": "Table from document 'Particulars' on page 1: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Particulars Room Revenue - 2017-18 Room Revenue - 2018-19 Coffee Shop - 2017-18 Coffee Shop - 2018-19 Banquets - 2017-18 Banquets - 2018-19 Room Service - 2017-18 Room Service - 2018-19 Laundry -2017-18 NaN Laundry -2018-19 Mis Income - 2017-18 Mis Income - 2018-19 NaN Total - 2017-18 Total - 2018-19 April 32.54 32.33 15.61 15.33 26.7 29.68 3.02 3.43 0.75 1.02 0.68 0.69 79.3 82.48 May 37.41 26.23 15.14 12.77 26.63 23.46 3.4 3.16 0.91 1.36 0.98 0.95 84.47 67.93 June 35.3 28.41 14.94 15.25 36.02 39.49 3.16 3.45 1.05 1.16 0.75 0.44 91.22 88.2 July 34.04 30.97 14.41 16.9 38.29 32.71 2.85 4.07 0.98 1.23 1.36 0.42 91.93 86.3 August 37.38 35.59 15.6 16.21 34.77 50.34 2.98 3.93 1.25 1.19 1.21 1.71 93.19 108.97 September 30.15 29.86 14.06 14.65 23.04 35.71 3.82 4.07 0.88 1.08 0.75 0.84 72.7 86.21 October 41.51 41.68 14.38 17.37 49.18 39.6 2.34 4.31 1.05 0.98 0.69 0.64 109.15 104.58 November 35.44 35.69 14.47 15.73 44.05 38.09 3.18 5.73 0.94 1.32 0.58 1.02 98.66 97.58 December 37.94 39.55 23.63 15.65 33.17 48.26 3.17 5.23 1.39 1.11 0.67 0.56 99.97 110.36 January 26.27 30.21 17.17 23.45 32.14 38.05 2.92 3.1 1.02 1.01 0.8 0.66 80.32 96.48 February 23.94 29.64 13.7 12.74 31.85 48.74 2.62 3.15 1.01 0.74 0.75 0.68 73.87 95.69 March 24.24 24.37 13.07 12.96 32.81 33.23 2.6 2.71 0.99 0.86 0.67 0.73 74.38 74.86 Total 396.16 384.53 186.18 189.01 408.65 457.36 36.06 46.34 12.22 13.06 9.89 9.34 1049.16 1099.64",
+    "content": "Section: Introduction. Text: a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.",
     "metadata": {
-      "id": "1_0",
+      "doc_id": "3811cd14",
       "page": 1,
-      "csv_path": "src\\data\\assets\\2852c2a3\\tbl_1_0.csv",
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: \u2217Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Transformer models and has been crucially involved in every aspect of this work. Noam proposed scaled dot-product attention, multi-head attention and the parameter-free position representation and became the other person involved in nearly every detail. Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and tensor2tensor. Llion also experimented with novel model variants, was responsible for our initial codebase, and efficient inference and visualizations. Lukasz and Aidan spent countless long days designing various parts of and implementing tensor2tensor, replacing our earlier codebase, greatly improving results and massively accelerating our research. \u2020Work performed while at Google Brain. \u2021Work performed while at Google Research.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: Introduction. Text: \u2020Work performed while at Google Brain. \u2021Work performed while at Google Research. 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 1,
+      "section": "Introduction",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3 Model Architecture. Text: 1 Introduction Recurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks in particular, have been firmly established as state of the art approaches in sequence modeling and transduction problems such as language modeling and machine translation [35, 2, 5]. Numerous efforts have since continued to push the boundaries of recurrent language models and encoder-decoder architectures [38, 24, 15].",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 2,
+      "section": "3 Model Architecture",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3 Model Architecture. Text: Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states ht, as a function of the previous hidden state ht\u22121 and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples. Recent work has achieved significant improvements in computational efficiency through factorization tricks [21] and conditional computation [32], while also improving model performance in case of the latter. The fundamental constraint of sequential computation, however, remains.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 2,
+      "section": "3 Model Architecture",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3 Model Architecture. Text: Attention mechanisms have become an integral part of compelling sequence modeling and transduc- tion models in various tasks, allowing modeling of dependencies without regard to their distance in the input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms are used in conjunction with a recurrent network. In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs. 2 Background",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 2,
+      "section": "3 Model Architecture",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3 Model Architecture. Text: 2 Background The goal of reducing sequential computation also forms the foundation of the Extended Neural GPU [16], ByteNet [18] and ConvS2S [9], all of which use convolutional neural networks as basic building block, computing hidden representations in parallel for all input and output positions. In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions [12]. In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 2,
+      "section": "3 Model Architecture",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3 Model Architecture. Text: Self-attention, sometimes called intra-attention is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence. Self-attention has been used successfully in a variety of tasks including reading comprehension, abstractive summarization, textual entailment and learning task-independent sentence representations [4, 27, 28, 22]. End-to-end memory networks are based on a recurrent attention mechanism instead of sequence- aligned recurrence and have been shown to perform well on simple-language question answering and language modeling tasks [34]. To the best of our knowledge, however, the Transformer is the first transduction model relying entirely on self-attention to compute representations of its input and output without using sequence- aligned RNNs or convolution. In the following sections, we will describe the Transformer, motivate self-attention and discuss its advantages over models such as [17, 18] and [9].",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 2,
+      "section": "3 Model Architecture",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3 Model Architecture. Text: 3 Model Architecture Most competitive neural sequence transduction models have an encoder-decoder structure [5, 2, 35]. Here, the encoder maps an input sequence of symbol representations (x1,...,xn) to a sequence of continuous representations z = (z1,...,zn). Given z, the decoder then generates an output sequence (y1,...,ym) of symbols one element at a time. At each step the model is auto-regressive [10], consuming the previously generated symbols as additional input when generating the next. 2",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 2,
+      "section": "3 Model Architecture",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.2 Attention. Text: Figure 1: The Transformer - model architecture. The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, shown in the left and right halves of Figure 1, respectively. 3.1 Encoder and Decoder Stacks Encoder: The encoder is composed of a stack of N = 6 identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position- wise fully connected feed-forward network. We employ a residual connection [11] around each of the two sub-layers, followed by layer normalization [1]. That is, the output of each sub-layer is LayerNorm(x + Sublayer(x)), where Sublayer(x) is the function implemented by the sub-layer itself. To facilitate these residual connections, all sub-layers in the model, as well as the embedding layers, produce outputs of dimension dmodel = 512.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 3,
+      "section": "3.2 Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.2 Attention. Text: Decoder: The decoder is also composed of a stack of N = 6 identical layers. In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack. Similar to the encoder, we employ residual connections around each of the sub-layers, followed by layer normalization. We also modify the self-attention sub-layer in the decoder stack to prevent positions from attending to subsequent positions. This masking, combined with fact that the output embeddings are offset by one position, ensures that the predictions for position i can depend only on the known outputs at positions less than i. 3.2 Attention An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors. The output is computed as a weighted sum 3",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 3,
+      "section": "3.2 Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.2.2 Multi-Head Attention. Text: Scaled Dot-Product Attention Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several attention layers running in parallel. of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key. 3.2.1 Scaled Dot-Product Attention We call our particular attention \"Scaled Dot-Product Attention\" (Figure 2). The input consists of queries and keys of dimension dk, and values of dimension dv. We compute the dot products of the dk, and apply a softmax function to obtain the weights on the query with all keys, divide each by values. \u221a In practice, we compute the attention function on a set of queries simultaneously, packed together into a matrix Q. The keys and values are also packed together into matrices K and V . We compute the matrix of outputs as: Attention(Q,K,V ) = softmax( QKT \u221a dk )V",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 4,
+      "section": "3.2.2 Multi-Head Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.2.2 Multi-Head Attention. Text: Attention(Q,K,V ) = softmax( QKT \u221a dk )V The two most commonly used attention functions are additive attention [2], and dot-product (multi- plicative) attention. Dot-product attention is identical to our algorithm, except for the scaling factor . Additive attention computes the compatibility function using a feed-forward network with of a single hidden layer. While the two are similar in theoretical complexity, dot-product attention is much faster and more space-efficient in practice, since it can be implemented using highly optimized matrix multiplication code. 1\u221a dk While for small values of dk the two mechanisms perform similarly, additive attention outperforms dot product attention without scaling for larger values of dk [3]. We suspect that for large values of dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients 4. To counteract this effect, we scale the dot products by 1\u221a dk . 3.2.2 Multi-Head Attention",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 4,
+      "section": "3.2.2 Multi-Head Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.2.2 Multi-Head Attention. Text: . 3.2.2 Multi-Head Attention Instead of performing a single attention function with dmodel-dimensional keys, values and queries, we found it beneficial to linearly project the queries, keys and values h times with different, learned linear projections to dk, dk and dv dimensions, respectively. On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional 4To illustrate why the dot products get large, assume that the components of q and k are independent random i=1 qiki, has mean 0 and variance dk. variables with mean 0 and variance 1. Then their dot product, q \u00b7 k = (cid:80)dk 4 (1)",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 4,
+      "section": "3.2.2 Multi-Head Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.4 Embeddings and Softmax. Text: output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. With a single attention head, averaging inhibits this. MultiHead(Q,K,V ) = Concat(head1,...,headh)W O where headi = Attention(QW Q i ,KW K i ,V W V i ) Where the projections are parameter matrices W Q and W O \u2208 Rhdv\u00d7dmodel. i \u2208 Rdmodel\u00d7dk, W K i \u2208 Rdmodel\u00d7dk, W V i \u2208 Rdmodel\u00d7dv In this work we employ h = 8 parallel attention layers, or heads. For each of these we use dk = dv = dmodel/h = 64. Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality. 3.2.3 Applications of Attention in our Model The Transformer uses multi-head attention in three different ways:",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 5,
+      "section": "3.4 Embeddings and Softmax",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.4 Embeddings and Softmax. Text: 3.2.3 Applications of Attention in our Model The Transformer uses multi-head attention in three different ways: In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder. This allows every position in the decoder to attend over all positions in the input sequence. This mimics the typical encoder-decoder attention mechanisms in sequence-to-sequence models such as [38, 2, 9]. The encoder contains self-attention layers. In a self-attention layer all of the keys, values and queries come from the same place, in this case, the output of the previous layer in the encoder. Each position in the encoder can attend to all positions in the previous layer of the encoder.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 5,
+      "section": "3.4 Embeddings and Softmax",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.4 Embeddings and Softmax. Text: Similarly, self-attention layers in the decoder allow each position in the decoder to attend to all positions in the decoder up to and including that position. We need to prevent leftward information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot-product attention by masking out (setting to \u2212\u221e) all values in the input of the softmax which correspond to illegal connections. See Figure 2. 3.3 Position-wise Feed-Forward Networks In addition to attention sub-layers, each of the layers in our encoder and decoder contains a fully connected feed-forward network, which is applied to each position separately and identically. This consists of two linear transformations with a ReLU activation in between. FFN(x) = max(0,xW1 + b1)W2 + b2 (2)",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 5,
+      "section": "3.4 Embeddings and Softmax",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 3.4 Embeddings and Softmax. Text: FFN(x) = max(0,xW1 + b1)W2 + b2 (2) While the linear transformations are the same across different positions, they use different parameters from layer to layer. Another way of describing this is as two convolutions with kernel size 1. The dimensionality of input and output is dmodel = 512, and the inner-layer has dimensionality dff = 2048. 3.4 Embeddings and Softmax Similarly to other sequence transduction models, we use learned embeddings to convert the input tokens and output tokens to vectors of dimension dmodel. We also use the usual learned linear transfor- mation and softmax function to convert the decoder output to predicted next-token probabilities. In our model, we share the same weight matrix between the two embedding layers and the pre-softmax dmodel. linear transformation, similar to [30]. In the embedding layers, we multiply those weights by \u221a 5",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 5,
+      "section": "3.4 Embeddings and Softmax",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 4 Why Self-Attention. Text: Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations for different layer types. n is the sequence length, d is the representation dimension, k is the kernel size of convolutions and r the size of the neighborhood in restricted self-attention. Layer Type Self-Attention Recurrent Convolutional Self-Attention (restricted) Complexity per Layer O(n2 \u00b7 d) O(n \u00b7 d2) O(k \u00b7 n \u00b7 d2) O(r \u00b7 n \u00b7 d) Sequential Maximum Path Length Operations O(1) O(n) O(1) O(1) O(1) O(n) O(logk(n)) O(n/r) 3.5 Positional Encoding",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 4 Why Self-Attention. Text: Complexity per Layer O(n2 \u00b7 d) O(n \u00b7 d2) O(k \u00b7 n \u00b7 d2) O(r \u00b7 n \u00b7 d) Sequential Maximum Path Length Operations O(1) O(n) O(1) O(1) O(1) O(n) O(logk(n)) O(n/r) 3.5 Positional Encoding Since our model contains no recurrence and no convolution, in order for the model to make use of the order of the sequence, we must inject some information about the relative or absolute position of the tokens in the sequence. To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks. The positional encodings have the same dimension dmodel as the embeddings, so that the two can be summed. There are many choices of positional encodings, learned and fixed [9]. In this work, we use sine and cosine functions of different frequencies: PE(pos,2i) = sin(pos/100002i/dmodel) PE(pos,2i+1) = cos(pos/100002i/dmodel)",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 4 Why Self-Attention. Text: In this work, we use sine and cosine functions of different frequencies: PE(pos,2i) = sin(pos/100002i/dmodel) PE(pos,2i+1) = cos(pos/100002i/dmodel) where pos is the position and i is the dimension. That is, each dimension of the positional encoding corresponds to a sinusoid. The wavelengths form a geometric progression from 2\u03c0 to 10000 \u00b7 2\u03c0. We chose this function because we hypothesized it would allow the model to easily learn to attend by relative positions, since for any fixed offset k, PEpos+k can be represented as a linear function of PEpos. We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training. 4 Why Self-Attention",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 4 Why Self-Attention. Text: 4 Why Self-Attention In this section we compare various aspects of self-attention layers to the recurrent and convolu- tional layers commonly used for mapping one variable-length sequence of symbol representations (x1,...,xn) to another sequence of equal length (z1,...,zn), with xi,zi \u2208 Rd, such as a hidden layer in a typical sequence transduction encoder or decoder. Motivating our use of self-attention we consider three desiderata. One is the total computational complexity per layer. Another is the amount of computation that can be parallelized, as measured by the minimum number of sequential operations required.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 4 Why Self-Attention. Text: One is the total computational complexity per layer. Another is the amount of computation that can be parallelized, as measured by the minimum number of sequential operations required. The third is the path length between long-range dependencies in the network. Learning long-range dependencies is a key challenge in many sequence transduction tasks. One key factor affecting the ability to learn such dependencies is the length of the paths forward and backward signals have to traverse in the network. The shorter these paths between any combination of positions in the input and output sequences, the easier it is to learn long-range dependencies [12]. Hence we also compare the maximum path length between any two input and output positions in networks composed of the different layer types.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 4 Why Self-Attention. Text: As noted in Table 1, a self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations. In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence 6",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 5.4 Regularization. Text: length n is smaller than the representation dimensionality d, which is most often the case with sentence representations used by state-of-the-art models in machine translations, such as word-piece [38] and byte-pair [31] representations. To improve computational performance for tasks involving very long sequences, self-attention could be restricted to considering only a neighborhood of size r in the input sequence centered around the respective output position. This would increase the maximum path length to O(n/r). We plan to investigate this approach further in future work.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 7,
+      "section": "5.4 Regularization",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 5.4 Regularization. Text: A single convolutional layer with kernel width k < n does not connect all pairs of input and output positions. Doing so requires a stack of O(n/k) convolutional layers in the case of contiguous kernels, or O(logk(n)) in the case of dilated convolutions [18], increasing the length of the longest paths between any two positions in the network. Convolutional layers are generally more expensive than recurrent layers, by a factor of k. Separable convolutions [6], however, decrease the complexity considerably, to O(k \u00b7 n \u00b7 d + n \u00b7 d2). Even with k = n, however, the complexity of a separable convolution is equal to the combination of a self-attention layer and a point-wise feed-forward layer, the approach we take in our model.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 7,
+      "section": "5.4 Regularization",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 5.4 Regularization. Text: As side benefit, self-attention could yield more interpretable models. We inspect attention distributions from our models and present and discuss examples in the appendix. Not only do individual attention heads clearly learn to perform different tasks, many appear to exhibit behavior related to the syntactic and semantic structure of the sentences. 5 Training This section describes the training regime for our models. 5.1 Training Data and Batching",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 7,
+      "section": "5.4 Regularization",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 5.4 Regularization. Text: 5 Training This section describes the training regime for our models. 5.1 Training Data and Batching We trained on the standard WMT 2014 English-German dataset consisting of about 4.5 million sentence pairs. Sentences were encoded using byte-pair encoding [3], which has a shared source- target vocabulary of about 37000 tokens. For English-French, we used the significantly larger WMT 2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [38]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens. 5.2 Hardware and Schedule",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 7,
+      "section": "5.4 Regularization",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 5.4 Regularization. Text: 5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models,(described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days). 5.3 Optimizer We used the Adam optimizer [20] with \u03b21 = 0.9, \u03b22 = 0.98 and \u03f5 = 10\u22129. We varied the learning rate over the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5,step_num \u00b7 warmup_steps\u22121.5) This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used warmup_steps = 4000. 5.4 Regularization We employ three types of regularization during training: 7 (3)",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 7,
+      "section": "5.4 Regularization",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.2 Model Variations. Text: Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. Model ByteNet [18] Deep-Att + PosUnk [39] GNMT + RL [38] ConvS2S [9] MoE [32] Deep-Att + PosUnk Ensemble [39] GNMT + RL Ensemble [38] ConvS2S Ensemble [9] Transformer (base model) Transformer (big) BLEU EN-DE EN-FR 23.75 24.6 25.16 26.03 26.30 26.36 27.3 28.4 39.2 39.92 40.46 40.56 40.4 41.16 41.29 38.1 41.8 Training Cost (FLOPs) EN-DE EN-FR 2.3 \u00b7 1019 9.6 \u00b7 1018 2.0 \u00b7 1019 1.8 \u00b7 1020 7.7 \u00b7 1019 1.0 \u00b7 1020 1.4 \u00b7 1020 1.5 \u00b7 1020 1.2 \u00b7 1020 8.0 \u00b7 1020 1.1 \u00b7 1021 1.2 \u00b7 1021 3.3 \u00b7 1018 2.3 \u00b7 1019 Residual Dropout We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of Pdrop = 0.1.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 8,
+      "section": "6.2 Model Variations",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.2 Model Variations. Text: Label Smoothing During training, we employed label smoothing of value \u03f5ls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score. 6 Results 6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. The configuration of this model is listed in the bottom line of Table 3. Training took 3.5 days on 8 P100 GPUs. Even our base model surpasses all previously published models and ensembles, at a fraction of the training cost of any of the competitive models.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 8,
+      "section": "6.2 Model Variations",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.2 Model Variations. Text: On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model. The Transformer (big) model trained for English-to-French used dropout rate Pdrop = 0.1, instead of 0.3. For the base models, we used a single model obtained by averaging the last 5 checkpoints, which were written at 10-minute intervals. For the big models, we averaged the last 20 checkpoints. We used beam search with a beam size of 4 and length penalty \u03b1 = 0.6 [38]. These hyperparameters were chosen after experimentation on the development set. We set the maximum output length during inference to input length + 50, but terminate early when possible [38].",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 8,
+      "section": "6.2 Model Variations",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.2 Model Variations. Text: Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU 5. 6.2 Model Variations To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the 5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively. 8",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 8,
+      "section": "6.2 Model Variations",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.3 English Constituency Parsing. Text: Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Listed perplexities are per-wordpiece, according to our byte-pair encoding, and should not be compared to per-word perplexities. base (A) (B) (C) (D) N dmodel 6 512 2 4 8 256 1024 dff 2048 1024 4096 h 8 1 4 16 32 dk 64 512 128 32 16 16 32 32 128 dv 64 512 128 32 16 32 128 Pdrop 0.1 0.0 0.2 \u03f5ls 0.1 0.0 0.2 PPL train steps (dev) 100K 4.92 5.29 5.00 4.91 5.01 5.16 5.01 6.11 5.19 4.88 5.75 4.66 5.12 4.75 5.77 4.95 4.67 5.47 4.92 300K 4.33 BLEU params \u00d7106 (dev) 25.8 65 24.9 25.5 25.8 25.4 25.1 25.4 23.7 25.3 25.5 24.5 26.0 25.4 26.2 24.6 25.5 25.3 25.7 25.7 26.4 58 60 36 50 80 28 168 53 90 (E) big 6 positional embedding instead of sinusoids 1024 4096 16 0.3 213",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 9,
+      "section": "6.3 English Constituency Parsing",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.3 English Constituency Parsing. Text: 58 60 36 50 80 28 168 53 90 (E) big 6 positional embedding instead of sinusoids 1024 4096 16 0.3 213 development set, newstest2013. We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3. In Table 3 rows (A), we vary the number of attention heads and the attention key and value dimensions, keeping the amount of computation constant, as described in Section 3.2.2. While single-head attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 9,
+      "section": "6.3 English Constituency Parsing",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.3 English Constituency Parsing. Text: In Table 3 rows (B), we observe that reducing the attention key size dk hurts model quality. This suggests that determining compatibility is not easy and that a more sophisticated compatibility function than dot product may be beneficial. We further observe in rows (C) and (D) that, as expected, bigger models are better, and dropout is very helpful in avoiding over-fitting. In row (E) we replace our sinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical results to the base model. 6.3 English Constituency Parsing To evaluate if the Transformer can generalize to other tasks we performed experiments on English constituency parsing. This task presents specific challenges: the output is subject to strong structural constraints and is significantly longer than the input. Furthermore, RNN sequence-to-sequence models have not been able to attain state-of-the-art results in small-data regimes [37].",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 9,
+      "section": "6.3 English Constituency Parsing",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 6.3 English Constituency Parsing. Text: We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences. We also trained it in a semi-supervised setting, using the larger high-confidence and BerkleyParser corpora from with approximately 17M sentences [37]. We used a vocabulary of 16K tokens for the WSJ only setting and a vocabulary of 32K tokens for the semi-supervised setting. We performed only a small number of experiments to select the dropout, both attention and residual (section 5.4), learning rates and beam size on the Section 22 development set, all other parameters remained unchanged from the English-to-German base translation model. During inference, we 9",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 9,
+      "section": "6.3 English Constituency Parsing",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: Table 4: The Transformer generalizes well to English constituency parsing (Results are on Section 23 of WSJ) Parser Training Vinyals & Kaiser el al. (2014) [37] WSJ only, discriminative WSJ only, discriminative WSJ only, discriminative WSJ only, discriminative WSJ only, discriminative semi-supervised semi-supervised semi-supervised semi-supervised semi-supervised multi-task generative Petrov et al. (2006) [29] Zhu et al. (2013) [40] Dyer et al. (2016) [8] Transformer (4 layers) Zhu et al. (2013) [40] Huang & Harper (2009) [14] McClosky et al. (2006) [26] Vinyals & Kaiser el al. (2014) [37] Transformer (4 layers) Luong et al. (2015) [23] Dyer et al. (2016) [8] WSJ 23 F1 88.3 90.4 90.4 91.7 91.3 91.3 91.3 92.1 92.1 92.7 93.0 93.3 increased the maximum output length to input length + 300. We used a beam size of 21 and \u03b1 = 0.3 for both WSJ only and the semi-supervised setting.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 10,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: increased the maximum output length to input length + 300. We used a beam size of 21 and \u03b1 = 0.3 for both WSJ only and the semi-supervised setting. Our results in Table 4 show that despite the lack of task-specific tuning our model performs sur- prisingly well, yielding better results than all previously reported models with the exception of the Recurrent Neural Network Grammar [8]. In contrast to RNN sequence-to-sequence models [37], the Transformer outperforms the Berkeley- Parser [29] even when training only on the WSJ training set of 40K sentences. 7 Conclusion In this work, we presented the Transformer, the first sequence transduction model based entirely on attention, replacing the recurrent layers most commonly used in encoder-decoder architectures with multi-headed self-attention.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 10,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: For translation tasks, the Transformer can be trained significantly faster than architectures based on recurrent or convolutional layers. On both WMT 2014 English-to-German and WMT 2014 English-to-French translation tasks, we achieve a new state of the art. In the former task our best model outperforms even all previously reported ensembles. We are excited about the future of attention-based models and plan to apply them to other tasks. We plan to extend the Transformer to problems involving input and output modalities other than text and to investigate local, restricted attention mechanisms to efficiently handle large inputs and outputs such as images, audio and video. Making generation less sequential is another research goals of ours. The code we used to train and evaluate our models is available at https://github.com/ tensorflow/tensor2tensor. Acknowledgements We are grateful to Nal Kalchbrenner and Stephan Gouws for their fruitful comments, corrections and inspiration. References",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 10,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: Acknowledgements We are grateful to Nal Kalchbrenner and Stephan Gouws for their fruitful comments, corrections and inspiration. References [1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016. [2] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. CoRR, abs/1409.0473, 2014. [3] Denny Britz, Anna Goldie, Minh-Thang Luong, and Quoc V. Le. Massive exploration of neural machine translation architectures. CoRR, abs/1703.03906, 2017. [4] Jianpeng Cheng, Li Dong, and Mirella Lapata. Long short-term memory-networks for machine reading. arXiv preprint arXiv:1601.06733, 2016. 10",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 10,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: [5] Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Fethi Bougares, Holger Schwenk, and Yoshua Bengio. Learning phrase representations using rnn encoder-decoder for statistical machine translation. CoRR, abs/1406.1078, 2014. [6] Francois Chollet. Xception: Deep learning with depthwise separable convolutions. arXiv preprint arXiv:1610.02357, 2016. [7] Junyoung Chung, \u00c7aglar G\u00fcl\u00e7ehre, Kyunghyun Cho, and Yoshua Bengio. Empirical evaluation of gated recurrent neural networks on sequence modeling. CoRR, abs/1412.3555, 2014. [8] Chris Dyer, Adhiguna Kuncoro, Miguel Ballesteros, and Noah A. Smith. Recurrent neural network grammars. In Proc. of NAACL, 2016. [9] Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N. Dauphin. Convolu- tional sequence to sequence learning. arXiv preprint arXiv:1705.03122v2, 2017. [10] Alex Graves. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850, 2013.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 11,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: tional sequence to sequence learning. arXiv preprint arXiv:1705.03122v2, 2017. [10] Alex Graves. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850, 2013. [11] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for im- age recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 770\u2013778, 2016. [12] Sepp Hochreiter, Yoshua Bengio, Paolo Frasconi, and J\u00fcrgen Schmidhuber. Gradient flow in recurrent nets: the difficulty of learning long-term dependencies, 2001. [13] Sepp Hochreiter and J\u00fcrgen Schmidhuber. Long short-term memory. Neural computation, 9(8):1735\u20131780, 1997. [14] Zhongqiang Huang and Mary Harper. Self-training PCFG grammars with latent annotations across languages. In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing, pages 832\u2013841. ACL, August 2009.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 11,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: [15] Rafal Jozefowicz, Oriol Vinyals, Mike Schuster, Noam Shazeer, and Yonghui Wu. Exploring the limits of language modeling. arXiv preprint arXiv:1602.02410, 2016. [16] \u0141ukasz Kaiser and Samy Bengio. Can active memory replace attention? In Advances in Neural Information Processing Systems, (NIPS), 2016. [17] \u0141ukasz Kaiser and Ilya Sutskever. Neural GPUs learn algorithms. In International Conference on Learning Representations (ICLR), 2016. [18] Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Ko- ray Kavukcuoglu. Neural machine translation in linear time. arXiv preprint arXiv:1610.10099v2, 2017. [19] Yoon Kim, Carl Denton, Luong Hoang, and Alexander M. Rush. Structured attention networks. In International Conference on Learning Representations, 2017. [20] Diederik Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In ICLR, 2015. [21] Oleksii Kuchaiev and Boris Ginsburg. Factorization tricks for LSTM networks. arXiv preprint",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 11,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: [20] Diederik Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In ICLR, 2015. [21] Oleksii Kuchaiev and Boris Ginsburg. Factorization tricks for LSTM networks. arXiv preprint arXiv:1703.10722, 2017. [22] Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, and Yoshua Bengio. A structured self-attentive sentence embedding. arXiv preprint arXiv:1703.03130, 2017. [23] Minh-Thang Luong, Quoc V. Le, Ilya Sutskever, Oriol Vinyals, and Lukasz Kaiser. Multi-task sequence to sequence learning. arXiv preprint arXiv:1511.06114, 2015. [24] Minh-Thang Luong, Hieu Pham, and Christopher D Manning. Effective approaches to attention- based neural machine translation. arXiv preprint arXiv:1508.04025, 2015. 11",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 11,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: [25] Mitchell P Marcus, Mary Ann Marcinkiewicz, and Beatrice Santorini. Building a large annotated corpus of english: The penn treebank. Computational linguistics, 19(2):313\u2013330, 1993. [26] David McClosky, Eugene Charniak, and Mark Johnson. Effective self-training for parsing. In Proceedings of the Human Language Technology Conference of the NAACL, Main Conference, pages 152\u2013159. ACL, June 2006. [27] Ankur Parikh, Oscar T\u00e4ckstr\u00f6m, Dipanjan Das, and Jakob Uszkoreit. A decomposable attention model. In Empirical Methods in Natural Language Processing, 2016. [28] Romain Paulus, Caiming Xiong, and Richard Socher. A deep reinforced model for abstractive summarization. arXiv preprint arXiv:1705.04304, 2017. [29] Slav Petrov, Leon Barrett, Romain Thibaux, and Dan Klein. Learning accurate, compact, and interpretable tree annotation. In Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the ACL, pages 433\u2013440. ACL, July 2006.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 12,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: [30] Ofir Press and Lior Wolf. Using the output embedding to improve language models. arXiv preprint arXiv:1608.05859, 2016. [31] Rico Sennrich, Barry Haddow, and Alexandra Birch. Neural machine translation of rare words with subword units. arXiv preprint arXiv:1508.07909, 2015. [32] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538, 2017. [33] Nitish Srivastava, Geoffrey E Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdi- nov. Dropout: a simple way to prevent neural networks from overfitting. Journal of Machine Learning Research, 15(1):1929\u20131958, 2014.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 12,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: [34] Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, and Rob Fergus. End-to-end memory networks. In C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, and R. Garnett, editors, Advances in Neural Information Processing Systems 28, pages 2440\u20132448. Curran Associates, Inc., 2015. [35] Ilya Sutskever, Oriol Vinyals, and Quoc VV Le. Sequence to sequence learning with neural networks. In Advances in Neural Information Processing Systems, pages 3104\u20133112, 2014. [36] Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, and Zbigniew Wojna. Rethinking the inception architecture for computer vision. CoRR, abs/1512.00567, 2015. [37] Vinyals & Kaiser, Koo, Petrov, Sutskever, and Hinton. Grammar as a foreign language. In Advances in Neural Information Processing Systems, 2015.",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 12,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: [37] Vinyals & Kaiser, Koo, Petrov, Sutskever, and Hinton. Grammar as a foreign language. In Advances in Neural Information Processing Systems, 2015. [38] Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. Google\u2019s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144, 2016. [39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. Deep recurrent models with fast-forward connections for neural machine translation. CoRR, abs/1606.04199, 2016. [40] Muhua Zhu, Yue Zhang, Wenliang Chen, Min Zhang, and Jingbo Zhu. Fast and accurate shift-reduce constituent parsing. In Proceedings of the 51st Annual Meeting of the ACL (Volume 1: Long Papers), pages 434\u2013443. ACL, August 2013. 12",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 12,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: Attention Visualizations passed have governments American of majority new a spirit this in is It Input-Input Layer5 that since more making the registration or voting process <pad> difficult . <EOS> <pad> <pad> <pad> <pad> laws 2009 <pad> It since laws new passed have governments 2009 American majority a that spirit this in <pad> . making the registration or voting process more difficult <EOS> <pad> <pad> <pad> <pad> <pad> of is Figure 3: An example of the attention mechanism following long-distance dependencies in the encoder self-attention in layer 5 of 6. Many of the attention heads attend to a distant dependency of the verb \u2018making\u2019, completing the phrase \u2018making...more difficult\u2019. Attentions here shown only for the word \u2018making\u2019. Different colors represent different heads. Best viewed in color. 13",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 13,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: Input-Input Layer5 The Law will never be perfect , but its application should be just just just just <pad> Figure 4: Two attention heads, also in layer 5 of 6, apparently involved in anaphora resolution. Top: Full attentions for head 5. Bottom: Isolated attentions from just the word \u2018its\u2019 for attention heads 5 and 6. Note that the attentions are very sharp for this word. 14",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 14,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Section: 7 Conclusion. Text: Input-Input Layer5 The Law will never be perfect , but its application should be just just just just <pad> Figure 5: Many of the attention heads exhibit behaviour that seems related to the structure of the sentence. We give two such examples above, from two different heads from the encoder self-attention at layer 5 of 6. The heads clearly learned to perform different tasks. 15",
+    "metadata": {
+      "doc_id": "3811cd14",
+      "page": 15,
+      "section": "7 Conclusion",
+      "type": "chunks",
+      "weight": 1.0
+    }
+  },
+  {
+    "content": "Table from document '] L C . s c [' on page 9: 0 1 2 NaN train N h dk dv Pdrop \u03f5ls dmodel dff steps PPL BLEU params \u00d7106 (dev) (dev) base 6 512 2048 8 64 64 0.1 0.1 100K 4.92 25.8 65 (A) 1 512 512 4 128 128 16 32 32 32 16 16 5.29 24.9 5.00 25.5 4.91 25.8 5.01 25.4 (B) 16 32 5.16 25.1 58 5.01 25.4 60 (C) 2 4 8 256 32 32 1024 128 128 1024 4096 6.11 23.7 36 5.19 25.3 50 4.88 25.5 80 5.75 24.5 28 4.66 26.0 168 5.12 25.4 53 4.75 26.2 90 (D) 0.0 0.2 0.0 0.2 5.77 24.6 4.95 25.5 4.67 25.3 5.47 25.7 (E) positional embedding instead of sinusoids 4.92 25.7 big 6 1024 4096 16 0.3 300K 4.33 26.4 213",
+    "metadata": {
+      "id": "9_0",
+      "page": 9,
+      "csv_path": "src\\data\\assets\\3811cd14\\3811cd14_tbl_9_0.csv",
       "shape": [
-        14,
-        15
+        8,
+        3
       ],
-      "doc_id": "2852c2a3",
+      "doc_id": "3811cd14",
       "type": "tables",
       "weight": 1.0
     }
   },
   {
-    "content": "Title: Product Name. Abstract:",
+    "content": "Table from document '] L C . s c [' on page 10: 0 1 2 Parser Training WSJ 23 F1 Vinyals & Kaiser el al. (2014) [37] Petrov et al. (2006) [29] Zhu et al. (2013) [40] Dyer et al. (2016) [8] WSJ only, discriminative WSJ only, discriminative WSJ only, discriminative WSJ only, discriminative 88.3 90.4 90.4 91.7 Transformer (4 layers) WSJ only, discriminative 91.3 Zhu et al. (2013) [40] Huang & Harper (2009) [14] McClosky et al. (2006) [26] Vinyals & Kaiser el al. (2014) [37] semi-supervised semi-supervised semi-supervised semi-supervised 91.3 91.3 92.1 92.1 Transformer (4 layers) semi-supervised 92.7 Luong et al. (2015) [23] Dyer et al. (2016) [8] multi-task generative 93.0 93.3",
     "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 1,
-      "type": "summary",
-      "weight": 3.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Product Name Brand Pure Collagen Cleanser COSRX Fresh Snail Mucin Cleanser Skinfood Soothing Hyaluronic Acid Emulsion Tony Moly Glow Niacinamide MaskMissha Hydra Collagen SerumSkinfood Bright Collagen Mist IOPE Calm Hyaluronic Acid Ampoule Tony Moly Hydra Collagen MaskCOSRX Laneige Glow Vitamin C Ampoule Innisfree Radiant Green Tea Serum Fresh Niacinamide Cream Mamonde Glow Centella MistSulwhasoo Pure Snail Mucin Emulsion Etude House Pure Collagen TonerNeogen Hydra Mugwort MaskSulwhasoo Laneige Hydra Niacinamide Mask Silky Propolis CreamInnisfree Youth Centella Cleanser Neogen Soothing Ginseng Emulsion Missha Youth Mugwort SerumCOSRX Calm Centella SerumBenton Fresh Green Tea MistHera Youth Centella MistCOSRX Calm Green Tea SerumMissha Glow Centella SerumNeogen Glow Ginseng SerumTony Moly Youth Centella Cleanser Innisfree Radiant Centella MaskMissha Hydra Vitamin C MistMamonde Radiant Centella Emulsion Neogen Dr. Jart+ Soothing Centella Serum Pure Propolis AmpouleSulwhasoo",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Youth Centella Cleanser Innisfree Radiant Centella MaskMissha Hydra Vitamin C MistMamonde Radiant Centella Emulsion Neogen Dr. Jart+ Soothing Centella Serum Pure Propolis AmpouleSulwhasoo Soothing Propolis Emulsion Laneige Glow Snail Mucin Essence Benton Brand Tier B A A A B B C A B A A B A A B B A B C A C B B A C B A A C B C B B C Price (USD) 36.22 76.55 61.24 51.91 20.92 20.92 14.07 61.09 52.08 59.57 11.44 77.89 68.27 24.86 22.73 22.84 31.3 46.73 40.24 30.39 52.83 19.76 30.45 35.65 41.92 64.96 23.98 46 51.47 13.25 52.53 21.94 14.55 76.42 COGS (USD) 14.83 45.24 30.27 28.68 14.06 9.93 7.36 44.26 24.41 25.2 5.57 34.92 46.35 15.97 13.41 15.11 20.07 21.31 26.87 17.07 33.93 13.22 15.08 15.44 19.63 34.31 15.48 30.28 20.7 7.33 27.59 10.24 6.34 38.31 Days of InventoryUnits in Stock 33 84 81 45 47 34 27 75 63 44 89 70 50 42 77 42 23 30 57 29 17 16 76 26 42 57 85 68 31 39 47 60 63 17 307 234 466 361 70 172 205 82 209 144 169 333 77 361 324 199 189 345 290 73 463 120 283 72 79 127 24 122 215",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 47 34 27 75 63 44 89 70 50 42 77 42 23 30 57 29 17 16 76 26 42 57 85 68 31 39 47 60 63 17 307 234 466 361 70 172 205 82 209 144 169 333 77 361 324 199 189 345 290 73 463 120 283 72 79 127 24 122 215 281 384 499 391 369 Views Last MonthVolume Sold Last Month 3059 185 2365 46 2579 190 4746 227 1735 126 1857 137 4552 167 2170 219 2949 225 3351 239 3830 335 2589 150 1731 243 2916 80 1115 13 1448 78 4711 257 3187 234 2939 11 435 178 4692 145 995 172 3646 174 951 397 1787 287 2031 126 3846 198 2527 9 1668 33 4100 169 2838 343 3598 140 4013 369 1166 325",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Missha Soothing Ginseng Serum Calm Centella CreamLaneige Youth Mugwort TonerTony Moly Soothing Hyaluronic Acid Cleanser Mamonde Radiant Centella SerumHera Radiant Collagen Serum Tony Moly Glow Collagen Essence Skinfood Pure Centella TonerBenton Soothing Mugwort Emulsion Benton Calm Propolis Essence Benton Hydra Propolis Essence Skinfood Soothing Niacinamide Emulsion Dr. Jart+ Bright Propolis MaskCOSRX Radiant Hyaluronic Acid Cream Missha Bright Centella Essence Innisfree Silky Collagen Essence Skinfood Fresh Green Tea Essence Mamonde Silky Mugwort MaskCOSRX Youth Hyaluronic Acid Essence Neogen Youth Snail Mucin Toner COSRX Pure Vitamin C SerumSkinfood Calm Propolis SerumIOPE Silky Centella MistInnisfree Silky Green Tea MistBenton Pure Propolis MistMamonde Silky Collagen Ampoule Sulwhasoo Bright Centella Ampoule Tony Moly Calm Niacinamide Lotion Sulwhasoo Hydra Niacinamide Emulsion Skinfood Fresh Snail Mucin Essence Missha Radiant Vitamin C MistCOSRX Pure Snail Mucin MaskMissha",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Bright Centella Ampoule Tony Moly Calm Niacinamide Lotion Sulwhasoo Hydra Niacinamide Emulsion Skinfood Fresh Snail Mucin Essence Missha Radiant Vitamin C MistCOSRX Pure Snail Mucin MaskMissha Benton Calm Collagen Cleanser Hydra Ginseng SerumSulwhasoo B B C B C B B A A A A A A A B B B A A C B B A B A B C B B B C B A A 77.59 66.59 31.32 16.84 57.9 40.81 18.54 44.66 12.41 73.65 28.11 56.38 31.82 46.4 48.27 22.94 77.87 64.26 75.76 72.64 51.85 74.53 16.19 23.72 13.17 32.77 37.21 28.99 68.01 34.97 29.67 47.99 19.86 66.15 52.98 33.09 17.4 10.29 29.48 28.22 12.77 21.24 6.82 36.11 13.65 23.18 18.55 25.56 20.05 11.09 52.37 30.32 33.6 39.72 36.07 35.22 9.74 14.91 6.21 20.27 18.99 17.1 40.13 19.61 12.67 31.22 9.86 30.16 36 36 30 39 37 73 78 70 57 28 13 44 73 58 26 53 39 55 15 46 33 55 62 69 72 41 42 76 27 34 63 67 76 55 66 374 330 443 327 163 288 389 143 125 177 166 164 139 338 294 111 77 458 365 248 493 136 337 298 146 412 415 148 77 141 20 258 309 4480 2544 4207 3473 4069 2646 853 2182 2874",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 42 76 27 34 63 67 76 55 66 374 330 443 327 163 288 389 143 125 177 166 164 139 338 294 111 77 458 365 248 493 136 337 298 146 412 415 148 77 141 20 258 309 4480 2544 4207 3473 4069 2646 853 2182 2874 2996 4285 875 1725 3169 517 214 716 4074 3367 925 1616 3246 512 828 3448 2908 775 3565 2604 3067 2886 1222 4179 1671 346 149 331 221 305 136 296 74 256 279 368 186 171 95 206 350 23 43 130 177 145 246 224 130 62 152 321 387 365 5 391 352 194 195",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Calm Ginseng Cleanser Tony Moly Hydra Mugwort MaskEtude House Bright Vitamin C MaskDr. Jart+ Missha Glow Collagen Cleanser Pure Hyaluronic Acid Cleanser Skinfood Pure Snail Mucin MaskMissha Hydra Niacinamide Cleanser Skinfood Silky Centella AmpouleBenton Calm Niacinamide Mask Mamonde Etude House Radiant Niacinamide Essence Pure Propolis Cleanser Neogen Neogen Glow Green Tea Ampoule Hydra Niacinamide Toner Sulwhasoo Radiant Collagen LotionMissha Youth Green Tea SerumTony Moly Pure Hyaluronic Acid Mask IOPE Glow Ginseng MistLaneige Sulwhasoo Youth Hyaluronic Acid Lotion Hydra Green Tea Cleanser Sulwhasoo Dr. Jart+ Fresh Green Tea Ampoule Calm Centella SerumMissha Fresh Collagen LotionHera Silky Hyaluronic Acid Cream Neogen Hydra Hyaluronic Acid Lotion Neogen Glow Hyaluronic Acid Ampoule Skinfood Soothing Centella Cleanser COSRX Hydra Snail Mucin Lotion The Face Shop A Glow Mugwort CreamThe Face Shop B Calm Mugwort Ampoule The Face Shop C Bright Centella CreamSkinfood",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 3,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Skinfood Soothing Centella Cleanser COSRX Hydra Snail Mucin Lotion The Face Shop A Glow Mugwort CreamThe Face Shop B Calm Mugwort Ampoule The Face Shop C Bright Centella CreamSkinfood Glow Centella LotionDr. Jart+ Fresh Niacinamide Serum Tony Moly B A A C C B B B C B A A B A B C B A C B A A A B B B B C C 15.22 79.08 64.06 23.91 10.39 67.08 59.48 61.03 63.99 15.18 35.09 18.11 70.42 53.63 33.16 14.45 31.77 32.76 61.07 54.63 72.1 43.06 18.37 59.93 63.25 49.29 63.97 44.57 46.59 39.93 11.78 17.55 6.27 45.65 38.65 9.68 5.75 31.39 35.3 27.6 38.86 7.83 23.9 7.99 35.37 23.28 22.46 9.58 15.17 19.59 39.4 30.95 40.3 20.35 7.86 40.1 42.39 29.08 32.09 22.5 28.78 26.72 7.85 11.13 33 41 56 32 75 36 11 26 42 18 52 57 48 51 35 59 34 33 22 69 16 66 45 54 29 74 17 25 23 85 24 75 115 145 137 67 108 256 392 404 291 208 211 466 88 297 368 266 470 95 173 163 454 105 204 304 481 239 88 66 113 257 465 472 2243 1787 4232 3951 3540 3866 2426 3014 4052 695 828 1465 4592 798 495 4271 4460 2602 1919 817 2882 3677",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 3,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 291 208 211 466 88 297 368 266 470 95 173 163 454 105 204 304 481 239 88 66 113 257 465 472 2243 1787 4232 3951 3540 3866 2426 3014 4052 695 828 1465 4592 798 495 4271 4460 2602 1919 817 2882 3677 243 3240 4591 3038 3736 3322 1267 2716 1162 2256 373 316 121 138 62 48 177 164 177 321 307 153 84 378 217 207 256 233 168 231 151 24 51 237 309 18 147 5 377 58 378 263",
-    "metadata": {
-      "doc_id": "36ae85b5",
-      "page": 3,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Table from document 'Product Name' on page 1: 0 1 2 3 4 5 6 7 8 9 Product Name Brand NaN Brand Tier Price (USD) COGS (USD) Days of InventoryUnits in Stock NaN Views Last MonthVolume Sold Last Month NaN NaN Pure Collagen Cleanser NaN B 36.22 14.83 33 307.0 3059 185 NaN NaN Fresh Snail Mucin Cleanser NaN A 76.55 45.24 84 234.0 2365 46 NaN NaN Soothing Hyaluronic Acid Emulsion NaN A 61.24 30.27 81 466.0 2579 190 NaN NaN Glow Niacinamide Mask NaN A 51.91 28.68 45 361.0 4746 227 NaN NaN Hydra Collagen Serum Skinfood NaN B 20.92 14.06 47 70.0 1735 126 NaN NaN Bright Collagen Mist IOPE NaN B 20.92 9.93 34 172.0 1857 137 NaN NaN Calm Hyaluronic Acid Ampoule NaN C 14.07 7.36 27 205.0 4552 167 NaN NaN Hydra Collagen MaskCOSRX NaN A 61.09 44.26 75 82.0 2170 219 NaN NaN Glow Vitamin C Ampoule NaN B 52.08 24.41 63 209.0 2949 225 NaN NaN Radiant Green Tea Serum NaN A 59.57 25.2 44 144.0 3351 239 NaN NaN Fresh Niacinamide Cream NaN A 11.44 5.57 89 169.0 3830 335 NaN NaN Glow Centella MistSulwhasoo NaN B 77.89 34.92 70 333.0 2589 150 NaN NaN Pure Snail Mucin Emulsion Etude House NaN A 68.27 46.35 50 77.0 1731 243 NaN NaN Pure Collagen TonerNeogen NaN A 24.86 15.97 42 361.0 2916 80 NaN NaN Hydra Mugwort MaskSulwhasoo NaN B 22.73 13.41 77 324.0 1115 13 NaN NaN Hydra Niacinamide Mask NaN B 22.84 15.11 42 199.0 1448 78 NaN NaN Silky Propolis CreamInnisfree NaN A 31.3 20.07 23 189.0 4711 257 NaN NaN Youth Centella Cleanser NaN B 46.73 21.31 30 345.0 3187 234 NaN NaN Soothing Ginseng Emulsion NaN C 40.24 26.87 57 290.0 2939 11 NaN NaN Youth Mugwort SerumCOSRX NaN A 30.39 17.07 29 73.0 435 178 NaN NaN Calm Centella SerumBenton NaN C 52.83 33.93 17 463.0 4692 145 NaN NaN Fresh Green Tea Mist NaN B 19.76 13.22 16 120.0 995 172 NaN NaN Youth Centella MistCOSRX NaN B 30.45 15.08 76 283.0 3646 174 NaN NaN Calm Green Tea Serum NaN A 35.65 15.44 26 72.0 951 397 NaN NaN Glow Centella SerumNeogen NaN C 41.92 19.63 42 79.0 1787 287 NaN NaN Glow Ginseng SerumTony Moly NaN B 64.96 34.31 57 127.0 2031 126 NaN NaN Youth Centella Cleanser Innisfree NaN A 23.98 15.48 85 24.0 3846 198 NaN NaN Radiant Centella Mask Missha NaN A 46 30.28 68 122.0 2527 9 NaN NaN Hydra Vitamin C MistMamonde NaN C 51.47 20.7 31 215.0 1668 33 NaN NaN Radiant Centella Emulsion NaN B 13.25 7.33 39 281.0 4100 169 NaN NaN Soothing Centella Serum NaN C 52.53 27.59 47 384.0 2838 343 NaN NaN Pure Propolis Ampoule Sulwhasoo NaN B 21.94 10.24 60 499.0 3598 140 NaN NaN Soothing Propolis Emulsion NaN B 14.55 6.34 63 391.0 4013 369 NaN NaN Glow Snail Mucin Essence NaN C 76.42 38.31 17 369.0 1166 325 NaN NaN",
-    "metadata": {
-      "id": "1_0",
-      "page": 1,
-      "csv_path": "src\\data\\assets\\36ae85b5\\tbl_1_0.csv",
+      "id": "10_1",
+      "page": 10,
+      "csv_path": "src\\data\\assets\\3811cd14\\3811cd14_tbl_10_1.csv",
       "shape": [
-        35,
-        10
+        6,
+        3
       ],
-      "doc_id": "36ae85b5",
+      "doc_id": "3811cd14",
       "type": "tables",
       "weight": 1.0
     }
   },
   {
-    "content": "Table from document 'Product Name' on page 2: 0 1 2 3 4 5 6 7 8 Soothing Ginseng Serum B 77.59 52.98 36 66 4480 346 NaN Calm Centella CreamLaneige B 66.59 33.09 36 374 2544 149 NaN Youth Mugwort Toner Tony Moly C 31.32 17.40 30 330 4207 331 NaN Soothing Hyaluronic Acid Cleanser B 16.84 10.29 39 443 3473 221 NaN Radiant Centella Serum C 57.90 29.48 37 327 4069 305 NaN Radiant Collagen Serum Tony Moly B 40.81 28.22 73 163 2646 136 NaN Glow Collagen Essence Skinfood B 18.54 12.77 78 288 853 296 NaN Pure Centella TonerBenton A 44.66 21.24 70 389 2182 74 NaN Soothing Mugwort Emulsion A 12.41 6.82 57 143 2874 256 NaN Calm Propolis Essence A 73.65 36.11 28 125 2996 279 NaN Hydra Propolis Essence Skinfood A 28.11 13.65 13 177 4285 368 NaN Soothing Niacinamide Emulsion A 56.38 23.18 44 166 875 186 NaN Bright Propolis MaskCOSRX A 31.82 18.55 73 164 1725 171 NaN Radiant Hyaluronic Acid Cream A 46.40 25.56 58 139 3169 95 NaN Bright Centella Essence Innisfree B 48.27 20.05 26 338 517 206 NaN Silky Collagen Essence Skinfood B 22.94 11.09 53 294 214 350 NaN Fresh Green Tea Essence B 77.87 52.37 39 111 716 23 NaN Silky Mugwort MaskCOSRX A 64.26 30.32 55 77 4074 43 NaN Youth Hyaluronic Acid Essence A 75.76 33.60 15 458 3367 130 NaN Youth Snail Mucin Toner C 72.64 39.72 46 365 925 177 NaN Pure Vitamin C SerumSkinfood B 51.85 36.07 33 248 1616 145 NaN Calm Propolis SerumIOPE B 74.53 35.22 55 493 3246 246 NaN Silky Centella MistInnisfree A 16.19 9.74 62 136 512 224 NaN Silky Green Tea MistBenton B 23.72 14.91 69 337 828 130 NaN Pure Propolis MistMamonde A 13.17 6.21 72 298 3448 62 NaN Silky Collagen Ampoule Sulwhasoo B 32.77 20.27 41 146 2908 152 NaN Bright Centella Ampoule Tony Moly C 37.21 18.99 42 412 775 321 NaN Calm Niacinamide Lotion Sulwhasoo B 28.99 17.10 76 415 3565 387 NaN Hydra Niacinamide Emulsion B 68.01 40.13 27 148 2604 365 NaN Fresh Snail Mucin Essence B 34.97 19.61 34 77 3067 5 NaN Radiant Vitamin C Mist COSRX C 29.67 12.67 63 141 2886 391 NaN Pure Snail Mucin Mask Missha B 47.99 31.22 67 20 1222 352 NaN Calm Collagen Cleanser A 19.86 9.86 76 258 4179 194 NaN Hydra Ginseng SerumSulwhasoo A 66.15 30.16 55 309 1671 195 NaN",
+    "content": "Figure on page 3: Figure 1: The Transformer - model architecture. ows this overall architecture using stacked self-attention",
     "metadata": {
-      "id": "2_1",
-      "page": 2,
-      "csv_path": "src\\data\\assets\\36ae85b5\\tbl_2_1.csv",
-      "shape": [
-        34,
-        9
-      ],
-      "doc_id": "36ae85b5",
-      "type": "tables",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Table from document 'Product Name' on page 3: 0 1 2 3 4 5 6 7 8 Calm Ginseng Cleanser Tony Moly B 15.22 6.27 33 115 2243 373 NaN Hydra Mugwort MaskEtude House A 79.08 45.65 41 145 1787 316 NaN Bright Vitamin C Mask Dr. Jart+ A 64.06 38.65 56 137 4232 121 NaN Glow Collagen Cleanser C 23.91 9.68 32 67 3951 138 NaN Pure Hyaluronic Acid Cleanser C 10.39 5.75 75 108 3540 62 NaN Pure Snail Mucin Mask Missha B 67.08 31.39 36 256 3866 48 NaN Hydra Niacinamide Cleanser B 59.48 35.30 11 392 2426 177 NaN Silky Centella Ampoule Benton B 61.03 27.60 26 404 3014 164 NaN Calm Niacinamide Mask Mamonde C 63.99 38.86 42 291 4052 177 NaN Radiant Niacinamide Essence B 15.18 7.83 18 208 695 321 NaN Pure Propolis Cleanser Neogen A 35.09 23.90 52 211 828 307 NaN Glow Green Tea Ampoule A 18.11 7.99 57 466 1465 153 NaN Hydra Niacinamide Toner Sulwhasoo B 70.42 35.37 48 88 4592 84 NaN Radiant Collagen Lotion A 53.63 23.28 51 297 798 378 NaN Youth Green Tea Serum Tony Moly B 33.16 22.46 35 368 495 217 NaN Pure Hyaluronic Acid Mask C 14.45 9.58 59 266 4271 207 NaN Glow Ginseng MistLaneige B 31.77 15.17 34 470 4460 256 NaN Youth Hyaluronic Acid Lotion A 32.76 19.59 33 95 2602 233 NaN Hydra Green Tea Cleanser C 61.07 39.40 22 173 1919 168 NaN Fresh Green Tea Ampoule B 54.63 30.95 69 163 817 231 NaN Calm Centella SerumMissha A 72.10 40.30 16 454 2882 151 NaN Fresh Collagen Lotion A 43.06 20.35 66 105 3677 24 NaN Silky Hyaluronic Acid Cream A 18.37 7.86 45 204 243 51 NaN Hydra Hyaluronic Acid Lotion B 59.93 40.10 54 304 3240 237 NaN Glow Hyaluronic Acid Ampoule B 63.25 42.39 29 481 4591 309 NaN Soothing Centella Cleanser B 49.29 29.08 74 239 3038 18 NaN Hydra Snail Mucin Lotion The Face Shop A 63.97 32.09 17 88 3736 147 NaN Glow Mugwort CreamThe Face Shop B 44.57 22.50 25 66 3322 5 NaN Calm Mugwort Ampoule The Face Shop C 46.59 28.78 23 113 1267 377 NaN Bright Centella CreamSkinfood B 39.93 26.72 85 257 2716 58 NaN Glow Centella LotionDr. Jart+ C 11.78 7.85 24 465 1162 378 NaN Fresh Niacinamide Serum C 17.55 11.13 75 472 2256 263 NaN",
-    "metadata": {
-      "id": "3_2",
+      "id": "fig_3_0",
       "page": 3,
-      "csv_path": "src\\data\\assets\\36ae85b5\\tbl_3_2.csv",
-      "shape": [
-        32,
-        9
-      ],
-      "doc_id": "36ae85b5",
-      "type": "tables",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Title: Introduction. Abstract:",
-    "metadata": {
-      "doc_id": "44eb8a28",
-      "page": 1,
-      "type": "summary",
-      "weight": 3.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Attention Is All You Need Introduction",
-    "metadata": {
-      "doc_id": "44eb8a28",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text:",
-    "metadata": {
-      "doc_id": "44eb8a28",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: layers, or heads. For each of these we use dk = dv = dmodel/h = 64. Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality",
-    "metadata": {
-      "doc_id": "44eb8a28",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: ReLU activation in between. FFN(x) = max(0,xW1 + b1)W2 + b2 (2) While the linear transformations are the same across different positions In this work, we use sine and cosine functions of different frequencies: PE(pos,2i) = sin(pos/100002i/dmodel ) PE(pos,2i+1) = cos(pos/100002i/dmodel ) where pos is the position and i is the dimension. That is, each dimension of the positional encoding We used the Adam optimizer [20] with \u03b21 = 0.9, \u03b22 = 0.98 and \u03f5 = 10\u22129. We varied the learning rate over the course of training, according to the formula: lrate = d\u22120.5 model \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5) (3) This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used warmup_steps = 4000.",
-    "metadata": {
-      "doc_id": "44eb8a28",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Title: Skin Seoul Competency Assessment AI Agent Automation Engineer (Beauty E-Commerce). Abstract:",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 1,
-      "type": "summary",
-      "weight": 3.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Skin Seoul Competency Assessment AI Agent Automation Engineer (Beauty E-Commerce) Daniel Danny Kennedy \ud83d\udce9ddinny@gmail.com \ud83d\udcde+91 9393085959 Introduction: This document shows my approach to addressing the e-commerce automated merchandising challenge. The process begins with deploying a transparent ranking algorithm as a strategic baseline. Over time, the system evolves from simple learning to autonomous optimization, intelligently adapting and perfecting its ranking strategy in real time.This assessment challenged me to translate qualitative objectives, like \u2018enhancing discovery,\u2019 into a measurable ranking algorithm \u2014 moving from abstract goals to a precise, quantitative formula.",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 1. Selected Touchpoint and Rationale \u2794 on the main page to engage visitors immediately. \u2794 \u2794 on-site product merchandising. This agent will achieve this not only by historical sales data but also with proactive market intelligence to enhance product discovery and customer engagement. \u2794 Rationale: The homepage has the widest reach at the top of the sales funnel, where users are most open to discovery. Optimizing this high-visibility space creates a strong first impression and drives immediate impact on conversions and customer experience. Touchpoint: \u201cHomepage Carousels\u201d (\"Best Sellers\" Section).This displays rotating product highlights User Context: Top of the sales funnel, users are browsing K-Beauty casually, not yet committed. Business Objective: To maximize revenue by deploying an AI agent that automates and optimizes",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 2. Defining Data Requirements (What Info We Need from the Dataset?) As an AI/ML Student, I naturally approached the mock data analytically and ran a Python-based exploration to uncover insights. I leveraged Google Colab to implement a Scoring Algorithm. I\u2019ve extended the challenge by implementing a demo Skin Seoul website frontend (using Python Flask) with a clean, intuitive UI/UX that records basic user activity and feeds it into the \u201cML model\u201d (MAB Algorithm) to fine-tune for optimal weights. Please Visit my Colab Notebook: https://colab.research.google.com/drive/1BQ4YNl0xV_z75XI3-RCIlikTbJ9HfGA0?usp=sharing \u2794 Margin using the Volume Sold, Units in Stock, Price, and COGS data. Strategic attributes like Brand Priority, Inventory Freshness, and Views were then derived from the Brand Tier, Days of Inventory, and Views columns. \u2794 Derived Fields/Columns: Profit Margin = ($ - COGS) / $; Sell-Through Rate = Sold / (Stock + Sold) \u2794 Assumptions: The model requires a hybrid data pipeline,",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Days of Inventory, and Views columns. \u2794 Derived Fields/Columns: Profit Margin = ($ - COGS) / $; Sell-Through Rate = Sold / (Stock + Sold) \u2794 Assumptions: The model requires a hybrid data pipeline, pulling internal data (sales, inventory, margin) from our analytics API and enriching it with external live internet data streams for market intelligence (social media buzz, competitor pricing, and product review sentiment).",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 3. Analytical Logic Design: \u2794 \u2794 1: Filters: Units in Stock >= 10 (ensure availability) & Volume Sold Last Month >= 50 (proven demand). 2: Scoring Function: \u201cThe 4D Product Ranking Algorithm\u201d My first algorithm was too reactive, relying only on given data. Introducing the 4D Ranking Algorithm: a holistic system that is both reactive to Historical Data and proactive to market opportunities, generating a single intelligent score. Below are brief explanations of each term in the \u201cFour Dimensions\u201d: 1. \u201cCore Performance\u201d first identifies proven top-performers by analyzing raw sales velocity and efficiency. 2. \"Core Economics\" ensures our products make money by prioritizing high profits and efficient inventory. 3.\u201cMarket Intelligence\u201d scans the internet, capitalizing on social media buzz and competitive advantages. 4. \"Customer's Voice\" adds brand reputation and product quality to the score, based on customer reviews.",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: \u2794 3. Refresh Cadence: I must work backward from the modern customer\u2019s real-time needs. If a product trends on TikTok or Instagram at 11 AM, it must be capitalized immediately\u2014not the next day. That\u2019s why I chose a 4-hour refresh cadence to meet this demand and serve customers what\u2019s relevant now. 4. Merchandising Goals and Design Constraints \u2794 Goals: 1. Drive conversions & AOV by ranking on multiple factors like profitability, not just past sales. 2. Enhance discovery by proactively identifying and boosting products based on social media & seasonal trends. 3. Automate strategically to reduce manual curation by \u2248 80% Assuming that the AI agent automates all routine ranking tasks, the merchandiser's role will shift from manual curation to high-level strategic oversight. 4. Strengthen brand partnerships by ensuring key brands receive strategic visibility. \u2794 Constraints:",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 4. Strengthen brand partnerships by ensuring key brands receive strategic visibility. \u2794 Constraints: 1. The model is restricted to validation on a mock dataset with hardcoded algorithm weights. 2. The 4-hour refresh cadence is restricted by technical and resource limitations. 5. Process Flow Map (multi-phase, cyclical, and robust system) Phase 1 \u2013 Automated Ranking: Every 4 hours, a CRON job pulls internal (sales, inventory) and external (social buzz, competitor prices) data. The 4D algorithm scores products, outputs a ranked JSON feed, and supports manual overrides via a dashboard, with full process logging. Phase 2 \u2013 Continuous Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent that dynamically adjusts the 4D formula\u2019s weights to align with business goals. Deployment: A CI/CD pipeline ensures automated testing, reliable updates, and rapid iteration.",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Conclusion \ud83d\udcab This assessment helped me hone my data analytical skills and business acumen while challenging me in multiple ways. The solution includes: a proactive 4D Ranking Algorithm that balances proven performance with profitability, while fusing market intelligence with the customer's voice. It proves we can move beyond simply reacting to sales data and start proactively shaping customer demand. Ultimately, this isn't just about optimizing a feature; it's about challenging the static nature of e-commerce itself by \u201cLeveraging AI.\u201d",
-    "metadata": {
-      "doc_id": "c36d4a30",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Figure on page 2: aints e profitability, not just past sales. d t b d i l di & l t d",
-    "metadata": {
-      "id": "fig_2_0",
-      "page": 2,
       "bbox": [
-        349.3822937011719,
-        18.0,
-        603.8677368164062,
-        209.25
+        196.5590057373047,
+        72.001953125,
+        415.43902587890625,
+        394.4179992675781
       ],
-      "path": "src\\data\\assets\\c36d4a30\\fig_page2_0.png",
-      "caption": "aints \ne profitability, not just past sales. \nd\nt b\nd\ni l\ndi\n&\nl t\nd",
-      "doc_id": "c36d4a30",
+      "path": "src\\data\\assets\\3811cd14\\fig_page3_0.png",
+      "caption": "Figure 1: The Transformer - model architecture.\nows this overall architecture using stacked self-attention",
+      "doc_id": "3811cd14",
       "type": "figures",
       "weight": 1.0
     }
   },
   {
-    "content": "Figure on page 2: \u2794\u200b 3. Refresh Cadence: I must work backward from the modern customer\u2019s real-time needs. If a product trends on TikTok or Instagram at 11 AM, it must be capitalized immediately\u2014not the",
+    "content": "Figure on page 4: ulti-Head Attention consists o",
     "metadata": {
-      "id": "fig_2_1",
-      "page": 2,
+      "id": "fig_4_1",
+      "page": 4,
       "bbox": [
-        15.75,
-        18.0,
-        349.5,
-        127.5
+        346.7720031738281,
+        82.68701171875,
+        467.0119934082031,
+        267.29498291015625
       ],
-      "path": "src\\data\\assets\\c36d4a30\\fig_page2_1.png",
-      "caption": "\u2794\u200b 3. Refresh Cadence: I must work backward from the modern \ncustomer\u2019s real-time needs. If a product trends on TikTok or \nInstagram at 11 AM, it must be capitalized immediately\u2014not the",
-      "doc_id": "c36d4a30",
+      "path": "src\\data\\assets\\3811cd14\\fig_page4_1.png",
+      "caption": "ulti-Head Attention consists o",
+      "doc_id": "3811cd14",
       "type": "figures",
       "weight": 1.0
     }
   },
   {
-    "content": "Figure on page 2: Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent he 4D formula\u2019s weights to align with business goals. peline ensures automated testing, reliable updates, and rapid iteration.",
+    "content": "Equation on page 1: ] L C . s c [",
     "metadata": {
-      "id": "fig_2_2",
-      "page": 2,
-      "bbox": [
-        141.75,
-        376.6317138671875,
-        599.25,
-        592.6317138671875
-      ],
-      "path": "src\\data\\assets\\c36d4a30\\fig_page2_2.png",
-      "caption": "Optimization: User feedback (CTR, conversions, AOV) trains a Reinforcement Learning agent \nhe 4D formula\u2019s weights to align with business goals. \npeline ensures automated testing, reliable updates, and rapid iteration.",
-      "doc_id": "c36d4a30",
-      "type": "figures",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Title: https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review. Abstract:",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 1,
-      "type": "summary",
-      "weight": 3.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: The Micro-Paper: Towards cheaper, citable research ideas and conversations FRANK ELAVSKY, Carnegie Mellon University, fje@cmu.edu",
-    "metadata": {
-      "doc_id": "e531768d",
+      "id": "txt_eqn_3811cd14_p1_0_2",
       "page": 1,
       "section": "Introduction",
-      "type": "chunks",
+      "type": "equations",
+      "equation_text": "] L C . s c [",
+      "normalized_text": "] L C . s c [",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   },
   {
-    "content": "Section: Introduction. Text: Academic, peer-reviewed \u201cshort\u201d papers are a common way to present a late-breaking work to the academic community that outlines preliminary findings, research ideas, and novel conversations. By comparison, blogging or writing posts on social media are an unstructured and open way to discuss ideas and start new conversations. Both have limitations in the proliferation of research ideas. The short paper format relies on the conference and journal submission process while blogging does not operate within a structured format or set of expectations at all. However, at times the demand exists for late-breaking ideas and conversations to arise in a raw form or with urgency but should still be archived and recorded in a way that promotes citational honesty and integrity. To address this, I present: The Micro-Paper, as a micro-paper itself. The Micro-Paper is a small, cheap, accessible, digital document that is self-published and archived, akin to a pre-print of a short paper. This meta",
+    "content": "Equation on page 5: FFN(x) = max(0,xW1 + b1)W2 + b2 (2)",
     "metadata": {
-      "doc_id": "e531768d",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
+      "id": "txt_eqn_3811cd14_p5_2_3",
+      "page": 5,
+      "section": "3.4 Embeddings and Softmax",
+      "type": "equations",
+      "equation_text": "FFN(x) = max(0,xW1 + b1)W2 + b2 (2)",
+      "normalized_text": "FFN(x) = max(0,xW1 + b1)W2 + b2 (2)",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   },
   {
-    "content": "Section: Introduction. Text: present: The Micro-Paper, as a micro-paper itself. The Micro-Paper is a small, cheap, accessible, digital document that is self-published and archived, akin to a pre-print of a short paper. This meta micro-paper discusses the context, goals, and considerations of micro-paper authoring.",
+    "content": "Equation on page 6: O(n2 \\cdot d) O(n \\cdot d2) O(k \\cdot n \\cdot d2) O(r \\cdot n \\cdot d)",
     "metadata": {
-      "doc_id": "e531768d",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
+      "id": "txt_eqn_3811cd14_p6_0_4",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "equations",
+      "equation_text": "O(n2 \u00b7 d) O(n \u00b7 d2) O(k \u00b7 n \u00b7 d2) O(r \u00b7 n \u00b7 d)",
+      "normalized_text": "O(n2 \\cdot d) O(n \\cdot d2) O(k \\cdot n \\cdot d2) O(r \\cdot n \\cdot d)",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   },
   {
-    "content": "Section: Introduction. Text: ideas that aren\u2019t only congealed or refined, but raw and messy as well. Generally, the gap for disseminating cheap Fig 1: The micro-paper fills a gap on the spectrum between fast, cheap ideas and rigorous, archival work. ideas is filled by academics today through Twitter, blogging, or in some form of social media or another. Sometimes the gap is filled through workshops, position papers, or conversation pieces (such as ACM\u2019s Interactions). There are many options for sharing ideas, all with different tradeoffs between editorial and authoring expenses, time, archiving, accessibility, and democratization of the process. 1. What is a micro-paper? A micro-paper is a paper between 1 and 4 pages in length that engages a single idea clearly. A micro-paper can be anything from focused blog post to a preprinted short paper, but it is published through an open archive.",
+    "content": "Equation on page 6: O(1) O(n) O(logk(n)) O(n/r)",
     "metadata": {
-      "doc_id": "e531768d",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
+      "id": "txt_eqn_3811cd14_p6_0_6",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "equations",
+      "equation_text": "O(1) O(n) O(logk(n)) O(n/r)",
+      "normalized_text": "O(1) O(n) O(logk(n)) O(n/r)",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   },
   {
-    "content": "Section: Introduction. Text: 2. The context of micro-papers Ideas and conversations often arise in research settings in response to problems, gaps, or issues. But some ideas and conversations also come about in a more generative fashion: they are still responding to something within a context but are not concerned with problems and gaps. So, whether filling gaps or otherwise, a micro-paper (and even the authors at times) must clearly and reflexively be situated within a conversational context. At a meta-level, this paper is framed as a gap- filler (see: Fig 1). Currently, academic publishing is expensive, time-consuming, and high risk. And while much of the process could be argued as a necessary set of procedures to ensure we aren\u2019t making claims that are misleading or unfounded, there exists a gap for disseminating ideas that should be cheap, accessible, and intended to inspire other work [4]. Not all research conversation needs to have answers. The heart of research as a community is due to the dissemination of",
+    "content": "Equation on page 6: PE(pos,2i) = sin(pos/100002i/dmodel) PE(pos,2i+1) = cos(pos/100002i/dmodel)",
     "metadata": {
-      "doc_id": "e531768d",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
+      "id": "txt_eqn_3811cd14_p6_1_7",
+      "page": 6,
+      "section": "4 Why Self-Attention",
+      "type": "equations",
+      "equation_text": "PE(pos,2i) = sin(pos/100002i/dmodel) PE(pos,2i+1) = cos(pos/100002i/dmodel)",
+      "normalized_text": "PE(pos,2i) = sin(pos/100002i/dmodel) PE(pos,2i+1) = cos(pos/100002i/dmodel)",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   },
   {
-    "content": "Section: Introduction. Text: 3. A micro-paper\u2019s goal is the free, cheap, open, and honest dissemination of ideas The micro-paper\u2019s focus is on ideas for the sake of generative work, conversation, and inspiration. In contrast, a micro-paper is not an appropriate venue for sharing findings, claims, or experiments. The nature of methodological generation of knowledge is most trustworthy when there is a more rigorous process in place. Some avenues generate good or trustworthy knowledge and ideas, but the micro-paper is a place for sharing potentially useful ideas. Good or trustworthy knowledge may require more careful review [3, 4, 6], but potentially useful ideas should at least be archived. 3.1 A micro-paper must be small and cheap Whether having peer-reviewed work or an editorial team, most writing is costly in both time and money. It is also risky: your work could get rejected or require slow iterations of feedback and review.",
+    "content": "Equation on page 7: lrate = d-0.5",
     "metadata": {
-      "doc_id": "e531768d",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
+      "id": "txt_eqn_3811cd14_p7_4_4",
+      "page": 7,
+      "section": "5.4 Regularization",
+      "type": "equations",
+      "equation_text": "lrate = d\u22120.5",
+      "normalized_text": "lrate = d-0.5",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   },
   {
-    "content": "Section: Introduction. Text: In contrast, this micro-paper took me 3 hours on a random Thursday in February (when I should be crunching for another deadline). Most micro-papers should ideally be short enough in length to encourage both rapid authoring and reading.",
+    "content": "Equation on page 8: Training Cost (FLOPs) EN-DE EN-FR",
     "metadata": {
-      "doc_id": "e531768d",
-      "page": 1,
-      "section": "Introduction",
-      "type": "chunks",
+      "id": "txt_eqn_3811cd14_p8_0_8",
+      "page": 8,
+      "section": "6.2 Model Variations",
+      "type": "equations",
+      "equation_text": "Training Cost (FLOPs) EN-DE EN-FR",
+      "normalized_text": "Training Cost (FLOPs) EN-DE EN-FR",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   },
   {
-    "content": "Section: Introduction. Text: 3.2 A micro-paper must be archived While blogging and tweeting is cheap and fast and encourages ideas to be shared, these aren\u2019t trustworthy archives. And sometimes good ideas arise in these faster, cheaper contexts that should be captured, articulated, and stored for later reference. With the existential threat of twitter disintegrating at any moment and the entirely unmaintained space of many academic blogs, it is important for some ideas to be archived [5]. While some blog maintainers may have higher standards for their longevity, url stability, dois, and records of changes, it may make sense for most to use an existing pre-print archival platform, like arXiv for ensuring trustworthiness and reliability in your readers.",
+    "content": "Equation on page 9: (E) big 6",
     "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 3.3 Revisions must also be archived In addition to archival processes for the sake of accessing later, many archival sites (such as arXiv) also keep track of revision histories. The ephemeral and non-standardized way that individuals operate their own blogs and social media means that not only might something move or cease to exist (a findability problem) but there is also an honesty problem when contents change or update without record [7].",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 3.4 A micro-paper must be accessible Blogs, twitter, and mastodon have done more for disability discourse than most other media, but especially more than the dreaded PDF favored by academics. This is because text-based media online (generally in HTML or Markdown) has immense accessibility potential over PDF [1] (and paper publications). All artifacts of academic discourse, including every paper publication, should be more accessible. Due to a micro-paper\u2019s size, it is easier for authors to learn accessibility for than a full-size paper with proprietary formatting involved. This micro-paper was authored in Microsoft Word, exported as a PDF, and then converted into HTML using pandoc. With the push for arXiv to transition more towards accessible formats of publication [2], I believe that trustworthy archives that are accessibility-first are near. Micro-papers will compliment this push.",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: towards accessible formats of publication [2], I believe that trustworthy archives that are accessibility-first are near. Micro-papers will compliment this push. 4. Considering when a micro-paper is the write choice (pun intended) If someone has an idea, conversation, or late-breaking work, they might consider the following questions: Why wouldn\u2019t I write a short academic paper and submit to a traditional venue? It is time-consuming, expensive, and requires waiting for the publication cycle. It is also higher risk, in cases where the peer review process might reject it. Why shouldn\u2019t I write a piece in a non-peer reviewed publication, like ACM Interactions? This is also time-consuming and higher risk, because editorial interest may conflict. In addition, these often require an existing network of colleagues, invitation to contribute, or formal submission and selection process.",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Why shouldn\u2019t I write a blog or twitter thread? Blogs and social media posts raise concerns about archival quality and trustworthiness. Accessing the piece later may become difficult or cumbersome. Some great ideas and discussions have been lost in time due to the ephemeral nature of these cheap and fast options. When is writing a micro-paper a good idea? Notably, there is no formal peer review for a micro- paper. Our currently imagined peer review process may not make sense for all work published with the intent to push new ideas and conversations. It is even worth considering if this practice should continue at all [3, 4]. A practical use for a micro-paper may be as a",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: preprint or early draft for an eventual short or full paper submission, position paper, or book chapter. The greatest strength of both the pre-print and short paper process is that they can invigorate scholars with new or raw ideas to see those turn into full projects. Short papers also have a core readership and opportunities to present that are not afforded to micro-papers, so for early career researchers it may be important to consider ways to use these two formats together. For folks who simply want to get a citable idea out into the world without regard for submission and publication cycles and procedures, a micro-paper is a good choice as well. And lastly, there may be authors with too",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: out into the world without regard for submission and publication cycles and procedures, a micro-paper is a good choice as well. And lastly, there may be authors with too many ideas to pursue (even when some are useful) and they are willing to admit that they won\u2019t pursue every idea that they have. A micro-paper is a way to put the idea into the discussion and let it run its course. In my case, I recognize that some problems and patterns are outside of the scope of my leverage and experience to address, such as contributions to design or behavioral domains of accessibility (when my area is strictly technical contributions).",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: 5. Conclusion The hope is that both the procedural and systemic inaccessibility of the short paper authoring process and the citational uncertainty of blogs and social media can be addressed with the micro-paper. I hope to see early, usable ideas shared more freely and especially hope to invigorate young scholars and include historically excluded folks, such as those with disabilities, in the larger research conversation.",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 2,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: Acknowledgements Special thanks to Jonathan Zong, for your encouragement to make my cheap ideas citable and for feedback on this micro-paper. Also thanks to the folks at the MIT Vis Lab (Arvind, Crystal, and Alan) for supporting my not- traditionally-publishable ideas over the past couple years especially. Hearing that my \u201ctweets are a public service\u201d encouraged me to make the heart of that service last longer than Twitter does (hopefully). References [1] Bigham, Jeffrey et al. \u201cAn Uninteresting Tour Through Why Our Research Papers Aren't Accessible.\u201d CHI, May 2016. doi: 10.1145/2851581.2892588. [2] Brinn, Shamsi et al. \u201cA framework for improving the accessibility of research papers on arXiv.org.\u201d arXiv, Dec. 2022. doi: 10.48550/ARXIV.2212.07286 [3] Mastroianni, Adam. \u201cThe rise and fall of peer review.\u201d Experimental History, Accessed: Feb. 24, 2023. https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 3,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Section: Introduction. Text: [3] Mastroianni, Adam. \u201cThe rise and fall of peer review.\u201d Experimental History, Accessed: Feb. 24, 2023. https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review [4] Mastroianni, Adam et al. \u201cThings Could Be Better.\u201d PsyArXiv, Nov 2022. [5] Sanderson, Robert et al. \u201cAnalyzing the Persistence of Referenced Web Resources with Memento.\u201d arXiv, May 2011. doi: 10.48550/arXiv.1105.3459 [6] \u201cWhy Do People Publish on Arxiv Instead of Other Places?\u201d Academia Stack Exchange, Accessed: Feb. 23, 2023, https://academia.stackexchange.com/questions/75325/why-do-people-publish-on-arxiv-instead-of- other-places. [7] Zittrain, Jonathan et al. \u201cPerma: Scoping and Addressing the Problem of Link and Reference Rot in Legal Citations.\u201d Harvard Law Review, Mar. 2014.",
-    "metadata": {
-      "doc_id": "e531768d",
-      "page": 3,
-      "section": "Introduction",
-      "type": "chunks",
-      "weight": 1.0
-    }
-  },
-  {
-    "content": "Figure on page 1: Fig 1: The micro-paper fills a gap on the spectrum between fast, cheap ideas and rigorous, archival work. 1. What is a micro-paper?",
-    "metadata": {
-      "id": "fig_1_0",
-      "page": 1,
-      "bbox": [
-        72.0,
-        280.19000244140625,
-        297.0,
-        377.239990234375
-      ],
-      "path": "src\\data\\assets\\e531768d\\fig_page1_0.png",
-      "caption": "Fig 1: The micro-paper fills a gap on the spectrum \nbetween fast, cheap ideas and rigorous, archival work. \n1. What is a micro-paper?",
-      "doc_id": "e531768d",
-      "type": "figures",
+      "id": "txt_eqn_3811cd14_p9_0_31",
+      "page": 9,
+      "section": "6.3 English Constituency Parsing",
+      "type": "equations",
+      "equation_text": "(E) big 6",
+      "normalized_text": "(E) big 6",
+      "doc_id": "3811cd14",
       "weight": 1.0
     }
   }

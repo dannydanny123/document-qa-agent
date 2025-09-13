@@ -85,7 +85,6 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
     
     full_text = "\n\n".join([el.text for el in elements])
     
-    # Heuristic to find abstract and sections from the structured elements
     abstract = ""
     sections = []
     try:
@@ -93,11 +92,11 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
         if abstract_element_indices:
             start_index = abstract_element_indices[0] + 1
             for i in range(start_index, len(elements)):
-                if elements[i].category == "Title": # Stop at the next section title
+                if elements[i].category == "Title":
                     break
                 abstract += elements[i].text + "\n"
     except Exception:
-        pass # Abstract detection is best-effort
+        pass
 
     section_pattern = r'^\d+(\.\d+)*\s+.*'
     sections = [{"name": el.text, "page": el.metadata.page_number} for el in elements if el.category == "Title" and re.match(section_pattern, el.text)]
@@ -109,6 +108,7 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
         "pages_text": pages_text,
         "full_text": full_text.strip()
     }
+
 
 def _sanitize_cell(cell_data: Any) -> str:
     """A helper function to clean individual table cells."""
@@ -125,6 +125,7 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
     Everything gets saved as CSV for traceability.
     """
     extracted = []
+    tables = None # Initialize to ensure variable exists
 
     with tempfile.TemporaryDirectory() as tmpdir:
         try:
@@ -132,8 +133,7 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
             tables = camelot.read_pdf(
                 pdf_path,
                 pages='all',
-                flavor='lattice',
-                backend='poppler'
+                flavor='lattice'
             )
             if not tables:
                 logger.info(f"No lattice tables found in {pdf_path}, trying stream mode")
@@ -142,7 +142,6 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
                     pdf_path,
                     pages='all',
                     flavor='stream',
-                    backend='poppler',
                     temp_dir=tmpdir
                 )
         except Exception as e:
@@ -153,41 +152,59 @@ def extract_tables(pdf_path: str, doc_id: str) -> List[Dict]:
                     raw_tables = page.extract_tables()
                     for i, table in enumerate(raw_tables):
                         if table:
-                            # --- SANITIZE DATA ---
                             cleaned_table = [[_sanitize_cell(cell) for cell in row] for row in table]
                             df = pd.DataFrame(cleaned_table)
-                                          
+                            
                             doc_assets_dir = ASSETS_DIR / doc_id
                             doc_assets_dir.mkdir(parents=True, exist_ok=True)
-                            csv_path = doc_assets_dir / f"tbl_{page_num}_{i}.csv"
+                            csv_path = doc_assets_dir / f"{doc_id}_tbl_{page_num}_{i}.csv"
 
                             df.to_csv(csv_path, index=False, quoting=csv.QUOTE_ALL)
                             extracted.append({
                                 "id": f"{page_num}_{i}", "page": page_num,
-                                "csv_path": str(csv_path), "shape": df.shape # Convert Path to string for JSON
+                                "csv_path": str(csv_path), "shape": df.shape
                             })
-            return extracted
-        
-        # Process the tables returned by Camelot
+            return extracted # Return here since we used the fallback
+    
+    # Process the tables returned by Camelot if the try block succeeded
+    if tables:
         for i, table in enumerate(tables):
             if not table.df.empty:
-                # --- SANITIZE DATA HERE ---
-                df = table.df.applymap(_sanitize_cell)
+                # FIX: Replaced deprecated 'applymap' with modern 'map'
+                df = table.df.map(_sanitize_cell)
 
                 doc_assets_dir = ASSETS_DIR / doc_id
                 doc_assets_dir.mkdir(parents=True, exist_ok=True)
-                csv_path = doc_assets_dir / f"tbl_{table.page}_{i}.csv"
+                csv_path = doc_assets_dir / f"{doc_id}_tbl_{table.page}_{i}.csv"
 
                 df.to_csv(csv_path, index=False, quoting=csv.QUOTE_ALL)
                 extracted.append({
                     "id": f"{table.page}_{i}", "page": table.page,
-                    "csv_path": str(csv_path), "shape": df.shape # Convert Path to string for JSON
+                    "csv_path": str(csv_path), "shape": df.shape
                 })
 
-        logger.info(f"Extracted {len(extracted)} tables for {pdf_path}")
+    logger.info(f"Extracted {len(extracted)} tables for {pdf_path}")
     return extracted
+        
+    #     # Process the tables returned by Camelot
+    #     for i, table in enumerate(tables):
+    #         if not table.df.empty:
+    #             # --- SANITIZE DATA HERE ---
+    #             df = table.df.applymap(_sanitize_cell)
 
-# Simplified to only extract figures
+    #             doc_assets_dir = ASSETS_DIR / doc_id
+    #             doc_assets_dir.mkdir(parents=True, exist_ok=True)
+    #             csv_path = doc_assets_dir / f"tbl_{table.page}_{i}.csv"
+
+    #             df.to_csv(csv_path, index=False, quoting=csv.QUOTE_ALL)
+    #             extracted.append({
+    #                 "id": f"{table.page}_{i}", "page": table.page,
+    #                 "csv_path": str(csv_path), "shape": df.shape # Convert Path to string for JSON
+    #             })
+
+    #     logger.info(f"Extracted {len(extracted)} tables for {pdf_path}")
+    # return extracted
+
 def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
     """
     Extracts all images from a PDF and saves them as figures,
@@ -196,6 +213,7 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
     doc = fitz.open(pdf_path)
     figures = []
 
+    # Use the global ASSETS_DIR to create the correct path
     doc_assets_dir = ASSETS_DIR / doc_id
     doc_assets_dir.mkdir(parents=True, exist_ok=True)
 
@@ -222,8 +240,7 @@ def extract_figures(pdf_path: str, doc_id: str) -> List[Dict]:
                     # PyMuPDF can choke on some objects, so don’t crash, just log
                     logger.warning(f"No bbox for image on page {page_num}: {e}")
 
-                # save the raw bytes to  png on disk
-                # --- PATH FIX: Use the correctly constructed path object ---
+                # save the raw bytes to png on disk
                 img_path = doc_assets_dir / f"fig_page{page_num}_{img_index}.png"
                 with open(img_path, "wb") as f:
                     f.write(base_image["image"])
