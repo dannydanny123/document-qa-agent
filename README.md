@@ -9,12 +9,14 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
     ⚡ Enterprise-ready optimizations.
     🔌 Give refrences from Arxiv Database (Extensible to API calls).
 
-⚙️ Setup Instructions
+⚙️ Setup & Running Instruction
+    -> Download Miniconda3 (Highly Recomended) or Anaconda python Environment, go to : https://www.anaconda.com/download (signup  with email and download)
+
     1️⃣ Clone Repo 
     git clone https://github.com/dannydanny123/document-qa-agent.git
     cd document-qa-agent
 
-    2️⃣ Create Conda Environment (Conda is the best)
+    2️⃣ Create Conda Environment (Miniconda is recomended, download if not avail)
     conda env create -f environment.yml
     conda activate docqa
 
@@ -28,7 +30,7 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
     macOS: brew install tesseract
     Windows: Download and run the installer from the Tesseract at UB-Mannheim page.
 
-    ### unstructured
+    ### unstructured IO lib
     pip install "unstructured[pdf]" langchain
     also need to install layoutparser and pytesseract for 'unstructured'
 
@@ -42,8 +44,12 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
     GOOGLE_API_KEY=your_key_here
 
     5️⃣ Run 'agent.py' with command line args mentioning Multiple pdfs path seperated with a space in btw in the terminal of the root dir 'document-qa-agent'
-    python agent.py "pdf_path1" "pdf_path2" "pdf_path3" "pdf_path4" "pdf_path_N"
-    or if you want to run the code again with the same previously processed pdf, use this command line simply: python agent.py... You dont need to go from stage 1 to 3 for already processed pdfs, only for new ones.
+    RUN:
+    python agent.py "pdf_path1" "pdf_path2" "pdf_path3" "pdf_path4" "pdf_path_n"
+
+    or if you want to run the code again with the same previously processed pdf, Simply run: 
+    python agent.py
+     You dont need to go from stage 1 to 3 for already processed pdfs, only for new ones.
 
     🖥️ Operations
     I made 'agent.py' as the entry to my app that calls of 3 python scripts Automatically: 'src\tasks\Stage 1\ingestion.py', 'src\tasks\Stage 2\Index_builder.py' and 'src\tasks\Stage 3\app.py'
@@ -56,15 +62,22 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
     -> Toggle 'Enable Arxiv Search' in the sidebar of the UI for activating Arxiv Search.
     "Summarise the Document, also find more papers related to the given documents !"
 
-SCREENSHOTS: TO DO
+SCREENSHOTS: 
+![
+    
+](<Screenshot 2025-09-14 173835.png>) ![
+    
+](<Screenshot 2025-09-14 180510.png>) ![
+    
+](<Screenshot 2025-09-14 180533.png>)
+
+TIP
+
 
 🔮 Details on developing this Project
-    Project Research - Getting Familier with the buiding of Ai Agents. (Time taken: 2 Days)
+    Project Research - Getting Familer with the buiding of Ai Agents. (Time taken: 2 Days)
     Project setup + CODE ingestion pipeline (Time taken: 2 Days with Crazy Mode on)
     CODE RAG pipeline + Arxiv API call pipeline + CODE Streamlit User Interface (Time Taken: 1 Days)
-
-📹 Demo
-    (A demo video .mp4 will be added after final implementation.)
 
 👤 Author
     Daniel Danny Kennedy

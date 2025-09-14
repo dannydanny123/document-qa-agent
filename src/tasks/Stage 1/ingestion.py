@@ -56,7 +56,7 @@ def extract_structure_with_unstructured(pdf_path: str) -> Dict:
     logger.info(f"Extracting structure from {pdf_path} using unstructured.io...")
     try:
         # I ran into mistakes while using "fast" strategy for speed; so pivoted to "hi_res" for more accurate... but slower, np
-        elements = partition_pdf(pdf_path, strategy="fast")
+        elements = partition_pdf(pdf_path, strategy="hi_res")
     except Exception as e:
         logger.error(f"Unstructured failed for {pdf_path}: {e}")
         # Fallback to a very basic text extraction if unstructured fails
