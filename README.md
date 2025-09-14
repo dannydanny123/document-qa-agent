@@ -93,11 +93,9 @@ Hybrid pipeline → Build FAISS index + Build BM25 index → Save in /data/index
 Streamlit app for user-friendly interface → Renders an intuitive platform for agent-user interaction.
 
 🔌 Query the Agent in Streamlit Web Page
-Examples:
-
-"What is the Summary of Paper X?"
-
-"Summarise the Document, also find more papers related to the given documents!"
+    Examples:
+    "What is the Summary of Paper X?"
+    "Summarise the Document, also find more papers related to the given documents!"
 
 👉 Toggle Enable Arxiv Search in the sidebar of the UI to activate Arxiv search.
 
@@ -108,15 +106,12 @@ Examples:
 ![Screenshot 3](Screenshot3.png)
 
 💡 TIP
-To extract PDFs, you can customize for speed or accuracy.
-In ingest.py (Line 59), it uses "fast" strategy (faster but less accurate) compared to "hi_res" strategy (extremely accurate but relatively slower).
+    - To extract PDFs, you can customize for speed or accuracy. In ingest.py (Line 59), it uses "fast" strategy (faster but less accurate) compared to "hi_res" strategy (extremely accurate but relatively slower).
 
 🔮 Details on Developing this Project
-Project Research → Getting familiar with building AI Agents. (2 Days)
-
-Project Setup + Ingestion Pipeline → (2 Days, Crazy Mode on)
-
-RAG Pipeline + Arxiv API Call + Streamlit UI → (1 Day)
+    1. Project Research → Getting familiar with building AI Agents. (2 Days)
+    2. Project Setup + Ingestion Pipeline → (2 Days, Crazy Mode on)
+    3. RAG Pipeline + Arxiv API Call + Streamlit UI → (1 Day)
 
 👤 Author
 Daniel Danny Kennedy
