@@ -58,7 +58,6 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
 
 SCREENSHOTS: TO DO
 
-
 🔮 Details on developing this Project
     Project Research - Getting Familier with the buiding of Ai Agents. (Time taken: 2 Days)
     Project setup + CODE ingestion pipeline (Time taken: 2 Days with Crazy Mode on)

@@ -158,7 +158,6 @@ if __name__ == "__main__":
     start = time.time()
     print("--- Loading Smart Index Builder Engine ! ---")
     
-    # Correctly define the processed directory path
     PROCESSED_DIR = DATA_DIR / "processed"
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     
