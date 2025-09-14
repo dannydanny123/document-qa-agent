@@ -43,6 +43,7 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
 
     5️⃣ Run 'agent.py' with command line args mentioning Multiple pdfs path seperated with a space in btw in the terminal of the root dir 'document-qa-agent'
     python agent.py "pdf_path1" "pdf_path2" "pdf_path3" "pdf_path4" "pdf_path_N"
+    or if you want to run the code again with the same previously processed pdf, use this command line simply: python agent.py... You dont need to go from stage 1 to 3 for already processed pdfs, only for new ones.
 
     🖥️ Operations
     I made 'agent.py' as the entry to my app that calls of 3 python scripts Automatically: 'src\tasks\Stage 1\ingestion.py', 'src\tasks\Stage 2\Index_builder.py' and 'src\tasks\Stage 3\app.py'
@@ -54,6 +55,9 @@ An enterprise-ready AI agent prototype that ingests PDF documents, extracts stru
     "What is the Summary of Paper X?"
     -> Toggle 'Enable Arxiv Search' in the sidebar of the UI for activating Arxiv Search.
     "Summarise the Document, also find more papers related to the given documents !"
+
+SCREENSHOTS: TO DO
+
 
 🔮 Details on developing this Project
     Project Research - Getting Familier with the buiding of Ai Agents. (Time taken: 2 Days)
