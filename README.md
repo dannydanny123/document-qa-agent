@@ -1,83 +1,122 @@
-Introducing: Document Q&A AI Agent 📄!
+Introducing: Document Q&A AI Agent 📄
+An enterprise-ready AI agent prototype that ingests PDF documents, extracts PDF content, and answers user queries using LLM APIs (Google Gemini).
+It also searches the ArXiv Database for relevant research papers.
 
-An enterprise-ready AI agent prototype that ingests PDF documents, extracts structured content, and answers user queries using LLM APIs (Google Gemini).
+🚀 Features
+📂 Multi-PDF ingestion pipeline (titles, abstracts, sections, tables, equations, figures/pics).
+🤖 Ask questions over extracted content.
+📝 Summarization & evaluation metric extraction.
+⚡ Enterprise-ready optimizations.
+🔌 References from Arxiv Database (Extensible to API calls).
 
-🚀 Features:
-    📂 Multi-PDF ingestion pipeline (titles, abstracts, sections, tables, Equations, figures/pics).
-    🤖 User can Ask questions over extracted content.
-    📝 Summarization & evaluation metric extraction.
-    ⚡ Enterprise-ready optimizations.
-    🔌 Give refrences from Arxiv Database (Extensible to API calls).
+⚙️ Setup & Running Instructions
+1️⃣ Download Miniconda3 (Highly Recommended) or Anaconda
+Go to 👉 https://www.anaconda.com/download (signup with email and free download).
 
-⚙️ Setup & Running Instruction
-    -> Download Miniconda3 (Highly Recomended) or Anaconda python Environment, go to : https://www.anaconda.com/download (signup  with email and download)
+2️⃣ Clone Repo
+Bash
 
-    1️⃣ Clone Repo 
-    git clone https://github.com/dannydanny123/document-qa-agent.git
-    cd document-qa-agent
+git clone https://github.com/dannydanny123/document-qa-agent.git
+cd document-qa-agent
+3️⃣ Create Conda Environment
+(Miniconda is recommended, download if not available)
 
-    2️⃣ Create Conda Environment (Miniconda is recomended, download if not avail)
-    conda env create -f environment.yml
-    conda activate docqa
+Bash
 
-    3️⃣ Install Dependencies
-    pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate docqa
+4️⃣ Install Dependencies
+Bash
 
-    ## System-Level Dependencies (Crucial!)
-    Some of the Python libraries require external tools to be installed on the operating system. These must be installed before running pip install. like:
-    ### 1. Tesseract-OCR
-    Required by unstructured for Optical Character Recognition.
-    macOS: brew install tesseract
-    Windows: Download and run the installer from the Tesseract at UB-Mannheim page.
+pip install -r requirements.txt
+🖥️ System-Level Dependencies
+Some Python libraries require external tools to be installed before running pip install.
 
-    ### unstructured IO lib
-    pip install "unstructured[pdf]" langchain
-    also need to install layoutparser and pytesseract for 'unstructured'
+1. Tesseract-OCR
+Required by unstructured for Optical Character Recognition.
 
-    ### Poppler
-    Required by unstructured and camelot for PDF rendering.
-    macOS: brew install poppler
-    Windows: Download the binaries, extract them, and add the bin/ folder to your system's PATH.
+macOS:
 
-    4️⃣ Add API Keys
-    Create a .env file in project root:
-    GOOGLE_API_KEY=your_key_here
+Bash
 
-    5️⃣ Run 'agent.py' with command line args mentioning Multiple pdfs path seperated with a space in btw in the terminal of the root dir 'document-qa-agent'
-    RUN:
-    python agent.py "pdf_path1" "pdf_path2" "pdf_path3" "pdf_path4" "pdf_path_n"
+brew install tesseract
+Windows:
+Download and run the installer from the Tesseract at UB-Mannheim page.
 
-    or if you want to run the code again with the same previously processed pdf, Simply run: 
-    python agent.py
-     You dont need to go from stage 1 to 3 for already processed pdfs, only for new ones.
+2. unstructured IO lib
 
-    🖥️ Operations
-    I made 'agent.py' as the entry to my app that calls of 3 python scripts Automatically: 'src\tasks\Stage 1\ingestion.py', 'src\tasks\Stage 2\Index_builder.py' and 'src\tasks\Stage 3\app.py'
-    🚀(Phase 1 → Examine the given Docs, Extracting features of the pdf and store in Data dir)
-    🚀(Phase 2 → A hybrid pipeline: Build FAISS index, Build BM25 index → Indexing Complete Store in data/index)
-    🚀 (Phase 3 → Streamlit app for user-friendly interface, Renders an Intutive platform for Agent-User interraction)
-    
-    🔌Query the Agent in the Streamlit Web page
-    "What is the Summary of Paper X?"
-    -> Toggle 'Enable Arxiv Search' in the sidebar of the UI for activating Arxiv Search.
-    "Summarise the Document, also find more papers related to the given documents !"
+Bash
 
-SCREENSHOTS: 
-![
-    
-](<Screenshot 2025-09-14 173835.png>) ![
-    
-](<Screenshot 2025-09-14 180510.png>) ![
-    
-](<Screenshot 2025-09-14 180533.png>)
+pip install "unstructured[pdf]" langchain
+Also need to install layoutparser and pytesseract for unstructured.
 
-TIP
+3. Poppler
+Required by unstructured and camelot for PDF rendering.
 
+macOS:
 
-🔮 Details on developing this Project
-    Project Research - Getting Familer with the buiding of Ai Agents. (Time taken: 2 Days)
-    Project setup + CODE ingestion pipeline (Time taken: 2 Days with Crazy Mode on)
-    CODE RAG pipeline + Arxiv API call pipeline + CODE Streamlit User Interface (Time Taken: 1 Days)
+Bash
+
+brew install poppler
+Windows:
+Download the binaries, extract them, and add the bin/ folder to your system's PATH.
+
+🔑 Add API Keys
+Create a .env file in the project root:
+
+Code snippet
+
+GOOGLE_API_KEY=your_key_here
+▶️ Run the Agent
+Run agent.py with command-line args mentioning multiple PDF paths (separated by spaces) in the terminal of the root dir document-qa-agent:
+
+Bash
+
+python agent.py "pdf_path1" "pdf_path2" "pdf_path3" "pdf_path4" "pdf_path_n"
+👉 To run the code again with the same previously processed PDFs, simply run:
+
+Bash
+
+python agent.py
+No need to repeat Stage 1–3 for already processed PDFs, only for new ones.
+
+🖥️ Operations
+agent.py is the entry point to the app and automatically calls these 3 scripts:
+
+🚀 Stage 1 → ingestion.py
+Examine the given docs, extract PDF features, and store in /data.
+
+🚀 Stage 2 → Index_builder.py
+Hybrid pipeline → Build FAISS index + Build BM25 index → Save in /data/index.
+
+🚀 Stage 3 → app.py
+Streamlit app for user-friendly interface → Renders an intuitive platform for agent-user interaction.
+
+🔌 Query the Agent in Streamlit Web Page
+Examples:
+
+"What is the Summary of Paper X?"
+
+"Summarise the Document, also find more papers related to the given documents!"
+
+👉 Toggle Enable Arxiv Search in the sidebar of the UI to activate Arxiv search.
+
+📸 Screenshots
+
+![Screenshot 1](Screenshot1.png)
+![Screenshot 2](Screenshot2.png)
+![Screenshot 3](Screenshot3.png)
+
+💡 TIP
+To extract PDFs, you can customize for speed or accuracy.
+In ingest.py (Line 59), it uses "fast" strategy (faster but less accurate) compared to "hi_res" strategy (extremely accurate but relatively slower).
+
+🔮 Details on Developing this Project
+Project Research → Getting familiar with building AI Agents. (2 Days)
+
+Project Setup + Ingestion Pipeline → (2 Days, Crazy Mode on)
+
+RAG Pipeline + Arxiv API Call + Streamlit UI → (1 Day)
 
 👤 Author
-    Daniel Danny Kennedy
+Daniel Danny Kennedy
