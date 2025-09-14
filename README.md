@@ -1,18 +1,18 @@
 # Introducing: Document Q&A AI Agent 📄
 
-## An enterprise-ready AI agent prototype that ingests PDF documents, extracts their content, answers user queries using LLM APIs (Google Gemini), and searches the ArXiv database for relevant research papers.
+### An enterprise-ready AI agent prototype that ingests PDF documents, extracts their content, answers user queries using LLM APIs (Google Gemini), and searches the ArXiv database for relevant research papers.
 
 ## 🚀 Features
 
-### 📂 Multi-PDF ingestion pipeline (titles, abstracts, sections, tables, equations, figures/pics).
+📂 Multi-PDF ingestion pipeline (titles, abstracts, sections, tables, equations, figures/pics).
 
-### 🤖 Ask questions over extracted content.
+🤖 Ask questions over extracted content.
 
-### 📝 Summarization & evaluation metric extraction.
+📝 Summarization & evaluation metric extraction.
 
-### ⚡ Enterprise-ready optimizations.
+⚡ Enterprise-ready optimizations.
 
-### 🔌 References from Arxiv Database (Extensible to API calls).
+🔌 References from Arxiv Database (Extensible to API calls).
 
 
 ## ⚙️ Setup & Running Instructions
@@ -21,19 +21,19 @@
 Go to 👉 https://www.anaconda.com/download (signup with email and free download).
 
 ### 2️⃣ Clone Repo
-git clone https://github.com/dannydanny123/document-qa-agent.git
-cd document-qa-agent
+    git clone https://github.com/dannydanny123/document-qa-agent.git
+    cd document-qa-agent
 
 ### 3️⃣ Create Conda Environment
 (Miniconda is recommended, download if not available)
 
-conda env create -f environment.yml
+    conda env create -f environment.yml
 
-conda activate docqa
+    conda activate docqa
 
 ### 4️⃣ Install Dependencies
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ## 🖥️ System-Level Dependencies
 
@@ -42,26 +42,26 @@ Some Python libraries require external tools to be installed before running pip 
 1. Tesseract-OCR
 Required by unstructured for Optical Character Recognition.
 
-macOS:
-brew install tesseract
+    macOS:
+    brew install tesseract
 
-Windows:
-Download and run the installer from the Tesseract at UB-Mannheim page.
+    Windows:
+    Download and run the installer from the Tesseract at UB-Mannheim page.
 
 2. unstructured IO 
 
-pip install "unstructured[pdf]" langchain
+    pip install "unstructured[pdf]" langchain
 
 Also need to install layoutparser and pytesseract for unstructured.
 
 3. Poppler
 Required by unstructured and camelot for PDF rendering.
 
-macOS:
-brew install poppler
+    macOS:
+    brew install poppler
 
-Windows:
-Download the binaries, extract them, and add the bin/ folder to your system's PATH.
+    Windows:
+    Download the binaries, extract them, and add the bin/ folder to your system's PATH.
 
 ## 🔑 Add API Keys
 Create a .env file in the project root:
@@ -73,11 +73,11 @@ Create a .env file in the project root:
 
 Run agent.py with command-line args mentioning multiple PDF paths (separated by spaces) in the terminal of the root dir document-qa-agent:
 
-python agent.py "pdf_path1" "pdf_path2" "pdf_path3" "pdf_path4" "pdf_path_n"
+    python agent.py "pdf_path1" "pdf_path2" "pdf_path3" "pdf_path4" "pdf_path_n"
 
 👉 To run the code again with the same previously processed PDFs, simply run:
 
-python agent.py
+    python agent.py
 
 No need to repeat Stage 1–2 for already processed PDFs, only for new ones.
 
