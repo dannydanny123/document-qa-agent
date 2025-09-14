@@ -126,5 +126,4 @@ In ingest.py (Line 59), it uses "fast" strategy (faster but less accurate) compa
 # 👤 Author
 
 Daniel Danny Kennedy
-
 https://www.linkedin.com/in/danny-kennedy
