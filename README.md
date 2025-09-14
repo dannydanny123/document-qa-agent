@@ -42,31 +42,31 @@ Some Python libraries require external tools to be installed before running pip 
 1. Tesseract-OCR
 Required by unstructured for Optical Character Recognition.
 
-    macOS:
-    brew install tesseract
+        macOS:
+        brew install tesseract
 
-    Windows:
-    Download and run the installer from the Tesseract at UB-Mannheim page.
+        Windows:
+        Download and run the installer from the Tesseract at UB-Mannheim page.
 
 2. unstructured IO 
 
-    pip install "unstructured[pdf]" langchain
+        pip install "unstructured[pdf]" langchain
 
 Also need to install layoutparser and pytesseract for unstructured.
 
 3. Poppler
 Required by unstructured and camelot for PDF rendering.
 
-    macOS:
-    brew install poppler
+        macOS:
+        brew install poppler
 
-    Windows:
-    Download the binaries, extract them, and add the bin/ folder to your system's PATH.
+        Windows:
+        Download the binaries, extract them, and add the bin/ folder to your system's PATH.
 
 ## 🔑 Add API Keys
 Create a .env file in the project root:
 
-### GOOGLE_API_KEY=your_key_here
+    GOOGLE_API_KEY=your_key_here
 
 ## ▶️ Run the Agent
 
@@ -86,21 +86,21 @@ No need to repeat Stage 1–2 for already processed PDFs, only for new ones.
 
 agent.py is the entry point to the app and automatically calls these 3 scripts:
 
-### 🚀 Stage 1 → ingestion.py
+🚀 Stage 1 → ingestion.py
 Examine the given docs, extract PDF features, and store in /data.
 
-### 🚀 Stage 2 → Index_builder.py
+🚀 Stage 2 → Index_builder.py
 Hybrid pipeline → Build FAISS index + Build BM25 index → Save in /data/index.
 
-### 🚀 Stage 3 → app.py
+🚀 Stage 3 → app.py
 Streamlit app for user-friendly interface → Renders an intuitive platform for agent-user interaction.
 
 ## 🔌 Query the Agent in Streamlit Web Page
 
 
-    **Examples:**
+Examples:
     "What is the Summary of Paper X?"
-    "Summarise the Document, also find more papers related to the given documents!"
+    "Summarise the Conclusion of given Doc, also find more papers related to the given documents!"
 
 👉 Toggle Enable Arxiv Search in the sidebar of the UI to activate Arxiv search.
 
@@ -113,15 +113,18 @@ Streamlit app for user-friendly interface → Renders an intuitive platform for 
 ## 💡 TIP
 
 
-    - To extract PDFs, you can customize for speed or accuracy. In ingest.py (Line 59), it uses "fast" strategy (faster but less accurate) compared to "hi_res" strategy (extremely accurate but relatively slower).
+- To extract PDFs, you can customize for speed or accuracy. 
+In ingest.py (Line 59), it uses "fast" strategy (faster but less accurate) compared to "hi_res" strategy (extremely accurate but relatively slower).
 
 ## 🔮 Details on Developing this Project
 
 
-    1. Project Research → Getting familiar with building AI Agents. (2 Days)
-    2. Project Setup + Ingestion Pipeline → (2 Days, Crazy Mode on)
-    3. RAG Pipeline + Arxiv API Call + Streamlit UI → (1 Day)
+1. Project Research → Getting familiar with building AI Agents. (2 Days)
+2. Project Setup + Ingestion Pipeline → (2 Days, Crazy Mode on)
+3. RAG Pipeline + Arxiv API Call + Streamlit UI → (1 Day)
 
 # 👤 Author
 
 Daniel Danny Kennedy
+
+https://www.linkedin.com/in/danny-kennedy
